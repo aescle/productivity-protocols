@@ -1,0 +1,39 @@
+{
+  "id": "feed_free_morning",
+  "title": "Keep one three-hour work period low-distraction.",
+  "subtitle": "Sustained focus",
+  "rationale": "Protect the same focus boundary across a substantial work period, whenever it occurs.",
+  "kind": "deep_work",
+  "family": "attention_defense",
+  "tier": "intermediate",
+  "tierTarget": "One 3-hour low-distraction work period",
+  "targets": [
+    "Focus",
+    "Work quality",
+    "Information diet"
+  ],
+  "durationMinutes": 180,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Reducing social-media exposure can improve well-being and removes a common source of focus interruption.",
+    "sources": [
+      {
+        "label": "Social-media abstinence randomized trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35512731/"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "One 90-minute protected block is already consistent.",
+    "Feeds and news creep into work gaps.",
+    "Deep work needs longer uninterrupted arcs."
+  ],
+  "guide": {
+    "source": "Cal Newport",
+    "url": "https://calnewport.com/the-rise-of-the-monk-mode-morning/"
+  }
+}

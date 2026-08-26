@@ -1,0 +1,35 @@
+{
+  "id": "deliberate_study_hour",
+  "title": "Block a daily hour of deliberate study in your field.",
+  "subtitle": "Input before output",
+  "rationale": "Protected daily input compounds into the pattern library that differentiates all later output.",
+  "kind": "deep_work",
+  "targets": [
+    "Learning",
+    "Compounding",
+    "Judgment"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "The practice behind Senra's method and many masters' routines; no trials, strong practitioner lineage.",
+    "sources": [
+      {
+        "label": "David Senra on daily study blocks",
+        "url": "https://manual.compoundplanning.com/chapters/watching-game-tapes-of-historys-best-entrepreneurs-with-david-senra"
+      },
+      {
+        "label": "Tim Ferriss and David Senra on note resurfacing",
+        "url": "https://tim.blog/2025/09/26/david-senra-transcript/"
+      }
+    ]
+  },
+  "indications": [
+    "All reading is reactive: feeds, docs, and inbound links.",
+    "Skill growth has flattened since formal learning ended."
+  ],
+  "guide": {
+    "url": "https://manual.compoundplanning.com/chapters/watching-game-tapes-of-historys-best-entrepreneurs-with-david-senra",
+    "source": "Compound Manual"
+  }
+}

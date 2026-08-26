@@ -1,0 +1,35 @@
+{
+  "id": "sleep_regular_wake_time",
+  "title": "Keep wake time within a 45-minute window.",
+  "subtitle": "Sleep anchor",
+  "rationale": "A stable wake time keeps the circadian system anchored even when bedtime drifts.",
+  "kind": "sleep",
+  "family": "sleep_regularity",
+  "tier": "intermediate",
+  "tierTarget": "Wake time within 45 minutes",
+  "targets": [
+    "Sleep timing",
+    "Recovery",
+    "Alertness"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Consistent sleep and wake timing is associated with better health, safety, and performance.",
+    "sources": [
+      {
+        "label": "Sleep timing and consistency systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33054339/"
+      }
+    ]
+  },
+  "indications": [
+    "Wake time varies 45 to 90 minutes across the week.",
+    "The 90-minute window is already mastered.",
+    "Mornings feel inconsistent despite adequate sleep duration."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/how-to-reset-your-sleep-routine"
+  }
+}

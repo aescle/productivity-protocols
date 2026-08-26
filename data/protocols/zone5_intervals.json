@@ -1,0 +1,39 @@
+{
+  "id": "zone5_intervals",
+  "title": "Train VO2 max weekly.",
+  "subtitle": "Anaerobic capacity",
+  "rationale": "Keep high-end capacity trained with one hard, bounded interval session when recovery permits.",
+  "kind": "training",
+  "targets": [
+    "VO2 max",
+    "Anaerobic capacity",
+    "Cardiovascular fitness"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Vigorous aerobic activity improves cardiorespiratory fitness and contributes to weekly activity targets.",
+    "sources": [
+      {
+        "label": "WHO physical activity guidelines",
+        "url": "https://iris.who.int/bitstream/handle/10665/336656/9789240015128-eng.pdf"
+      },
+      {
+        "label": "Physical Activity Guidelines for Americans",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      }
+    ]
+  },
+  "indications": [
+    "An aerobic base is established but top-end capacity is untrained.",
+    "VO2 max has plateaued or declined.",
+    "All current training sits at one moderate intensity."
+  ],
+  "avoidWhen": [
+    "Recovery debt, illness, injury, uncontrolled blood pressure, or no base fitness."
+  ],
+  "guide": {
+    "source": "NTNU",
+    "url": "https://www.ntnu.edu/cerg/advice"
+  }
+}

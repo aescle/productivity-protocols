@@ -1,0 +1,35 @@
+{
+  "id": "thinking_walk",
+  "title": "Take a daily walk on a fixed route with one problem loaded.",
+  "subtitle": "Ambulatory thinking",
+  "rationale": "A known route removes navigation decisions so attention can chew on the problem while the body moves.",
+  "kind": "walk",
+  "targets": [
+    "Creativity",
+    "Problem solving",
+    "Movement"
+  ],
+  "durationMinutes": 45,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Experiments show walking acutely boosts creative ideation; the fixed-route, problem-loaded format is practitioner design.",
+    "sources": [
+      {
+        "label": "Walking and creative thinking experiments",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24749966/"
+      },
+      {
+        "label": "Paul Graham, How to Do Great Work",
+        "url": "https://paulgraham.com/greatwork.html"
+      }
+    ]
+  },
+  "indications": [
+    "A hard problem has resisted desk time for days.",
+    "Walks happen but are filled with podcasts and calls."
+  ],
+  "guide": {
+    "url": "https://paulgraham.com/greatwork.html",
+    "source": "Paul Graham"
+  }
+}

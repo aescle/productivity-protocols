@@ -1,0 +1,31 @@
+{
+  "id": "top_idea_audit",
+  "title": "Audit what your mind drifts to; realign until it is your top problem.",
+  "subtitle": "Ambient thought check",
+  "rationale": "Background thinking does the real work on hard problems, and you can only curate what owns it, not command it.",
+  "kind": "deep_work",
+  "targets": [
+    "Prioritization",
+    "Deep work",
+    "Clarity"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Paul Graham's heuristic; incubation research supports the value of diffuse thinking, the audit ritual itself is untested.",
+    "sources": [
+      {
+        "label": "Paul Graham, The Top Idea in Your Mind",
+        "url": "https://paulgraham.com/top.html"
+      }
+    ]
+  },
+  "indications": [
+    "Shower and walk thoughts default to disputes or fundraising, not the product.",
+    "The stated top priority and the mind's actual top idea disagree."
+  ],
+  "guide": {
+    "url": "https://paulgraham.com/top.html",
+    "source": "Paul Graham"
+  }
+}

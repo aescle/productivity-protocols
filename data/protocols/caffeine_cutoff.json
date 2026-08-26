@@ -1,0 +1,32 @@
+{
+  "id": "caffeine_cutoff",
+  "title": "Keep caffeine inside your effective window.",
+  "subtitle": "Caffeine timing",
+  "rationale": "Place caffeine where your recorded dose supports work while staying clear of your learned sleep cutoff.",
+  "kind": "sleep",
+  "targets": [
+    "Caffeine timing",
+    "Focus",
+    "Sleep"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Caffeine can disrupt sleep even when consumed six hours before bedtime.",
+    "sources": [
+      {
+        "label": "Caffeine timing and sleep trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+      }
+    ]
+  },
+  "indications": [
+    "Caffeine intake continues within 8 hours of bedtime.",
+    "Sleep onset or depth degrades on days with late caffeine.",
+    "Total intake is fine but timing drifts late under deadline pressure."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/nutrition/caffeine-and-sleep"
+  }
+}

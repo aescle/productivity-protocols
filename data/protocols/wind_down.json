@@ -1,0 +1,34 @@
+{
+  "id": "wind_down",
+  "title": "Shut down screens 60 minutes before bed.",
+  "subtitle": "Full wind-down",
+  "rationale": "Move the screen boundary earlier so the nervous system has a real downshift before sleep.",
+  "kind": "sleep",
+  "family": "sleep_shutdown",
+  "tier": "intermediate",
+  "tierTarget": "60 screen-free minutes before sleep",
+  "targets": [
+    "Sleep",
+    "Recovery"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Pre-bed screen use can delay sleep through light exposure, alerting content, and displaced sleep time.",
+    "sources": [
+      {
+        "label": "Screen use and sleep consensus statement",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38806392/"
+      }
+    ]
+  },
+  "indications": [
+    "Screen use continues into the final hour before sleep on most nights.",
+    "Sleep onset is slow after evening screen sessions.",
+    "A 30-minute shutdown is already consistent and no longer difficult."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/bedroom-environment/technology-in-the-bedroom"
+  }
+}

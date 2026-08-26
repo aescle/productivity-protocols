@@ -1,0 +1,32 @@
+{
+  "id": "pre_sleep_breathing",
+  "title": "Use slow breathing before sleep.",
+  "subtitle": "Sleep breathwork",
+  "rationale": "Give the sleep window an explicit physiological downshift instead of ending on screens or work.",
+  "kind": "sleep",
+  "targets": [
+    "Sleep latency",
+    "Stress",
+    "Recovery"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Peer-reviewed sleep research supports slow breathing before bed as a low-friction sleep-quality intervention.",
+    "sources": [
+      {
+        "label": "Slow breathing before sleep trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25234581/"
+      }
+    ]
+  },
+  "indications": [
+    "The mind races at lights-out.",
+    "Sleep onset exceeds 20 minutes despite good sleep hygiene.",
+    "Evening stress carries into bed."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/best-breathing-exercises-for-sleep"
+  }
+}

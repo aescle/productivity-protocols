@@ -1,0 +1,33 @@
+{
+  "id": "email_batching",
+  "title": "Check email at two or three set times per day.",
+  "subtitle": "Communication boundary",
+  "rationale": "Convert email from an ambient interrupt stream into a bounded task with scheduled windows.",
+  "kind": "deep_work",
+  "targets": [
+    "Focus",
+    "Stress",
+    "Output"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "A randomized trial found checking email three times daily reduced stress versus unlimited checking; interruption research supports the mechanism.",
+    "sources": [
+      {
+        "label": "Email checking frequency randomized trial",
+        "url": "https://doi.org/10.1016/j.chb.2014.11.005"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "The inbox stays open in a visible tab all day.",
+    "Email checks exceed ten per day.",
+    "Replies interrupt focus blocks within minutes of arriving."
+  ],
+  "guide": null
+}

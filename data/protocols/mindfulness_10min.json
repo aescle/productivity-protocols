@@ -1,0 +1,39 @@
+{
+  "id": "mindfulness_10min",
+  "title": "Meditate 10 minutes per day.",
+  "subtitle": "Mindfulness floor",
+  "rationale": "Build a small daily attention practice before judging whether meditation earns a bigger slot.",
+  "kind": "recovery",
+  "family": "mindfulness",
+  "tier": "beginner",
+  "tierTarget": "10 minutes of meditation on most days",
+  "targets": [
+    "Stress",
+    "Focus",
+    "Mood"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Meta-analytic evidence shows mindfulness programs produce small-to-moderate improvements in anxiety, depression, and stress; brief daily practice shows measurable attention and mood effects in trials.",
+    "sources": [
+      {
+        "label": "Meditation programs systematic review and meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24395196/"
+      },
+      {
+        "label": "Brief daily meditation randomized trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30153464/"
+      }
+    ]
+  },
+  "indications": [
+    "Stress recovery relies entirely on physical levers.",
+    "Attention feels scattered even in protected blocks.",
+    "Meditation apps get installed and abandoned."
+  ],
+  "guide": {
+    "url": "https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/",
+    "source": "NHS"
+  }
+}

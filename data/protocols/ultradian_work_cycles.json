@@ -1,0 +1,32 @@
+{
+  "id": "ultradian_work_cycles",
+  "title": "Work in 90-minute cycles with real breaks between.",
+  "subtitle": "Work-rest pacing",
+  "rationale": "Match hard cognitive pushes to roughly 90-minute arcs and take a genuine break between them instead of grinding flat-out.",
+  "kind": "deep_work",
+  "targets": [
+    "Focus",
+    "Output quality",
+    "Energy"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Break research shows micro-breaks reduce fatigue and sustain vigor; the specific 90-minute ultradian pacing is an extrapolation from sleep-cycle physiology.",
+    "sources": [
+      {
+        "label": "Micro-breaks meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36044424/"
+      }
+    ]
+  },
+  "indications": [
+    "Focus quality decays sharply after the first long push.",
+    "Work runs as one continuous stretch without planned breaks.",
+    "Afternoons produce hours at the desk but little output."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+    "source": "Huberman Lab"
+  }
+}

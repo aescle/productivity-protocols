@@ -1,0 +1,35 @@
+{
+  "id": "deliberate_hobby_switch",
+  "title": "End hard workdays in an absorbing unrelated hobby.",
+  "subtitle": "Active recovery switch",
+  "rationale": "Only a genuinely absorbing alternative interest interrupts work rumination; idle rest leaves the loop running.",
+  "kind": "recovery",
+  "targets": [
+    "Detachment",
+    "Recovery",
+    "Mood"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Recovery research finds mastery experiences predict recovery better than passive rest, matching Churchill's change-is-the-master-key claim.",
+    "sources": [
+      {
+        "label": "Work detachment meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28133454/"
+      },
+      {
+        "label": "Churchill, Painting as a Pastime",
+        "url": "https://gutenberg.ca/ebooks/churchillws-paintingasapastime/churchillws-paintingasapastime-00-h-dir/churchillws-paintingasapastime-00-h.html"
+      }
+    ]
+  },
+  "indications": [
+    "Evenings are passive but the mind stays at work.",
+    "A skill hobby exists but never gets scheduled."
+  ],
+  "guide": {
+    "url": "https://gutenberg.ca/ebooks/churchillws-paintingasapastime/churchillws-paintingasapastime-00-h-dir/churchillws-paintingasapastime-00-h.html",
+    "source": "Winston Churchill"
+  }
+}

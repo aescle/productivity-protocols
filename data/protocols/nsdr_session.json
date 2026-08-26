@@ -1,0 +1,32 @@
+{
+  "id": "nsdr_session",
+  "title": "Use a 10-to-20-minute NSDR session instead of pushing through.",
+  "subtitle": "Structured rest",
+  "rationale": "Swap a low-quality afternoon grind for a guided non-sleep deep rest or yoga nidra session that actually restores.",
+  "kind": "recovery",
+  "targets": [
+    "Energy",
+    "Stress",
+    "Focus"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Guided deep-rest protocols descend from yoga nidra, where small studies report reduced stress and improved wellbeing; direct trials of NSDR itself are scarce.",
+    "sources": [
+      {
+        "label": "Meditation programs systematic review and meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24395196/"
+      }
+    ]
+  },
+  "indications": [
+    "Afternoon energy craters and caffeine is not an option.",
+    "Napping fails or leaves grogginess.",
+    "Recovery time exists but sleep is not possible."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/nsdr",
+    "source": "Huberman Lab"
+  }
+}

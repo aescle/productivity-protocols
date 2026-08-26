@@ -1,0 +1,35 @@
+{
+  "id": "no_all_nighters",
+  "title": "Never trade sleep for a stuck problem; retry after a full night.",
+  "subtitle": "Sleep-first debugging",
+  "rationale": "Overnight consolidation routinely solves in minutes what a fatigued brain could not in hours; the all-nighter is a bad trade.",
+  "kind": "sleep",
+  "targets": [
+    "Problem solving",
+    "Work quality",
+    "Sleep"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Sleep-dependent memory consolidation and sleep-deprivation cognition effects are among the most robust findings in the field.",
+    "sources": [
+      {
+        "label": "Andrej Karpathy's advice on all-nighters",
+        "url": "https://cs.stanford.edu/people/karpathy/advice.html"
+      },
+      {
+        "label": "Caffeine timing and sleep trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+      }
+    ]
+  },
+  "indications": [
+    "Deadline pressure is turning into planned all-nighters.",
+    "Late-night work regularly gets redone the next day."
+  ],
+  "guide": {
+    "url": "https://cs.stanford.edu/people/karpathy/advice.html",
+    "source": "Andrej Karpathy"
+  }
+}

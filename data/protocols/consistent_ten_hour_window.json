@@ -1,0 +1,32 @@
+{
+  "id": "consistent_ten_hour_window",
+  "title": "Keep eating inside a consistent 10-hour window.",
+  "subtitle": "Eating window",
+  "rationale": "Test a stable eating window when longer or more variable covered windows predict weaker sleep, recovery, or output.",
+  "kind": "nutrition",
+  "family": "eating_window",
+  "tier": "beginner",
+  "tierTarget": "A consistent 10-hour eating window",
+  "targets": [
+    "Eating window",
+    "Consistency",
+    "Recovery"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Time-restricted eating studies support testing a consistent daily eating window.",
+    "sources": [
+      {
+        "label": "Nighttime eating meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31782659/"
+      }
+    ]
+  },
+  "indications": [
+    "Eating start and end times swing widely day to day.",
+    "Late grazing extends the eating window past 12 hours.",
+    "Sleep or digestion complaints accompany irregular meal timing."
+  ],
+  "guide": null
+}

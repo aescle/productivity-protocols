@@ -1,0 +1,29 @@
+{
+  "id": "background_sound_design",
+  "title": "Pick one deliberate soundscape per focus block.",
+  "subtitle": "Auditory environment",
+  "rationale": "Choose silence, noise, or familiar instrumental sound on purpose, instead of letting novel audio compete for attention.",
+  "kind": "deep_work",
+  "targets": [
+    "Focus",
+    "Distraction",
+    "Arousal"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Meta-analysis finds small task-performance benefits of white or pink noise in attention-challenged youth; effects in healthy adults are mixed and individual.",
+    "sources": [
+      {
+        "label": "White and pink noise task-performance meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38428577/"
+      }
+    ]
+  },
+  "indications": [
+    "An open office or street noise keeps breaking focus.",
+    "Music with lyrics plays during language-heavy work.",
+    "Focus quality swings with the audio environment."
+  ],
+  "guide": null
+}

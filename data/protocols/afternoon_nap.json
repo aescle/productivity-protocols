@@ -1,0 +1,36 @@
+{
+  "id": "afternoon_nap",
+  "title": "Take a 10-to-20-minute early-afternoon nap.",
+  "subtitle": "Strategic nap",
+  "rationale": "Use a short, early, bounded nap to buy back alertness without paying for it at night.",
+  "kind": "sleep",
+  "targets": [
+    "Alertness",
+    "Energy",
+    "Focus"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Trials show 10-20 minute naps improve alertness and performance with minimal grogginess; longer naps carry sleep inertia.",
+    "sources": [
+      {
+        "label": "Afternoon nap duration trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16796222/"
+      }
+    ]
+  },
+  "indications": [
+    "Afternoon output collapses despite decent nights.",
+    "The schedule allows a protected 20-minute window.",
+    "Last night ran short and the evening must still be productive."
+  ],
+  "avoidWhen": [
+    "Insomnia or difficulty falling asleep at night.",
+    "Napping after mid-afternoon."
+  ],
+  "guide": {
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/napping",
+    "source": "Sleep Foundation"
+  }
+}

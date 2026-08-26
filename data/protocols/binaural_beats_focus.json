@@ -1,0 +1,27 @@
+{
+  "id": "binaural_beats_focus",
+  "title": "Play 40 Hz binaural beats for five minutes before deep work.",
+  "subtitle": "Auditory ramp",
+  "rationale": "Use a cheap, low-risk auditory cue to mark and ramp into a focus bout.",
+  "kind": "deep_work",
+  "targets": [
+    "Focus",
+    "Task initiation"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Meta-analysis finds small, heterogeneous effects of binaural beats on attention; mechanism claims outrun the data.",
+    "sources": [
+      {
+        "label": "Binaural beats cognition meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
+      }
+    ]
+  },
+  "indications": [
+    "Settling into focus takes 15 minutes or more.",
+    "A consistent start-of-block ritual is missing."
+  ],
+  "guide": null
+}

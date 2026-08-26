@@ -1,0 +1,32 @@
+{
+  "id": "nature_dose",
+  "title": "Spend 120 minutes per week in nature.",
+  "subtitle": "Nature dose",
+  "rationale": "Treat time in green space as a weekly recovery dose rather than a vacation-only event.",
+  "kind": "recovery",
+  "targets": [
+    "Stress",
+    "Mood",
+    "Recovery"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "In a large population study, 120-plus weekly minutes in nature associated with higher self-reported health and wellbeing, in any session pattern.",
+    "sources": [
+      {
+        "label": "120 minutes in nature and wellbeing study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31197192/"
+      }
+    ]
+  },
+  "indications": [
+    "Weeks pass entirely indoors between home, transit, and office.",
+    "Walks happen but only through built environments.",
+    "Stress stays elevated despite adequate sleep and training."
+  ],
+  "guide": {
+    "url": "https://www.apa.org/topics/stress/nature",
+    "source": "APA"
+  }
+}

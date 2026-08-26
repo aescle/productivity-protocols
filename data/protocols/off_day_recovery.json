@@ -1,0 +1,31 @@
+{
+  "id": "off_day_recovery",
+  "title": "Take a full weekend day off.",
+  "subtitle": "Full day off",
+  "rationale": "Working on a day you usually leave open has cost more downstream output than it created. Take the day off.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Deep work",
+    "Weekly cadence"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Psychological detachment from work supports recovery, well-being, sleep, and subsequent task performance.",
+    "sources": [
+      {
+        "label": "Work detachment meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28133454/"
+      }
+    ]
+  },
+  "indications": [
+    "Records show off-day work that cost more downstream output than it produced.",
+    "Fatigue accumulates across uninterrupted work weeks."
+  ],
+  "guide": {
+    "source": "APA",
+    "url": "https://www.apa.org/monitor/2019/01/break"
+  }
+}

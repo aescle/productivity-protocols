@@ -1,0 +1,34 @@
+{
+  "id": "creatine_daily",
+  "title": "Take 3 to 5 grams of creatine monohydrate daily.",
+  "subtitle": "Supplement staple",
+  "rationale": "Use the single best-studied performance supplement to support strength, training volume, and possibly cognition.",
+  "kind": "nutrition",
+  "targets": [
+    "Strength",
+    "Training",
+    "Cognition"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Position-stand evidence supports creatine monohydrate as safe and effective for strength and lean mass across hundreds of trials.",
+    "sources": [
+      {
+        "label": "ISSN creatine position stand",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28615996/"
+      }
+    ]
+  },
+  "indications": [
+    "Strength training is consistent but unsupplemented.",
+    "Muscle or strength progression is an explicit goal."
+  ],
+  "avoidWhen": [
+    "Kidney disease or impaired renal function unless cleared by a physician."
+  ],
+  "guide": {
+    "url": "https://my.clevelandclinic.org/health/treatments/17674-creatine",
+    "source": "Cleveland Clinic"
+  }
+}

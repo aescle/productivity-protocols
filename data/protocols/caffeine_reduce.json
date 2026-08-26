@@ -1,0 +1,29 @@
+{
+  "id": "caffeine_reduce",
+  "title": "Reduce caffeine to your sleep-safe dose.",
+  "subtitle": "Caffeine dose",
+  "rationale": "Use the lower learned dose range when higher recorded doses cost more sleep or recovery than they return in performance.",
+  "kind": "nutrition",
+  "targets": [
+    "Caffeine dose",
+    "Sleep",
+    "Recovery"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Caffeine's sleep effect increases with dose and proximity to sleep.",
+    "sources": [
+      {
+        "label": "Caffeine timing and sleep trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+      }
+    ]
+  },
+  "indications": [
+    "Sleep or recovery degrades on higher-caffeine days.",
+    "Anxiety or jitteriness accompanies the current dose.",
+    "Late-day doses prop up energy that better sleep should supply."
+  ],
+  "guide": null
+}

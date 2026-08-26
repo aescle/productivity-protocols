@@ -1,0 +1,37 @@
+{
+  "id": "mouth_taping",
+  "title": "Test mouth taping to force nasal breathing overnight.",
+  "subtitle": "Nasal breathing experiment",
+  "rationale": "Try a low-cost nudge toward nasal breathing during sleep, treated honestly as an experiment rather than a proven lever.",
+  "kind": "sleep",
+  "targets": [
+    "Sleep quality",
+    "Snoring",
+    "Dry mouth"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Popular practice with plausible rationale for mouth breathers; direct trial evidence is minimal and safety screening matters more than the tape.",
+    "sources": [
+      {
+        "label": "Sleep Foundation review of mouth taping",
+        "url": "https://www.sleepfoundation.org/sleep-hygiene/mouth-taping-for-sleep"
+      }
+    ]
+  },
+  "indications": [
+    "Mornings start with dry mouth or a sore throat.",
+    "A partner reports open-mouth snoring.",
+    "Nasal breathing is comfortable while awake."
+  ],
+  "avoidWhen": [
+    "Diagnosed or suspected sleep apnea.",
+    "Nasal obstruction or congestion.",
+    "Alcohol or sedatives before bed."
+  ],
+  "guide": {
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/mouth-taping-for-sleep",
+    "source": "Sleep Foundation"
+  }
+}

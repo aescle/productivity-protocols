@@ -1,0 +1,38 @@
+{
+  "id": "strength_3x",
+  "title": "Lift three or more times per week.",
+  "subtitle": "High strength volume",
+  "rationale": "Use three or more structured sessions to progress strength rather than merely maintain it.",
+  "kind": "training",
+  "family": "strength_capacity",
+  "tier": "advanced",
+  "tierTarget": "3+ strength sessions per week",
+  "targets": [
+    "Strength",
+    "Durability",
+    "Metabolic health"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Multiple weekly strength exposures support strength and muscle development when paired with sufficient training volume.",
+    "sources": [
+      {
+        "label": "Resistance-training frequency meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30558493/"
+      },
+      {
+        "label": "Physical Activity Guidelines for Americans",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      }
+    ]
+  },
+  "indications": [
+    "Two weekly sessions are established and recovery is solid.",
+    "Progression, not maintenance, is the goal."
+  ],
+  "guide": {
+    "source": "The Fitness Wiki",
+    "url": "https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "moderate_midday_meal",
+  "title": "Keep lunch moderate on days that need a sharp afternoon.",
+  "subtitle": "Post-lunch dip control",
+  "rationale": "Stop short of fullness at midday so digestion does not amplify the natural afternoon alertness dip.",
+  "kind": "nutrition",
+  "targets": [
+    "Alertness",
+    "Focus",
+    "Energy"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "The post-lunch performance dip is well documented and scales with meal size; the exact size threshold is individual.",
+    "sources": [
+      {
+        "label": "Post-lunch dip in performance review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15892914/"
+      }
+    ]
+  },
+  "indications": [
+    "Large lunches reliably precede a lost hour.",
+    "The day's key block sits at 2 to 4 p.m."
+  ],
+  "guide": null
+}

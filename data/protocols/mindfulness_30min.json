@@ -1,0 +1,34 @@
+{
+  "id": "mindfulness_30min",
+  "title": "Meditate 30 minutes per day.",
+  "subtitle": "High practice volume",
+  "rationale": "Hold a full program-level daily dose once shorter sits stop being a challenge.",
+  "kind": "recovery",
+  "family": "mindfulness",
+  "tier": "advanced",
+  "tierTarget": "30 minutes of meditation on most days",
+  "targets": [
+    "Stress",
+    "Focus",
+    "Emotional regulation"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Dose-response evidence above 20 daily minutes is thin; longer practice matches formal program doses but incremental benefit is not well quantified.",
+    "sources": [
+      {
+        "label": "Meditation programs systematic review and meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24395196/"
+      }
+    ]
+  },
+  "indications": [
+    "20 daily minutes are established and no longer difficult.",
+    "The practice is valuable enough to justify a bigger slot."
+  ],
+  "guide": {
+    "url": "https://www.apa.org/topics/mindfulness/meditation",
+    "source": "APA"
+  }
+}

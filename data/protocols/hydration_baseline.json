@@ -1,0 +1,38 @@
+{
+  "id": "hydration_baseline",
+  "title": "Drink roughly a glass of water per waking hour, front-loaded.",
+  "subtitle": "Hydration floor",
+  "rationale": "Even 1 to 2 percent dehydration measurably dents attention and mood; steady daytime intake avoids it without night waking.",
+  "kind": "nutrition",
+  "targets": [
+    "Alertness",
+    "Mood",
+    "Energy"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Small crossover trials show mild dehydration impairs cognition and mood; the per-hour dosing is a practitioner heuristic.",
+    "sources": [
+      {
+        "label": "Mild dehydration and cognition trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21736786/"
+      },
+      {
+        "label": "Huberman Lab hydration newsletter",
+        "url": "https://www.hubermanlab.com/newsletter/optimize-your-water-quality-and-intake-for-health"
+      }
+    ]
+  },
+  "indications": [
+    "Water intake is coffee plus whatever happens.",
+    "Headaches or fog appear by mid-afternoon."
+  ],
+  "avoidWhen": [
+    "Medical fluid restriction."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/newsletter/optimize-your-water-quality-and-intake-for-health",
+    "source": "Huberman Lab"
+  }
+}

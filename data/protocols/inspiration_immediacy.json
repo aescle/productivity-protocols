@@ -1,0 +1,28 @@
+{
+  "id": "inspiration_immediacy",
+  "title": "Act on inspiration within minutes, not on the calendar.",
+  "subtitle": "Perishable inspiration",
+  "rationale": "Genuine interest is the highest-leverage work state; captured immediately it produces effortless output, scheduled later it decays.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Learning",
+    "Momentum"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Naval Ravikant's rule; consistent with interest-driven learning research but untested as a protocol.",
+    "sources": [
+      {
+        "label": "Naval Ravikant on perishable inspiration",
+        "url": "https://www.startuparchive.org/p/naval-ravikant-inspiration-is-perishable"
+      }
+    ]
+  },
+  "indications": [
+    "Sparks of curiosity get filed into someday lists and die there.",
+    "The schedule has room to absorb an unplanned hour."
+  ],
+  "guide": null
+}

@@ -1,0 +1,32 @@
+{
+  "id": "evening_light_dimming",
+  "title": "Dim lights for the last hour.",
+  "subtitle": "Circadian guardrail",
+  "rationale": "Use darkness as the evening signal instead of asking willpower to shut the day down.",
+  "kind": "sleep",
+  "targets": [
+    "Sleep timing",
+    "Melatonin",
+    "Recovery"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Light exposure is a primary circadian input; evening dimming supports sleep timing.",
+    "sources": [
+      {
+        "label": "Evening light and circadian outcomes review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35753149/"
+      }
+    ]
+  },
+  "indications": [
+    "Bright overhead lighting stays on until bedtime.",
+    "Sleep onset is slow even after screens are off.",
+    "Alertness spikes near bedtime."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/bedroom-environment/light-and-sleep"
+  }
+}

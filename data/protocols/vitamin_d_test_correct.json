@@ -1,0 +1,39 @@
+{
+  "id": "vitamin_d_test_correct",
+  "title": "Test vitamin D and supplement to sufficiency.",
+  "subtitle": "Vitamin D correction",
+  "rationale": "Correct a measured deficiency with 1,000 to 4,000 IU daily instead of guessing at a dose.",
+  "kind": "nutrition",
+  "targets": [
+    "Immune function",
+    "Bone health",
+    "Mood"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Correcting deficiency is well supported; large trials in replete adults were null for primary outcomes, so test-then-treat beats blind dosing.",
+    "sources": [
+      {
+        "label": "VITAL vitamin D randomized trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30415629/"
+      },
+      {
+        "label": "FoundMyFitness vitamin D topic",
+        "url": "https://www.foundmyfitness.com/topics/vitamin-d"
+      }
+    ]
+  },
+  "indications": [
+    "25(OH)D has never been measured or came back low.",
+    "Winter months with minimal midday sun exposure."
+  ],
+  "avoidWhen": [
+    "High-dose supplementation without a blood level.",
+    "History of hypercalcemia or kidney stones unless cleared by a physician."
+  ],
+  "guide": {
+    "url": "https://www.foundmyfitness.com/topics/vitamin-d",
+    "source": "FoundMyFitness"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "lighter_post_meal_work",
+  "title": "Walk after two meals and finish eating two hours before bed.",
+  "subtitle": "Meal architecture",
+  "rationale": "Make meal timing deliberate across the day instead of fixing one isolated meal.",
+  "kind": "nutrition",
+  "family": "meal_timing",
+  "tier": "advanced",
+  "tierTarget": "2 post-meal walks and an early finish",
+  "targets": [
+    "Meals",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Post-meal walking lowers acute glucose excursions, while glucose handling is generally poorer at night.",
+    "sources": [
+      {
+        "label": "Post-meal exercise meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36715875/"
+      },
+      {
+        "label": "Nighttime eating meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31782659/"
+      }
+    ]
+  },
+  "indications": [
+    "One daily post-meal walk is already routine.",
+    "Late meals still run close to bedtime.",
+    "Post-lunch and post-dinner slumps persist."
+  ],
+  "guide": {
+    "source": "Cleveland Clinic",
+    "url": "https://health.clevelandclinic.org/is-eating-before-bed-bad-for-you"
+  }
+}

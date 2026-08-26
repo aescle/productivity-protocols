@@ -1,0 +1,28 @@
+{
+  "id": "carb_composition",
+  "title": "Move toward your better-performing carb share.",
+  "subtitle": "Macro composition",
+  "rationale": "Adjust overall carbohydrate share only when covered multi-day nutrition records support a better personal range.",
+  "kind": "nutrition",
+  "targets": [
+    "Carbohydrate share",
+    "Recovery",
+    "Output"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Diet composition can affect metabolic and performance outcomes over longer horizons.",
+    "sources": [
+      {
+        "label": "Carbohydrate timing systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35512764/"
+      }
+    ]
+  },
+  "indications": [
+    "Multi-day records link a higher or lower carbohydrate share to better output or recovery.",
+    "The current macro split is untracked or accidental."
+  ],
+  "guide": null
+}

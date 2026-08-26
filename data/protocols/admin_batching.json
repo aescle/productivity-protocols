@@ -1,0 +1,33 @@
+{
+  "id": "admin_batching",
+  "title": "Batch admin into one daily window.",
+  "subtitle": "Schedule protocol",
+  "rationale": "Batch shallow work so it stops leaking into the highest-readiness blocks.",
+  "kind": "calendar_defense",
+  "family": "calendar_defense",
+  "tier": "beginner",
+  "tierTarget": "Admin contained to 1 daily window",
+  "targets": [
+    "Admin",
+    "Calendar"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Reducing interruptions improves primary-task accuracy and shortens the time needed to resume work.",
+    "sources": [
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "Small administrative tasks interrupt focus blocks throughout the day.",
+    "Email and chat are handled reactively as they arrive."
+  ],
+  "guide": {
+    "source": "Asana",
+    "url": "https://asana.com/resources/task-batching"
+  }
+}

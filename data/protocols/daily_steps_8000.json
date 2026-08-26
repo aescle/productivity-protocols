@@ -1,0 +1,31 @@
+{
+  "id": "daily_steps_8000",
+  "title": "Hit 8,000 steps per day.",
+  "subtitle": "Step floor",
+  "rationale": "Use a step floor as the simplest observable proxy for a genuinely active day.",
+  "kind": "walk",
+  "targets": [
+    "Activity",
+    "Longevity",
+    "Energy"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Meta-analysis of 15 cohorts shows progressively lower all-cause mortality up to about 8,000-10,000 steps per day in adults under 60.",
+    "sources": [
+      {
+        "label": "Daily steps and all-cause mortality meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+      }
+    ]
+  },
+  "indications": [
+    "Step counts sit under 6,000 on most workdays.",
+    "Movement happens but concentrates into single workouts."
+  ],
+  "guide": {
+    "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/",
+    "source": "NHS"
+  }
+}

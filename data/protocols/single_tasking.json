@@ -1,0 +1,33 @@
+{
+  "id": "single_tasking",
+  "title": "Run one task on one screen at a time.",
+  "subtitle": "Attention discipline",
+  "rationale": "Close everything unrelated to the current task; task switching taxes accuracy and speed even when it feels efficient.",
+  "kind": "deep_work",
+  "targets": [
+    "Focus",
+    "Work quality",
+    "Speed"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Task-switching research consistently shows measurable time and error costs from multitasking; single-tasking removes the switch tax.",
+    "sources": [
+      {
+        "label": "APA research summary on multitasking costs",
+        "url": "https://www.apa.org/topics/research/multitasking"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "A second monitor or split screen always carries chat or email.",
+    "Tasks finish slower than their actual size explains.",
+    "Errors cluster during multi-thread periods."
+  ],
+  "guide": null
+}

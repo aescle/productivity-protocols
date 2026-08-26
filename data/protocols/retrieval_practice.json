@@ -1,0 +1,34 @@
+{
+  "id": "retrieval_practice",
+  "title": "Close the material and self-test instead of re-reading.",
+  "subtitle": "Testing effect",
+  "rationale": "Effortful recall, not re-exposure, is what durably encodes new material and exposes the gaps.",
+  "kind": "deep_work",
+  "targets": [
+    "Retention",
+    "Learning speed"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "strong",
+    "summary": "The testing effect has decades of replicated experimental support across lab and classroom settings.",
+    "sources": [
+      {
+        "label": "Test-enhanced learning study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16507066/"
+      },
+      {
+        "label": "Huberman Lab neuroplasticity newsletter",
+        "url": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol"
+      }
+    ]
+  },
+  "indications": [
+    "Learning defaults to re-reading and highlighting.",
+    "Material read last week is already gone."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol",
+    "source": "Huberman Lab"
+  }
+}

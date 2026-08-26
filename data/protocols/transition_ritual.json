@@ -1,0 +1,37 @@
+{
+  "id": "transition_ritual",
+  "title": "Cluster meetings into two daily windows.",
+  "subtitle": "Meeting architecture",
+  "rationale": "Contain meetings so they stop fragmenting every open edge of the workday.",
+  "kind": "calendar_defense",
+  "family": "calendar_defense",
+  "tier": "intermediate",
+  "tierTarget": "Meetings contained to 2 daily clusters",
+  "targets": [
+    "Meetings",
+    "Focus"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Meeting-heavy periods reduce opportunities for replenishing breaks and can lower knowledge-worker energy.",
+    "sources": [
+      {
+        "label": "Meetings and knowledge-worker energy study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37023294/"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "Meetings are scattered across the day, fragmenting open time.",
+    "No block longer than 90 minutes survives most workdays."
+  ],
+  "guide": {
+    "source": "Sam Altman",
+    "url": "https://blog.samaltman.com/productivity"
+  }
+}

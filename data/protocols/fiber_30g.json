@@ -1,0 +1,32 @@
+{
+  "id": "fiber_30g",
+  "title": "Reach 30 grams of fiber per day.",
+  "subtitle": "Fiber floor",
+  "rationale": "Push daily fiber toward the intake range with the strongest all-cause outcome data in nutrition.",
+  "kind": "nutrition",
+  "targets": [
+    "Metabolic health",
+    "Gut health",
+    "Longevity"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Systematic reviews and meta-analyses link 25-29-plus grams of daily fiber to lower all-cause mortality and cardiometabolic disease incidence.",
+    "sources": [
+      {
+        "label": "Carbohydrate quality systematic reviews and meta-analyses",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30638909/"
+      }
+    ]
+  },
+  "indications": [
+    "The default diet centers on protein and refined carbohydrate.",
+    "Fiber intake is untracked and probably under 20 grams.",
+    "Cholesterol or glucose markers are drifting upward."
+  ],
+  "guide": {
+    "url": "https://www.nhs.uk/live-well/eat-well/digestive-health/how-to-get-more-fibre-into-your-diet/",
+    "source": "NHS"
+  }
+}

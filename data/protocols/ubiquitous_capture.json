@@ -1,0 +1,28 @@
+{
+  "id": "ubiquitous_capture",
+  "title": "Capture every idea the moment it occurs, always.",
+  "subtitle": "Always-on notebook",
+  "rationale": "Working memory drops ideas within minutes; a capture tool always in reach preserves them and frees attention.",
+  "kind": "deep_work",
+  "targets": [
+    "Ideas",
+    "Clarity",
+    "Memory"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Da Vinci's belt notebook through GTD; working-memory decay is well established, the capture habit itself is practitioner canon.",
+    "sources": [
+      {
+        "label": "David Senra on daily study blocks",
+        "url": "https://manual.compoundplanning.com/chapters/watching-game-tapes-of-historys-best-entrepreneurs-with-david-senra"
+      }
+    ]
+  },
+  "indications": [
+    "Good ideas from walks and showers are gone by the desk.",
+    "Open loops circulate in the head instead of a system."
+  ],
+  "guide": null
+}

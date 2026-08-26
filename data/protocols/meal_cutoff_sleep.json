@@ -1,0 +1,35 @@
+{
+  "id": "meal_cutoff_sleep",
+  "title": "Finish eating two hours before bed.",
+  "subtitle": "Sleep nutrition",
+  "rationale": "Keep digestion out of the wind-down window when sleep or glucose stability is the constraint.",
+  "kind": "nutrition",
+  "family": "meal_timing",
+  "tier": "beginner",
+  "tierTarget": "Finish eating 2 hours before sleep",
+  "targets": [
+    "Meal timing",
+    "Sleep quality",
+    "Glucose"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Glucose handling is generally poorer at night, supporting an earlier end to the eating window.",
+    "sources": [
+      {
+        "label": "Nighttime eating meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31782659/"
+      }
+    ]
+  },
+  "indications": [
+    "Eating continues within two hours of bedtime.",
+    "Night waking or reflux follows late meals.",
+    "Morning glucose or sleep quality lags after late dinners."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/nutrition/is-it-bad-to-eat-before-bed"
+  }
+}

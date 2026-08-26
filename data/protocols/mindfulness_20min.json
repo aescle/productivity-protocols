@@ -1,0 +1,34 @@
+{
+  "id": "mindfulness_20min",
+  "title": "Meditate 20 minutes per day.",
+  "subtitle": "Mindfulness standard",
+  "rationale": "Extend an established daily sit toward the doses used in most studied programs.",
+  "kind": "recovery",
+  "family": "mindfulness",
+  "tier": "intermediate",
+  "tierTarget": "20 minutes of meditation on most days",
+  "targets": [
+    "Stress",
+    "Focus",
+    "Emotional regulation"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Structured programs studied in meta-analyses typically use 20-45 minute daily practice; benefits at these doses are small to moderate and consistent.",
+    "sources": [
+      {
+        "label": "Meditation programs systematic review and meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24395196/"
+      }
+    ]
+  },
+  "indications": [
+    "A 10-minute daily practice is consistent and easy.",
+    "Benefits are noticeable but plateau at the shorter dose."
+  ],
+  "guide": {
+    "url": "https://www.apa.org/topics/mindfulness/meditation",
+    "source": "APA"
+  }
+}

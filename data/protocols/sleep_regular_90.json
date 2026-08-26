@@ -1,0 +1,35 @@
+{
+  "id": "sleep_regular_90",
+  "title": "Keep wake time within a 90-minute window.",
+  "subtitle": "Sleep regularity floor",
+  "rationale": "Reduce large swings in wake time before trying to make sleep timing precise.",
+  "kind": "sleep",
+  "family": "sleep_regularity",
+  "tier": "beginner",
+  "tierTarget": "Wake time within 90 minutes",
+  "targets": [
+    "Sleep timing",
+    "Recovery",
+    "Alertness"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Reducing day-to-day variation in sleep and wake timing supports circadian stability and health.",
+    "sources": [
+      {
+        "label": "Sleep timing and consistency systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33054339/"
+      }
+    ]
+  },
+  "indications": [
+    "Wake time swings by hours between weekdays and weekends.",
+    "Social jet lag leaves Mondays wrecked.",
+    "Sleep duration is adequate but timing is chaotic."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/how-to-reset-your-sleep-routine"
+  }
+}

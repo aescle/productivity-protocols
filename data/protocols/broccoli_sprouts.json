@@ -1,0 +1,33 @@
+{
+  "id": "broccoli_sprouts",
+  "title": "Eat a half cup of broccoli sprouts most days.",
+  "subtitle": "Sulforaphane source",
+  "rationale": "Use the most potent dietary NRF2 inducer as a cheap, food-first antioxidant-pathway lever.",
+  "kind": "nutrition",
+  "targets": [
+    "Detoxification",
+    "Inflammation"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Mechanism is well characterized and human trials show biomarker shifts; hard-outcome evidence does not exist yet.",
+    "sources": [
+      {
+        "label": "FoundMyFitness sulforaphane episode",
+        "url": "https://www.foundmyfitness.com/episodes/sulforaphane"
+      }
+    ]
+  },
+  "indications": [
+    "Cruciferous vegetable intake is low.",
+    "A food-first lever is preferred over another capsule."
+  ],
+  "avoidWhen": [
+    "Immunocompromised: raw sprouts carry foodborne-illness risk."
+  ],
+  "guide": {
+    "url": "https://www.foundmyfitness.com/episodes/sulforaphane",
+    "source": "FoundMyFitness"
+  }
+}

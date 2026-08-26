@@ -1,0 +1,35 @@
+{
+  "id": "phone_free_focus_block",
+  "title": "Keep one 90-minute work block distraction-free.",
+  "subtitle": "Distraction boundary",
+  "rationale": "Improve the quality of one real work block by keeping phone interruptions and desktop drift out.",
+  "kind": "deep_work",
+  "family": "attention_defense",
+  "tier": "beginner",
+  "tierTarget": "One 90-minute distraction-free work block",
+  "targets": [
+    "Distraction",
+    "Work quality",
+    "Output"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Reducing interruptions improves task accuracy and lowers the cost of resuming complex work.",
+    "sources": [
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "The phone sits in reach during focused work.",
+    "Work sessions fragment into stretches under 20 minutes.",
+    "Notifications interrupt more than once per hour."
+  ],
+  "guide": {
+    "source": "UT Austin",
+    "url": "https://news.utexas.edu/2017/06/26/the-mere-presence-of-your-smartphone-reduces-brain-power/"
+  }
+}

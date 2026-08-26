@@ -1,0 +1,36 @@
+{
+  "id": "caffeine_nap",
+  "title": "Drink coffee, then nap 15 to 20 minutes.",
+  "subtitle": "Combined reset",
+  "rationale": "Caffeine taken right before a short nap peaks as you wake, stacking two alertness tools into one 20-minute window.",
+  "kind": "sleep",
+  "targets": [
+    "Alertness",
+    "Energy",
+    "Focus"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Trials in sleepy drivers found caffeine plus a short nap reduced impairment more than either alone; tested mainly in acute-sleepiness settings.",
+    "sources": [
+      {
+        "label": "Caffeine plus short nap driver trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9401427/"
+      }
+    ]
+  },
+  "indications": [
+    "An afternoon crash hits before a block that matters.",
+    "Naps alone leave grogginess.",
+    "The crash window sits safely before the caffeine cutoff."
+  ],
+  "avoidWhen": [
+    "Within 8 hours of bedtime.",
+    "Insomnia or difficulty sleeping at night."
+  ],
+  "guide": {
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/napping",
+    "source": "Sleep Foundation"
+  }
+}

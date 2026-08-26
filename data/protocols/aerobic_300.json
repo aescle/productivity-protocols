@@ -1,0 +1,39 @@
+{
+  "id": "aerobic_300",
+  "title": "Complete 300 aerobic minutes per week.",
+  "subtitle": "High aerobic volume",
+  "rationale": "Use a high weekly aerobic base to compound cardiovascular capacity without making every session hard.",
+  "kind": "training",
+  "family": "aerobic_volume",
+  "tier": "advanced",
+  "tierTarget": "300 aerobic minutes per week",
+  "targets": [
+    "Aerobic volume",
+    "VO2 max",
+    "Metabolic health"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Moving from 150 toward 300 weekly aerobic minutes provides additional health benefits.",
+    "sources": [
+      {
+        "label": "Physical Activity Guidelines for Americans",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      },
+      {
+        "label": "Physical activity dose-response meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36854652/"
+      }
+    ]
+  },
+  "indications": [
+    "150 weekly aerobic minutes are already routine.",
+    "Further cardiovascular headroom is the goal.",
+    "Training time is available without crowding out recovery."
+  ],
+  "guide": {
+    "source": "Cleveland Clinic",
+    "url": "https://health.clevelandclinic.org/zone-2-cardio"
+  }
+}

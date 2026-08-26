@@ -1,0 +1,30 @@
+{
+  "id": "structured_procrastination",
+  "title": "Keep a Later list and work it when you dodge the top task.",
+  "subtitle": "Procrastination channel",
+  "rationale": "Avoidance energy is inevitable; aim it at worthwhile second-tier work instead of feeds.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Procrastination"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "A practitioner method (Perry via Andreessen) with no direct trials; consistent with mood-regulation accounts of procrastination.",
+    "sources": [
+      {
+        "label": "Pmarca guide to personal productivity",
+        "url": "https://pmarchive.com/guide_to_personal_productivity.html"
+      }
+    ]
+  },
+  "indications": [
+    "Avoiding the main task currently means drifting to feeds.",
+    "A backlog of useful smaller tasks exists."
+  ],
+  "guide": {
+    "url": "https://pmarchive.com/guide_to_personal_productivity.html",
+    "source": "Marc Andreessen"
+  }
+}

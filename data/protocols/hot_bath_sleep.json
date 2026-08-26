@@ -1,0 +1,35 @@
+{
+  "id": "hot_bath_sleep",
+  "title": "Use heat before bed.",
+  "subtitle": "Thermal wind-down",
+  "rationale": "A hot bath, shower, or sauna window can support the temperature drop into sleep.",
+  "kind": "sleep",
+  "targets": [
+    "Sleep depth",
+    "Relaxation",
+    "Recovery"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Peer-reviewed sleep research supports warm water-based passive heating before bed as a practical sleep lever.",
+    "sources": [
+      {
+        "label": "Passive heating and sleep meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31102877/"
+      }
+    ]
+  },
+  "indications": [
+    "Sleep onset is slow despite a good shutdown routine.",
+    "Evening tension or cold extremities delay sleep.",
+    "A bath, hot shower, or sauna is practically available."
+  ],
+  "avoidWhen": [
+    "Pregnancy, cardiovascular instability, heat intolerance, or sauna contraindication."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/shower-before-bed"
+  }
+}

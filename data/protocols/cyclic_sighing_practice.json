@@ -1,0 +1,32 @@
+{
+  "id": "cyclic_sighing_practice",
+  "title": "Practice 15 minutes of cyclic sighing.",
+  "subtitle": "Breathwork protocol",
+  "rationale": "Use exhale-emphasized breathing as a repeatable stress and mood tool, not just an emergency reset.",
+  "kind": "recovery",
+  "targets": [
+    "Stress",
+    "Mood",
+    "Recovery"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Stanford and Cell Reports Medicine research supports brief cyclic sighing practice as a stress and mood intervention.",
+    "sources": [
+      {
+        "label": "Brief structured respiration practices trial",
+        "url": "https://www.cell.com/cell-reports-medecine/fulltext/S2666-3791(22)00474-8"
+      }
+    ]
+  },
+  "indications": [
+    "Stress stays elevated across the workday.",
+    "Mood dips need a repeatable, drug-free tool.",
+    "Brief breathwork already helps in emergencies."
+  ],
+  "guide": {
+    "source": "Stanford Medicine",
+    "url": "https://med.stanford.edu/news/insights/2023/02/cyclic-sighing-can-help-breathe-away-anxiety.html"
+  }
+}

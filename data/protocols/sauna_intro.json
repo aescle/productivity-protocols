@@ -1,0 +1,42 @@
+{
+  "id": "sauna_intro",
+  "title": "Take one 15-to-20-minute sauna session this week.",
+  "subtitle": "Heat exposure floor",
+  "rationale": "Start deliberate heat exposure as a repeatable recovery practice, not an occasional spa event.",
+  "kind": "recovery",
+  "family": "heat_exposure",
+  "tier": "beginner",
+  "tierTarget": "1 sauna session per week",
+  "targets": [
+    "Recovery",
+    "Cardiovascular fitness",
+    "Relaxation"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Large Finnish cohort data associate regular sauna use with lower cardiovascular and all-cause mortality, with plausible cardiovascular mechanisms.",
+    "sources": [
+      {
+        "label": "Sauna bathing and cardiovascular mortality cohort",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25705824/"
+      },
+      {
+        "label": "Sauna bathing health benefits review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30077204/"
+      }
+    ]
+  },
+  "indications": [
+    "A sauna is practically available but unused.",
+    "Recovery practice is limited to passive rest.",
+    "Evening tension persists after training or work."
+  ],
+  "avoidWhen": [
+    "Pregnancy, cardiovascular instability, recent alcohol, or heat intolerance."
+  ],
+  "guide": {
+    "url": "https://health.clevelandclinic.org/sauna-benefits",
+    "source": "Cleveland Clinic"
+  }
+}

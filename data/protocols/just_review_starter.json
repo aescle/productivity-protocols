@@ -1,0 +1,30 @@
+{
+  "id": "just_review_starter",
+  "title": "When stuck starting, just review what you have so far.",
+  "subtitle": "Initiation ramp",
+  "rationale": "Lower the bar to opening the work; found errors and loose ends pull you into real progress without willpower.",
+  "kind": "deep_work",
+  "targets": [
+    "Task initiation",
+    "Procrastination"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Paul Graham's self-trick, consistent with research on lowering initiation thresholds and the pull of unfinished work; untested directly.",
+    "sources": [
+      {
+        "label": "Paul Graham, How to Do Great Work",
+        "url": "https://paulgraham.com/greatwork.html"
+      }
+    ]
+  },
+  "indications": [
+    "Starting is the hard part; momentum holds once begun.",
+    "A project has stalled between sessions."
+  ],
+  "guide": {
+    "url": "https://paulgraham.com/greatwork.html",
+    "source": "Paul Graham"
+  }
+}

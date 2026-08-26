@@ -1,0 +1,32 @@
+{
+  "id": "alcohol_free_weeknights",
+  "title": "Keep worknights alcohol-free.",
+  "subtitle": "Alcohol dose boundary",
+  "rationale": "Concentrate drinking into deliberate occasions so recovery and next-day output stop paying a nightly tax.",
+  "kind": "nutrition",
+  "targets": [
+    "Sleep quality",
+    "Recovery",
+    "Output"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Alcohol's dose-dependent sleep disruption is well documented; scheduling-based reduction is a practical application rather than a directly tested protocol.",
+    "sources": [
+      {
+        "label": "Alcohol and normal sleep review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23347102/"
+      }
+    ]
+  },
+  "indications": [
+    "Most weeknights include at least one drink.",
+    "The three-hour cutoff is already consistent.",
+    "Morning readiness dips after drinking evenings."
+  ],
+  "guide": {
+    "url": "https://www.sleepfoundation.org/nutrition/alcohol-and-sleep",
+    "source": "Sleep Foundation"
+  }
+}

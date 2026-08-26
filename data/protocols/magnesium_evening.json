@@ -1,0 +1,34 @@
+{
+  "id": "magnesium_evening",
+  "title": "Test 200 to 400 milligrams of magnesium in the evening.",
+  "subtitle": "Sleep supplement experiment",
+  "rationale": "Run a bounded experiment on an inexpensive, low-risk supplement with suggestive but thin sleep evidence.",
+  "kind": "nutrition",
+  "targets": [
+    "Sleep quality",
+    "Relaxation"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Small trials, mostly in older or deficient adults, report modest improvements in insomnia measures; evidence in healthy adults is thin.",
+    "sources": [
+      {
+        "label": "Magnesium and insomnia randomized trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23853635/"
+      }
+    ]
+  },
+  "indications": [
+    "Sleep quality lags despite solid behavior-level hygiene.",
+    "Dietary magnesium intake is likely low.",
+    "A cheap, low-risk experiment is preferred before bigger changes."
+  ],
+  "avoidWhen": [
+    "Kidney disease or impaired renal function unless cleared by a physician."
+  ],
+  "guide": {
+    "url": "https://www.sleepfoundation.org/magnesium",
+    "source": "Sleep Foundation"
+  }
+}

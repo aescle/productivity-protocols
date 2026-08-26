@@ -1,0 +1,41 @@
+{
+  "id": "cold_shower_finish",
+  "title": "End your shower with 30 to 60 seconds cold.",
+  "subtitle": "Cold exposure floor",
+  "rationale": "Use the cheapest possible cold dose to build tolerance and test the alertness effect before investing in immersion.",
+  "kind": "recovery",
+  "family": "cold_exposure",
+  "tier": "beginner",
+  "tierTarget": "A cold finish on most showers",
+  "targets": [
+    "Alertness",
+    "Mood",
+    "Stress tolerance"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "One large randomized trial of cold shower finishes found reduced self-reported sickness absence; broader outcomes remain untested.",
+    "sources": [
+      {
+        "label": "Cold showering randomized controlled trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27631616/"
+      },
+      {
+        "label": "Voluntary cold-water exposure health effects review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36137565/"
+      }
+    ]
+  },
+  "indications": [
+    "Mornings start slow despite adequate sleep.",
+    "Cold exposure is interesting but an ice bath is not practical."
+  ],
+  "avoidWhen": [
+    "Cardiovascular disease or arrhythmia unless cleared by a physician."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/newsletter/the-science-and-use-of-cold-exposure-for-health-and-performance",
+    "source": "Huberman Lab"
+  }
+}

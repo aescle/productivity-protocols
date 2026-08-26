@@ -1,0 +1,31 @@
+{
+  "id": "copywork_masters",
+  "title": "Reconstruct a master's work from notes, then compare.",
+  "subtitle": "Franklin's method",
+  "rationale": "Rebuild excellent work in your craft from brief notes and diff your version against the original for self-generated feedback.",
+  "kind": "deep_work",
+  "targets": [
+    "Skill",
+    "Craft",
+    "Writing"
+  ],
+  "durationMinutes": 45,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Franklin's Spectator method; a clean fit with deliberate-practice theory, without direct modern trials.",
+    "sources": [
+      {
+        "label": "Franklin's copywork method",
+        "url": "https://www.excellence-in-literature.com/copywork-how-benjamin-franklin-taught-himself-to-write-well/"
+      }
+    ]
+  },
+  "indications": [
+    "Craft improvement has stalled without a coach.",
+    "Consumption of great work far exceeds imitation of it."
+  ],
+  "guide": {
+    "url": "https://www.excellence-in-literature.com/copywork-how-benjamin-franklin-taught-himself-to-write-well/",
+    "source": "Excellence in Literature"
+  }
+}

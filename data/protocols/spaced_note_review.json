@@ -1,0 +1,32 @@
+{
+  "id": "spaced_note_review",
+  "title": "Review a daily batch of your old notes and highlights.",
+  "subtitle": "Spaced resurfacing",
+  "rationale": "Spaced re-exposure keeps your best collected ideas active when decisions arise, instead of buried in an archive.",
+  "kind": "deep_work",
+  "targets": [
+    "Retention",
+    "Judgment",
+    "Ideas"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "The spacing effect is among the most replicated memory findings; applying it to personal notes is a practitioner adaptation.",
+    "sources": [
+      {
+        "label": "Distributed practice quantitative synthesis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16719566/"
+      },
+      {
+        "label": "Tim Ferriss and David Senra on note resurfacing",
+        "url": "https://tim.blog/2025/09/26/david-senra-transcript/"
+      }
+    ]
+  },
+  "indications": [
+    "A large highlight archive exists and is never reopened.",
+    "The same insights keep being relearned from scratch."
+  ],
+  "guide": null
+}

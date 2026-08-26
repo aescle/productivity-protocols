@@ -1,0 +1,32 @@
+{
+  "id": "hard_work_daily_cap",
+  "title": "Cap your hardest thinking at four to five hours per day.",
+  "subtitle": "Cognitive load ceiling",
+  "rationale": "Beyond the cap, fatigue degrades judgment on hard problems; stop the hard work and switch to lighter tasks.",
+  "kind": "deep_work",
+  "targets": [
+    "Work quality",
+    "Sustainability",
+    "Focus"
+  ],
+  "durationMinutes": 240,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Elite-performer practice records cluster around 4-5 focused hours daily; direct trials on knowledge work are lacking.",
+    "sources": [
+      {
+        "label": "Paul Graham, How to Do Great Work",
+        "url": "https://paulgraham.com/greatwork.html"
+      }
+    ]
+  },
+  "indications": [
+    "Evening work on hard problems produces code or writing that gets reverted.",
+    "Deep-work hours are treated as unlimited.",
+    "Quality decays sharply after mid-afternoon."
+  ],
+  "guide": {
+    "url": "https://paulgraham.com/greatwork.html",
+    "source": "Paul Graham"
+  }
+}

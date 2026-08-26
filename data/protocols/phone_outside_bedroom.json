@@ -1,0 +1,29 @@
+{
+  "id": "phone_outside_bedroom",
+  "title": "Charge the phone outside the bedroom.",
+  "subtitle": "Bedroom boundary",
+  "rationale": "Remove the highest-friction sleep competitor from arm's reach and break the wake-to-scroll reflex.",
+  "kind": "sleep",
+  "targets": [
+    "Sleep quality",
+    "Phone use",
+    "Wind-down"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "A randomized pilot found restricting bedtime phone use improved sleep quality and mood within a week; larger trials are lacking.",
+    "sources": [
+      {
+        "label": "Bedtime phone restriction randomized pilot trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32040492/"
+      }
+    ]
+  },
+  "indications": [
+    "The night ends and the morning starts with scrolling in bed.",
+    "The phone doubles as the alarm clock.",
+    "Screen shutdown protocols keep failing in the bedroom."
+  ],
+  "guide": null
+}

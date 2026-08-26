@@ -1,0 +1,29 @@
+{
+  "id": "protein_anchor",
+  "title": "Move toward your better-performing protein range.",
+  "subtitle": "Meal composition",
+  "rationale": "Adjust protein only when your recorded meal or daily range supports better training, recovery, sleep, or steady work.",
+  "kind": "nutrition",
+  "targets": [
+    "Protein",
+    "Training",
+    "Recovery"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Adequate protein distributed across meals supports training adaptation and recovery.",
+    "sources": [
+      {
+        "label": "Protein intake and distribution position stand",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28642676/"
+      }
+    ]
+  },
+  "indications": [
+    "Protein intake is inconsistent or concentrated in one meal.",
+    "Training volume is rising without matching protein support.",
+    "Recovery between sessions feels slower than the load justifies."
+  ],
+  "guide": null
+}

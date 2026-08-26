@@ -213,6 +213,98 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "annual_think_week",
+    "title": "Take a solo think week once or twice a year.",
+    "subtitle": "Strategic isolation",
+    "rationale": "Days of isolation with only reading and open problems make strategic thought possible in a way tactical weeks never do.",
+    "kind": "deep_work",
+    "targets": [
+      "Strategy",
+      "Clarity",
+      "Learning"
+    ],
+    "durationMinutes": 480,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Bill Gates' practice with famous outcomes; incubation research supports stepping away, the week-long format is untested.",
+      "sources": [
+        {
+          "label": "Bill Gates' think weeks",
+          "url": "https://www.cnbc.com/2019/07/26/bill-gates-took-solo-think-weeks-in-a-cabin-in-the-woods.html"
+        }
+      ]
+    },
+    "indications": [
+      "Every week for a year has been tactical.",
+      "Strategy questions keep getting deferred to someday."
+    ],
+    "guide": {
+      "url": "https://www.cnbc.com/2019/07/26/bill-gates-took-solo-think-weeks-in-a-cabin-in-the-woods.html",
+      "source": "CNBC"
+    }
+  },
+  {
+    "id": "anti_todo_list",
+    "title": "Log each task as you finish it; review the list at day's end.",
+    "subtitle": "Anti-todo list",
+    "rationale": "Record what you actually completed, not what you planned, and end the day on evidence of progress.",
+    "kind": "deep_work",
+    "targets": [
+      "Motivation",
+      "Momentum",
+      "Mood"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Marc Andreessen's card ritual; consistent with progress-principle research on small visible wins, but the ritual itself is untested.",
+      "sources": [
+        {
+          "label": "Pmarca guide to personal productivity",
+          "url": "https://pmarchive.com/guide_to_personal_productivity.html"
+        }
+      ]
+    },
+    "indications": [
+      "Days feel unproductive despite steady output.",
+      "Motivation sags in the late afternoon.",
+      "Todo lists exist but finish-tracking does not."
+    ],
+    "guide": {
+      "url": "https://pmarchive.com/guide_to_personal_productivity.html",
+      "source": "Marc Andreessen"
+    }
+  },
+  {
+    "id": "background_sound_design",
+    "title": "Pick one deliberate soundscape per focus block.",
+    "subtitle": "Auditory environment",
+    "rationale": "Choose silence, noise, or familiar instrumental sound on purpose, instead of letting novel audio compete for attention.",
+    "kind": "deep_work",
+    "targets": [
+      "Focus",
+      "Distraction",
+      "Arousal"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Meta-analysis finds small task-performance benefits of white or pink noise in attention-challenged youth; effects in healthy adults are mixed and individual.",
+      "sources": [
+        {
+          "label": "White and pink noise task-performance meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38428577/"
+        }
+      ]
+    },
+    "indications": [
+      "An open office or street noise keeps breaking focus.",
+      "Music with lyrics plays during language-heavy work.",
+      "Focus quality swings with the audio environment."
+    ],
+    "guide": null
+  },
+  {
     "id": "bedroom_cool_dark",
     "title": "Set the bedroom cold, dark, and quiet.",
     "subtitle": "Sleep environment",
@@ -242,6 +334,163 @@ export const PROTOCOLS = [
     "guide": {
       "url": "https://www.sleepfoundation.org/bedroom-environment",
       "source": "Sleep Foundation"
+    }
+  },
+  {
+    "id": "best_hour_for_yourself",
+    "title": "Sell your best hour to yourself before anyone else.",
+    "subtitle": "Munger's hour",
+    "rationale": "Reserve the single sharpest hour of the day for your own long-term project; everyone else gets the rest.",
+    "kind": "deep_work",
+    "targets": [
+      "Compounding",
+      "Deep work",
+      "Prioritization"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Charlie Munger's practice; chronotype research supports large intraday performance swings, the ownership ritual is practitioner lore.",
+      "sources": [
+        {
+          "label": "The Munger best-hour technique",
+          "url": "https://dariusforoux.com/munger-technique/"
+        }
+      ]
+    },
+    "indications": [
+      "The calendar sells every peak hour to other people's agendas.",
+      "A long-term project only advances on vacations."
+    ],
+    "guide": {
+      "url": "https://dariusforoux.com/munger-technique/",
+      "source": "Darius Foroux"
+    }
+  },
+  {
+    "id": "binaural_beats_focus",
+    "title": "Play 40 Hz binaural beats for five minutes before deep work.",
+    "subtitle": "Auditory ramp",
+    "rationale": "Use a cheap, low-risk auditory cue to mark and ramp into a focus bout.",
+    "kind": "deep_work",
+    "targets": [
+      "Focus",
+      "Task initiation"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Meta-analysis finds small, heterogeneous effects of binaural beats on attention; mechanism claims outrun the data.",
+      "sources": [
+        {
+          "label": "Binaural beats cognition meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
+        }
+      ]
+    },
+    "indications": [
+      "Settling into focus takes 15 minutes or more.",
+      "A consistent start-of-block ritual is missing."
+    ],
+    "guide": null
+  },
+  {
+    "id": "blueberries_daily",
+    "title": "Eat a cup of blueberries daily.",
+    "subtitle": "Anthocyanin dose",
+    "rationale": "A cheap, pleasant polyphenol dose with small-trial support for memory in older adults.",
+    "kind": "nutrition",
+    "targets": [
+      "Memory",
+      "Brain aging"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Small randomized trials in older adults show modest memory improvements; benefits in healthy midlife adults are extrapolation.",
+      "sources": [
+        {
+          "label": "Blueberry supplementation memory trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20047325/"
+        },
+        {
+          "label": "FoundMyFitness polyphenols and brain aging topic",
+          "url": "https://www.foundmyfitness.com/topics/polyphenols-brain-aging"
+        }
+      ]
+    },
+    "indications": [
+      "Berry and polyphenol intake is low.",
+      "Long-horizon brain health is an explicit goal."
+    ],
+    "guide": {
+      "url": "https://www.foundmyfitness.com/topics/polyphenols-brain-aging",
+      "source": "FoundMyFitness"
+    }
+  },
+  {
+    "id": "body_doubling",
+    "title": "Book a co-working session for work you keep avoiding.",
+    "subtitle": "Social accountability",
+    "rationale": "Work alongside another person, in the room or on a call, and let quiet social presence hold you to the task.",
+    "kind": "deep_work",
+    "targets": [
+      "Task initiation",
+      "Focus",
+      "Procrastination"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Widely used in ADHD communities and remote-work tools with consistent self-report; controlled evidence is minimal.",
+      "sources": [
+        {
+          "label": "ADDA on body doubling",
+          "url": "https://add.org/the-body-double/"
+        }
+      ]
+    },
+    "indications": [
+      "A specific task has been rescheduled three or more times.",
+      "Focus is fine in meetings but collapses when working alone.",
+      "Accountability reliably outperforms willpower."
+    ],
+    "guide": {
+      "url": "https://add.org/the-body-double/",
+      "source": "ADDA"
+    }
+  },
+  {
+    "id": "broccoli_sprouts",
+    "title": "Eat a half cup of broccoli sprouts most days.",
+    "subtitle": "Sulforaphane source",
+    "rationale": "Use the most potent dietary NRF2 inducer as a cheap, food-first antioxidant-pathway lever.",
+    "kind": "nutrition",
+    "targets": [
+      "Detoxification",
+      "Inflammation"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Mechanism is well characterized and human trials show biomarker shifts; hard-outcome evidence does not exist yet.",
+      "sources": [
+        {
+          "label": "FoundMyFitness sulforaphane episode",
+          "url": "https://www.foundmyfitness.com/episodes/sulforaphane"
+        }
+      ]
+    },
+    "indications": [
+      "Cruciferous vegetable intake is low.",
+      "A food-first lever is preferred over another capsule."
+    ],
+    "avoidWhen": [
+      "Immunocompromised: raw sprouts carry foodborne-illness risk."
+    ],
+    "guide": {
+      "url": "https://www.foundmyfitness.com/episodes/sulforaphane",
+      "source": "FoundMyFitness"
     }
   },
   {
@@ -302,6 +551,42 @@ export const PROTOCOLS = [
       "Recorded higher-dose days show better focus without a sleep cost."
     ],
     "guide": null
+  },
+  {
+    "id": "caffeine_nap",
+    "title": "Drink coffee, then nap 15 to 20 minutes.",
+    "subtitle": "Combined reset",
+    "rationale": "Caffeine taken right before a short nap peaks as you wake, stacking two alertness tools into one 20-minute window.",
+    "kind": "sleep",
+    "targets": [
+      "Alertness",
+      "Energy",
+      "Focus"
+    ],
+    "durationMinutes": 20,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Trials in sleepy drivers found caffeine plus a short nap reduced impairment more than either alone; tested mainly in acute-sleepiness settings.",
+      "sources": [
+        {
+          "label": "Caffeine plus short nap driver trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9401427/"
+        }
+      ]
+    },
+    "indications": [
+      "An afternoon crash hits before a block that matters.",
+      "Naps alone leave grogginess.",
+      "The crash window sits safely before the caffeine cutoff."
+    ],
+    "avoidWhen": [
+      "Within 8 hours of bedtime.",
+      "Insomnia or difficulty sleeping at night."
+    ],
+    "guide": {
+      "url": "https://www.sleepfoundation.org/sleep-hygiene/napping",
+      "source": "Sleep Foundation"
+    }
   },
   {
     "id": "caffeine_reduce",
@@ -546,6 +831,37 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "copywork_masters",
+    "title": "Reconstruct a master's work from notes, then compare.",
+    "subtitle": "Franklin's method",
+    "rationale": "Rebuild excellent work in your craft from brief notes and diff your version against the original for self-generated feedback.",
+    "kind": "deep_work",
+    "targets": [
+      "Skill",
+      "Craft",
+      "Writing"
+    ],
+    "durationMinutes": 45,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Franklin's Spectator method; a clean fit with deliberate-practice theory, without direct modern trials.",
+      "sources": [
+        {
+          "label": "Franklin's copywork method",
+          "url": "https://www.excellence-in-literature.com/copywork-how-benjamin-franklin-taught-himself-to-write-well/"
+        }
+      ]
+    },
+    "indications": [
+      "Craft improvement has stalled without a coach.",
+      "Consumption of great work far exceeds imitation of it."
+    ],
+    "guide": {
+      "url": "https://www.excellence-in-literature.com/copywork-how-benjamin-franklin-taught-himself-to-write-well/",
+      "source": "Excellence in Literature"
+    }
+  },
+  {
     "id": "creatine_daily",
     "title": "Take 3 to 5 grams of creatine monohydrate daily.",
     "subtitle": "Supplement staple",
@@ -682,6 +998,77 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "daily_top_three",
+    "title": "Pick tomorrow's top three tasks before today ends.",
+    "subtitle": "Daily prioritization",
+    "rationale": "Decide what matters while today's context is loaded, so tomorrow starts with execution instead of triage.",
+    "kind": "deep_work",
+    "targets": [
+      "Prioritization",
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "A century-old practitioner method (Ivy Lee) still used by top operators; plausible via decision-fatigue research but untested directly.",
+      "sources": [
+        {
+          "label": "The Ivy Lee method",
+          "url": "https://jamesclear.com/ivy-lee"
+        },
+        {
+          "label": "Sam Altman on productivity",
+          "url": "https://blog.samaltman.com/productivity"
+        },
+        {
+          "label": "Pmarca guide to personal productivity",
+          "url": "https://pmarchive.com/guide_to_personal_productivity.html"
+        }
+      ]
+    },
+    "indications": [
+      "Mornings open with list-sorting instead of work.",
+      "Task lists grow faster than they shrink.",
+      "The important task keeps losing to the easy one."
+    ],
+    "guide": {
+      "url": "https://jamesclear.com/ivy-lee",
+      "source": "James Clear"
+    }
+  },
+  {
+    "id": "decision_memo",
+    "title": "Write a narrative memo before any significant decision.",
+    "subtitle": "Bezos memo",
+    "rationale": "Full sentences force complete thinking that bullet points hide; the memo becomes the meeting's floor.",
+    "kind": "deep_work",
+    "targets": [
+      "Decision quality",
+      "Clarity",
+      "Meetings"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Amazon's six-pager practice; consistent with writing-to-learn research, untested as a decision protocol.",
+      "sources": [
+        {
+          "label": "Bezos on narrative memos at Amazon",
+          "url": "https://www.cnbc.com/2019/10/14/jeff-bezos-this-is-the-smartest-thing-we-ever-did-at-amazon.html"
+        }
+      ]
+    },
+    "indications": [
+      "Big decisions ride on slides and gut feel.",
+      "Meetings on hard topics stay shallow."
+    ],
+    "guide": {
+      "url": "https://www.cnbc.com/2019/10/14/jeff-bezos-this-is-the-smartest-thing-we-ever-did-at-amazon.html",
+      "source": "CNBC"
+    }
+  },
+  {
     "id": "defocus_decompression",
     "title": "Reset after focused work.",
     "subtitle": "Focus exit",
@@ -711,6 +1098,76 @@ export const PROTOCOLS = [
     "guide": {
       "source": "Huberman Lab",
       "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration"
+    }
+  },
+  {
+    "id": "deliberate_hobby_switch",
+    "title": "End hard workdays in an absorbing unrelated hobby.",
+    "subtitle": "Active recovery switch",
+    "rationale": "Only a genuinely absorbing alternative interest interrupts work rumination; idle rest leaves the loop running.",
+    "kind": "recovery",
+    "targets": [
+      "Detachment",
+      "Recovery",
+      "Mood"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Recovery research finds mastery experiences predict recovery better than passive rest, matching Churchill's change-is-the-master-key claim.",
+      "sources": [
+        {
+          "label": "Work detachment meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28133454/"
+        },
+        {
+          "label": "Churchill, Painting as a Pastime",
+          "url": "https://gutenberg.ca/ebooks/churchillws-paintingasapastime/churchillws-paintingasapastime-00-h-dir/churchillws-paintingasapastime-00-h.html"
+        }
+      ]
+    },
+    "indications": [
+      "Evenings are passive but the mind stays at work.",
+      "A skill hobby exists but never gets scheduled."
+    ],
+    "guide": {
+      "url": "https://gutenberg.ca/ebooks/churchillws-paintingasapastime/churchillws-paintingasapastime-00-h-dir/churchillws-paintingasapastime-00-h.html",
+      "source": "Winston Churchill"
+    }
+  },
+  {
+    "id": "deliberate_study_hour",
+    "title": "Block a daily hour of deliberate study in your field.",
+    "subtitle": "Input before output",
+    "rationale": "Protected daily input compounds into the pattern library that differentiates all later output.",
+    "kind": "deep_work",
+    "targets": [
+      "Learning",
+      "Compounding",
+      "Judgment"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "The practice behind Senra's method and many masters' routines; no trials, strong practitioner lineage.",
+      "sources": [
+        {
+          "label": "David Senra on daily study blocks",
+          "url": "https://manual.compoundplanning.com/chapters/watching-game-tapes-of-historys-best-entrepreneurs-with-david-senra"
+        },
+        {
+          "label": "Tim Ferriss and David Senra on note resurfacing",
+          "url": "https://tim.blog/2025/09/26/david-senra-transcript/"
+        }
+      ]
+    },
+    "indications": [
+      "All reading is reactive: feeds, docs, and inbound links.",
+      "Skill growth has flattened since formal learning ended."
+    ],
+    "guide": {
+      "url": "https://manual.compoundplanning.com/chapters/watching-game-tapes-of-historys-best-entrepreneurs-with-david-senra",
+      "source": "Compound Manual"
     }
   },
   {
@@ -941,6 +1398,37 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "fermented_foods_daily",
+    "title": "Add live-culture fermented foods to most days.",
+    "subtitle": "Microbiome diversity",
+    "rationale": "Yogurt, kefir, kimchi, or sauerkraut servings raise microbiome diversity and lower inflammatory markers.",
+    "kind": "nutrition",
+    "targets": [
+      "Gut health",
+      "Inflammation",
+      "Immune function"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "One well-run randomized trial found six daily servings raised microbiome diversity and lowered 19 inflammatory proteins; replication pending.",
+      "sources": [
+        {
+          "label": "Fermented-food diet immune trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34256014/"
+        }
+      ]
+    },
+    "indications": [
+      "Fermented foods are absent from the default diet.",
+      "Fiber intake is already handled and gut diversity is the next lever."
+    ],
+    "avoidWhen": [
+      "Histamine intolerance."
+    ],
+    "guide": null
+  },
+  {
     "id": "fiber_30g",
     "title": "Reach 30 grams of fiber per day.",
     "subtitle": "Fiber floor",
@@ -1040,6 +1528,76 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "grip_carries_hangs",
+    "title": "Add farmer's carries and dead hangs weekly.",
+    "subtitle": "Grip and carry strength",
+    "rationale": "Grip strength is among the strongest physical mortality markers; carries and hangs train it plus shoulders and trunk.",
+    "kind": "training",
+    "targets": [
+      "Strength",
+      "Durability",
+      "Longevity"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "The grip-mortality association is robust and dose-dependent in cohorts; that training grip moves outcomes is extrapolation from the marker.",
+      "sources": [
+        {
+          "label": "Grip strength and mortality PURE cohort",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25982160/"
+        },
+        {
+          "label": "Peter Attia on grip strength",
+          "url": "https://peterattiamd.com/avoiding-injury-part-ii-grip-strength/"
+        }
+      ]
+    },
+    "indications": [
+      "Strength sessions skip carries and hangs entirely.",
+      "Grip fails before the rest of the body on big lifts."
+    ],
+    "avoidWhen": [
+      "Acute shoulder or elbow injury."
+    ],
+    "guide": {
+      "url": "https://peterattiamd.com/avoiding-injury-part-ii-grip-strength/",
+      "source": "Peter Attia"
+    }
+  },
+  {
+    "id": "hard_work_daily_cap",
+    "title": "Cap your hardest thinking at four to five hours per day.",
+    "subtitle": "Cognitive load ceiling",
+    "rationale": "Beyond the cap, fatigue degrades judgment on hard problems; stop the hard work and switch to lighter tasks.",
+    "kind": "deep_work",
+    "targets": [
+      "Work quality",
+      "Sustainability",
+      "Focus"
+    ],
+    "durationMinutes": 240,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Elite-performer practice records cluster around 4-5 focused hours daily; direct trials on knowledge work are lacking.",
+      "sources": [
+        {
+          "label": "Paul Graham, How to Do Great Work",
+          "url": "https://paulgraham.com/greatwork.html"
+        }
+      ]
+    },
+    "indications": [
+      "Evening work on hard problems produces code or writing that gets reverted.",
+      "Deep-work hours are treated as unlimited.",
+      "Quality decays sharply after mid-afternoon."
+    ],
+    "guide": {
+      "url": "https://paulgraham.com/greatwork.html",
+      "source": "Paul Graham"
+    }
+  },
+  {
     "id": "hot_bath_sleep",
     "title": "Use heat before bed.",
     "subtitle": "Thermal wind-down",
@@ -1072,6 +1630,172 @@ export const PROTOCOLS = [
     "guide": {
       "source": "Sleep Foundation",
       "url": "https://www.sleepfoundation.org/sleep-hygiene/shower-before-bed"
+    }
+  },
+  {
+    "id": "hydration_baseline",
+    "title": "Drink roughly a glass of water per waking hour, front-loaded.",
+    "subtitle": "Hydration floor",
+    "rationale": "Even 1 to 2 percent dehydration measurably dents attention and mood; steady daytime intake avoids it without night waking.",
+    "kind": "nutrition",
+    "targets": [
+      "Alertness",
+      "Mood",
+      "Energy"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Small crossover trials show mild dehydration impairs cognition and mood; the per-hour dosing is a practitioner heuristic.",
+      "sources": [
+        {
+          "label": "Mild dehydration and cognition trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21736786/"
+        },
+        {
+          "label": "Huberman Lab hydration newsletter",
+          "url": "https://www.hubermanlab.com/newsletter/optimize-your-water-quality-and-intake-for-health"
+        }
+      ]
+    },
+    "indications": [
+      "Water intake is coffee plus whatever happens.",
+      "Headaches or fog appear by mid-afternoon."
+    ],
+    "avoidWhen": [
+      "Medical fluid restriction."
+    ],
+    "guide": {
+      "url": "https://www.hubermanlab.com/newsletter/optimize-your-water-quality-and-intake-for-health",
+      "source": "Huberman Lab"
+    }
+  },
+  {
+    "id": "inspiration_immediacy",
+    "title": "Act on inspiration within minutes, not on the calendar.",
+    "subtitle": "Perishable inspiration",
+    "rationale": "Genuine interest is the highest-leverage work state; captured immediately it produces effortless output, scheduled later it decays.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Learning",
+      "Momentum"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Naval Ravikant's rule; consistent with interest-driven learning research but untested as a protocol.",
+      "sources": [
+        {
+          "label": "Naval Ravikant on perishable inspiration",
+          "url": "https://www.startuparchive.org/p/naval-ravikant-inspiration-is-perishable"
+        }
+      ]
+    },
+    "indications": [
+      "Sparks of curiosity get filed into someday lists and die there.",
+      "The schedule has room to absorb an unplanned hour."
+    ],
+    "guide": null
+  },
+  {
+    "id": "interruption_office_hours",
+    "title": "Route interruptions to a daily office hour.",
+    "subtitle": "Interruption boundary",
+    "rationale": "Give questions a reliable daily window so they stop arriving as random fragmentation across the day.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Focus",
+      "Team throughput",
+      "Calendar"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "A practitioner pattern for reconciling maker time with availability; consistent with interruption research but untested as a protocol.",
+      "sources": [
+        {
+          "label": "Maker's schedule, manager's schedule essay",
+          "url": "https://www.paulgraham.com/makersschedule.html"
+        },
+        {
+          "label": "Interruption-reduction systematic review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+        }
+      ]
+    },
+    "indications": [
+      "Ad-hoc questions fragment every block of the day.",
+      "The team needs access but focus needs protection.",
+      "Interruptions repeat that a single window could batch."
+    ],
+    "guide": {
+      "url": "https://www.paulgraham.com/makersschedule.html",
+      "source": "Paul Graham"
+    }
+  },
+  {
+    "id": "just_review_starter",
+    "title": "When stuck starting, just review what you have so far.",
+    "subtitle": "Initiation ramp",
+    "rationale": "Lower the bar to opening the work; found errors and loose ends pull you into real progress without willpower.",
+    "kind": "deep_work",
+    "targets": [
+      "Task initiation",
+      "Procrastination"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Paul Graham's self-trick, consistent with research on lowering initiation thresholds and the pull of unfinished work; untested directly.",
+      "sources": [
+        {
+          "label": "Paul Graham, How to Do Great Work",
+          "url": "https://paulgraham.com/greatwork.html"
+        }
+      ]
+    },
+    "indications": [
+      "Starting is the hard part; momentum holds once begun.",
+      "A project has stalled between sessions."
+    ],
+    "guide": {
+      "url": "https://paulgraham.com/greatwork.html",
+      "source": "Paul Graham"
+    }
+  },
+  {
+    "id": "learning_micro_gaps",
+    "title": "Insert 10-second pauses every few minutes when learning.",
+    "subtitle": "Micro-offline gains",
+    "rationale": "Brief eyes-open rest gaps let the brain replay just-practiced material, compressing extra repetitions into the session.",
+    "kind": "deep_work",
+    "targets": [
+      "Learning speed",
+      "Skill acquisition"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Lab studies show rapid offline consolidation during 10-second rests in motor learning; extension to knowledge work is extrapolation.",
+      "sources": [
+        {
+          "label": "Rapid offline consolidation in skill learning",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30930043/"
+        },
+        {
+          "label": "Huberman Lab neuroplasticity newsletter",
+          "url": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol"
+        }
+      ]
+    },
+    "indications": [
+      "A new skill or codebase must be absorbed fast.",
+      "Study sessions run dense with no pauses."
+    ],
+    "guide": {
+      "url": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol",
+      "source": "Huberman Lab"
     }
   },
   {
@@ -1328,6 +2052,34 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "moderate_midday_meal",
+    "title": "Keep lunch moderate on days that need a sharp afternoon.",
+    "subtitle": "Post-lunch dip control",
+    "rationale": "Stop short of fullness at midday so digestion does not amplify the natural afternoon alertness dip.",
+    "kind": "nutrition",
+    "targets": [
+      "Alertness",
+      "Focus",
+      "Energy"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "The post-lunch performance dip is well documented and scales with meal size; the exact size threshold is individual.",
+      "sources": [
+        {
+          "label": "Post-lunch dip in performance review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15892914/"
+        }
+      ]
+    },
+    "indications": [
+      "Large lunches reliably precede a lost hour.",
+      "The day's key block sits at 2 to 4 p.m."
+    ],
+    "guide": null
+  },
+  {
     "id": "morning_light",
     "title": "Get outdoor light after waking.",
     "subtitle": "Circadian rhythm",
@@ -1425,6 +2177,108 @@ export const PROTOCOLS = [
     "guide": {
       "url": "https://www.apa.org/topics/stress/nature",
       "source": "APA"
+    }
+  },
+  {
+    "id": "no_all_nighters",
+    "title": "Never trade sleep for a stuck problem; retry after a full night.",
+    "subtitle": "Sleep-first debugging",
+    "rationale": "Overnight consolidation routinely solves in minutes what a fatigued brain could not in hours; the all-nighter is a bad trade.",
+    "kind": "sleep",
+    "targets": [
+      "Problem solving",
+      "Work quality",
+      "Sleep"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "strong",
+      "summary": "Sleep-dependent memory consolidation and sleep-deprivation cognition effects are among the most robust findings in the field.",
+      "sources": [
+        {
+          "label": "Andrej Karpathy's advice on all-nighters",
+          "url": "https://cs.stanford.edu/people/karpathy/advice.html"
+        },
+        {
+          "label": "Caffeine timing and sleep trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+        }
+      ]
+    },
+    "indications": [
+      "Deadline pressure is turning into planned all-nighters.",
+      "Late-night work regularly gets redone the next day."
+    ],
+    "guide": {
+      "url": "https://cs.stanford.edu/people/karpathy/advice.html",
+      "source": "Andrej Karpathy"
+    }
+  },
+  {
+    "id": "no_meeting_mornings",
+    "title": "Keep mornings meeting-free; take meetings after lunch.",
+    "subtitle": "Day architecture",
+    "rationale": "Give the highest-energy hours to creation and stack coordination into the afternoon, where a meeting costs less momentum.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Deep work",
+      "Calendar",
+      "Output"
+    ],
+    "durationMinutes": 180,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "A standard founder calendar design; supported indirectly by interruption and circadian-alertness research, untested as a whole.",
+      "sources": [
+        {
+          "label": "Pmarca guide to personal productivity",
+          "url": "https://pmarchive.com/guide_to_personal_productivity.html"
+        },
+        {
+          "label": "Maker's schedule, manager's schedule essay",
+          "url": "https://www.paulgraham.com/makersschedule.html"
+        }
+      ]
+    },
+    "indications": [
+      "Meetings scatter across mornings and afternoons alike.",
+      "Morning hours are reliably the sharpest and least protected.",
+      "Meeting clustering is established but not yet anchored to a daypart."
+    ],
+    "guide": {
+      "url": "https://pmarchive.com/guide_to_personal_productivity.html",
+      "source": "Marc Andreessen"
+    }
+  },
+  {
+    "id": "nondefault_meeting_lengths",
+    "title": "Book meetings at 15 or 20 minutes, not the default 30.",
+    "subtitle": "Meeting sizing",
+    "rationale": "Meetings expand to their scheduled slot; size them to the topic and reclaim the difference.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Meetings",
+      "Deep work"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Sam Altman's practice, consistent with the observation that meetings fill their allotted time; not directly trialed.",
+      "sources": [
+        {
+          "label": "Sam Altman on productivity",
+          "url": "https://blog.samaltman.com/productivity"
+        }
+      ]
+    },
+    "indications": [
+      "Most calendar slots are 30 or 60 minutes by default.",
+      "Meetings routinely end with padding small talk."
+    ],
+    "guide": {
+      "url": "https://blog.samaltman.com/productivity",
+      "source": "Sam Altman"
     }
   },
   {
@@ -1552,6 +2406,44 @@ export const PROTOCOLS = [
     "guide": {
       "source": "APA",
       "url": "https://www.apa.org/monitor/2019/01/break"
+    }
+  },
+  {
+    "id": "omega3_daily",
+    "title": "Take about 2 grams of combined EPA and DHA daily.",
+    "subtitle": "Omega-3 baseline",
+    "rationale": "Raise omega-3 status toward the range associated with lower cardiovascular and all-cause mortality.",
+    "kind": "nutrition",
+    "targets": [
+      "Cardiovascular health",
+      "Cognition",
+      "Longevity"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Pooled cohort data associate higher blood omega-3 with lower mortality; outcome trials are mixed, so the case is strong observational plus mechanism.",
+      "sources": [
+        {
+          "label": "Blood omega-3 levels and mortality pooled analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33888689/"
+        },
+        {
+          "label": "FoundMyFitness omega-3 topic",
+          "url": "https://www.foundmyfitness.com/topics/omega-3"
+        }
+      ]
+    },
+    "indications": [
+      "Oily fish appears in the diet less than twice a week.",
+      "Omega-3 index is measured and below 8%."
+    ],
+    "avoidWhen": [
+      "Anticoagulant therapy or bleeding disorders unless cleared by a physician."
+    ],
+    "guide": {
+      "url": "https://www.foundmyfitness.com/topics/omega-3",
+      "source": "FoundMyFitness"
     }
   },
   {
@@ -1715,6 +2607,40 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "retrieval_practice",
+    "title": "Close the material and self-test instead of re-reading.",
+    "subtitle": "Testing effect",
+    "rationale": "Effortful recall, not re-exposure, is what durably encodes new material and exposes the gaps.",
+    "kind": "deep_work",
+    "targets": [
+      "Retention",
+      "Learning speed"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "strong",
+      "summary": "The testing effect has decades of replicated experimental support across lab and classroom settings.",
+      "sources": [
+        {
+          "label": "Test-enhanced learning study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16507066/"
+        },
+        {
+          "label": "Huberman Lab neuroplasticity newsletter",
+          "url": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol"
+        }
+      ]
+    },
+    "indications": [
+      "Learning defaults to re-reading and highlighting.",
+      "Material read last week is already gone."
+    ],
+    "guide": {
+      "url": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol",
+      "source": "Huberman Lab"
+    }
+  },
+  {
     "id": "sauna_frequent",
     "title": "Sauna four or more times per week, 19-plus minutes.",
     "subtitle": "High heat volume",
@@ -1872,6 +2798,107 @@ export const PROTOCOLS = [
       "source": "Sleep Foundation",
       "url": "https://www.sleepfoundation.org/bedroom-environment/technology-in-the-bedroom"
     }
+  },
+  {
+    "id": "ship_weekly_cadence",
+    "title": "Ship one finished artifact every week, same day, no exceptions.",
+    "subtitle": "Fixed shipping cadence",
+    "rationale": "A dated public cadence converts open-ended work into finished reps, and volume is where quality comes from.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Skill",
+      "Momentum"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Edison ran an explicit invention quota and modern makers run weekly cadences; goal-setting research strongly supports specific difficult goals.",
+      "sources": [
+        {
+          "label": "Edison's invention factory quota",
+          "url": "https://edison.rutgers.edu/life-of-edison/biographical-essays/the-invention-factory"
+        },
+        {
+          "label": "Fortune profile of David Senra's weekly cadence",
+          "url": "https://fortune.com/2026/07/05/how-david-senra-built-founders-podcast-powerful-ceos-spotify-bezos-coinbase-ramp-tbpn/"
+        }
+      ]
+    },
+    "indications": [
+      "Projects stay 90 percent done indefinitely.",
+      "Output arrives in bursts separated by dead months."
+    ],
+    "guide": null
+  },
+  {
+    "id": "shutdown_ritual",
+    "title": "End each workday with a five-minute shutdown ritual.",
+    "subtitle": "Workday boundary",
+    "rationale": "Review open loops, park tomorrow's first move, and declare the day closed so work stops leaking into the evening.",
+    "kind": "recovery",
+    "targets": [
+      "Detachment",
+      "Stress",
+      "Sleep"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Meta-analytic evidence links psychological detachment from work to recovery, wellbeing, and next-day performance; the specific ritual format is practitioner-designed.",
+      "sources": [
+        {
+          "label": "Work detachment meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28133454/"
+        },
+        {
+          "label": "Cal Newport on the work shutdown ritual",
+          "url": "https://calnewport.com/drastically-reduce-stress-with-a-work-shutdown-ritual/"
+        }
+      ]
+    },
+    "indications": [
+      "Work thoughts intrude through evenings and at lights-out.",
+      "The day ends by trailing off rather than by decision.",
+      "Open loops resurface as 3 a.m. wake-ups."
+    ],
+    "guide": {
+      "url": "https://calnewport.com/drastically-reduce-stress-with-a-work-shutdown-ritual/",
+      "source": "Cal Newport"
+    }
+  },
+  {
+    "id": "single_tasking",
+    "title": "Run one task on one screen at a time.",
+    "subtitle": "Attention discipline",
+    "rationale": "Close everything unrelated to the current task; task switching taxes accuracy and speed even when it feels efficient.",
+    "kind": "deep_work",
+    "targets": [
+      "Focus",
+      "Work quality",
+      "Speed"
+    ],
+    "durationMinutes": 90,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Task-switching research consistently shows measurable time and error costs from multitasking; single-tasking removes the switch tax.",
+      "sources": [
+        {
+          "label": "APA research summary on multitasking costs",
+          "url": "https://www.apa.org/topics/research/multitasking"
+        },
+        {
+          "label": "Interruption-reduction systematic review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+        }
+      ]
+    },
+    "indications": [
+      "A second monitor or split screen always carries chat or email.",
+      "Tasks finish slower than their actual size explains.",
+      "Errors cluster during multi-thread periods."
+    ],
+    "guide": null
   },
   {
     "id": "sleep_extension_experiment",
@@ -2075,6 +3102,38 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "spaced_note_review",
+    "title": "Review a daily batch of your old notes and highlights.",
+    "subtitle": "Spaced resurfacing",
+    "rationale": "Spaced re-exposure keeps your best collected ideas active when decisions arise, instead of buried in an archive.",
+    "kind": "deep_work",
+    "targets": [
+      "Retention",
+      "Judgment",
+      "Ideas"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "The spacing effect is among the most replicated memory findings; applying it to personal notes is a practitioner adaptation.",
+      "sources": [
+        {
+          "label": "Distributed practice quantitative synthesis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16719566/"
+        },
+        {
+          "label": "Tim Ferriss and David Senra on note resurfacing",
+          "url": "https://tim.blog/2025/09/26/david-senra-transcript/"
+        }
+      ]
+    },
+    "indications": [
+      "A large highlight archive exists and is never reopened.",
+      "The same insights keep being relearned from scratch."
+    ],
+    "guide": null
+  },
+  {
     "id": "strength_2x",
     "title": "Lift twice per week.",
     "subtitle": "Strength standard",
@@ -2189,6 +3248,140 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "structured_procrastination",
+    "title": "Keep a Later list and work it when you dodge the top task.",
+    "subtitle": "Procrastination channel",
+    "rationale": "Avoidance energy is inevitable; aim it at worthwhile second-tier work instead of feeds.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Procrastination"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "A practitioner method (Perry via Andreessen) with no direct trials; consistent with mood-regulation accounts of procrastination.",
+      "sources": [
+        {
+          "label": "Pmarca guide to personal productivity",
+          "url": "https://pmarchive.com/guide_to_personal_productivity.html"
+        }
+      ]
+    },
+    "indications": [
+      "Avoiding the main task currently means drifting to feeds.",
+      "A backlog of useful smaller tasks exists."
+    ],
+    "guide": {
+      "url": "https://pmarchive.com/guide_to_personal_productivity.html",
+      "source": "Marc Andreessen"
+    }
+  },
+  {
+    "id": "theanine_apigenin_stack",
+    "title": "Test theanine 200 mg with apigenin 50 mg before bed.",
+    "subtitle": "Sleep stack experiment",
+    "rationale": "Run the popular non-prescription sleep stack as a bounded experiment against your own sleep data.",
+    "kind": "nutrition",
+    "targets": [
+      "Sleep onset",
+      "Relaxation"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Theanine has small trials for stress and sleep quality; apigenin at this dose has essentially no direct human trials. Practitioner stack with thin support.",
+      "sources": [
+        {
+          "label": "L-theanine stress and cognition trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31623400/"
+        },
+        {
+          "label": "Huberman Lab sleep toolkit",
+          "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
+        }
+      ]
+    },
+    "indications": [
+      "Behavior-level sleep hygiene is solid but onset still lags.",
+      "Magnesium alone made no measurable difference."
+    ],
+    "avoidWhen": [
+      "Pregnancy.",
+      "Sedative medications unless cleared by a physician."
+    ],
+    "guide": {
+      "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep",
+      "source": "Huberman Lab"
+    }
+  },
+  {
+    "id": "thinking_walk",
+    "title": "Take a daily walk on a fixed route with one problem loaded.",
+    "subtitle": "Ambulatory thinking",
+    "rationale": "A known route removes navigation decisions so attention can chew on the problem while the body moves.",
+    "kind": "walk",
+    "targets": [
+      "Creativity",
+      "Problem solving",
+      "Movement"
+    ],
+    "durationMinutes": 45,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Experiments show walking acutely boosts creative ideation; the fixed-route, problem-loaded format is practitioner design.",
+      "sources": [
+        {
+          "label": "Walking and creative thinking experiments",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24749966/"
+        },
+        {
+          "label": "Paul Graham, How to Do Great Work",
+          "url": "https://paulgraham.com/greatwork.html"
+        }
+      ]
+    },
+    "indications": [
+      "A hard problem has resisted desk time for days.",
+      "Walks happen but are filled with podcasts and calls."
+    ],
+    "guide": {
+      "url": "https://paulgraham.com/greatwork.html",
+      "source": "Paul Graham"
+    }
+  },
+  {
+    "id": "top_idea_audit",
+    "title": "Audit what your mind drifts to; realign until it is your top problem.",
+    "subtitle": "Ambient thought check",
+    "rationale": "Background thinking does the real work on hard problems, and you can only curate what owns it, not command it.",
+    "kind": "deep_work",
+    "targets": [
+      "Prioritization",
+      "Deep work",
+      "Clarity"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Paul Graham's heuristic; incubation research supports the value of diffuse thinking, the audit ritual itself is untested.",
+      "sources": [
+        {
+          "label": "Paul Graham, The Top Idea in Your Mind",
+          "url": "https://paulgraham.com/top.html"
+        }
+      ]
+    },
+    "indications": [
+      "Shower and walk thoughts default to disputes or fundraising, not the product.",
+      "The stated top priority and the mind's actual top idea disagree."
+    ],
+    "guide": {
+      "url": "https://paulgraham.com/top.html",
+      "source": "Paul Graham"
+    }
+  },
+  {
     "id": "transition_ritual",
     "title": "Cluster meetings into two daily windows.",
     "subtitle": "Meeting architecture",
@@ -2223,6 +3416,105 @@ export const PROTOCOLS = [
     "guide": {
       "source": "Sam Altman",
       "url": "https://blog.samaltman.com/productivity"
+    }
+  },
+  {
+    "id": "ubiquitous_capture",
+    "title": "Capture every idea the moment it occurs, always.",
+    "subtitle": "Always-on notebook",
+    "rationale": "Working memory drops ideas within minutes; a capture tool always in reach preserves them and frees attention.",
+    "kind": "deep_work",
+    "targets": [
+      "Ideas",
+      "Clarity",
+      "Memory"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Da Vinci's belt notebook through GTD; working-memory decay is well established, the capture habit itself is practitioner canon.",
+      "sources": [
+        {
+          "label": "David Senra on daily study blocks",
+          "url": "https://manual.compoundplanning.com/chapters/watching-game-tapes-of-historys-best-entrepreneurs-with-david-senra"
+        }
+      ]
+    },
+    "indications": [
+      "Good ideas from walks and showers are gone by the desk.",
+      "Open loops circulate in the head instead of a system."
+    ],
+    "guide": null
+  },
+  {
+    "id": "ultradian_work_cycles",
+    "title": "Work in 90-minute cycles with real breaks between.",
+    "subtitle": "Work-rest pacing",
+    "rationale": "Match hard cognitive pushes to roughly 90-minute arcs and take a genuine break between them instead of grinding flat-out.",
+    "kind": "deep_work",
+    "targets": [
+      "Focus",
+      "Output quality",
+      "Energy"
+    ],
+    "durationMinutes": 90,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Break research shows micro-breaks reduce fatigue and sustain vigor; the specific 90-minute ultradian pacing is an extrapolation from sleep-cycle physiology.",
+      "sources": [
+        {
+          "label": "Micro-breaks meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36044424/"
+        }
+      ]
+    },
+    "indications": [
+      "Focus quality decays sharply after the first long push.",
+      "Work runs as one continuous stretch without planned breaks.",
+      "Afternoons produce hours at the desk but little output."
+    ],
+    "guide": {
+      "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+      "source": "Huberman Lab"
+    }
+  },
+  {
+    "id": "vitamin_d_test_correct",
+    "title": "Test vitamin D and supplement to sufficiency.",
+    "subtitle": "Vitamin D correction",
+    "rationale": "Correct a measured deficiency with 1,000 to 4,000 IU daily instead of guessing at a dose.",
+    "kind": "nutrition",
+    "targets": [
+      "Immune function",
+      "Bone health",
+      "Mood"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Correcting deficiency is well supported; large trials in replete adults were null for primary outcomes, so test-then-treat beats blind dosing.",
+      "sources": [
+        {
+          "label": "VITAL vitamin D randomized trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415629/"
+        },
+        {
+          "label": "FoundMyFitness vitamin D topic",
+          "url": "https://www.foundmyfitness.com/topics/vitamin-d"
+        }
+      ]
+    },
+    "indications": [
+      "25(OH)D has never been measured or came back low.",
+      "Winter months with minimal midday sun exposure."
+    ],
+    "avoidWhen": [
+      "High-dose supplementation without a blood level.",
+      "History of hypercalcemia or kidney stones unless cleared by a physician."
+    ],
+    "guide": {
+      "url": "https://www.foundmyfitness.com/topics/vitamin-d",
+      "source": "FoundMyFitness"
     }
   },
   {
@@ -2333,6 +3625,76 @@ export const PROTOCOLS = [
     "guide": {
       "url": "https://hbr.org/2015/08/how-to-do-walking-meetings-right",
       "source": "Harvard Business Review"
+    }
+  },
+  {
+    "id": "weekly_planning_block",
+    "title": "Plan the week in one 30-minute Monday block.",
+    "subtitle": "Weekly architecture",
+    "rationale": "See the whole week once, place the important work first, and stop re-deciding priorities every morning.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Calendar",
+      "Prioritization"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "A near-universal practitioner habit among high-output founders and makers; direct trials of weekly planning are lacking.",
+      "sources": [
+        {
+          "label": "Cal Newport on planning the week in advance",
+          "url": "https://calnewport.com/deep-habits-plan-your-week-in-advance/"
+        },
+        {
+          "label": "Sam Altman on productivity",
+          "url": "https://blog.samaltman.com/productivity"
+        }
+      ]
+    },
+    "indications": [
+      "Weeks end with urgent work done and important work untouched.",
+      "Mondays start reactive, set by the inbox.",
+      "Deadlines arrive as surprises despite a calendar."
+    ],
+    "guide": {
+      "url": "https://calnewport.com/deep-habits-plan-your-week-in-advance/",
+      "source": "Cal Newport"
+    }
+  },
+  {
+    "id": "weighted_rucking",
+    "title": "Walk 45 minutes with a loaded pack twice a week.",
+    "subtitle": "Loaded carry cardio",
+    "rationale": "Start near 10 percent of body weight: zone-2-adjacent cardio, axial loading, and time outdoors in one low-skill session.",
+    "kind": "training",
+    "targets": [
+      "Cardiovascular fitness",
+      "Bone density",
+      "Work capacity"
+    ],
+    "durationMinutes": 45,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "A practitioner composite of walking and load-carriage evidence; plausible but untested as a protocol in outcome trials.",
+      "sources": [
+        {
+          "label": "Peter Attia AMA on rucking and strength",
+          "url": "https://peterattiamd.com/ama49/"
+        }
+      ]
+    },
+    "indications": [
+      "Walking volume is solid but no longer challenging.",
+      "Gym-based training keeps getting skipped."
+    ],
+    "avoidWhen": [
+      "Active back, hip, or knee injury."
+    ],
+    "guide": {
+      "url": "https://peterattiamd.com/ama49/",
+      "source": "Peter Attia"
     }
   },
   {

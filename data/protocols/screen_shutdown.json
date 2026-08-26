@@ -1,0 +1,35 @@
+{
+  "id": "screen_shutdown",
+  "title": "Shut down screens 30 minutes before bed.",
+  "subtitle": "Sleep guardrail",
+  "rationale": "Remove the light and cognitive input that keep the nervous system online late.",
+  "kind": "sleep",
+  "family": "sleep_shutdown",
+  "tier": "beginner",
+  "tierTarget": "30 screen-free minutes before sleep",
+  "targets": [
+    "Sleep latency",
+    "Wind-down",
+    "Recovery"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Pre-bed screen use can impair sleep through light exposure, alerting content, and displaced sleep time.",
+    "sources": [
+      {
+        "label": "Screen use and sleep consensus statement",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38806392/"
+      }
+    ]
+  },
+  "indications": [
+    "Screens are in hand at lights-out on most nights.",
+    "Sleep onset takes more than 20 minutes.",
+    "No shutdown boundary currently exists."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/bedroom-environment/technology-in-the-bedroom"
+  }
+}

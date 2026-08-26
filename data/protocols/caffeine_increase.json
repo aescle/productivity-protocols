@@ -1,0 +1,27 @@
+{
+  "id": "caffeine_increase",
+  "title": "Increase caffeine to your effective dose.",
+  "subtitle": "Caffeine dose",
+  "rationale": "Use the learned dose range only when higher recorded doses improve the following work window without a later sleep cost.",
+  "kind": "nutrition",
+  "targets": [
+    "Caffeine dose",
+    "Focus"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Caffeine can acutely improve alertness and performance, with response depending on dose and timing.",
+    "sources": [
+      {
+        "label": "Caffeine timing and sleep trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+      }
+    ]
+  },
+  "indications": [
+    "Morning output lags despite adequate sleep.",
+    "Recorded higher-dose days show better focus without a sleep cost."
+  ],
+  "guide": null
+}

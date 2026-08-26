@@ -1,0 +1,31 @@
+{
+  "id": "gratitude_three_things",
+  "title": "Write down three good things from the day.",
+  "subtitle": "Gratitude practice",
+  "rationale": "Bias the end-of-day review toward what worked, cheaply and in under five minutes.",
+  "kind": "recovery",
+  "targets": [
+    "Mood",
+    "Optimism",
+    "Sleep"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Experimental studies show gratitude listing modestly improves wellbeing and mood versus neutral or negative journaling.",
+    "sources": [
+      {
+        "label": "Counting blessings experimental study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12585811/"
+      }
+    ]
+  },
+  "indications": [
+    "Days end on the unfinished-work list by default.",
+    "Mood skews negative despite objectively good progress."
+  ],
+  "guide": {
+    "url": "https://greatergood.berkeley.edu/article/item/tips_for_keeping_a_gratitude_journal",
+    "source": "Greater Good Science Center"
+  }
+}

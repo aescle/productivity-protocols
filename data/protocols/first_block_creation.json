@@ -1,0 +1,36 @@
+{
+  "id": "first_block_creation",
+  "title": "Give the first 90 work minutes to creation, not communication.",
+  "subtitle": "First-block boundary",
+  "rationale": "Spend the day's freshest attention on the hardest work before the inbox sets the agenda.",
+  "kind": "deep_work",
+  "targets": [
+    "Deep work",
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "A widely adopted practitioner pattern consistent with interruption research; the specific first-block design is untested in trials.",
+    "sources": [
+      {
+        "label": "Maker's schedule, manager's schedule essay",
+        "url": "https://www.paulgraham.com/makersschedule.html"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "Workdays open with email, chat, or news by default.",
+    "The most important project advances only on meeting-free days.",
+    "Mornings are reliably the highest-energy hours."
+  ],
+  "guide": {
+    "url": "https://www.paulgraham.com/makersschedule.html",
+    "source": "Paul Graham"
+  }
+}

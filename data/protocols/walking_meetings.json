@@ -1,0 +1,32 @@
+{
+  "id": "walking_meetings",
+  "title": "Convert one-on-ones into walking meetings.",
+  "subtitle": "Meeting movement",
+  "rationale": "Reclaim meeting hours as movement and use the walking state for open-ended discussion.",
+  "kind": "walk",
+  "targets": [
+    "Movement",
+    "Creativity",
+    "Meetings"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Experiments show walking acutely boosts creative divergent thinking; walking-meeting outcomes themselves are largely untested.",
+    "sources": [
+      {
+        "label": "Walking and creative thinking experiments",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24749966/"
+      }
+    ]
+  },
+  "indications": [
+    "Recurring one-on-ones fill afternoons spent fully seated.",
+    "Daily movement minutes fall short on meeting-heavy days.",
+    "Discussion-format meetings need no screen."
+  ],
+  "guide": {
+    "url": "https://hbr.org/2015/08/how-to-do-walking-meetings-right",
+    "source": "Harvard Business Review"
+  }
+}

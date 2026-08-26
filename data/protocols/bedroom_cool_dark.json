@@ -1,0 +1,32 @@
+{
+  "id": "bedroom_cool_dark",
+  "title": "Set the bedroom cold, dark, and quiet.",
+  "subtitle": "Sleep environment",
+  "rationale": "Fix the physical environment once so every night starts from a pro-sleep baseline without willpower.",
+  "kind": "sleep",
+  "targets": [
+    "Sleep quality",
+    "Sleep depth",
+    "Recovery"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Thermal environment research shows heat exposure and light disrupt sleep stages; roughly 18-20°C, blackout, and quiet support deeper sleep.",
+    "sources": [
+      {
+        "label": "Thermal environment and sleep review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22738673/"
+      }
+    ]
+  },
+  "indications": [
+    "The bedroom runs warm or lets in street light.",
+    "Night waking clusters in the early morning hours.",
+    "Sleep quality drops in summer."
+  ],
+  "guide": {
+    "url": "https://www.sleepfoundation.org/bedroom-environment",
+    "source": "Sleep Foundation"
+  }
+}

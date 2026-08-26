@@ -1,0 +1,39 @@
+{
+  "id": "meeting_free_creation_days",
+  "title": "Keep two creation days meeting-free each week.",
+  "subtitle": "Calendar architecture",
+  "rationale": "Move beyond managing fragmentation and remove it from entire creation days.",
+  "kind": "calendar_defense",
+  "family": "calendar_defense",
+  "tier": "advanced",
+  "tierTarget": "2 meeting-free creation days per week",
+  "targets": [
+    "Calendar",
+    "Deep work",
+    "Output"
+  ],
+  "durationMinutes": 300,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Reducing meeting load and interruptions preserves energy and lowers the cost of resuming complex work.",
+    "sources": [
+      {
+        "label": "Meetings and knowledge-worker energy study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37023294/"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "Meetings are already clustered but still touch every day.",
+    "Deep work needs full days, not fragments.",
+    "Calendar control is sufficient to protect whole days."
+  ],
+  "guide": {
+    "source": "Paul Graham",
+    "url": "https://www.paulgraham.com/makersschedule.html"
+  }
+}

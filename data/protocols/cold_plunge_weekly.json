@@ -1,0 +1,42 @@
+{
+  "id": "cold_plunge_weekly",
+  "title": "Do two or three short cold immersions per week.",
+  "subtitle": "Cold immersion standard",
+  "rationale": "Move from shower finishes to deliberate immersions of one to three minutes, keeping each dose short and controlled.",
+  "kind": "recovery",
+  "family": "cold_exposure",
+  "tier": "intermediate",
+  "tierTarget": "2-3 cold immersions per week",
+  "targets": [
+    "Alertness",
+    "Mood",
+    "Stress tolerance"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Reviews of voluntary cold-water exposure report acute catecholamine and mood effects; long-term health outcomes are debated and understudied.",
+    "sources": [
+      {
+        "label": "Voluntary cold-water exposure health effects review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36137565/"
+      },
+      {
+        "label": "Winter-swimming thermogenesis study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34755128/"
+      }
+    ]
+  },
+  "indications": [
+    "Cold shower finishes are already routine and easy.",
+    "A plunge, cold tub, or open water is practically available."
+  ],
+  "avoidWhen": [
+    "Cardiovascular disease or arrhythmia unless cleared by a physician.",
+    "Swimming alone in open water."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/newsletter/the-science-and-use-of-cold-exposure-for-health-and-performance",
+    "source": "Huberman Lab"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "notification_batching",
+  "title": "Batch phone notifications to three deliveries per day.",
+  "subtitle": "Notification boundary",
+  "rationale": "Let notifications arrive on your schedule instead of the sender's, without going fully unreachable.",
+  "kind": "deep_work",
+  "targets": [
+    "Focus",
+    "Stress",
+    "Phone use"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "A randomized trial found batching notifications to three daily deliveries improved attention and wellbeing versus default streams.",
+    "sources": [
+      {
+        "label": "Notification batching randomized trial",
+        "url": "https://doi.org/10.1016/j.chb.2019.07.016"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "The phone interrupts more than a few times per hour.",
+    "Notification settings have never been deliberately configured.",
+    "Full do-not-disturb feels too unreachable to sustain."
+  ],
+  "guide": null
+}

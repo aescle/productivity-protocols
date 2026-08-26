@@ -1,0 +1,41 @@
+{
+  "id": "sauna_frequent",
+  "title": "Sauna four or more times per week, 19-plus minutes.",
+  "subtitle": "High heat volume",
+  "rationale": "Use the frequency and duration range where the cohort curves flatten out, if access and schedule allow it.",
+  "kind": "recovery",
+  "family": "heat_exposure",
+  "tier": "advanced",
+  "tierTarget": "4+ sauna sessions per week",
+  "targets": [
+    "Recovery",
+    "Cardiovascular fitness",
+    "Longevity"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "In cohort data the lowest cardiovascular mortality appeared at 4-7 weekly sessions of roughly 19 minutes or more; causality is not established.",
+    "sources": [
+      {
+        "label": "Sauna bathing and cardiovascular mortality cohort",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25705824/"
+      },
+      {
+        "label": "Sauna bathing health benefits review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30077204/"
+      }
+    ]
+  },
+  "indications": [
+    "Two to three weekly sessions are already routine.",
+    "Daily sauna access makes higher frequency practical."
+  ],
+  "avoidWhen": [
+    "Pregnancy, cardiovascular instability, recent alcohol, or heat intolerance."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/newsletter/deliberate-heat-exposure-protocols-for-health-and-performance",
+    "source": "Huberman Lab"
+  }
+}

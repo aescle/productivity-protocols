@@ -1,0 +1,31 @@
+{
+  "id": "nondefault_meeting_lengths",
+  "title": "Book meetings at 15 or 20 minutes, not the default 30.",
+  "subtitle": "Meeting sizing",
+  "rationale": "Meetings expand to their scheduled slot; size them to the topic and reclaim the difference.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Meetings",
+    "Deep work"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Sam Altman's practice, consistent with the observation that meetings fill their allotted time; not directly trialed.",
+    "sources": [
+      {
+        "label": "Sam Altman on productivity",
+        "url": "https://blog.samaltman.com/productivity"
+      }
+    ]
+  },
+  "indications": [
+    "Most calendar slots are 30 or 60 minutes by default.",
+    "Meetings routinely end with padding small talk."
+  ],
+  "guide": {
+    "url": "https://blog.samaltman.com/productivity",
+    "source": "Sam Altman"
+  }
+}

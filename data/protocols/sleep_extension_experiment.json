@@ -1,0 +1,32 @@
+{
+  "id": "sleep_extension_experiment",
+  "title": "Add 45 minutes of time in bed for two weeks.",
+  "subtitle": "Sleep extension experiment",
+  "rationale": "Test whether current sleep is quietly short by extending the window and watching performance respond.",
+  "kind": "sleep",
+  "targets": [
+    "Sleep duration",
+    "Alertness",
+    "Output"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Small extension studies in athletes show faster reaction times and better performance after weeks of deliberately longer sleep; generalization is untested.",
+    "sources": [
+      {
+        "label": "Sleep extension and athletic performance study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21731144/"
+      }
+    ]
+  },
+  "indications": [
+    "Sleep duration hovers at the low end of the adult range.",
+    "Daytime sleepiness persists despite consistent timing.",
+    "Caffeine dose has crept upward to compensate."
+  ],
+  "guide": {
+    "url": "https://www.sleepfoundation.org/how-sleep-works/how-much-sleep-do-we-really-need",
+    "source": "Sleep Foundation"
+  }
+}

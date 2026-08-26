@@ -1,0 +1,32 @@
+{
+  "id": "exercise_snacks",
+  "title": "Add two or three one-minute movement bursts to the workday.",
+  "subtitle": "Exercise snacks",
+  "rationale": "Break sedentary stretches with stair climbs or squats hard enough to raise heart rate, no gym required.",
+  "kind": "training",
+  "targets": [
+    "Metabolic health",
+    "Energy",
+    "Cardiovascular fitness"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Small trials show brief vigorous bursts improve cardiorespiratory fitness and glycemic markers; long-term outcomes are untested.",
+    "sources": [
+      {
+        "label": "WHO physical activity guidelines",
+        "url": "https://iris.who.int/bitstream/handle/10665/336656/9789240015128-eng.pdf"
+      }
+    ]
+  },
+  "indications": [
+    "Deep-work days regularly pass with near-zero movement.",
+    "Structured workouts keep getting displaced by the calendar.",
+    "Stairs are available and unused."
+  ],
+  "guide": {
+    "url": "https://health.clevelandclinic.org/exercise-snacks",
+    "source": "Cleveland Clinic"
+  }
+}

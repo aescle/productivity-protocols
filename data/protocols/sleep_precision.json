@@ -1,0 +1,34 @@
+{
+  "id": "sleep_precision",
+  "title": "Keep wake time within a 20-minute window.",
+  "subtitle": "Precise sleep anchor",
+  "rationale": "Make wake timing exceptionally stable so circadian drift stops taxing the next day.",
+  "kind": "sleep",
+  "family": "sleep_regularity",
+  "tier": "advanced",
+  "tierTarget": "Wake time within 20 minutes",
+  "targets": [
+    "Sleep timing",
+    "Recovery",
+    "Alertness"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Stable sleep and wake timing supports circadian regularity, health, safety, and performance.",
+    "sources": [
+      {
+        "label": "Sleep timing and consistency systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33054339/"
+      }
+    ]
+  },
+  "indications": [
+    "The 45-minute wake window is already mastered.",
+    "Marginal circadian gains still matter for performance."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/how-to-reset-your-sleep-routine"
+  }
+}

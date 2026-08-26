@@ -1,0 +1,31 @@
+{
+  "id": "annual_think_week",
+  "title": "Take a solo think week once or twice a year.",
+  "subtitle": "Strategic isolation",
+  "rationale": "Days of isolation with only reading and open problems make strategic thought possible in a way tactical weeks never do.",
+  "kind": "deep_work",
+  "targets": [
+    "Strategy",
+    "Clarity",
+    "Learning"
+  ],
+  "durationMinutes": 480,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Bill Gates' practice with famous outcomes; incubation research supports stepping away, the week-long format is untested.",
+    "sources": [
+      {
+        "label": "Bill Gates' think weeks",
+        "url": "https://www.cnbc.com/2019/07/26/bill-gates-took-solo-think-weeks-in-a-cabin-in-the-woods.html"
+      }
+    ]
+  },
+  "indications": [
+    "Every week for a year has been tactical.",
+    "Strategy questions keep getting deferred to someday."
+  ],
+  "guide": {
+    "url": "https://www.cnbc.com/2019/07/26/bill-gates-took-solo-think-weeks-in-a-cabin-in-the-woods.html",
+    "source": "CNBC"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "daily_top_three",
+  "title": "Pick tomorrow's top three tasks before today ends.",
+  "subtitle": "Daily prioritization",
+  "rationale": "Decide what matters while today's context is loaded, so tomorrow starts with execution instead of triage.",
+  "kind": "deep_work",
+  "targets": [
+    "Prioritization",
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "A century-old practitioner method (Ivy Lee) still used by top operators; plausible via decision-fatigue research but untested directly.",
+    "sources": [
+      {
+        "label": "The Ivy Lee method",
+        "url": "https://jamesclear.com/ivy-lee"
+      },
+      {
+        "label": "Sam Altman on productivity",
+        "url": "https://blog.samaltman.com/productivity"
+      },
+      {
+        "label": "Pmarca guide to personal productivity",
+        "url": "https://pmarchive.com/guide_to_personal_productivity.html"
+      }
+    ]
+  },
+  "indications": [
+    "Mornings open with list-sorting instead of work.",
+    "Task lists grow faster than they shrink.",
+    "The important task keeps losing to the easy one."
+  ],
+  "guide": {
+    "url": "https://jamesclear.com/ivy-lee",
+    "source": "James Clear"
+  }
+}

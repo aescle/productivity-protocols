@@ -1,0 +1,35 @@
+{
+  "id": "post_meal_walk",
+  "title": "Walk after one meal per day.",
+  "subtitle": "Meal protocol",
+  "rationale": "Establish one repeatable post-meal walk before extending the practice across the day.",
+  "kind": "walk",
+  "family": "meal_timing",
+  "tier": "intermediate",
+  "tierTarget": "A walk after at least 1 meal",
+  "targets": [
+    "Meals",
+    "Walk",
+    "Focus"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Walking soon after eating reduces acute post-meal glucose excursions.",
+    "sources": [
+      {
+        "label": "Post-meal exercise meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36715875/"
+      }
+    ]
+  },
+  "indications": [
+    "Focus reliably dips in the hour after lunch.",
+    "Post-meal glucose spikes or sluggishness are suspected or measured.",
+    "Days include at least one meal followed immediately by desk work."
+  ],
+  "guide": {
+    "source": "Cleveland Clinic",
+    "url": "https://health.clevelandclinic.org/walking-after-eating"
+  }
+}

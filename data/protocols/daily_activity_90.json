@@ -1,0 +1,39 @@
+{
+  "id": "daily_activity_90",
+  "title": "Move for 60 minutes per day.",
+  "subtitle": "Advanced daily activity",
+  "rationale": "Use the day’s open edges for movement until a genuinely active day is the baseline.",
+  "kind": "walk",
+  "family": "daily_activity",
+  "tier": "advanced",
+  "tierTarget": "60 minutes of movement on most days",
+  "targets": [
+    "Activity",
+    "Movement",
+    "Energy"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Higher volumes of regular physical activity are associated with broader cardiovascular and long-term health benefits.",
+    "sources": [
+      {
+        "label": "Physical Activity Guidelines for Americans",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      },
+      {
+        "label": "Physical activity dose-response meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36854652/"
+      }
+    ]
+  },
+  "indications": [
+    "45 minutes of daily movement is already consistent.",
+    "Long sedentary stretches remain despite a movement habit.",
+    "An active day needs to become the default, not the exception."
+  ],
+  "guide": {
+    "source": "NHS",
+    "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/"
+  }
+}

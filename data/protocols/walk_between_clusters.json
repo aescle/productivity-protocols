@@ -1,0 +1,39 @@
+{
+  "id": "walk_between_clusters",
+  "title": "Move for 45 minutes per day.",
+  "subtitle": "Daily activity",
+  "rationale": "Raise daily movement without relying on one workout by using walks and work breaks.",
+  "kind": "walk",
+  "family": "daily_activity",
+  "tier": "intermediate",
+  "tierTarget": "45 minutes of movement on most days",
+  "targets": [
+    "Meetings",
+    "Walk",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Accumulating movement across the day contributes to the health benefits of regular physical activity.",
+    "sources": [
+      {
+        "label": "Physical Activity Guidelines for Americans",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      },
+      {
+        "label": "Physical activity dose-response meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36854652/"
+      }
+    ]
+  },
+  "indications": [
+    "A 30-minute daily movement floor is already consistent.",
+    "Meetings cluster with usable gaps between them.",
+    "Afternoon energy fades on meeting-heavy days."
+  ],
+  "guide": {
+    "source": "NHS",
+    "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/"
+  }
+}

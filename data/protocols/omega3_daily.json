@@ -1,0 +1,38 @@
+{
+  "id": "omega3_daily",
+  "title": "Take about 2 grams of combined EPA and DHA daily.",
+  "subtitle": "Omega-3 baseline",
+  "rationale": "Raise omega-3 status toward the range associated with lower cardiovascular and all-cause mortality.",
+  "kind": "nutrition",
+  "targets": [
+    "Cardiovascular health",
+    "Cognition",
+    "Longevity"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Pooled cohort data associate higher blood omega-3 with lower mortality; outcome trials are mixed, so the case is strong observational plus mechanism.",
+    "sources": [
+      {
+        "label": "Blood omega-3 levels and mortality pooled analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33888689/"
+      },
+      {
+        "label": "FoundMyFitness omega-3 topic",
+        "url": "https://www.foundmyfitness.com/topics/omega-3"
+      }
+    ]
+  },
+  "indications": [
+    "Oily fish appears in the diet less than twice a week.",
+    "Omega-3 index is measured and below 8%."
+  ],
+  "avoidWhen": [
+    "Anticoagulant therapy or bleeding disorders unless cleared by a physician."
+  ],
+  "guide": {
+    "url": "https://www.foundmyfitness.com/topics/omega-3",
+    "source": "FoundMyFitness"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "learning_micro_gaps",
+  "title": "Insert 10-second pauses every few minutes when learning.",
+  "subtitle": "Micro-offline gains",
+  "rationale": "Brief eyes-open rest gaps let the brain replay just-practiced material, compressing extra repetitions into the session.",
+  "kind": "deep_work",
+  "targets": [
+    "Learning speed",
+    "Skill acquisition"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Lab studies show rapid offline consolidation during 10-second rests in motor learning; extension to knowledge work is extrapolation.",
+    "sources": [
+      {
+        "label": "Rapid offline consolidation in skill learning",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30930043/"
+      },
+      {
+        "label": "Huberman Lab neuroplasticity newsletter",
+        "url": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol"
+      }
+    ]
+  },
+  "indications": [
+    "A new skill or codebase must be absorbed fast.",
+    "Study sessions run dense with no pauses."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/newsletter/teach-and-learn-better-with-a-neuroplasticity-super-protocol",
+    "source": "Huberman Lab"
+  }
+}

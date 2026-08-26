@@ -1,0 +1,36 @@
+{
+  "id": "weekly_planning_block",
+  "title": "Plan the week in one 30-minute Monday block.",
+  "subtitle": "Weekly architecture",
+  "rationale": "See the whole week once, place the important work first, and stop re-deciding priorities every morning.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Calendar",
+    "Prioritization"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "A near-universal practitioner habit among high-output founders and makers; direct trials of weekly planning are lacking.",
+    "sources": [
+      {
+        "label": "Cal Newport on planning the week in advance",
+        "url": "https://calnewport.com/deep-habits-plan-your-week-in-advance/"
+      },
+      {
+        "label": "Sam Altman on productivity",
+        "url": "https://blog.samaltman.com/productivity"
+      }
+    ]
+  },
+  "indications": [
+    "Weeks end with urgent work done and important work untouched.",
+    "Mondays start reactive, set by the inbox.",
+    "Deadlines arrive as surprises despite a calendar."
+  ],
+  "guide": {
+    "url": "https://calnewport.com/deep-habits-plan-your-week-in-advance/",
+    "source": "Cal Newport"
+  }
+}

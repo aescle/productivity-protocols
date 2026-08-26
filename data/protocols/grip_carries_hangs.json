@@ -1,0 +1,38 @@
+{
+  "id": "grip_carries_hangs",
+  "title": "Add farmer's carries and dead hangs weekly.",
+  "subtitle": "Grip and carry strength",
+  "rationale": "Grip strength is among the strongest physical mortality markers; carries and hangs train it plus shoulders and trunk.",
+  "kind": "training",
+  "targets": [
+    "Strength",
+    "Durability",
+    "Longevity"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "The grip-mortality association is robust and dose-dependent in cohorts; that training grip moves outcomes is extrapolation from the marker.",
+    "sources": [
+      {
+        "label": "Grip strength and mortality PURE cohort",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25982160/"
+      },
+      {
+        "label": "Peter Attia on grip strength",
+        "url": "https://peterattiamd.com/avoiding-injury-part-ii-grip-strength/"
+      }
+    ]
+  },
+  "indications": [
+    "Strength sessions skip carries and hangs entirely.",
+    "Grip fails before the rest of the body on big lifts."
+  ],
+  "avoidWhen": [
+    "Acute shoulder or elbow injury."
+  ],
+  "guide": {
+    "url": "https://peterattiamd.com/avoiding-injury-part-ii-grip-strength/",
+    "source": "Peter Attia"
+  }
+}

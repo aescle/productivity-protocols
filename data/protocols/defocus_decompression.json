@@ -1,0 +1,32 @@
+{
+  "id": "defocus_decompression",
+  "title": "Reset after focused work.",
+  "subtitle": "Focus exit",
+  "rationale": "Leave the screen for 15 minutes: walk outside, sit without input, or have a real conversation.",
+  "kind": "recovery",
+  "targets": [
+    "Focus",
+    "Recovery",
+    "Creativity"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Deliberate breaks reduce fatigue and improve vigor during sustained work.",
+    "sources": [
+      {
+        "label": "Micro-breaks meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36044424/"
+      }
+    ]
+  },
+  "indications": [
+    "Focus blocks end and the next one starts without a break.",
+    "Output quality decays across consecutive deep-work sessions.",
+    "Breaks default to feeds instead of genuine disengagement."
+  ],
+  "guide": {
+    "source": "Huberman Lab",
+    "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration"
+  }
+}

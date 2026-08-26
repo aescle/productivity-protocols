@@ -1,0 +1,31 @@
+{
+  "id": "off_day_creation",
+  "title": "Use a weekend block for focused work.",
+  "subtitle": "Weekly push",
+  "rationale": "Working on a day you usually leave open has added more output than it displaced afterward. Use a deliberate, bounded block.",
+  "kind": "deep_work",
+  "targets": [
+    "Deep work",
+    "Output",
+    "Weekly cadence"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "A bounded, interruption-protected work block reduces the accuracy and resumption costs created by fragmented work.",
+    "sources": [
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "Records show off-day work blocks that added output without a recovery cost.",
+    "A bounded weekend block fits the current push."
+  ],
+  "guide": {
+    "source": "Cal Newport",
+    "url": "https://calnewport.com/fixed-schedule-productivity-how-i-accomplish-a-large-amount-of-work-in-a-small-number-of-work-hours/"
+  }
+}

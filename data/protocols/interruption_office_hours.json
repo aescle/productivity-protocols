@@ -1,0 +1,36 @@
+{
+  "id": "interruption_office_hours",
+  "title": "Route interruptions to a daily office hour.",
+  "subtitle": "Interruption boundary",
+  "rationale": "Give questions a reliable daily window so they stop arriving as random fragmentation across the day.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Focus",
+    "Team throughput",
+    "Calendar"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "A practitioner pattern for reconciling maker time with availability; consistent with interruption research but untested as a protocol.",
+    "sources": [
+      {
+        "label": "Maker's schedule, manager's schedule essay",
+        "url": "https://www.paulgraham.com/makersschedule.html"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "Ad-hoc questions fragment every block of the day.",
+    "The team needs access but focus needs protection.",
+    "Interruptions repeat that a single window could batch."
+  ],
+  "guide": {
+    "url": "https://www.paulgraham.com/makersschedule.html",
+    "source": "Paul Graham"
+  }
+}

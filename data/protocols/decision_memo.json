@@ -1,0 +1,31 @@
+{
+  "id": "decision_memo",
+  "title": "Write a narrative memo before any significant decision.",
+  "subtitle": "Bezos memo",
+  "rationale": "Full sentences force complete thinking that bullet points hide; the memo becomes the meeting's floor.",
+  "kind": "deep_work",
+  "targets": [
+    "Decision quality",
+    "Clarity",
+    "Meetings"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Amazon's six-pager practice; consistent with writing-to-learn research, untested as a decision protocol.",
+    "sources": [
+      {
+        "label": "Bezos on narrative memos at Amazon",
+        "url": "https://www.cnbc.com/2019/10/14/jeff-bezos-this-is-the-smartest-thing-we-ever-did-at-amazon.html"
+      }
+    ]
+  },
+  "indications": [
+    "Big decisions ride on slides and gut feel.",
+    "Meetings on hard topics stay shallow."
+  ],
+  "guide": {
+    "url": "https://www.cnbc.com/2019/10/14/jeff-bezos-this-is-the-smartest-thing-we-ever-did-at-amazon.html",
+    "source": "CNBC"
+  }
+}

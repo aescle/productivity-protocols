@@ -1,0 +1,41 @@
+{
+  "id": "sauna_regular",
+  "title": "Sauna two to three times per week.",
+  "subtitle": "Heat exposure standard",
+  "rationale": "Move from occasional sessions to the frequency range where cohort benefits start to appear.",
+  "kind": "recovery",
+  "family": "heat_exposure",
+  "tier": "intermediate",
+  "tierTarget": "2-3 sauna sessions per week",
+  "targets": [
+    "Recovery",
+    "Cardiovascular fitness",
+    "Sleep"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Cohort data show a dose-response association: 2-3 weekly sauna sessions track with lower cardiovascular mortality than one.",
+    "sources": [
+      {
+        "label": "Sauna bathing and cardiovascular mortality cohort",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25705824/"
+      },
+      {
+        "label": "Sauna bathing health benefits review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30077204/"
+      }
+    ]
+  },
+  "indications": [
+    "One weekly sauna session is already routine.",
+    "Sessions are easy and no longer feel like a stressor."
+  ],
+  "avoidWhen": [
+    "Pregnancy, cardiovascular instability, recent alcohol, or heat intolerance."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/newsletter/deliberate-heat-exposure-protocols-for-health-and-performance",
+    "source": "Huberman Lab"
+  }
+}

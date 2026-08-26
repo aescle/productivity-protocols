@@ -1,0 +1,38 @@
+{
+  "id": "theanine_apigenin_stack",
+  "title": "Test theanine 200 mg with apigenin 50 mg before bed.",
+  "subtitle": "Sleep stack experiment",
+  "rationale": "Run the popular non-prescription sleep stack as a bounded experiment against your own sleep data.",
+  "kind": "nutrition",
+  "targets": [
+    "Sleep onset",
+    "Relaxation"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Theanine has small trials for stress and sleep quality; apigenin at this dose has essentially no direct human trials. Practitioner stack with thin support.",
+    "sources": [
+      {
+        "label": "L-theanine stress and cognition trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31623400/"
+      },
+      {
+        "label": "Huberman Lab sleep toolkit",
+        "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
+      }
+    ]
+  },
+  "indications": [
+    "Behavior-level sleep hygiene is solid but onset still lags.",
+    "Magnesium alone made no measurable difference."
+  ],
+  "avoidWhen": [
+    "Pregnancy.",
+    "Sedative medications unless cleared by a physician."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep",
+    "source": "Huberman Lab"
+  }
+}

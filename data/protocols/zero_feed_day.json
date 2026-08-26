@@ -1,0 +1,39 @@
+{
+  "id": "zero_feed_day",
+  "title": "Make one workday distraction-free.",
+  "subtitle": "Workday focus boundary",
+  "rationale": "Keep feeds closed and incidental device drift negligible across one real workday each week.",
+  "kind": "deep_work",
+  "family": "attention_defense",
+  "tier": "advanced",
+  "tierTarget": "1 distraction-free workday per week",
+  "targets": [
+    "Focus",
+    "Work quality",
+    "Information diet"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Short periods away from social media can improve well-being and reduce repeated demands on focus.",
+    "sources": [
+      {
+        "label": "Social-media abstinence randomized trial",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35512731/"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "Three-hour protected periods are already routine.",
+    "Feed checking still bookends every work session.",
+    "One day of full output matters more than availability."
+  ],
+  "guide": {
+    "source": "Tech Shabbat",
+    "url": "https://www.tiffanyshlain.com/tech-shabbat"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "anti_todo_list",
+  "title": "Log each task as you finish it; review the list at day's end.",
+  "subtitle": "Anti-todo list",
+  "rationale": "Record what you actually completed, not what you planned, and end the day on evidence of progress.",
+  "kind": "deep_work",
+  "targets": [
+    "Motivation",
+    "Momentum",
+    "Mood"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Marc Andreessen's card ritual; consistent with progress-principle research on small visible wins, but the ritual itself is untested.",
+    "sources": [
+      {
+        "label": "Pmarca guide to personal productivity",
+        "url": "https://pmarchive.com/guide_to_personal_productivity.html"
+      }
+    ]
+  },
+  "indications": [
+    "Days feel unproductive despite steady output.",
+    "Motivation sags in the late afternoon.",
+    "Todo lists exist but finish-tracking does not."
+  ],
+  "guide": {
+    "url": "https://pmarchive.com/guide_to_personal_productivity.html",
+    "source": "Marc Andreessen"
+  }
+}

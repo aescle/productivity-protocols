@@ -1,0 +1,36 @@
+{
+  "id": "shutdown_ritual",
+  "title": "End each workday with a five-minute shutdown ritual.",
+  "subtitle": "Workday boundary",
+  "rationale": "Review open loops, park tomorrow's first move, and declare the day closed so work stops leaking into the evening.",
+  "kind": "recovery",
+  "targets": [
+    "Detachment",
+    "Stress",
+    "Sleep"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Meta-analytic evidence links psychological detachment from work to recovery, wellbeing, and next-day performance; the specific ritual format is practitioner-designed.",
+    "sources": [
+      {
+        "label": "Work detachment meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28133454/"
+      },
+      {
+        "label": "Cal Newport on the work shutdown ritual",
+        "url": "https://calnewport.com/drastically-reduce-stress-with-a-work-shutdown-ritual/"
+      }
+    ]
+  },
+  "indications": [
+    "Work thoughts intrude through evenings and at lights-out.",
+    "The day ends by trailing off rather than by decision.",
+    "Open loops resurface as 3 a.m. wake-ups."
+  ],
+  "guide": {
+    "url": "https://calnewport.com/drastically-reduce-stress-with-a-work-shutdown-ritual/",
+    "source": "Cal Newport"
+  }
+}

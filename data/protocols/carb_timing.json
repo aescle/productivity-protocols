@@ -1,0 +1,28 @@
+{
+  "id": "carb_timing",
+  "title": "Move carbs out of your drag window.",
+  "subtitle": "Meal composition",
+  "rationale": "Shift carbohydrate intake away from the work or evening window where your recorded response is weaker.",
+  "kind": "nutrition",
+  "targets": [
+    "Meal composition",
+    "Focus",
+    "Sleep"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "The metabolic response to carbohydrate intake differs by time of day.",
+    "sources": [
+      {
+        "label": "Carbohydrate timing systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35512764/"
+      }
+    ]
+  },
+  "indications": [
+    "Focus drops after carbohydrate-heavy meals during work hours.",
+    "Evening carbohydrate loads precede poorer sleep or next-morning grogginess."
+  ],
+  "guide": null
+}

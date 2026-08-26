@@ -1,0 +1,34 @@
+{
+  "id": "sleep_hygiene",
+  "title": "Start a 90-minute sleep shutdown.",
+  "subtitle": "Extended shutdown",
+  "rationale": "Remove screens early enough that late input no longer owns the transition into sleep.",
+  "kind": "sleep",
+  "family": "sleep_shutdown",
+  "tier": "advanced",
+  "tierTarget": "90 screen-free minutes before sleep",
+  "targets": [
+    "Sleep quality",
+    "Recovery"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Reducing screen exposure before bed removes light and content that can delay or disrupt sleep.",
+    "sources": [
+      {
+        "label": "Screen use and sleep consensus statement",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38806392/"
+      }
+    ]
+  },
+  "indications": [
+    "A 60-minute screen shutdown is already consistent.",
+    "Sleep quality still lags despite a solid shutdown.",
+    "Evenings allow a longer, protected wind-down."
+  ],
+  "guide": {
+    "source": "Sleep Foundation",
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/bedtime-routine-for-adults"
+  }
+}

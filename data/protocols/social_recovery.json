@@ -1,0 +1,31 @@
+{
+  "id": "social_recovery",
+  "title": "Include real social recovery each week.",
+  "subtitle": "Recovery protocol",
+  "rationale": "Social recovery is part of the health base, not a bonus after everything else is done.",
+  "kind": "social",
+  "targets": [
+    "Mood",
+    "Recovery"
+  ],
+  "durationMinutes": 45,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Stronger social connection is associated with better health and lower all-cause mortality risk.",
+    "sources": [
+      {
+        "label": "Loneliness and mortality meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29300743/"
+      }
+    ]
+  },
+  "indications": [
+    "Weeks pass without unstructured time with people who matter.",
+    "Work has crowded out friendships.",
+    "Mood is flat despite adequate sleep and training."
+  ],
+  "guide": {
+    "source": "Harvard Chan School",
+    "url": "https://hsph.harvard.edu/news/the-importance-of-connections-ways-to-live-a-longer-healthier-life/"
+  }
+}

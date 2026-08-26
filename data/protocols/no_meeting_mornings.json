@@ -1,0 +1,36 @@
+{
+  "id": "no_meeting_mornings",
+  "title": "Keep mornings meeting-free; take meetings after lunch.",
+  "subtitle": "Day architecture",
+  "rationale": "Give the highest-energy hours to creation and stack coordination into the afternoon, where a meeting costs less momentum.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Deep work",
+    "Calendar",
+    "Output"
+  ],
+  "durationMinutes": 180,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "A standard founder calendar design; supported indirectly by interruption and circadian-alertness research, untested as a whole.",
+    "sources": [
+      {
+        "label": "Pmarca guide to personal productivity",
+        "url": "https://pmarchive.com/guide_to_personal_productivity.html"
+      },
+      {
+        "label": "Maker's schedule, manager's schedule essay",
+        "url": "https://www.paulgraham.com/makersschedule.html"
+      }
+    ]
+  },
+  "indications": [
+    "Meetings scatter across mornings and afternoons alike.",
+    "Morning hours are reliably the sharpest and least protected.",
+    "Meeting clustering is established but not yet anchored to a daypart."
+  ],
+  "guide": {
+    "url": "https://pmarchive.com/guide_to_personal_productivity.html",
+    "source": "Marc Andreessen"
+  }
+}

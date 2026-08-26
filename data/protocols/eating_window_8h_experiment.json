@@ -1,0 +1,30 @@
+{
+  "id": "eating_window_8h_experiment",
+  "title": "Test an 8-hour eating window.",
+  "subtitle": "Eating-window experiment",
+  "rationale": "Run the narrower experiment only after covered personal evidence supports shorter windows or the user explicitly chooses it.",
+  "kind": "nutrition",
+  "family": "eating_window",
+  "tier": "advanced",
+  "tierTarget": "An evidence-backed 8-hour eating-window experiment",
+  "targets": [
+    "Eating window",
+    "Recovery"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Time-restricted eating can improve some cardiometabolic outcomes, with response varying by timing and person.",
+    "sources": [
+      {
+        "label": "Nighttime eating meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31782659/"
+      }
+    ]
+  },
+  "indications": [
+    "A 10-hour window is already consistent.",
+    "A defined metabolic or recovery goal justifies a tighter experiment."
+  ],
+  "guide": null
+}

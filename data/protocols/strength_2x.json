@@ -1,0 +1,38 @@
+{
+  "id": "strength_2x",
+  "title": "Lift twice per week.",
+  "subtitle": "Strength standard",
+  "rationale": "Make twice-weekly strength work part of the operating baseline.",
+  "kind": "training",
+  "family": "strength_capacity",
+  "tier": "intermediate",
+  "tierTarget": "2 strength sessions per week",
+  "targets": [
+    "Strength",
+    "Metabolic health",
+    "Durability"
+  ],
+  "durationMinutes": 45,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Adults benefit from muscle-strengthening activity on at least two days each week.",
+    "sources": [
+      {
+        "label": "Physical Activity Guidelines for Americans",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      },
+      {
+        "label": "Resistance-training frequency meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30558493/"
+      }
+    ]
+  },
+  "indications": [
+    "One weekly strength session is established.",
+    "Strength gains have stalled at single-session frequency."
+  ],
+  "guide": {
+    "source": "The Fitness Wiki",
+    "url": "https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/"
+  }
+}

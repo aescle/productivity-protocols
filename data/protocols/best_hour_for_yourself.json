@@ -1,0 +1,31 @@
+{
+  "id": "best_hour_for_yourself",
+  "title": "Sell your best hour to yourself before anyone else.",
+  "subtitle": "Munger's hour",
+  "rationale": "Reserve the single sharpest hour of the day for your own long-term project; everyone else gets the rest.",
+  "kind": "deep_work",
+  "targets": [
+    "Compounding",
+    "Deep work",
+    "Prioritization"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Charlie Munger's practice; chronotype research supports large intraday performance swings, the ownership ritual is practitioner lore.",
+    "sources": [
+      {
+        "label": "The Munger best-hour technique",
+        "url": "https://dariusforoux.com/munger-technique/"
+      }
+    ]
+  },
+  "indications": [
+    "The calendar sells every peak hour to other people's agendas.",
+    "A long-term project only advances on vacations."
+  ],
+  "guide": {
+    "url": "https://dariusforoux.com/munger-technique/",
+    "source": "Darius Foroux"
+  }
+}

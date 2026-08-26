@@ -1,0 +1,38 @@
+{
+  "id": "strength_training",
+  "title": "Lift once per week.",
+  "subtitle": "Strength floor",
+  "rationale": "Keep the weekly strength floor explicit instead of treating all training as cardio.",
+  "kind": "training",
+  "family": "strength_capacity",
+  "tier": "beginner",
+  "tierTarget": "1 strength session per week",
+  "targets": [
+    "Strength",
+    "Metabolic health"
+  ],
+  "durationMinutes": 45,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Muscle-strengthening activity is a core component of adult physical-activity guidance.",
+    "sources": [
+      {
+        "label": "Physical Activity Guidelines for Americans",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      },
+      {
+        "label": "Resistance-training frequency meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30558493/"
+      }
+    ]
+  },
+  "indications": [
+    "No structured resistance work happens in a typical week.",
+    "Training is exclusively cardio.",
+    "Strength or muscle mass is an explicit goal."
+  ],
+  "guide": {
+    "source": "The Fitness Wiki",
+    "url": "https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/"
+  }
+}

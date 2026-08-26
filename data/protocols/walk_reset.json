@@ -1,0 +1,39 @@
+{
+  "id": "walk_reset",
+  "title": "Move for 30 minutes per day.",
+  "subtitle": "Daily activity floor",
+  "rationale": "Build a minimum daily movement dose that supports energy across the workday.",
+  "kind": "walk",
+  "family": "daily_activity",
+  "tier": "beginner",
+  "tierTarget": "30 minutes of movement on most days",
+  "targets": [
+    "Steps",
+    "Mood",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "strong",
+    "summary": "Regular physical activity supports cardiovascular health, mood, sleep, and cognitive function.",
+    "sources": [
+      {
+        "label": "Physical Activity Guidelines for Americans",
+        "url": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines/top-10-things-know"
+      },
+      {
+        "label": "Physical activity dose-response meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36854652/"
+      }
+    ]
+  },
+  "indications": [
+    "Most days close with fewer than 30 minutes of movement.",
+    "Energy sags across sedentary afternoons.",
+    "Long desk stretches dominate the workday."
+  ],
+  "guide": {
+    "source": "NHS",
+    "url": "https://www.nhs.uk/live-well/exercise/walking-for-health/"
+  }
+}

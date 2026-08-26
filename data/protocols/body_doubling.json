@@ -1,0 +1,32 @@
+{
+  "id": "body_doubling",
+  "title": "Book a co-working session for work you keep avoiding.",
+  "subtitle": "Social accountability",
+  "rationale": "Work alongside another person, in the room or on a call, and let quiet social presence hold you to the task.",
+  "kind": "deep_work",
+  "targets": [
+    "Task initiation",
+    "Focus",
+    "Procrastination"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Widely used in ADHD communities and remote-work tools with consistent self-report; controlled evidence is minimal.",
+    "sources": [
+      {
+        "label": "ADDA on body doubling",
+        "url": "https://add.org/the-body-double/"
+      }
+    ]
+  },
+  "indications": [
+    "A specific task has been rescheduled three or more times.",
+    "Focus is fine in meetings but collapses when working alone.",
+    "Accountability reliably outperforms willpower."
+  ],
+  "guide": {
+    "url": "https://add.org/the-body-double/",
+    "source": "ADDA"
+  }
+}

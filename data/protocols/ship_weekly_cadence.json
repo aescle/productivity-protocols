@@ -1,0 +1,32 @@
+{
+  "id": "ship_weekly_cadence",
+  "title": "Ship one finished artifact every week, same day, no exceptions.",
+  "subtitle": "Fixed shipping cadence",
+  "rationale": "A dated public cadence converts open-ended work into finished reps, and volume is where quality comes from.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Skill",
+    "Momentum"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Edison ran an explicit invention quota and modern makers run weekly cadences; goal-setting research strongly supports specific difficult goals.",
+    "sources": [
+      {
+        "label": "Edison's invention factory quota",
+        "url": "https://edison.rutgers.edu/life-of-edison/biographical-essays/the-invention-factory"
+      },
+      {
+        "label": "Fortune profile of David Senra's weekly cadence",
+        "url": "https://fortune.com/2026/07/05/how-david-senra-built-founders-podcast-powerful-ceos-spotify-bezos-coinbase-ramp-tbpn/"
+      }
+    ]
+  },
+  "indications": [
+    "Projects stay 90 percent done indefinitely.",
+    "Output arrives in bursts separated by dead months."
+  ],
+  "guide": null
+}

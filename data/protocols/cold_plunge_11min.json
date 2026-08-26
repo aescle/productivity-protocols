@@ -1,0 +1,42 @@
+{
+  "id": "cold_plunge_11min",
+  "title": "Accumulate 11 total minutes of cold immersion per week.",
+  "subtitle": "High cold volume",
+  "rationale": "Cap deliberate cold at a bounded weekly total split across sessions, so the practice stays a stimulus instead of becoming a time sink.",
+  "kind": "recovery",
+  "family": "cold_exposure",
+  "tier": "advanced",
+  "tierTarget": "About 11 total cold minutes per week",
+  "targets": [
+    "Stress tolerance",
+    "Mood",
+    "Metabolic health"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "The 11-minute weekly figure is a practitioner heuristic extrapolated from small physiology studies of winter swimmers, not a trial endpoint.",
+    "sources": [
+      {
+        "label": "Winter-swimming thermogenesis study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34755128/"
+      },
+      {
+        "label": "Voluntary cold-water exposure health effects review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36137565/"
+      }
+    ]
+  },
+  "indications": [
+    "Two to three weekly immersions are already comfortable.",
+    "A structured weekly cap would keep the habit bounded."
+  ],
+  "avoidWhen": [
+    "Cardiovascular disease or arrhythmia unless cleared by a physician.",
+    "Swimming alone in open water."
+  ],
+  "guide": {
+    "url": "https://www.hubermanlab.com/newsletter/the-science-and-use-of-cold-exposure-for-health-and-performance",
+    "source": "Huberman Lab"
+  }
+}

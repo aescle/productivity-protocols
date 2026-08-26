@@ -1,0 +1,31 @@
+{
+  "id": "morning_light",
+  "title": "Get outdoor light after waking.",
+  "subtitle": "Circadian rhythm",
+  "rationale": "Anchor the day with morning light before relying on stimulants or late-day fixes.",
+  "kind": "sleep",
+  "targets": [
+    "Sleep timing",
+    "Alertness"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Morning light advances circadian timing and can improve sleep timing and daytime symptoms.",
+    "sources": [
+      {
+        "label": "Morning light therapy systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34381579/"
+      }
+    ]
+  },
+  "indications": [
+    "Sleep timing drifts later across the week.",
+    "Mornings start slow and groggy indoors.",
+    "Most days start with screens before any outdoor light."
+  ],
+  "guide": {
+    "source": "Huberman Lab",
+    "url": "https://www.hubermanlab.com/newsletter/using-light-for-health"
+  }
+}

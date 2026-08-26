@@ -1,0 +1,29 @@
+{
+  "id": "expressive_journaling",
+  "title": "Write for 15 minutes about what is weighing on you.",
+  "subtitle": "Expressive writing",
+  "rationale": "Externalize a live stressor in writing so it stops looping in working memory.",
+  "kind": "recovery",
+  "targets": [
+    "Stress",
+    "Mood",
+    "Clarity"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Meta-analysis of experimental disclosure studies shows small but reliable psychological and physical health benefits.",
+    "sources": [
+      {
+        "label": "Experimental disclosure meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17073523/"
+      }
+    ]
+  },
+  "indications": [
+    "One problem loops during work blocks and at lights-out.",
+    "A hard decision or conflict is consuming background attention.",
+    "Sleep onset is delayed by rumination."
+  ],
+  "guide": null
+}
