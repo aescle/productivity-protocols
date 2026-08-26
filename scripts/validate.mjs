@@ -1,0 +1,146 @@
+// Validates data/protocols/*.json against the schema contract and checks that
+// the committed src/protocols.generated.js mirror matches the data. Zero
+// dependencies so it runs anywhere Node runs:
+//
+//   node packages/protocol-bank/scripts/validate.mjs
+import assert from "node:assert/strict";
+import { readdir, readFile } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { renderGeneratedModule } from "./generate-index.mjs";
+
+const pkgRoot = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
+const dataDir = path.join(pkgRoot, "data", "protocols");
+
+const KINDS = new Set([
+  "calendar_defense",
+  "deep_work",
+  "nutrition",
+  "recovery",
+  "sleep",
+  "social",
+  "training",
+  "walk",
+]);
+const TIERS = new Set(["beginner", "intermediate", "advanced"]);
+const GRADES = new Set(["strong", "moderate", "emerging", "anecdotal"]);
+const ALLOWED_KEYS = new Set([
+  "id",
+  "title",
+  "subtitle",
+  "rationale",
+  "kind",
+  "family",
+  "tier",
+  "tierTarget",
+  "targets",
+  "durationMinutes",
+  "evidence",
+  "indications",
+  "avoidWhen",
+  "guide",
+]);
+
+const isNonEmptyString = (v) => typeof v === "string" && v.length > 0;
+const isStringList = (v, min = 1, max = Infinity) =>
+  Array.isArray(v) && v.length >= min && v.length <= max && v.every(isNonEmptyString);
+
+function checkUrl(url, context) {
+  assert.ok(isNonEmptyString(url), `${context}: url missing`);
+  assert.ok(url.startsWith("https://"), `${context}: url must be https (${url})`);
+  assert.ok(!/[?&](utm_|fbclid|gclid)/.test(url), `${context}: url carries tracking params (${url})`);
+}
+
+const files = (await readdir(dataDir)).filter((f) => f.endsWith(".json")).sort();
+assert.ok(files.length > 0, "no protocol data files found");
+
+const protocols = [];
+for (const file of files) {
+  const raw = await readFile(path.join(dataDir, file), "utf8");
+  let record;
+  try {
+    record = JSON.parse(raw);
+  } catch (error) {
+    throw new Error(`${file}: invalid JSON (${error.message})`);
+  }
+
+  const ctx = file;
+  assert.equal(`${record.id}.json`, file, `${ctx}: filename must equal id`);
+  for (const key of Object.keys(record)) {
+    assert.ok(ALLOWED_KEYS.has(key), `${ctx}: unknown key "${key}"`);
+  }
+  assert.ok(/^[a-z][a-z0-9_]*$/.test(record.id), `${ctx}: id must be snake_case`);
+  assert.ok(isNonEmptyString(record.title), `${ctx}: title missing`);
+  assert.ok(isNonEmptyString(record.subtitle), `${ctx}: subtitle missing`);
+  assert.ok(isNonEmptyString(record.rationale), `${ctx}: rationale missing`);
+  assert.ok(KINDS.has(record.kind), `${ctx}: unknown kind "${record.kind}"`);
+  assert.ok(isStringList(record.targets), `${ctx}: targets must be a non-empty string list`);
+  assert.ok(
+    Number.isInteger(record.durationMinutes) && record.durationMinutes >= 1,
+    `${ctx}: durationMinutes must be a positive integer`,
+  );
+  assert.ok(isStringList(record.indications, 1, 5), `${ctx}: indications must list 1-5 signals`);
+  if (record.avoidWhen !== undefined) {
+    assert.ok(isStringList(record.avoidWhen), `${ctx}: avoidWhen must be a non-empty string list`);
+  }
+
+  if (record.family !== undefined || record.tier !== undefined || record.tierTarget !== undefined) {
+    assert.ok(
+      /^[a-z][a-z0-9_]*$/.test(record.family ?? ""),
+      `${ctx}: family must be snake_case when the protocol is on a ladder`,
+    );
+    assert.ok(TIERS.has(record.tier), `${ctx}: ladder protocols need a valid tier`);
+    assert.ok(isNonEmptyString(record.tierTarget), `${ctx}: ladder protocols need a tierTarget`);
+  }
+
+  const evidence = record.evidence;
+  assert.ok(evidence && typeof evidence === "object", `${ctx}: evidence missing`);
+  assert.ok(GRADES.has(evidence.grade), `${ctx}: unknown evidence grade "${evidence?.grade}"`);
+  assert.ok(isNonEmptyString(evidence.summary), `${ctx}: evidence summary missing`);
+  assert.ok(
+    Array.isArray(evidence.sources) && evidence.sources.length >= 1,
+    `${ctx}: evidence needs at least one source`,
+  );
+  for (const source of evidence.sources) {
+    assert.ok(isNonEmptyString(source.label), `${ctx}: source label missing`);
+    checkUrl(source.url, `${ctx} source "${source.label}"`);
+  }
+
+  assert.ok("guide" in record, `${ctx}: guide must be a link or an explicit null`);
+  if (record.guide !== null) {
+    assert.ok(isNonEmptyString(record.guide?.source), `${ctx}: guide source missing`);
+    checkUrl(record.guide?.url, `${ctx} guide`);
+  }
+
+  protocols.push(record);
+}
+
+const ids = new Set(protocols.map((p) => p.id));
+assert.equal(ids.size, protocols.length, "duplicate protocol ids");
+
+// Ladders, not lists: a family is a complete beginner -> intermediate ->
+// advanced progression, never a partial one.
+const families = new Map();
+for (const p of protocols) {
+  if (!p.family) continue;
+  if (!families.has(p.family)) families.set(p.family, []);
+  families.get(p.family).push(p.tier);
+}
+for (const [family, tiers] of families) {
+  const sorted = [...tiers].sort();
+  assert.deepEqual(
+    sorted,
+    ["advanced", "beginner", "intermediate"],
+    `family "${family}" must have exactly one beginner, one intermediate, and one advanced protocol (found: ${tiers.join(", ")})`,
+  );
+}
+
+const committed = await readFile(path.join(pkgRoot, "src", "protocols.generated.js"), "utf8");
+const expected = await renderGeneratedModule();
+assert.equal(
+  committed,
+  expected,
+  "src/protocols.generated.js is stale; run: node packages/protocol-bank/scripts/generate-index.mjs",
+);
+
+console.log(`protocol-bank: ${protocols.length} protocols valid, ${families.size} families complete, mirror in sync`);

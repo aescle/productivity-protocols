@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aescle.com/protocol-bank/protocol.schema.json",
+  "title": "Protocol",
+  "description": "One health or performance protocol: a concrete behavior with its rationale, evidence grade, citations, and the observable signals that indicate trying it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "subtitle",
+    "rationale",
+    "kind",
+    "targets",
+    "durationMinutes",
+    "evidence",
+    "indications",
+    "guide"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Stable snake_case identifier. Must equal the filename without .json. Never reuse or rename a published id."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Imperative one-line statement of the behavior, e.g. \"Shut down screens 60 minutes before bed.\""
+    },
+    "subtitle": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Two-to-four word category label, e.g. \"Full wind-down\"."
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1,
+      "description": "One or two sentences on why the behavior works and what it protects."
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "calendar_defense",
+        "deep_work",
+        "nutrition",
+        "recovery",
+        "sleep",
+        "social",
+        "training",
+        "walk"
+      ],
+      "description": "Behavior category."
+    },
+    "family": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Optional progression ladder this protocol belongs to. Every family must contain exactly one beginner, one intermediate, and one advanced protocol."
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["beginner", "intermediate", "advanced"],
+      "description": "Rung on the family ladder. Required when family is set, forbidden otherwise."
+    },
+    "tierTarget": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The measurable bar that counts as holding this rung, e.g. \"60 screen-free minutes before sleep\". Required when family is set."
+    },
+    "targets": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Outcome labels the protocol aims at, e.g. \"Sleep\", \"Focus\", \"VO2 max\"."
+    },
+    "durationMinutes": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Typical minutes one session or setup of this protocol takes."
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["grade", "summary", "sources"],
+      "properties": {
+        "grade": {
+          "type": "string",
+          "enum": ["strong", "moderate", "emerging", "anecdotal"],
+          "description": "strong: consistent trial, meta-analytic, or guideline-level support. moderate: supportive trials or robust observational evidence with limitations. emerging: early, small, or mixed evidence. anecdotal: practice-driven with a plausible mechanism but little direct trial evidence."
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One sentence stating what the evidence shows, written no stronger than the grade supports."
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "url"],
+            "properties": {
+              "label": { "type": "string", "minLength": 1 },
+              "url": { "type": "string", "pattern": "^https://" }
+            }
+          },
+          "description": "Citations backing the summary: studies, meta-analyses, position stands, or guidelines."
+        }
+      }
+    },
+    "indications": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Observable signals that suggest trying this protocol, phrased as neutral statements an agent can match against a person's data, e.g. \"Wake time swings by hours between weekdays and weekends.\""
+    },
+    "avoidWhen": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Contraindications and situations where the protocol should not be attempted."
+    },
+    "guide": {
+      "description": "One canonical external how-to page for first-timers, or an explicit null after checking that no external page earns the slot. Distinct from evidence sources.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url", "source"],
+          "properties": {
+            "url": { "type": "string", "pattern": "^https://" },
+            "source": { "type": "string", "minLength": 1 }
+          }
+        }
+      ]
+    }
+  }
+}

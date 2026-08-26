@@ -1,0 +1,14 @@
+{
+  "name": "@aescle/protocol-bank",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Structured, evidence-graded bank of health and performance protocols: behaviors, progressions, triggers, and citations.",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "generate": "node scripts/generate-index.mjs",
+    "validate": "node scripts/validate.mjs"
+  }
+}
