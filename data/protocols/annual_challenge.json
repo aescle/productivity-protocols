@@ -1,0 +1,30 @@
+{
+  "id": "annual_challenge",
+  "name": "Annual Challenge",
+  "title": "Set one public, measurable personal challenge each year.",
+  "benefit": "New capabilities outside your daily work.",
+  "subtitle": "Yearly Goal",
+  "rationale": "A public, measurable, year-long goal forces growth in areas the job would never require.",
+  "origin": "Mark Zuckerberg ran one every year, from Mandarin to 365 miles.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Zuckerberg's practice; specific difficult goals and public commitment both have research support, the annual format does not.",
+    "sources": [
+      {
+        "label": "Zuckerberg's annual challenges",
+        "url": "https://time.com/4167229/mark-zuckerberg-new-year-run-365-miles/"
+      }
+    ]
+  },
+  "indications": [
+    "Skill growth outside the job stalled years ago.",
+    "Public accountability reliably works on you."
+  ],
+  "guide": null
+}

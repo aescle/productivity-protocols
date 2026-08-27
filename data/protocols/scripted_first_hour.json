@@ -1,0 +1,30 @@
+{
+  "id": "scripted_first_hour",
+  "name": "Scripted First Hour",
+  "title": "Script the first hour into a fixed, decision-free sequence.",
+  "benefit": "An easier and more consistent start to the day.",
+  "subtitle": "Morning Routine",
+  "rationale": "A fixed, decision-free opening sequence means the day starts before motivation is consulted.",
+  "origin": "Arnold Schwarzenegger executes the same automatic morning.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Habit-automaticity and implementation-intention research supports cue-bound decision-free routines; the hour-long script is practitioner form.",
+    "sources": [
+      {
+        "label": "Schwarzenegger's automatic morning",
+        "url": "https://www.insidehook.com/wellness/arnold-schwarzenegger-morning-routine"
+      }
+    ]
+  },
+  "indications": [
+    "Mornings open with negotiation about what to do first.",
+    "Routines survive only as long as motivation does."
+  ],
+  "guide": null
+}

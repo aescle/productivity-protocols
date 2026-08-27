@@ -1,0 +1,33 @@
+{
+  "id": "one_detail_upgrade",
+  "name": "One-Detail Upgrade",
+  "title": "Over-invest in one small detail of your work at a time.",
+  "benefit": "Continuous improvement in your craft.",
+  "subtitle": "Craft Practice",
+  "rationale": "Aiming improvement at one controllable detail at a time is what makes decades of repetition keep producing gains.",
+  "origin": "Jiro Ono raised octopus massage from thirty minutes to forty-five.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Matches deliberate-practice findings that improvement requires targeted sub-component refinement, not raw repetition.",
+    "sources": [
+      {
+        "label": "Massaging the octopus",
+        "url": "https://www.thisisgoingtobebig.com/blog/2012/3/21/massaging-the-octopus-jiro-dreams-of-startups.html"
+      }
+    ]
+  },
+  "indications": [
+    "Repetition has plateaued into maintenance.",
+    "'Get better' has no current specific target."
+  ],
+  "guide": {
+    "url": "https://www.thisisgoingtobebig.com/blog/2012/3/21/massaging-the-octopus-jiro-dreams-of-startups.html",
+    "source": "This Is Going To Be Big"
+  }
+}

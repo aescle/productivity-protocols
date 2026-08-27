@@ -1,0 +1,34 @@
+{
+  "id": "murakami_metronome_days",
+  "name": "Identical Days",
+  "title": "Run identical days for the length of a project.",
+  "benefit": "Reliable deep focus over long projects.",
+  "subtitle": "Daily Structure",
+  "rationale": "Unvarying repetition acts as its own trigger, dropping you into a working state without spending willpower on it.",
+  "origin": "Haruki Murakami holds identical days for the length of a novel.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 300,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Murakami's stated method across decades of books; habit research supports stable context cues cutting initiation cost, the full regime is untested.",
+    "sources": [
+      {
+        "label": "Murakami's daily routine",
+        "url": "https://www.openculture.com/2021/07/haruki-murakamis-daily-routine-up-at-400-a-m-5-6-hours-of-writing-then-a-10k-run.html"
+      }
+    ]
+  },
+  "indications": [
+    "A months-long project needs sustained daily output.",
+    "Every day currently starts with negotiating the schedule from scratch.",
+    "Willpower is doing work that routine should."
+  ],
+  "guide": {
+    "url": "https://www.openculture.com/2021/07/haruki-murakamis-daily-routine-up-at-400-a-m-5-6-hours-of-writing-then-a-10k-run.html",
+    "source": "Open Culture"
+  }
+}

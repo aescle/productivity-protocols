@@ -1,0 +1,34 @@
+{
+  "id": "pre_dawn_session",
+  "name": "Pre-Dawn Session",
+  "title": "Add one session that ends when everyone else's alarm goes off.",
+  "benefit": "More skill built than peers of equal talent.",
+  "subtitle": "Extra Session",
+  "rationale": "An extra session before the day starts stacks on top of normal work, provided sleep is genuinely protected.",
+  "origin": "Kobe Bryant trained at four in the morning.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Kobe's documented practice; consistent with practice-volume reasoning, and dangerous without protected sleep, hence the warnings.",
+    "sources": [
+      {
+        "label": "Remembering Kobe Bryant (ESPN)",
+        "url": "https://www.espn.com/nba/story/_/id/28569694/remembering-kobe-bryant-relentless-curious-infinitely-complicated"
+      }
+    ]
+  },
+  "indications": [
+    "An earlier-than-everyone hour is genuinely available without cutting sleep.",
+    "The craft gap you want closed is measured in reps."
+  ],
+  "avoidWhen": [
+    "It compresses sleep below your full need.",
+    "A normal or late chronotype."
+  ],
+  "guide": null
+}

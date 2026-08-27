@@ -7,7 +7,9 @@
   "additionalProperties": false,
   "required": [
     "id",
+    "name",
     "title",
+    "benefit",
     "subtitle",
     "rationale",
     "kind",
@@ -23,20 +25,35 @@
       "pattern": "^[a-z][a-z0-9_]*$",
       "description": "Stable snake_case identifier. Must equal the filename without .json. Never reuse or rename a published id."
     },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Short Title-Case noun phrase, 2-5 words, naming the behavior plainly. No person names, no metaphors. Example: \"Post-Meal Walk\"."
+    },
     "title": {
       "type": "string",
       "minLength": 1,
-      "description": "Imperative one-line statement of the behavior, e.g. \"Shut down screens 60 minutes before bed.\""
+      "description": "One plain imperative sentence saying what to do, ending in a period. No semicolons, colons, or questions. Example: \"Walk after one meal per day.\""
+    },
+    "benefit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "One short plain outcome phrase, saying what the person gets: energy, focus, output, sleep, or recovery. 14 words or fewer. Do not address the reader directly. Example: \"Steadier energy after lunch.\""
     },
     "subtitle": {
       "type": "string",
       "minLength": 1,
-      "description": "Two-to-four word category label, e.g. \"Full wind-down\"."
+      "description": "Two or three word Title Case category label, no punctuation. Example: \"Meal Protocol\"."
     },
     "rationale": {
       "type": "string",
       "minLength": 1,
-      "description": "One or two sentences on why the behavior works and what it protects."
+      "description": "One or two plain sentences explaining why the protocol works. No person names as the subject (attribution belongs in `origin`), no semicolons or colons."
+    },
+    "origin": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional attribution: one plain sentence naming who is known for the practice and what they did. Example: \"Jeff Bezos replaced slides with six-page narrative memos at Amazon.\""
     },
     "kind": {
       "type": "string",
@@ -59,7 +76,11 @@
     },
     "tier": {
       "type": "string",
-      "enum": ["beginner", "intermediate", "advanced"],
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
       "description": "Rung on the family ladder. Required when family is set, forbidden otherwise."
     },
     "tierTarget": {
@@ -70,7 +91,10 @@
     "targets": {
       "type": "array",
       "minItems": 1,
-      "items": { "type": "string", "minLength": 1 },
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
       "description": "Outcome labels the protocol aims at, e.g. \"Sleep\", \"Focus\", \"VO2 max\"."
     },
     "durationMinutes": {
@@ -81,11 +105,20 @@
     "evidence": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["grade", "summary", "sources"],
+      "required": [
+        "grade",
+        "summary",
+        "sources"
+      ],
       "properties": {
         "grade": {
           "type": "string",
-          "enum": ["strong", "moderate", "emerging", "anecdotal"],
+          "enum": [
+            "strong",
+            "moderate",
+            "emerging",
+            "anecdotal"
+          ],
           "description": "strong: consistent trial, meta-analytic, or guideline-level support. moderate: supportive trials or robust observational evidence with limitations. emerging: early, small, or mixed evidence. anecdotal: practice-driven with a plausible mechanism but little direct trial evidence."
         },
         "summary": {
@@ -99,10 +132,19 @@
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["label", "url"],
+            "required": [
+              "label",
+              "url"
+            ],
             "properties": {
-              "label": { "type": "string", "minLength": 1 },
-              "url": { "type": "string", "pattern": "^https://" }
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https://"
+              }
             }
           },
           "description": "Citations backing the summary: studies, meta-analyses, position stands, or guidelines."
@@ -113,26 +155,43 @@
       "type": "array",
       "minItems": 1,
       "maxItems": 5,
-      "items": { "type": "string", "minLength": 1 },
-      "description": "Observable signals that suggest trying this protocol, phrased as neutral statements an agent can match against a person's data, e.g. \"Wake time swings by hours between weekdays and weekends.\""
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Observable signals that suggest trying this protocol, each a complete sentence ending in a period, phrased neutrally so an agent can match them against a person's data. Example: \"Wake time swings by hours between weekdays and weekends.\""
     },
     "avoidWhen": {
       "type": "array",
       "minItems": 1,
-      "items": { "type": "string", "minLength": 1 },
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
       "description": "Contraindications and situations where the protocol should not be attempted."
     },
     "guide": {
       "description": "One canonical external how-to page for first-timers, or an explicit null after checking that no external page earns the slot. Distinct from evidence sources.",
       "oneOf": [
-        { "type": "null" },
+        {
+          "type": "null"
+        },
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["url", "source"],
+          "required": [
+            "url",
+            "source"
+          ],
           "properties": {
-            "url": { "type": "string", "pattern": "^https://" },
-            "source": { "type": "string", "minLength": 1 }
+            "url": {
+              "type": "string",
+              "pattern": "^https://"
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
           }
         }
       ]

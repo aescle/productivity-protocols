@@ -1,0 +1,33 @@
+{
+  "id": "skinner_output_graph",
+  "name": "Output Graph",
+  "title": "Log true desk hours and graph cumulative output daily.",
+  "benefit": "Early warning when your output is slipping.",
+  "subtitle": "Output Tracking",
+  "rationale": "Plotting cumulative output makes a declining slope visible immediately rather than at the end of a bad month.",
+  "origin": "B.F. Skinner ran his own working life as an experiment.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Self-monitoring is among the best-replicated behavior-change techniques; the graph is Skinner's instrument for it.",
+    "sources": [
+      {
+        "label": "B.F. Skinner's measured routine",
+        "url": "https://abrilliantmind.blog/daily-rituals-of-scientists-the-meticulous-routine-of-b-f-skinner/"
+      }
+    ]
+  },
+  "indications": [
+    "Perceived busy hours and true work hours have diverged.",
+    "Output trends are invisible until a bad month ends."
+  ],
+  "guide": {
+    "url": "https://abrilliantmind.blog/daily-rituals-of-scientists-the-meticulous-routine-of-b-f-skinner/",
+    "source": "A Brilliant Mind"
+  }
+}

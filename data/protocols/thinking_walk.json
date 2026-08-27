@@ -1,8 +1,11 @@
 {
   "id": "thinking_walk",
+  "name": "Thinking Walk",
   "title": "Take a daily walk on a fixed route with one problem loaded.",
-  "subtitle": "Ambulatory thinking",
-  "rationale": "A known route removes navigation decisions so attention can chew on the problem while the body moves.",
+  "benefit": "Clearer thinking on problems that resist the desk.",
+  "subtitle": "Problem Solving",
+  "rationale": "A known route removes navigation decisions, which frees attention to work on the problem while the body moves.",
+  "origin": "Paul Graham walks a fixed route with one problem loaded.",
   "kind": "walk",
   "targets": [
     "Creativity",

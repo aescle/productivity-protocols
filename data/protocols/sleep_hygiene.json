@@ -1,8 +1,10 @@
 {
   "id": "sleep_hygiene",
+  "name": "90-Minute Shutdown",
   "title": "Start a 90-minute sleep shutdown.",
-  "subtitle": "Extended shutdown",
-  "rationale": "Remove screens early enough that late input no longer owns the transition into sleep.",
+  "benefit": "Deeper sleep and sharper thinking the next day.",
+  "subtitle": "Sleep Routine",
+  "rationale": "Ending screen input well before bed removes the late stimulation that otherwise owns the transition into sleep.",
   "kind": "sleep",
   "family": "sleep_shutdown",
   "tier": "advanced",

@@ -1,8 +1,10 @@
 {
   "id": "lighter_post_meal_work",
+  "name": "Meal Timing Plan",
   "title": "Walk after two meals and finish eating two hours before bed.",
-  "subtitle": "Meal architecture",
-  "rationale": "Make meal timing deliberate across the day instead of fixing one isolated meal.",
+  "benefit": "Even energy from lunch through the evening.",
+  "subtitle": "Meal Timing",
+  "rationale": "Making meal timing deliberate across the whole day works better than correcting one isolated meal.",
   "kind": "nutrition",
   "family": "meal_timing",
   "tier": "advanced",

@@ -1,0 +1,34 @@
+{
+  "id": "darwin_three_bouts",
+  "name": "Three Bouts",
+  "title": "Plan three focused bouts and finish hard work by mid-afternoon.",
+  "benefit": "High output at a pace you can sustain for years.",
+  "subtitle": "Day Structure",
+  "rationale": "A small number of protected bouts, separated by light work, produces high lifetime output at a sustainable pace.",
+  "origin": "Charles Darwin wrote nineteen books on three 90-minute bouts a day.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Matches deliberate-practice records clustering near four daily hours of hard work among elite performers; the specific structure is biographical.",
+    "sources": [
+      {
+        "label": "Darwin's working day",
+        "url": "https://nautil.us/darwin-was-a-slacker-and-you-should-be-too-236532"
+      }
+    ]
+  },
+  "indications": [
+    "Deep work is attempted as one long undifferentiated slab.",
+    "Output quality collapses in the late afternoon anyway.",
+    "Sustainability matters more than any single sprint."
+  ],
+  "guide": {
+    "url": "https://nautil.us/darwin-was-a-slacker-and-you-should-be-too-236532",
+    "source": "Nautilus"
+  }
+}

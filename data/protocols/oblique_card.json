@@ -1,0 +1,33 @@
+{
+  "id": "oblique_card",
+  "name": "Random Prompt",
+  "title": "When stuck, draw one lateral prompt and apply it before grinding on.",
+  "benefit": "New approaches when you are stuck.",
+  "subtitle": "Creative Unblock",
+  "rationale": "A random lateral prompt breaks the tunnel vision that pressure creates and reopens abandoned approaches.",
+  "origin": "Brian Eno created the Oblique Strategies deck for studio use.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Eno's studio tool; loosely related to random-stimulus creativity techniques, untested formally.",
+    "sources": [
+      {
+        "label": "Oblique Strategies",
+        "url": "https://en.wikipedia.org/wiki/Oblique_Strategies"
+      }
+    ]
+  },
+  "indications": [
+    "Stuckness triggers harder pushing on the same door.",
+    "Pressure narrows your option set to one."
+  ],
+  "guide": {
+    "url": "https://en.wikipedia.org/wiki/Oblique_Strategies",
+    "source": "Wikipedia"
+  }
+}

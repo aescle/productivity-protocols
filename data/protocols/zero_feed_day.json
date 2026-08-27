@@ -1,8 +1,10 @@
 {
   "id": "zero_feed_day",
+  "name": "Distraction-Free Day",
   "title": "Make one workday distraction-free.",
-  "subtitle": "Workday focus boundary",
-  "rationale": "Keep feeds closed and incidental device drift negligible across one real workday each week.",
+  "benefit": "A full day of undistracted, high-quality work.",
+  "subtitle": "Focus Boundary",
+  "rationale": "A full day with feeds closed produces undiluted output that a partially protected day cannot.",
   "kind": "deep_work",
   "family": "attention_defense",
   "tier": "advanced",

@@ -1,8 +1,10 @@
 {
   "id": "sauna_frequent",
+  "name": "Sauna 4x+",
   "title": "Sauna four or more times per week, 19-plus minutes.",
-  "subtitle": "High heat volume",
-  "rationale": "Use the frequency and duration range where the cohort curves flatten out, if access and schedule allow it.",
+  "benefit": "Strong recovery now and better heart health later.",
+  "subtitle": "Heat Volume",
+  "rationale": "The lowest cardiovascular mortality in cohort data appeared at four or more sessions a week of nineteen minutes or longer.",
   "kind": "recovery",
   "family": "heat_exposure",
   "tier": "advanced",

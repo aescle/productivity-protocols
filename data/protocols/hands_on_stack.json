@@ -1,0 +1,33 @@
+{
+  "id": "hands_on_stack",
+  "name": "Hands on the Stack",
+  "title": "Keep personally building in your product's stack, whatever your title.",
+  "benefit": "Better technical judgment.",
+  "subtitle": "Founder Craft",
+  "rationale": "Building in the real system keeps technical judgment accurate in a way status reports about it cannot.",
+  "origin": "Sergey Brin still submits code at Google.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Brin's stated practice; practitioner-only.",
+    "sources": [
+      {
+        "label": "Sergey Brin at All-In",
+        "url": "https://singjupost.com/transcript-of-sergey-brins-interview-at-all-in-live-from-miami/"
+      }
+    ]
+  },
+  "indications": [
+    "Your technical instincts now arrive secondhand.",
+    "It has been months since you touched the actual product."
+  ],
+  "guide": {
+    "url": "https://singjupost.com/transcript-of-sergey-brins-interview-at-all-in-live-from-miami/",
+    "source": "All-In transcript"
+  }
+}

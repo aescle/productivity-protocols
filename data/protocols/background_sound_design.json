@@ -1,8 +1,10 @@
 {
   "id": "background_sound_design",
+  "name": "Soundscape Design",
   "title": "Pick one deliberate soundscape per focus block.",
-  "subtitle": "Auditory environment",
-  "rationale": "Choose silence, noise, or familiar instrumental sound on purpose, instead of letting novel audio compete for attention.",
+  "benefit": "Faster focus in a distracting environment.",
+  "subtitle": "Work Environment",
+  "rationale": "Novel audio competes for attention, while a deliberately chosen constant one stops the environment from interrupting.",
   "kind": "deep_work",
   "targets": [
     "Focus",

@@ -1,8 +1,11 @@
 {
   "id": "ubiquitous_capture",
+  "name": "Always-On Capture",
   "title": "Capture every idea the moment it occurs, always.",
-  "subtitle": "Always-on notebook",
-  "rationale": "Working memory drops ideas within minutes; a capture tool always in reach preserves them and frees attention.",
+  "benefit": "Fewer lost ideas and a clearer head.",
+  "subtitle": "Idea Capture",
+  "rationale": "Working memory drops ideas within minutes, so a capture tool always in reach preserves them and frees attention.",
+  "origin": "Leonardo da Vinci hung a notebook from his belt.",
   "kind": "deep_work",
   "targets": [
     "Ideas",

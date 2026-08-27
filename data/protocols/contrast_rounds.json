@@ -1,0 +1,41 @@
+{
+  "id": "contrast_rounds",
+  "name": "Sauna and Cold Rounds",
+  "title": "Run four to six sauna-to-cold rounds to break a hijacked day.",
+  "benefit": "A reset mood and much lower stress.",
+  "subtitle": "Mood Reset",
+  "rationale": "Repeated heat and cold cycles produce a strong physiological shift that interrupts a bad mood faster than pushing through it.",
+  "origin": "Rick Rubin calls it the greatest mood elevator he knows.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Stress"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Sauna and cold each have supportive literature separately; the combined contrast protocol as mood reset is practitioner-driven.",
+    "sources": [
+      {
+        "label": "Rick Rubin on Tim Ferriss (transcript)",
+        "url": "https://tim.blog/wp-content/uploads/2018/07/76-rick-rubin.pdf"
+      },
+      {
+        "label": "Sauna bathing and cardiovascular mortality cohort",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25705824/"
+      }
+    ]
+  },
+  "indications": [
+    "A bad morning is metastasizing into a bad week.",
+    "Sauna and cold access are both available."
+  ],
+  "avoidWhen": [
+    "Cardiovascular disease or arrhythmia unless cleared by a physician.",
+    "Pregnancy."
+  ],
+  "guide": {
+    "url": "https://tim.blog/wp-content/uploads/2018/07/76-rick-rubin.pdf",
+    "source": "Tim Ferriss Show"
+  }
+}

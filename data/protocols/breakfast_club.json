@@ -1,0 +1,30 @@
+{
+  "id": "breakfast_club",
+  "name": "Morning Training Group",
+  "title": "Run a standing before-work training block with two or three peers.",
+  "benefit": "Consistent training and better energy.",
+  "subtitle": "Group Training",
+  "rationale": "A standing group makes the extra session survive the days motivation does not, and everyone's baseline rises together.",
+  "origin": "Michael Jordan trained before practice with Pippen and Harper.",
+  "kind": "training",
+  "targets": [
+    "Fitness",
+    "Energy"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Peer-commitment and group-adherence research supports the mechanism; the format is Jordan's.",
+    "sources": [
+      {
+        "label": "Jordan's Breakfast Club",
+        "url": "https://www.si.com/media/2016/08/09/jordan-brand-bringing-mjs-famous-breakfast-club-workout-online"
+      }
+    ]
+  },
+  "indications": [
+    "Solo extra work keeps dissolving after two weeks.",
+    "Two or three peers want the same edge."
+  ],
+  "guide": null
+}

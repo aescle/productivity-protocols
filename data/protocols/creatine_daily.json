@@ -1,8 +1,10 @@
 {
   "id": "creatine_daily",
+  "name": "3–5-Gram Daily Creatine",
   "title": "Take 3 to 5 grams of creatine monohydrate daily.",
-  "subtitle": "Supplement staple",
-  "rationale": "Use the single best-studied performance supplement to support strength, training volume, and possibly cognition.",
+  "benefit": "More strength and possibly sharper thinking.",
+  "subtitle": "Daily Supplement",
+  "rationale": "Creatine monohydrate is the most studied performance supplement there is, with consistent strength and lean-mass results.",
   "kind": "nutrition",
   "targets": [
     "Strength",

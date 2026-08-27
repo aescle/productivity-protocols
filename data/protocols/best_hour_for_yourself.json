@@ -1,8 +1,11 @@
 {
   "id": "best_hour_for_yourself",
+  "name": "Best Hour for Yourself",
   "title": "Sell your best hour to yourself before anyone else.",
-  "subtitle": "Munger's hour",
-  "rationale": "Reserve the single sharpest hour of the day for your own long-term project; everyone else gets the rest.",
+  "benefit": "Steady progress on your own most important work.",
+  "subtitle": "Time Allocation",
+  "rationale": "Reserving the sharpest hour for your own work means the highest-value time is not automatically sold to someone else's agenda.",
+  "origin": "Charlie Munger sold the best hour of the day to himself.",
   "kind": "deep_work",
   "targets": [
     "Compounding",

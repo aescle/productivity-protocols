@@ -1,8 +1,10 @@
 {
   "id": "pre_sleep_breathing",
+  "name": "Pre-Sleep Breathing",
   "title": "Use slow breathing before sleep.",
-  "subtitle": "Sleep breathwork",
-  "rationale": "Give the sleep window an explicit physiological downshift instead of ending on screens or work.",
+  "benefit": "A calmer mind and quicker sleep.",
+  "subtitle": "Sleep Routine",
+  "rationale": "Slow breathing before bed gives the sleep window an explicit physiological downshift.",
   "kind": "sleep",
   "targets": [
     "Sleep latency",

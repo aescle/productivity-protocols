@@ -1,0 +1,33 @@
+{
+  "id": "king_daily_quota",
+  "name": "Daily Quota",
+  "title": "Set a fixed daily output quota and hit it before stopping.",
+  "benefit": "Reliable output that does not depend on mood.",
+  "subtitle": "Output Floor",
+  "rationale": "A fixed daily number makes output independent of mood, which is what produces book-scale volume.",
+  "origin": "Stephen King writes 2,000 words a day including holidays.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 180,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Goal-setting research strongly supports specific, difficult goals over vague effort; the daily-quota ritual is practitioner canon.",
+    "sources": [
+      {
+        "label": "Stephen King's daily quota",
+        "url": "https://writersdailypractice.com/writers-routines/stephen-king/"
+      }
+    ]
+  },
+  "indications": [
+    "Daily output swings with energy and mood.",
+    "The core craft metric is countable."
+  ],
+  "guide": {
+    "url": "https://writersdailypractice.com/writers-routines/stephen-king/",
+    "source": "Writer's Daily Practice"
+  }
+}

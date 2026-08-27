@@ -1,0 +1,33 @@
+{
+  "id": "expert_cold_call",
+  "name": "Expert Cold Call",
+  "title": "Cold-contact one master outside your field with a specific craft question.",
+  "benefit": "Knowledge and relationships you cannot get elsewhere.",
+  "subtitle": "Outreach Habit",
+  "rationale": "A specific question about craft is answerable, which is why direct requests to masters outside your field often work.",
+  "origin": "Kobe Bryant cold-called champions in other domains.",
+  "kind": "social",
+  "targets": [
+    "Network",
+    "Judgment"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Kobe's documented habit; practitioner-only.",
+    "sources": [
+      {
+        "label": "Kobe and A-Rod on cold-calling experts",
+        "url": "https://www.cnbc.com/2017/08/04/alex-rodriguez-and-kobe-bryant-cold-call-famous-people.html"
+      }
+    ]
+  },
+  "indications": [
+    "Your questions currently go to books instead of the living best.",
+    "A specific craft problem has a nameable master."
+  ],
+  "guide": {
+    "url": "https://www.cnbc.com/2017/08/04/alex-rodriguez-and-kobe-bryant-cold-call-famous-people.html",
+    "source": "CNBC"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "selective_calendar",
+  "name": "Selective Calendar",
+  "title": "Commit only where you can genuinely win.",
+  "benefit": "Better work on the things that matter most.",
+  "subtitle": "Commitment Filter",
+  "rationale": "Entering fewer things fully preserves the freshness that winning the ones that matter requires.",
+  "origin": "Roger Federer played fewer tournaments to peak late in his career.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Federer's stated late-career strategy; practitioner-only.",
+    "sources": [
+      {
+        "label": "Federer on selective scheduling",
+        "url": "https://time.com/4659015/roger-federer-interview-tennis/"
+      },
+      {
+        "label": "Kipchoge interview notes",
+        "url": "https://mischavandenburg.com/zet/podcast-kipchoge-marathon-running/"
+      }
+    ]
+  },
+  "indications": [
+    "The calendar is full of mid-value commitments.",
+    "Every yes is diluting the two things that matter."
+  ],
+  "guide": null
+}

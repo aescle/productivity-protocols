@@ -1,0 +1,37 @@
+{
+  "id": "immersion_sprint",
+  "name": "Immersion Sprint",
+  "title": "Give a resistant problem one continuous multi-day immersion.",
+  "benefit": "Breakthroughs on problems that resist normal hours.",
+  "subtitle": "Deep Session",
+  "rationale": "Continuous days on one problem reach a depth that scheduled hours never touch, at a cost that makes it a rare tool.",
+  "origin": "Edwin Land worked marathon sessions with meals brought to him.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 480,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Land's documented method; consistent with switching-cost reasoning, and costly if overused, hence the warnings.",
+    "sources": [
+      {
+        "label": "Edwin Land's deep research",
+        "url": "https://calnewport.com/edwin-lands-deep-research/"
+      }
+    ]
+  },
+  "indications": [
+    "A defining problem has resisted months of scheduled hours.",
+    "The calendar can genuinely clear for days."
+  ],
+  "avoidWhen": [
+    "As a recurring pace rather than a rare tool.",
+    "It compresses sleep below your full need."
+  ],
+  "guide": {
+    "url": "https://calnewport.com/edwin-lands-deep-research/",
+    "source": "Cal Newport"
+  }
+}

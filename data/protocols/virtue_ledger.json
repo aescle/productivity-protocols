@@ -1,0 +1,33 @@
+{
+  "id": "virtue_ledger",
+  "name": "Standards Tracker",
+  "title": "Mark your standards on a grid every day.",
+  "benefit": "Measurable progress on your own standards.",
+  "subtitle": "Self Observation",
+  "rationale": "Marking faults daily against written standards turns character-level goals into a visible trend line.",
+  "origin": "Benjamin Franklin tracked thirteen virtues on a grid.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Self-monitoring is among the best-evidenced behavior-change techniques; Franklin's grid is its oldest famous form.",
+    "sources": [
+      {
+        "label": "Franklin's thirteen-virtues chart",
+        "url": "https://journalinghabit.com/benjamin-franklin-habit-tracker/"
+      }
+    ]
+  },
+  "indications": [
+    "Your standards live as intentions instead of measurements.",
+    "The same personal fault survives every resolution."
+  ],
+  "guide": {
+    "url": "https://journalinghabit.com/benjamin-franklin-habit-tracker/",
+    "source": "Journaling Habit"
+  }
+}

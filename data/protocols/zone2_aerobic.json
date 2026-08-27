@@ -1,8 +1,10 @@
 {
   "id": "zone2_aerobic",
+  "name": "30 Aerobic Minutes",
   "title": "Complete 30 aerobic minutes per week.",
-  "subtitle": "Aerobic floor",
-  "rationale": "Build the weekly movement floor without needing a max-intensity workout.",
+  "benefit": "Better mood and clearer thinking.",
+  "subtitle": "Aerobic Volume",
+  "rationale": "A modest weekly aerobic floor is enough to establish the habit without needing a hard session.",
   "kind": "training",
   "family": "aerobic_volume",
   "tier": "beginner",
@@ -28,7 +30,8 @@
   },
   "indications": [
     "Weekly aerobic minutes are near zero.",
-    "A workout habit needs a floor that survives busy weeks."
+    "A workout habit needs a floor that survives busy weeks.",
+    "Afternoon energy runs out before the work does."
   ],
   "guide": {
     "source": "Cleveland Clinic",

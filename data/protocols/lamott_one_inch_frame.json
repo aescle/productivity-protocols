@@ -1,0 +1,33 @@
+{
+  "id": "lamott_one_inch_frame",
+  "name": "Shrink the Task",
+  "title": "Shrink the task to one paragraph, one function, one test.",
+  "benefit": "Momentum on projects that felt too big.",
+  "subtitle": "Task Sizing",
+  "rationale": "Radically small first targets dissolve the overwhelm that stops big projects from starting at all.",
+  "origin": "Anne Lamott writes what fits in a one-inch picture frame.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Small-wins research shows minor visible progress is a dominant motivation driver; Lamott supplies the working form.",
+    "sources": [
+      {
+        "label": "Anne Lamott's short assignments",
+        "url": "https://notes.andymatuschak.org/zWxo7SzXzdGq1cHd3TUXquw"
+      }
+    ]
+  },
+  "indications": [
+    "A project stalls every time its full size comes into view.",
+    "Session one of anything new keeps getting deferred."
+  ],
+  "guide": {
+    "url": "https://notes.andymatuschak.org/zWxo7SzXzdGq1cHd3TUXquw",
+    "source": "Andy Matuschak"
+  }
+}

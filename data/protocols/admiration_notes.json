@@ -1,0 +1,30 @@
+{
+  "id": "admiration_notes",
+  "name": "Admiration Notes",
+  "title": "Send short unsolicited notes to people whose work you admire.",
+  "benefit": "Valuable relationships with people you respect.",
+  "subtitle": "Outreach Habit",
+  "rationale": "A specific, genuine note with no request attached is rare enough that accomplished people usually answer it.",
+  "origin": "Patrick Collison calls it one of his highest-return habits.",
+  "kind": "social",
+  "targets": [
+    "Network",
+    "Mood"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Collison's practice; practitioner-only.",
+    "sources": [
+      {
+        "label": "Collison on the Knowledge Project",
+        "url": "https://fs.blog/knowledge-project-podcast/patrick-collison/"
+      }
+    ]
+  },
+  "indications": [
+    "Your network grows only through inbound and accident.",
+    "You finish great work with no one to tell."
+  ],
+  "guide": null
+}

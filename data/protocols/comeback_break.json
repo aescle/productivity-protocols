@@ -1,0 +1,34 @@
+{
+  "id": "comeback_break",
+  "name": "Comeback Break",
+  "title": "After a major push, take a real multi-week off-block.",
+  "benefit": "Renewed energy and better work afterward.",
+  "subtitle": "Planned Deload",
+  "rationale": "A genuine multi-week break produces the next peak, because you return hungry rather than merely less tired.",
+  "origin": "Roger Federer took six months off before winning the Australian Open.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Stress"
+  ],
+  "durationMinutes": 480,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Federer's framing; consistent with planned-deload reasoning in overtraining literature, untested for knowledge work.",
+    "sources": [
+      {
+        "label": "Federer on selective scheduling",
+        "url": "https://time.com/4659015/roger-federer-interview-tennis/"
+      },
+      {
+        "label": "Work detachment meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28133454/"
+      }
+    ]
+  },
+  "indications": [
+    "A brutal push just ended and the tank reads empty.",
+    "Output quality has declined for a month straight."
+  ],
+  "guide": null
+}

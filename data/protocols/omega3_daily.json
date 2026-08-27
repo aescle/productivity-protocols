@@ -1,8 +1,10 @@
 {
   "id": "omega3_daily",
+  "name": "Daily Omega-3",
   "title": "Take about 2 grams of combined EPA and DHA daily.",
-  "subtitle": "Omega-3 baseline",
-  "rationale": "Raise omega-3 status toward the range associated with lower cardiovascular and all-cause mortality.",
+  "benefit": "Better long-term heart and brain health.",
+  "subtitle": "Daily Supplement",
+  "rationale": "Higher blood omega-3 levels are associated with lower cardiovascular and all-cause mortality in pooled cohort data.",
   "kind": "nutrition",
   "targets": [
     "Cardiovascular health",

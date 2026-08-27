@@ -1,8 +1,10 @@
 {
   "id": "strength_2x",
+  "name": "Twice-Weekly Lift",
   "title": "Lift twice per week.",
-  "subtitle": "Strength standard",
-  "rationale": "Make twice-weekly strength work part of the operating baseline.",
+  "benefit": "Visible strength and steadier energy.",
+  "subtitle": "Strength Volume",
+  "rationale": "Two sessions a week is the point where strength work becomes a genuine baseline rather than an occasional effort.",
   "kind": "training",
   "family": "strength_capacity",
   "tier": "intermediate",

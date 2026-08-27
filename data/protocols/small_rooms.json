@@ -1,0 +1,33 @@
+{
+  "id": "small_rooms",
+  "name": "Test in Small Rooms",
+  "title": "Test the big pitch in dozens of tiny rooms first, expecting bombs.",
+  "benefit": "Better performance when it counts.",
+  "subtitle": "Material Testing",
+  "rationale": "Testing rough material in dozens of low-stakes rooms means every element has already survived an audience.",
+  "origin": "Chris Rock works out material in small clubs before big shows.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Rock's documented process; structurally identical to low-fidelity iteration, untested as a transfer.",
+    "sources": [
+      {
+        "label": "Chris Rock's small-room process",
+        "url": "https://bakadesuyo.com/2012/07/how-does-chris-rock-create-such-brilliant-com/"
+      }
+    ]
+  },
+  "indications": [
+    "The big pitch will meet its first audience on the day it counts.",
+    "Material feels perfect because it has never been tested."
+  ],
+  "guide": {
+    "url": "https://bakadesuyo.com/2012/07/how-does-chris-rock-create-such-brilliant-com/",
+    "source": "Barking Up the Wrong Tree"
+  }
+}

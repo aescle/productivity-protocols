@@ -1,0 +1,33 @@
+{
+  "id": "maker_critic_split",
+  "name": "Separate Drafting and Editing",
+  "title": "Draft in one session and edit in a later one.",
+  "benefit": "Better ideas and a higher final standard.",
+  "subtitle": "Work Modes",
+  "rationale": "Generating and judging in the same session kills raw ideas early, so the two modes need separate sittings.",
+  "origin": "Jerry Seinfeld separates writing from editing entirely.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Evaluation-apprehension research shows expected judgment suppresses idea generation; the mode split removes it.",
+    "sources": [
+      {
+        "label": "Seinfeld's writing systems",
+        "url": "https://colindorman.com/horn/seinfelds-systems-for-success/"
+      }
+    ]
+  },
+  "indications": [
+    "Drafts get strangled by mid-sentence editing.",
+    "The inner critic attends the brainstorm."
+  ],
+  "guide": {
+    "url": "https://colindorman.com/horn/seinfelds-systems-for-success/",
+    "source": "Colin Dorman"
+  }
+}

@@ -30,4 +30,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const outPath = path.join(pkgRoot, "src", "protocols.generated.js");
   await writeFile(outPath, await renderGeneratedModule());
   console.log(`wrote ${path.relative(process.cwd(), outPath)}`);
+  const { renderSite } = await import("./generate-site.mjs");
+  const sitePath = path.join(pkgRoot, "site", "index.html");
+  await (await import("node:fs/promises")).mkdir(path.dirname(sitePath), { recursive: true });
+  await writeFile(sitePath, await renderSite());
+  console.log(`wrote ${path.relative(process.cwd(), sitePath)}`);
 }

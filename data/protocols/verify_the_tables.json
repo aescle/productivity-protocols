@@ -1,0 +1,33 @@
+{
+  "id": "verify_the_tables",
+  "name": "Check the Reference Data",
+  "title": "When results contradict the reference data, re-measure the fundamentals cheaply.",
+  "benefit": "Faster progress and fewer dead ends.",
+  "subtitle": "First Principles",
+  "rationale": "Re-measuring the fundamentals yourself is worth weeks when the reference numbers everyone trusts turn out to be wrong.",
+  "origin": "The Wright brothers built a wind tunnel after Lilienthal's tables failed.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "The canonical case of cheap component-level testing before system integration; practitioner lineage.",
+    "sources": [
+      {
+        "label": "NASA on the Wrights' 1901 wind tunnel",
+        "url": "https://www.grc.nasa.gov/www/k-12/airplane/wrights/test1901.html"
+      }
+    ]
+  },
+  "indications": [
+    "Iterations keep failing against numbers everyone trusts.",
+    "The reference data has never been independently checked."
+  ],
+  "guide": {
+    "url": "https://www.grc.nasa.gov/www/k-12/airplane/wrights/test1901.html",
+    "source": "NASA"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "braintrust_session",
+  "name": "Candid Peer Review",
+  "title": "Show rough work to candid peers who hold zero authority over you.",
+  "benefit": "Better work through honest early feedback.",
+  "subtitle": "Peer Feedback",
+  "rationale": "Feedback is candid when the people giving it have no authority to mandate changes, so the maker keeps ownership.",
+  "origin": "Pixar runs its films through a braintrust with no mandate power.",
+  "kind": "social",
+  "targets": [
+    "Network",
+    "Judgment"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Pixar's documented practice; adjacent to psychological-safety research, the no-authority rule is their design.",
+    "sources": [
+      {
+        "label": "Inside the Pixar braintrust",
+        "url": "https://www.fastcompany.com/3027135/inside-the-pixar-braintrust"
+      }
+    ]
+  },
+  "indications": [
+    "Feedback arrives late, softened, or attached to power.",
+    "Drafts go from private to shipped with no middle exposure."
+  ],
+  "guide": {
+    "url": "https://www.fastcompany.com/3027135/inside-the-pixar-braintrust",
+    "source": "Fast Company"
+  }
+}

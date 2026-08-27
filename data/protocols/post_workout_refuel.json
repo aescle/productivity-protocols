@@ -1,0 +1,30 @@
+{
+  "id": "post_workout_refuel",
+  "name": "30-Minute Post-Workout Refuel",
+  "title": "Eat protein and carbs within 30 minutes after hard training.",
+  "benefit": "Better recovery and more energy after training.",
+  "subtitle": "Refuel Window",
+  "rationale": "Refueling promptly after hard training restores glycogen and prevents the afternoon from being paid for by the morning.",
+  "origin": "Mike Mancias built the rule into LeBron James's routine.",
+  "kind": "nutrition",
+  "targets": [
+    "Energy",
+    "Recovery"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Post-exercise refueling for glycogen restoration is supported; the strict 30-minute window is weaker in recent literature.",
+    "sources": [
+      {
+        "label": "LeBron James and Mike Mancias on Tim Ferriss",
+        "url": "https://tim.blog/2018/11/30/the-tim-ferriss-show-transcripts-lebron-james-and-mike-mancias/"
+      }
+    ]
+  },
+  "indications": [
+    "Morning training is followed by an unfed sprint into meetings.",
+    "Post-workout afternoons feel heavier than rest-day ones."
+  ],
+  "guide": null
+}

@@ -1,8 +1,10 @@
 {
   "id": "nature_dose",
+  "name": "120-Minute Nature Dose",
   "title": "Spend 120 minutes per week in nature.",
-  "subtitle": "Nature dose",
-  "rationale": "Treat time in green space as a weekly recovery dose rather than a vacation-only event.",
+  "benefit": "Lower stress and better mood.",
+  "subtitle": "Weekly Recovery",
+  "rationale": "Two hours a week in green space is the threshold where self-reported health and wellbeing measurably improve.",
   "kind": "recovery",
   "targets": [
     "Stress",

@@ -1,0 +1,30 @@
+{
+  "id": "new_decade_new_sport",
+  "name": "Learn a New Sport",
+  "title": "Take up one entirely new sport at each new stage of life.",
+  "benefit": "Lasting fitness and a sharper mind as you age.",
+  "subtitle": "Lifelong Training",
+  "rationale": "Learning a genuinely new sport preserves both physical capacity and the ability to be a beginner.",
+  "origin": "Akio Morita took up tennis at 55, skiing at 60, and scuba at 68.",
+  "kind": "training",
+  "targets": [
+    "Fitness",
+    "Energy"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Novel-skill acquisition in older adults improves cognitive function in trials; Morita is the executive case.",
+    "sources": [
+      {
+        "label": "Akio Morita biography",
+        "url": "https://www.encyclopedia.com/people/social-sciences-and-law/business-leaders/akio-morita"
+      }
+    ]
+  },
+  "indications": [
+    "Physical practice has narrowed to one comfortable groove.",
+    "Being a beginner at anything ended years ago."
+  ],
+  "guide": null
+}

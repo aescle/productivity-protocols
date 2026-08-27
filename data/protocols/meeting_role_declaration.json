@@ -1,0 +1,33 @@
+{
+  "id": "meeting_role_declaration",
+  "name": "Meeting Role Declaration",
+  "title": "Name your role before you enter the meeting.",
+  "benefit": "Shorter meetings and clearer decisions.",
+  "subtitle": "Meeting Practice",
+  "rationale": "Naming your role before the meeting scopes your contribution, which shortens the meeting and prevents accidental decisions.",
+  "origin": "Daniel Ek names his role before entering any meeting.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Ek's personal adaptation of role-clarity practice; practitioner-only.",
+    "sources": [
+      {
+        "label": "Daniel Ek on Tim Ferriss",
+        "url": "https://tim.blog/2020/12/06/daniel-ek-transcript/"
+      }
+    ]
+  },
+  "indications": [
+    "You leave meetings having accidentally taken three decisions.",
+    "Attendance is constant but your role in each room is fuzzy."
+  ],
+  "guide": {
+    "url": "https://tim.blog/2020/12/06/daniel-ek-transcript/",
+    "source": "Tim Ferriss Show"
+  }
+}

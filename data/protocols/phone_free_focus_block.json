@@ -1,8 +1,10 @@
 {
   "id": "phone_free_focus_block",
+  "name": "90-Minute Phone-Free Block",
   "title": "Keep one 90-minute work block distraction-free.",
-  "subtitle": "Distraction boundary",
-  "rationale": "Improve the quality of one real work block by keeping phone interruptions and desktop drift out.",
+  "benefit": "Protected, deeper time on your hardest work.",
+  "subtitle": "Focus Boundary",
+  "rationale": "Removing the phone from reach raises the quality of one real work block more than adding hours does.",
   "kind": "deep_work",
   "family": "attention_defense",
   "tier": "beginner",

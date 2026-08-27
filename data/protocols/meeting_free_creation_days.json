@@ -1,8 +1,10 @@
 {
   "id": "meeting_free_creation_days",
+  "name": "Meeting-Free Creation Days",
   "title": "Keep two creation days meeting-free each week.",
-  "subtitle": "Calendar architecture",
-  "rationale": "Move beyond managing fragmentation and remove it from entire creation days.",
+  "benefit": "Two full days of real progress each week.",
+  "subtitle": "Calendar Structure",
+  "rationale": "Removing meetings from entire days goes beyond managing fragmentation and eliminates it.",
   "kind": "calendar_defense",
   "family": "calendar_defense",
   "tier": "advanced",

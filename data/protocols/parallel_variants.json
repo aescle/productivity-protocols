@@ -1,0 +1,33 @@
+{
+  "id": "parallel_variants",
+  "name": "Parallel Variants",
+  "title": "Make ten real versions, cut to three, refine, then commit to one.",
+  "benefit": "Better final designs.",
+  "subtitle": "Design Method",
+  "rationale": "Real parallel alternatives produce a better final design than iterating on the first idea ever does.",
+  "origin": "Apple's design process ran ten versions down to three, then one.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 180,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Parallel-prototyping research found parallel variants beat serial iteration on rated outcomes; 10-3-1 is Apple's form.",
+    "sources": [
+      {
+        "label": "Apple's 10-3-1 design process",
+        "url": "https://www.designorate.com/how-does-apples-design-process-work/"
+      }
+    ]
+  },
+  "indications": [
+    "Designs iterate on the first idea forever.",
+    "Options are made to flatter a favorite."
+  ],
+  "guide": {
+    "url": "https://www.designorate.com/how-does-apples-design-process-work/",
+    "source": "Designorate"
+  }
+}

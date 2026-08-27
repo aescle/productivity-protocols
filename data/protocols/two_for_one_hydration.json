@@ -1,0 +1,30 @@
+{
+  "id": "two_for_one_hydration",
+  "name": "Two-for-One Hydration",
+  "title": "Drink two glasses of water per coffee or alcoholic drink.",
+  "benefit": "Steadier energy without tracking anything.",
+  "subtitle": "Hydration Rule",
+  "rationale": "A simple pairing rule keeps intake adequate without any tracking, which is why it survives real days.",
+  "origin": "Tom Brady counterbalances every coffee with water.",
+  "kind": "nutrition",
+  "targets": [
+    "Energy",
+    "Recovery"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Brady's TB12 rule; caffeine's diuretic effect is mild in habitual users, so this is a memorable heuristic rather than physiology.",
+    "sources": [
+      {
+        "label": "Tom Brady's TB12 method",
+        "url": "https://www.cbsnews.com/boston/news/tom-brady-the-tb12-method-hydration-simon-and-schuster/"
+      }
+    ]
+  },
+  "indications": [
+    "Coffee outnumbers water until mid-afternoon.",
+    "Tracking rules fail but simple pairing rules stick."
+  ],
+  "guide": null
+}

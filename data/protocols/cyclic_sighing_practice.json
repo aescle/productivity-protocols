@@ -1,8 +1,10 @@
 {
   "id": "cyclic_sighing_practice",
+  "name": "15-Minute Cyclic Sighing",
   "title": "Practice 15 minutes of cyclic sighing.",
-  "subtitle": "Breathwork protocol",
-  "rationale": "Use exhale-emphasized breathing as a repeatable stress and mood tool, not just an emergency reset.",
+  "benefit": "Lower stress within minutes.",
+  "subtitle": "Breathing Practice",
+  "rationale": "Emphasizing the exhale shifts the nervous system toward calm faster than most other brief interventions tested.",
   "kind": "recovery",
   "targets": [
     "Stress",

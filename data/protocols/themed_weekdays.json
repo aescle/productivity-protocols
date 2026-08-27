@@ -1,0 +1,37 @@
+{
+  "id": "themed_weekdays",
+  "name": "Themed Days",
+  "title": "Give each weekday one theme and route work into its day.",
+  "benefit": "Less context switching and better focus.",
+  "subtitle": "Week Structure",
+  "rationale": "Routing work into a matching day means context gets built once a week instead of rebuilt several times a day.",
+  "origin": "Jack Dorsey ran two companies on themed weekdays.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Dorsey's system; task-switching costs are well documented, day-theming as a fix is practitioner-only.",
+    "sources": [
+      {
+        "label": "Dorsey's themed days",
+        "url": "https://www.forbes.com/sites/kevinkruse/2015/10/12/jack-dorsey-productivity-secret/"
+      },
+      {
+        "label": "Interruption-reduction systematic review",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      }
+    ]
+  },
+  "indications": [
+    "Multiple workstreams interleave through every day.",
+    "The same context gets rebuilt four times a week."
+  ],
+  "guide": {
+    "url": "https://www.forbes.com/sites/kevinkruse/2015/10/12/jack-dorsey-productivity-secret/",
+    "source": "Forbes"
+  }
+}

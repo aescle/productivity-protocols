@@ -1,0 +1,33 @@
+{
+  "id": "overnight_question",
+  "name": "Overnight Question",
+  "title": "Write your most important question at night and answer it at dawn.",
+  "benefit": "Better solutions to your hardest problems.",
+  "subtitle": "Incubation Loop",
+  "rationale": "Posing the question at the end of the day recruits overnight incubation, and answering before any input keeps it clean.",
+  "origin": "Josh Waitzkin ends the day with his most important question.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Incubation research supports delayed-return benefits on hard problems; the pre-input morning discipline is Waitzkin's.",
+    "sources": [
+      {
+        "label": "Waitzkin on Tim Ferriss",
+        "url": "https://tim.blog/2019/07/03/the-tim-ferriss-show-transcripts-josh-waitzkin-how-to-cram-2-months-of-learning-into-1-day-375/"
+      }
+    ]
+  },
+  "indications": [
+    "Mornings open on input instead of your own thinking.",
+    "Your hardest question never gets scheduled attention."
+  ],
+  "guide": {
+    "url": "https://tim.blog/2019/07/03/the-tim-ferriss-show-transcripts-josh-waitzkin-how-to-cram-2-months-of-learning-into-1-day-375/",
+    "source": "Tim Ferriss Show"
+  }
+}

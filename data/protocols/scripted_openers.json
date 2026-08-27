@@ -1,0 +1,33 @@
+{
+  "id": "scripted_openers",
+  "name": "20-Move Scripted Openers",
+  "title": "Script your first 20 moves of a high-stakes engagement in advance.",
+  "benefit": "Better execution when the stakes are highest.",
+  "subtitle": "Execution Plan",
+  "rationale": "Deciding the opening moves in calm conditions keeps early execution clinical and saves improvisation for real surprises.",
+  "origin": "Bill Walsh scripted the 49ers' first twenty-five plays.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Walsh's documented method; consistent with precommitment reasoning, untested outside football.",
+    "sources": [
+      {
+        "label": "Walsh's scripted game openers",
+        "url": "https://www.markovitzconsulting.com/blog/std-work-bill-walsh"
+      }
+    ]
+  },
+  "indications": [
+    "High-stakes moments run on adrenaline-quality judgment.",
+    "The first hour of big days is improvised."
+  ],
+  "guide": {
+    "url": "https://www.markovitzconsulting.com/blog/std-work-bill-walsh",
+    "source": "Markovitz Consulting"
+  }
+}

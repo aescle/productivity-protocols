@@ -1,0 +1,30 @@
+{
+  "id": "manufactured_rivalry",
+  "name": "Pick a Rival",
+  "title": "Frame the big task as a contest against a named doubter.",
+  "benefit": "Higher intensity and effort on important work.",
+  "subtitle": "Motivation Device",
+  "rationale": "A named rival converts a routine task into a contest, which reliably raises effort and persistence.",
+  "origin": "Michael Jordan invented slights when real ones ran out.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Rivalry research shows identified rivals measurably raise motivation and performance; the self-manufactured version is Jordan's.",
+    "sources": [
+      {
+        "label": "Jordan's manufactured slights",
+        "url": "https://www.cbssports.com/nba/news/five-slights-michael-jordan-turned-into-fuel-include-labradford-smith-fiction-george-karls-dinner-diss"
+      }
+    ]
+  },
+  "indications": [
+    "Flat stakes produce flat effort.",
+    "Competition reliably switches you on."
+  ],
+  "guide": null
+}

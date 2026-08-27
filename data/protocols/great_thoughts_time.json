@@ -1,0 +1,33 @@
+{
+  "id": "great_thoughts_time",
+  "name": "Big Questions Time",
+  "title": "Reserve Friday afternoon for only the biggest questions in your field.",
+  "benefit": "Progress on the problems that actually matter.",
+  "subtitle": "Strategic Block",
+  "rationale": "Reserving a standing slot for the biggest questions is what separates people who do important work from equally capable people who do not.",
+  "origin": "Richard Hamming held Great Thoughts Friday at Bell Labs.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Hamming's documented practice among Nobel-adjacent colleagues; practitioner-only.",
+    "sources": [
+      {
+        "label": "Hamming, You and Your Research",
+        "url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html"
+      }
+    ]
+  },
+  "indications": [
+    "All hours go to this quarter; none go to the decade.",
+    "Big questions get airtime only at offsites."
+  ],
+  "guide": {
+    "url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+    "source": "Richard Hamming"
+  }
+}

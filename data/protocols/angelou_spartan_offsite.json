@@ -1,0 +1,33 @@
+{
+  "id": "angelou_spartan_offsite",
+  "name": "Separate Workspace",
+  "title": "Keep a bare separate workspace used only for the hardest work.",
+  "benefit": "Faster, deeper focus when you sit down.",
+  "subtitle": "Work Environment",
+  "rationale": "A room used for nothing else becomes a cue for the work, so focus starts on arrival instead of being summoned.",
+  "origin": "Maya Angelou wrote in a bare rented hotel room.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 240,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Angelou's lifelong method; context-conditioning research supports environments as behavioral cues, the ritual itself is untested.",
+    "sources": [
+      {
+        "label": "Maya Angelou's writing routine",
+        "url": "https://famouswritingroutines.com/writing-routines/maya-angelou-writing-routine/"
+      }
+    ]
+  },
+  "indications": [
+    "Home and office are saturated with distraction cues.",
+    "Focus reliably improves in borrowed spaces like flights and libraries."
+  ],
+  "guide": {
+    "url": "https://famouswritingroutines.com/writing-routines/maya-angelou-writing-routine/",
+    "source": "Famous Writing Routines"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "gaiman_nothing_rule",
+  "name": "Work or Nothing",
+  "title": "Allow yourself the work or nothing at all.",
+  "benefit": "Easier starts and more writing finished.",
+  "subtitle": "Focus Rule",
+  "rationale": "When the only permitted alternative is sitting still, boredom quickly makes the work the most interesting option available.",
+  "origin": "Neil Gaiman allows himself to write or do nothing at all.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Gaiman's writing rule; idle-state research links boredom to idea generation, the rule itself is practitioner-only.",
+    "sources": [
+      {
+        "label": "Neil Gaiman's writing rule",
+        "url": "https://famouswritingroutines.com/writing-routines/neil-gaiman-writing-routine/"
+      }
+    ]
+  },
+  "indications": [
+    "Avoidance leaks into productive-feeling busywork.",
+    "Discipline to start is scarcer than time."
+  ],
+  "guide": {
+    "url": "https://famouswritingroutines.com/writing-routines/neil-gaiman-writing-routine/",
+    "source": "Famous Writing Routines"
+  }
+}

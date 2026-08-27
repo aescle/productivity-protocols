@@ -1,0 +1,33 @@
+{
+  "id": "question_ratio",
+  "name": "Question Ratio",
+  "title": "Ask more questions than you make statements.",
+  "benefit": "More learned from every conversation.",
+  "subtitle": "Conversation Habit",
+  "rationale": "Deliberately asking more than you state converts a conversation from broadcasting into learning.",
+  "origin": "Jim Collins was told to double his question-to-statement ratio.",
+  "kind": "social",
+  "targets": [
+    "Network",
+    "Judgment"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Question-asking research shows higher rates raise information gain and liking; the tracked ratio is Collins' mechanism.",
+    "sources": [
+      {
+        "label": "Jim Collins interview notes",
+        "url": "https://podcastnotes.org/2019/02/19/collins/"
+      }
+    ]
+  },
+  "indications": [
+    "Meetings end with your opinions delivered and nothing learned.",
+    "Access to great people keeps producing shallow exchanges."
+  ],
+  "guide": {
+    "url": "https://podcastnotes.org/2019/02/19/collins/",
+    "source": "Podcast Notes"
+  }
+}

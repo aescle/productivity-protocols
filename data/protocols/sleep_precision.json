@@ -1,8 +1,10 @@
 {
   "id": "sleep_precision",
+  "name": "20-Minute Wake Window",
   "title": "Keep wake time within a 20-minute window.",
-  "subtitle": "Precise sleep anchor",
-  "rationale": "Make wake timing exceptionally stable so circadian drift stops taxing the next day.",
+  "benefit": "Deep, reliable sleep and a clear head daily.",
+  "subtitle": "Sleep Timing",
+  "rationale": "Very stable wake timing keeps circadian drift from taxing the following day.",
   "kind": "sleep",
   "family": "sleep_regularity",
   "tier": "advanced",

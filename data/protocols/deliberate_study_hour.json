@@ -1,8 +1,11 @@
 {
   "id": "deliberate_study_hour",
+  "name": "Daily Study Hour",
   "title": "Block a daily hour of deliberate study in your field.",
-  "subtitle": "Input before output",
-  "rationale": "Protected daily input compounds into the pattern library that differentiates all later output.",
+  "benefit": "Deeper expertise in your field.",
+  "subtitle": "Learning Block",
+  "rationale": "Protected daily input compounds into a body of knowledge that later work draws on and competitors cannot copy quickly.",
+  "origin": "David Senra reads a biography a week as game tape.",
   "kind": "deep_work",
   "targets": [
     "Learning",

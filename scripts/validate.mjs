@@ -26,8 +26,11 @@ const TIERS = new Set(["beginner", "intermediate", "advanced"]);
 const GRADES = new Set(["strong", "moderate", "emerging", "anecdotal"]);
 const ALLOWED_KEYS = new Set([
   "id",
+  "name",
   "title",
+  "benefit",
   "subtitle",
+  "origin",
   "rationale",
   "kind",
   "family",
@@ -70,9 +73,80 @@ for (const file of files) {
     assert.ok(ALLOWED_KEYS.has(key), `${ctx}: unknown key "${key}"`);
   }
   assert.ok(/^[a-z][a-z0-9_]*$/.test(record.id), `${ctx}: id must be snake_case`);
+  assert.ok(isNonEmptyString(record.name), `${ctx}: name missing`);
   assert.ok(isNonEmptyString(record.title), `${ctx}: title missing`);
+  assert.ok(isNonEmptyString(record.benefit), `${ctx}: benefit missing`);
   assert.ok(isNonEmptyString(record.subtitle), `${ctx}: subtitle missing`);
   assert.ok(isNonEmptyString(record.rationale), `${ctx}: rationale missing`);
+
+  // House style. One voice across the bank, enforced rather than hoped for.
+  // See "Writing style" in README.md.
+  const words = (s) => s.trim().split(/\s+/).length;
+  // Colons inside clock times (10:30) are fine; colons used as punctuation are not.
+  const spliced = (s) => /;/.test(s) || /:(?!\d)/.test(s);
+
+  assert.ok(
+    words(record.name) >= 2 && words(record.name) <= 5,
+    `${ctx}: name must be 2-5 words (got "${record.name}")`,
+  );
+  assert.ok(
+    !/[.;:]/.test(record.name),
+    `${ctx}: name must not contain sentence punctuation (got "${record.name}")`,
+  );
+  if (/\d/.test(record.title)) {
+    assert.ok(
+      /\d/.test(record.name),
+      `${ctx}: numeric dose in title must also appear in name`,
+    );
+  }
+
+  assert.ok(record.title.endsWith("."), `${ctx}: title must end with a period`);
+  assert.ok(
+    !spliced(record.title) && !record.title.includes('?'),
+    `${ctx}: title must be one plain imperative sentence, no semicolons, colons, or questions`,
+  );
+
+  assert.ok(!/^You\b/.test(record.benefit), `${ctx}: benefit must be a plain outcome phrase, not second-person copy`);
+  assert.ok(record.benefit.endsWith("."), `${ctx}: benefit must end with a period`);
+  assert.ok(
+    !spliced(record.benefit) && words(record.benefit) <= 14,
+    `${ctx}: benefit must be one short sentence with no semicolons or colons`,
+  );
+
+  assert.ok(
+    words(record.subtitle) >= 2 && words(record.subtitle) <= 3,
+    `${ctx}: subtitle must be a 2-3 word category label (got "${record.subtitle}")`,
+  );
+  assert.ok(
+    !/[.;:]/.test(record.subtitle) && !/\b[a-z]+\b/.test(record.subtitle),
+    `${ctx}: subtitle must be Title Case with no punctuation`,
+  );
+
+  assert.ok(record.rationale.endsWith("."), `${ctx}: rationale must end with a period`);
+  assert.ok(
+    !spliced(record.rationale),
+    `${ctx}: rationale must be plain sentences with no semicolons or colons`,
+  );
+  assert.ok(
+    !/^[A-Z][a-z]+('s|s') /.test(record.rationale),
+    `${ctx}: rationale must explain why it works, not who did it — put attribution in "origin"`,
+  );
+
+  if (record.origin !== undefined) {
+    assert.ok(isNonEmptyString(record.origin), `${ctx}: origin must be a non-empty string`);
+    assert.ok(record.origin.endsWith("."), `${ctx}: origin must end with a period`);
+    assert.ok(
+      !spliced(record.origin),
+      `${ctx}: origin must be one plain sentence with no semicolons or colons`,
+    );
+  }
+
+  for (const indication of record.indications) {
+    assert.ok(
+      indication.endsWith("."),
+      `${ctx}: each indication must be a complete sentence ending in a period`,
+    );
+  }
   assert.ok(KINDS.has(record.kind), `${ctx}: unknown kind "${record.kind}"`);
   assert.ok(isStringList(record.targets), `${ctx}: targets must be a non-empty string list`);
   assert.ok(
@@ -118,6 +192,18 @@ for (const file of files) {
 const ids = new Set(protocols.map((p) => p.id));
 assert.equal(ids.size, protocols.length, "duplicate protocol ids");
 
+// Every benefit must be specific to its protocol. Shared template phrases are
+// how a bank of 200 protocols turns into a bank of 20 vague ones.
+const benefits = new Map();
+for (const p of protocols) {
+  const prior = benefits.get(p.benefit);
+  assert.ok(
+    prior === undefined,
+    `benefit is reused by ${p.id} and ${prior} — write the outcome specific to each protocol: "${p.benefit}"`,
+  );
+  benefits.set(p.benefit, p.id);
+}
+
 // Ladders, not lists: a family is a complete beginner -> intermediate ->
 // advanced progression, never a partial one.
 const families = new Map();
@@ -143,4 +229,12 @@ assert.equal(
   "src/protocols.generated.js is stale; run: node packages/protocol-bank/scripts/generate-index.mjs",
 );
 
-console.log(`protocol-bank: ${protocols.length} protocols valid, ${families.size} families complete, mirror in sync`);
+const { renderSite } = await import("./generate-site.mjs");
+const committedSite = await readFile(path.join(pkgRoot, "site", "index.html"), "utf8");
+assert.equal(
+  committedSite,
+  await renderSite(),
+  "site/index.html is stale; run: node packages/protocol-bank/scripts/generate-index.mjs",
+);
+
+console.log(`protocol-bank: ${protocols.length} protocols valid, ${families.size} families complete, mirror and site in sync`);

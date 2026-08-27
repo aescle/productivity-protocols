@@ -1,0 +1,33 @@
+{
+  "id": "slow_endurance_volume",
+  "name": "Slow Endurance Volume",
+  "title": "Log big weekly endurance volume at deliberately slow pace.",
+  "benefit": "High fitness without draining your work energy.",
+  "subtitle": "Aerobic Pacing",
+  "rationale": "Keeping most endurance volume genuinely easy builds capacity without consuming the recovery that work requires.",
+  "origin": "Alex Karp trains Norwegian-style at a deliberately slow pace.",
+  "kind": "training",
+  "targets": [
+    "Fitness",
+    "Energy"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Mirrors polarized-training evidence that elite endurance athletes keep most volume at low intensity; the executive framing is Karp's.",
+    "sources": [
+      {
+        "label": "How Alex Karp trains",
+        "url": "https://www.axios.com/2023/02/02/palantir-ceo-alex-karp-exercise"
+      }
+    ]
+  },
+  "indications": [
+    "Every session trends toward medium-hard and recovery suffers.",
+    "Training time is available but intensity budget is not."
+  ],
+  "guide": {
+    "url": "https://www.axios.com/2023/02/02/palantir-ceo-alex-karp-exercise",
+    "source": "Axios"
+  }
+}

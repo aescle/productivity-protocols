@@ -1,0 +1,30 @@
+{
+  "id": "saturday_numbers",
+  "name": "Weekly Numbers Review",
+  "title": "One fixed early morning a week, read every number line by line.",
+  "benefit": "Better decisions from knowing your numbers firsthand.",
+  "subtitle": "Weekly Review",
+  "rationale": "Reading the raw numbers before anyone interprets them means the week starts with a first-hand picture.",
+  "origin": "Sam Walton read every weekly number before dawn on Saturdays.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Walton's stated routine; loosely supported by feedback-cadence reasoning, practitioner-only.",
+    "sources": [
+      {
+        "label": "Sam Walton's principles",
+        "url": "https://www.afoundersmap.com/founders/sam-walton"
+      }
+    ]
+  },
+  "indications": [
+    "Metrics arrive filtered through other people's summaries.",
+    "Corrective decisions drift into midweek."
+  ],
+  "guide": null
+}

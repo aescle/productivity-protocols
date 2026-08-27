@@ -1,0 +1,30 @@
+{
+  "id": "cardio_learning_stack",
+  "name": "Cardio Learning Stack",
+  "title": "Pair daily morning cardio with audiobooks or podcasts.",
+  "benefit": "Better fitness and steady learning in one hour.",
+  "subtitle": "Habit Stack",
+  "rationale": "Pairing a habit you want with one you already enjoy makes both survive a crowded morning.",
+  "origin": "Brian Armstrong pairs daily cardio with audiobooks.",
+  "kind": "training",
+  "targets": [
+    "Fitness",
+    "Energy"
+  ],
+  "durationMinutes": 45,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Temptation-bundling has randomized-trial support for boosting exercise adherence; the specific stack is Armstrong's.",
+    "sources": [
+      {
+        "label": "Armstrong's routine",
+        "url": "https://fortune.com/2022/10/31/coinbase-coin-ceo-brian-armstrong-turn-company-around/"
+      }
+    ]
+  },
+  "indications": [
+    "Cardio and reading each keep losing to the calendar alone.",
+    "Mornings have one free slot, not two."
+  ],
+  "guide": null
+}

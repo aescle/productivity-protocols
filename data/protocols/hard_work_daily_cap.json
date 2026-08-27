@@ -1,8 +1,11 @@
 {
   "id": "hard_work_daily_cap",
+  "name": "Hard-Work Cap",
   "title": "Cap your hardest thinking at four to five hours per day.",
-  "subtitle": "Cognitive load ceiling",
-  "rationale": "Beyond the cap, fatigue degrades judgment on hard problems; stop the hard work and switch to lighter tasks.",
+  "benefit": "Better decisions and less work you must redo.",
+  "subtitle": "Effort Ceiling",
+  "rationale": "Past a few hours of genuinely hard thinking, fatigue degrades judgment enough that extra hours produce work you will redo.",
+  "origin": "Paul Graham caps hard work at four or five hours.",
   "kind": "deep_work",
   "targets": [
     "Work quality",

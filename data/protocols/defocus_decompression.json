@@ -1,8 +1,10 @@
 {
   "id": "defocus_decompression",
+  "name": "Break After Focus",
   "title": "Reset after focused work.",
-  "subtitle": "Focus exit",
-  "rationale": "Leave the screen for 15 minutes: walk outside, sit without input, or have a real conversation.",
+  "benefit": "Restored focus for your next block of work.",
+  "subtitle": "Focus Recovery",
+  "rationale": "Genuine disengagement, rather than a screen-based break, is what allows attention to recover for the next block.",
   "kind": "recovery",
   "targets": [
     "Focus",

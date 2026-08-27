@@ -1,8 +1,10 @@
 {
   "id": "daily_steps_8000",
+  "name": "8,000 Steps",
   "title": "Hit 8,000 steps per day.",
-  "subtitle": "Step floor",
-  "rationale": "Use a step floor as the simplest observable proxy for a genuinely active day.",
+  "benefit": "More energy now and better health long term.",
+  "subtitle": "Daily Activity",
+  "rationale": "Step count is the simplest observable proxy for a genuinely active day, and mortality curves improve up to this range.",
   "kind": "walk",
   "targets": [
     "Activity",

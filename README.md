@@ -5,12 +5,17 @@ their rationale, progression ladders, citations, contraindications, and the obse
 that indicate trying them.
 
 A protocol is a behavior, not advice prose. Each one is a single JSON file that a person or an
-agent can act on: what to do, why, what the evidence actually supports, and when it applies.
+agent can act on: what to do, what it buys you (`benefit`, stated performance-first: energy,
+focus, output, recovery), what the evidence actually supports, and when it applies. The bank's
+center of gravity is work performance; longevity levers earn their place by protecting the
+ability to keep performing, and their benefits are framed that way.
 
 ```json
 {
   "id": "post_meal_walk",
+  "name": "Post-Meal Walk",
   "title": "Walk after one meal per day.",
+  "benefit": "No post-lunch crash; a steadier afternoon.",
   "kind": "walk",
   "family": "meal_timing",
   "tier": "intermediate",
@@ -28,10 +33,34 @@ agent can act on: what to do, why, what the evidence actually supports, and when
 - `data/protocols/<id>.json` — one file per protocol. This is the source of truth.
 - `schema/protocol.schema.json` — the contract (JSON Schema draft-07, field docs included).
 - `src/protocols.generated.js` — committed plain-JS mirror of the data, for bundlers and Node.
-  Regenerate after any data edit: `node scripts/generate-index.mjs`.
+  Regenerate after any data edit: `node scripts/generate-index.mjs` (also refreshes the site).
 - `src/index.js` — entry point: `PROTOCOLS`, `protocolCore(id)`, `hasProtocol(id)`.
+- `site/index.html` — committed static browse page over the whole bank (search, grade filters,
+  ladders). Host it anywhere static; no build step, no backend.
+- `mcp/server.mjs` — zero-dependency MCP server (stdio) so agents can query the bank:
+  `list_protocols`, `get_protocol`, `match_situation`, `list_families`. Point any MCP client at
+  `node mcp/server.mjs`. A hosted Streamable HTTP variant can wrap the same handlers.
 - `scripts/validate.mjs` — zero-dependency validation: schema contract, unique ids, complete
-  ladders, clean https citations, mirror sync.
+  ladders, clean https citations, mirror and site sync.
+
+## Writing style
+
+Every protocol reads in one voice. Plain words, no metaphors, no cleverness. The validator
+enforces these rules, so a contribution that breaks them fails CI rather than shipping.
+
+| Field | Form | Example |
+| --- | --- | --- |
+| `name` | Title Case noun phrase, 2-5 words | `Post-Meal Walk` |
+| `title` | One imperative sentence, ends in a period | `Walk after one meal per day.` |
+| `benefit` | Plain outcome phrase, 14 words or fewer; no second-person address | `Steadier energy after lunch.` |
+| `subtitle` | Two or three word Title Case label | `Meal Protocol` |
+| `rationale` | Plain sentences on why it works, no names | `Walking soon after eating blunts the glucose spike...` |
+| `origin` | One sentence naming who is known for it | `Jeff Bezos replaced slides with narrative memos.` |
+| `indications` | Complete sentences describing an observable state | `Focus reliably dips in the hour after lunch.` |
+
+Three rules carry most of the weight. Say what the person gets, not how it sounds. Keep
+attribution in `origin` so `rationale` can stay a plain explanation. Never use a semicolon or a
+colon to splice two clauses together.
 
 ## Evidence grades
 
@@ -80,8 +109,12 @@ The Aescle app curates a subset of this bank (its `ProtocolId` union is the mani
 its own scheduling, personalization, and recommendation logic on top. Bank entries outside that
 subset do not appear in the app. Nothing app-specific belongs in this package.
 
+## License
+
+Code is MIT (`LICENSE`); the protocol dataset is CC BY 4.0 (`LICENSE-DATA.md`). Not medical
+advice; protocols describe general practices and their evidence, not recommendations for any
+individual.
+
 ## Status
 
-Internal package, pre-release. Intended licensing at publication: MIT for code, CC BY 4.0 for
-data. Not medical advice; protocols describe general practices and their evidence, not
-recommendations for any individual.
+Internal package, pre-release; public repository and hosted endpoints land at publication.

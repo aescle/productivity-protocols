@@ -1,8 +1,11 @@
 {
   "id": "structured_procrastination",
+  "name": "Structured Procrastination",
   "title": "Keep a Later list and work it when you dodge the top task.",
-  "subtitle": "Procrastination channel",
-  "rationale": "Avoidance energy is inevitable; aim it at worthwhile second-tier work instead of feeds.",
+  "benefit": "Useful output even when you avoid the main task.",
+  "subtitle": "Avoidance Channel",
+  "rationale": "Avoidance energy is inevitable, so directing it at worthwhile second-tier work produces output instead of feeds.",
+  "origin": "Marc Andreessen keeps a Later list for exactly this.",
   "kind": "deep_work",
   "targets": [
     "Output",

@@ -1,8 +1,10 @@
 {
   "id": "exercise_snacks",
+  "name": "Exercise Snacks",
   "title": "Add two or three one-minute movement bursts to the workday.",
-  "subtitle": "Exercise snacks",
-  "rationale": "Break sedentary stretches with stair climbs or squats hard enough to raise heart rate, no gym required.",
+  "benefit": "An energy and focus reset between meetings.",
+  "subtitle": "Movement Breaks",
+  "rationale": "Brief bursts hard enough to raise heart rate break up sedentary stretches without requiring a gym or a change of clothes.",
   "kind": "training",
   "targets": [
     "Metabolic health",

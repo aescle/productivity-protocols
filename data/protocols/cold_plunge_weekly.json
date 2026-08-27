@@ -1,8 +1,10 @@
 {
   "id": "cold_plunge_weekly",
+  "name": "Weekly Cold Plunge",
   "title": "Do two or three short cold immersions per week.",
-  "subtitle": "Cold immersion standard",
-  "rationale": "Move from shower finishes to deliberate immersions of one to three minutes, keeping each dose short and controlled.",
+  "benefit": "Better mood and higher stress tolerance.",
+  "subtitle": "Cold Immersion",
+  "rationale": "Short controlled immersions produce the catecholamine response without requiring long or dangerous exposure.",
   "kind": "recovery",
   "family": "cold_exposure",
   "tier": "intermediate",

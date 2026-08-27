@@ -1,8 +1,10 @@
 {
   "id": "caffeine_cutoff",
+  "name": "Caffeine Cutoff",
   "title": "Keep caffeine inside your effective window.",
-  "subtitle": "Caffeine timing",
-  "rationale": "Place caffeine where your recorded dose supports work while staying clear of your learned sleep cutoff.",
+  "benefit": "Daytime alertness without losing sleep.",
+  "subtitle": "Caffeine Timing",
+  "rationale": "Caffeine has a long half-life, so a dose that feels harmless in the afternoon can still be active at bedtime.",
   "kind": "sleep",
   "targets": [
     "Caffeine timing",

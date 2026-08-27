@@ -1,8 +1,10 @@
 {
   "id": "phone_outside_bedroom",
+  "name": "Phone Out of Bedroom",
   "title": "Charge the phone outside the bedroom.",
-  "subtitle": "Bedroom boundary",
-  "rationale": "Remove the highest-friction sleep competitor from arm's reach and break the wake-to-scroll reflex.",
+  "benefit": "Better sleep and a sharper start to the day.",
+  "subtitle": "Sleep Environment",
+  "rationale": "Putting the phone in another room removes the sleep competitor closest to hand and breaks the wake-to-scroll reflex.",
   "kind": "sleep",
   "targets": [
     "Sleep quality",

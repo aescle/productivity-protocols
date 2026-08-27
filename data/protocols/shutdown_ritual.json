@@ -1,8 +1,11 @@
 {
   "id": "shutdown_ritual",
+  "name": "Shutdown Ritual",
   "title": "End each workday with a five-minute shutdown ritual.",
-  "subtitle": "Workday boundary",
-  "rationale": "Review open loops, park tomorrow's first move, and declare the day closed so work stops leaking into the evening.",
+  "benefit": "Genuine rest in the evening and an easier morning.",
+  "subtitle": "Workday Boundary",
+  "rationale": "A short closing routine parks open loops and declares the day over, which stops work leaking into the evening.",
+  "origin": "Cal Newport formalized the shutdown ritual.",
   "kind": "recovery",
   "targets": [
     "Detachment",

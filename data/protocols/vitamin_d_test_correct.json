@@ -1,8 +1,10 @@
 {
   "id": "vitamin_d_test_correct",
+  "name": "Vitamin D Correction",
   "title": "Test vitamin D and supplement to sufficiency.",
-  "subtitle": "Vitamin D correction",
-  "rationale": "Correct a measured deficiency with 1,000 to 4,000 IU daily instead of guessing at a dose.",
+  "benefit": "Better mood and immune function.",
+  "subtitle": "Tested Supplement",
+  "rationale": "Testing first and dosing to the result corrects a real deficiency without guessing at a number.",
   "kind": "nutrition",
   "targets": [
     "Immune function",

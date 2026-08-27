@@ -1,0 +1,33 @@
+{
+  "id": "travel_kit",
+  "name": "Travel Kit",
+  "title": "Carry the gear that keeps your core routine running on the road.",
+  "benefit": "Consistent energy and routine while traveling.",
+  "subtitle": "Travel Routine",
+  "rationale": "Carrying the equipment your routine depends on is what keeps the routine intact away from home.",
+  "origin": "John Mackey packs a rice cooker and books hotels near good food.",
+  "kind": "nutrition",
+  "targets": [
+    "Energy",
+    "Recovery"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Environment-design research shows context protection preserves habits under disruption; the kit is Mackey's form.",
+    "sources": [
+      {
+        "label": "John Mackey's health routine",
+        "url": "https://www.cnbc.com/2019/08/14/inside-whole-foods-ceo-john-mackeys-health-and-fitness-routine.html"
+      }
+    ]
+  },
+  "indications": [
+    "Every trip demolishes diet, training, and sleep for a week.",
+    "Road defaults are whatever the hotel offers."
+  ],
+  "guide": {
+    "url": "https://www.cnbc.com/2019/08/14/inside-whole-foods-ceo-john-mackeys-health-and-fitness-routine.html",
+    "source": "CNBC"
+  }
+}

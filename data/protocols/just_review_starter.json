@@ -1,8 +1,11 @@
 {
   "id": "just_review_starter",
+  "name": "Just Review It",
   "title": "When stuck starting, just review what you have so far.",
-  "subtitle": "Initiation ramp",
-  "rationale": "Lower the bar to opening the work; found errors and loose ends pull you into real progress without willpower.",
+  "benefit": "An easier start on stalled work.",
+  "subtitle": "Task Initiation",
+  "rationale": "Lowering the commitment to merely looking at the work bypasses the activation barrier, and found errors pull you in.",
+  "origin": "Paul Graham uses the trick on work he cannot start.",
   "kind": "deep_work",
   "targets": [
     "Task initiation",

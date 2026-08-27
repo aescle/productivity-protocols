@@ -1,8 +1,10 @@
 {
   "id": "evening_light_dimming",
+  "name": "Evening Dimming",
   "title": "Dim lights for the last hour.",
-  "subtitle": "Circadian guardrail",
-  "rationale": "Use darkness as the evening signal instead of asking willpower to shut the day down.",
+  "benefit": "Faster, easier sleep onset.",
+  "subtitle": "Light Exposure",
+  "rationale": "Light is the primary circadian signal, so dimming it does the work that willpower otherwise has to.",
   "kind": "sleep",
   "targets": [
     "Sleep timing",

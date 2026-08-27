@@ -1,8 +1,11 @@
 {
   "id": "deliberate_hobby_switch",
+  "name": "Absorbing Hobby",
   "title": "End hard workdays in an absorbing unrelated hobby.",
-  "subtitle": "Active recovery switch",
-  "rationale": "Only a genuinely absorbing alternative interest interrupts work rumination; idle rest leaves the loop running.",
+  "benefit": "Real mental recovery in the evening.",
+  "subtitle": "Evening Recovery",
+  "rationale": "Only a genuinely absorbing alternative interrupts work rumination, which passive rest leaves running.",
+  "origin": "Winston Churchill credited painting with restoring him through crises.",
   "kind": "recovery",
   "targets": [
     "Detachment",

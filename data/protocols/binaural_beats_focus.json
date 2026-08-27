@@ -1,8 +1,10 @@
 {
   "id": "binaural_beats_focus",
+  "name": "40 Hz Focus Audio",
   "title": "Play 40 Hz binaural beats for five minutes before deep work.",
-  "subtitle": "Auditory ramp",
-  "rationale": "Use a cheap, low-risk auditory cue to mark and ramp into a focus bout.",
+  "benefit": "A quicker start into focused work.",
+  "subtitle": "Start Ritual",
+  "rationale": "A consistent audio cue at the start of a block marks the transition and shortens the ramp into focus.",
   "kind": "deep_work",
   "targets": [
     "Focus",

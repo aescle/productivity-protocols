@@ -1,0 +1,33 @@
+{
+  "id": "dissent_scorecard",
+  "name": "−10 to +10 Dissent Scorecard",
+  "title": "Before big decisions, collect -10 to +10 ratings with written reasons.",
+  "benefit": "Fewer bad decisions from false consensus.",
+  "subtitle": "Decision Practice",
+  "rationale": "Numbered ratings with written reasoning surface disagreement that a verbal round of nods conceals.",
+  "origin": "Reed Hastings built the practice at Netflix after Qwikster.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Hastings' documented practice; related to devil's-advocacy research, the scorecard form is his.",
+    "sources": [
+      {
+        "label": "Hastings' dissent scorecard",
+        "url": "https://www.cnbc.com/2024/04/20/how-to-make-big-decisions-the-tactic-reed-hastings-used-at-netflix.html"
+      }
+    ]
+  },
+  "indications": [
+    "Big calls pass on nods that later prove hollow.",
+    "Dissent exists but has no safe channel."
+  ],
+  "guide": {
+    "url": "https://www.cnbc.com/2024/04/20/how-to-make-big-decisions-the-tactic-reed-hastings-used-at-netflix.html",
+    "source": "CNBC"
+  }
+}

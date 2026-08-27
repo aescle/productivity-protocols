@@ -1,8 +1,10 @@
 {
   "id": "wind_down",
+  "name": "60-Minute Screen-Free Hour",
   "title": "Shut down screens 60 minutes before bed.",
-  "subtitle": "Full wind-down",
-  "rationale": "Move the screen boundary earlier so the nervous system has a real downshift before sleep.",
+  "benefit": "Faster sleep and a clearer head in the morning.",
+  "subtitle": "Sleep Routine",
+  "rationale": "Moving the screen boundary earlier gives the nervous system a real downshift before sleep.",
   "kind": "sleep",
   "family": "sleep_shutdown",
   "tier": "intermediate",

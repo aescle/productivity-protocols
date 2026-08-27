@@ -1,0 +1,33 @@
+{
+  "id": "high_iq_window",
+  "name": "Hard Decisions in the Morning",
+  "title": "Schedule your hardest decisions for late morning.",
+  "benefit": "Better decisions on your most important calls.",
+  "subtitle": "Decision Timing",
+  "rationale": "Analytic decision quality peaks in the late morning for most people and falls off sharply by evening.",
+  "origin": "Jeff Bezos reserves the ten-to-noon window for hard decisions.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Time-of-day cognition research supports morning analytic peaks for most chronotypes; the scheduling rule is Bezos' design.",
+    "sources": [
+      {
+        "label": "Bezos on 10 a.m. decisions",
+        "url": "https://www.cnbc.com/2018/11/20/why-jeff-bezos-schedules-challenging-meetings-at-10-am.html"
+      }
+    ]
+  },
+  "indications": [
+    "Hard decisions land whenever meetings happen to fall.",
+    "Late-day calls keep getting reversed the next morning."
+  ],
+  "guide": {
+    "url": "https://www.cnbc.com/2018/11/20/why-jeff-bezos-schedules-challenging-meetings-at-10-am.html",
+    "source": "CNBC"
+  }
+}

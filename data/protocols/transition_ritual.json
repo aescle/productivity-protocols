@@ -1,8 +1,10 @@
 {
   "id": "transition_ritual",
+  "name": "Meeting Clustering",
   "title": "Cluster meetings into two daily windows.",
-  "subtitle": "Meeting architecture",
-  "rationale": "Contain meetings so they stop fragmenting every open edge of the workday.",
+  "benefit": "Longer uninterrupted stretches for real work.",
+  "subtitle": "Calendar Structure",
+  "rationale": "Containing meetings into clusters stops them from fragmenting every open edge of the workday.",
   "kind": "calendar_defense",
   "family": "calendar_defense",
   "tier": "intermediate",

@@ -1,0 +1,30 @@
+{
+  "id": "decompression_run",
+  "name": "Evening Run",
+  "title": "Run the same evening route daily, any weather, then shower and eat.",
+  "benefit": "Lower stress and a clearer head by evening.",
+  "subtitle": "Evening Training",
+  "rationale": "A fixed route at a fixed time makes the run automatic, and the effort clears the day's stress before home.",
+  "origin": "Phil Knight ran six miles every evening while building Nike.",
+  "kind": "training",
+  "targets": [
+    "Fitness",
+    "Energy"
+  ],
+  "durationMinutes": 45,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Regular aerobic exercise reliably reduces stress reactivity; the fixed evening slot is Knight's design.",
+    "sources": [
+      {
+        "label": "Phil Knight's Shoe Dog lessons",
+        "url": "https://marekveneny.medium.com/what-can-phil-knight-the-creator-of-nike-teach-you-about-life-and-business-9623c6232ba5"
+      }
+    ]
+  },
+  "indications": [
+    "Work stress currently rides into the evening unprocessed.",
+    "Morning training keeps losing to the calendar."
+  ],
+  "guide": null
+}

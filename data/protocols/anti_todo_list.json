@@ -1,8 +1,11 @@
 {
   "id": "anti_todo_list",
-  "title": "Log each task as you finish it; review the list at day's end.",
-  "subtitle": "Anti-todo list",
-  "rationale": "Record what you actually completed, not what you planned, and end the day on evidence of progress.",
+  "name": "Anti-Todo List",
+  "title": "Write down each task as you finish it.",
+  "benefit": "Better motivation and a clearer sense of progress.",
+  "subtitle": "Progress Log",
+  "rationale": "Recording what you finished, rather than what you planned, gives the day visible evidence of progress.",
+  "origin": "Marc Andreessen kept his on the back of a daily index card.",
   "kind": "deep_work",
   "targets": [
     "Motivation",

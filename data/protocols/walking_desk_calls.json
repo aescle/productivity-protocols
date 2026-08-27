@@ -1,0 +1,37 @@
+{
+  "id": "walking_desk_calls",
+  "name": "Walking Desk",
+  "title": "Route routine calls through a treadmill or walking setup.",
+  "benefit": "More movement and less frustration from calls.",
+  "subtitle": "Meeting Movement",
+  "rationale": "Routing shallow meetings through a walking setup recovers movement from a call-heavy day.",
+  "origin": "Stephen Wolfram takes meetings at two miles per hour.",
+  "kind": "walk",
+  "targets": [
+    "Clarity",
+    "Movement"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Walking's mood and creativity effects are documented; the walking-desk meeting arrangement is Wolfram's design, with his own N-of-1 data.",
+    "sources": [
+      {
+        "label": "Wolfram's personal infrastructure",
+        "url": "https://writings.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/"
+      },
+      {
+        "label": "Walking and creative thinking experiments",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24749966/"
+      }
+    ]
+  },
+  "indications": [
+    "Call-heavy days end with near-zero movement.",
+    "Certain recurring meetings reliably spike frustration."
+  ],
+  "guide": {
+    "url": "https://writings.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/",
+    "source": "Stephen Wolfram"
+  }
+}

@@ -1,8 +1,10 @@
 {
   "id": "moderate_midday_meal",
+  "name": "Light Lunch",
   "title": "Keep lunch moderate on days that need a sharp afternoon.",
-  "subtitle": "Post-lunch dip control",
-  "rationale": "Stop short of fullness at midday so digestion does not amplify the natural afternoon alertness dip.",
+  "benefit": "A sharp afternoon instead of a slump.",
+  "subtitle": "Meal Size",
+  "rationale": "A large midday meal amplifies the natural afternoon alertness dip, and a moderate one does not.",
   "kind": "nutrition",
   "targets": [
     "Alertness",

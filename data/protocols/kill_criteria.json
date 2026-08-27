@@ -1,0 +1,33 @@
+{
+  "id": "kill_criteria",
+  "name": "Kill Criteria",
+  "title": "Write the quit rule before you start.",
+  "benefit": "Less time lost to projects that will not work.",
+  "subtitle": "Exit Rule",
+  "rationale": "A quit rule written in advance converts an emotional in-the-moment judgment into a precommitted trigger.",
+  "origin": "Annie Duke recommends kill criteria as states and dates.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Escalation-of-commitment research supports precommitted exits; the states-and-dates format is Duke's.",
+    "sources": [
+      {
+        "label": "Annie Duke on kill criteria",
+        "url": "https://www.charterworks.com/quit-annie-duke/"
+      }
+    ]
+  },
+  "indications": [
+    "Projects persist on sunk cost long past their answer.",
+    "Quitting decisions keep getting deferred to 'one more month'."
+  ],
+  "guide": {
+    "url": "https://www.charterworks.com/quit-annie-duke/",
+    "source": "Charter"
+  }
+}

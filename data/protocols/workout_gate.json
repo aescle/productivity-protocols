@@ -1,0 +1,33 @@
+{
+  "id": "workout_gate",
+  "name": "Workout Gate",
+  "title": "No workday until the workout is done. No exceptions.",
+  "benefit": "Consistent training and better daily energy.",
+  "subtitle": "Training Rule",
+  "rationale": "Making the workout a hard precondition rather than an appointment is what stops it losing to the calendar.",
+  "origin": "Naval Ravikant will not start work until training is done.",
+  "kind": "training",
+  "targets": [
+    "Fitness",
+    "Energy"
+  ],
+  "durationMinutes": 45,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Naval's rule; if-then gating has strong adherence research behind it, the specific gate is practitioner design.",
+    "sources": [
+      {
+        "label": "Naval Ravikant on the Knowledge Project",
+        "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/"
+      }
+    ]
+  },
+  "indications": [
+    "Exercise is scheduled daily and skipped daily.",
+    "Soft appointments keep losing to the inbox; only hard gates survive."
+  ],
+  "guide": {
+    "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/",
+    "source": "The Knowledge Project"
+  }
+}

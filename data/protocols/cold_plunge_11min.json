@@ -1,8 +1,10 @@
 {
   "id": "cold_plunge_11min",
+  "name": "11-Minute Cold Week",
   "title": "Accumulate 11 total minutes of cold immersion per week.",
-  "subtitle": "High cold volume",
-  "rationale": "Cap deliberate cold at a bounded weekly total split across sessions, so the practice stays a stimulus instead of becoming a time sink.",
+  "benefit": "Noticeably better mood and resilience.",
+  "subtitle": "Cold Volume",
+  "rationale": "A bounded weekly total keeps deliberate cold a stimulus instead of letting it expand into a time-consuming hobby.",
   "kind": "recovery",
   "family": "cold_exposure",
   "tier": "advanced",

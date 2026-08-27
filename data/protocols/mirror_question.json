@@ -1,0 +1,33 @@
+{
+  "id": "mirror_question",
+  "name": "Mirror Question",
+  "title": "Ask each morning whether you would choose today's plan.",
+  "benefit": "Better alignment between your work and what matters.",
+  "subtitle": "Life Audit",
+  "rationale": "A run of days where the honest answer is no is the clearest available signal that something needs to change.",
+  "origin": "Steve Jobs asked the question in the mirror each morning.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Jobs' stated practice; death-reflection studies show shifts toward intrinsic goals, the daily ritual is his.",
+    "sources": [
+      {
+        "label": "Jobs' 2005 Stanford commencement",
+        "url": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says"
+      }
+    ]
+  },
+  "indications": [
+    "The current path continues on inertia, unexamined.",
+    "Big changes keep waiting for a sign."
+  ],
+  "guide": {
+    "url": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says",
+    "source": "Stanford News"
+  }
+}

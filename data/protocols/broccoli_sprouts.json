@@ -1,8 +1,10 @@
 {
   "id": "broccoli_sprouts",
+  "name": "Broccoli Sprouts",
   "title": "Eat a half cup of broccoli sprouts most days.",
-  "subtitle": "Sulforaphane source",
-  "rationale": "Use the most potent dietary NRF2 inducer as a cheap, food-first antioxidant-pathway lever.",
+  "benefit": "Lower inflammation.",
+  "subtitle": "Daily Food",
+  "rationale": "Sprouts are the most concentrated dietary source of the compound that activates the body's antioxidant pathways.",
   "kind": "nutrition",
   "targets": [
     "Detoxification",

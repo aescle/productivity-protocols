@@ -1,0 +1,33 @@
+{
+  "id": "competitor_walk",
+  "name": "Competitor Walk",
+  "title": "Walk a competitor's product and take one idea away.",
+  "benefit": "A steady flow of proven ideas.",
+  "subtitle": "Market Research",
+  "rationale": "Looking only for what a competitor does well turns rivalry into a free source of proven ideas.",
+  "origin": "Sam Walton walked rivals' stores with a pocket notebook.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Walton's documented lifelong habit; practitioner-only.",
+    "sources": [
+      {
+        "label": "Made in America notes",
+        "url": "https://rationalwalk.com/made-in-america-sam-waltons-story/"
+      }
+    ]
+  },
+  "indications": [
+    "Competitor knowledge arrives as screenshots, never as visits.",
+    "Rivalry currently produces dismissal instead of adoption."
+  ],
+  "guide": {
+    "url": "https://rationalwalk.com/made-in-america-sam-waltons-story/",
+    "source": "Rational Walk"
+  }
+}

@@ -1,8 +1,10 @@
 {
   "id": "strength_3x",
+  "name": "3x Strength Week",
   "title": "Lift three or more times per week.",
-  "subtitle": "High strength volume",
-  "rationale": "Use three or more structured sessions to progress strength rather than merely maintain it.",
+  "benefit": "Real strength gains and better physical resilience.",
+  "subtitle": "Strength Volume",
+  "rationale": "Three or more structured sessions progress strength rather than merely maintaining it.",
   "kind": "training",
   "family": "strength_capacity",
   "tier": "advanced",

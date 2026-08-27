@@ -1,0 +1,33 @@
+{
+  "id": "project_rotation",
+  "name": "Project Rotation",
+  "title": "Keep two or three projects live and switch by mental state.",
+  "benefit": "More productive hours when one project stalls.",
+  "subtitle": "Work Switching",
+  "rationale": "Fatigue is often specific to one problem, so switching projects recovers productivity that forcing would waste.",
+  "origin": "John Carmack rotates between live projects by mental state.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Carmack's practice; partial support from task-variety research on attention restoration.",
+    "sources": [
+      {
+        "label": "John Carmack on Lex Fridman",
+        "url": "https://podscripts.co/podcasts/lex-fridman-podcast/309-john-carmack-doom-quake-vr-agi-programming-video-games-and-rockets"
+      }
+    ]
+  },
+  "indications": [
+    "Walls on one project currently end the whole day.",
+    "Two or more meaningful projects are genuinely live."
+  ],
+  "guide": {
+    "url": "https://podscripts.co/podcasts/lex-fridman-podcast/309-john-carmack-doom-quake-vr-agi-programming-video-games-and-rockets",
+    "source": "Lex Fridman Podcast"
+  }
+}

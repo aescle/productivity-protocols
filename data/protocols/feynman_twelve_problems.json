@@ -1,0 +1,33 @@
+{
+  "id": "feynman_twelve_problems",
+  "name": "Open Problems List",
+  "title": "Keep a dozen open problems and test new ideas against them.",
+  "benefit": "Occasional breakthroughs from ordinary reading.",
+  "subtitle": "Problem Registry",
+  "rationale": "Holding a dozen open problems means every new technique gets tested against them the moment it arrives.",
+  "origin": "Richard Feynman kept twelve favorite problems in mind.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Feynman's method via Rota; consistent with opportunistic-assimilation accounts of insight, untested directly.",
+    "sources": [
+      {
+        "label": "Feynman's twelve problems",
+        "url": "https://fortelabs.com/blog/12-favorite-problems-how-to-spark-genius-with-the-power-of-open-questions/"
+      }
+    ]
+  },
+  "indications": [
+    "Reading volume is high but rarely changes what gets built.",
+    "Good problems get abandoned instead of parked."
+  ],
+  "guide": {
+    "url": "https://fortelabs.com/blog/12-favorite-problems-how-to-spark-genius-with-the-power-of-open-questions/",
+    "source": "Forte Labs"
+  }
+}

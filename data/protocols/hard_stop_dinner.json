@@ -1,0 +1,33 @@
+{
+  "id": "hard_stop_dinner",
+  "name": "Hard Stop",
+  "title": "End the workday at a fixed hard stop, every day.",
+  "benefit": "Sharper prioritization and sustainable energy.",
+  "subtitle": "Workday Boundary",
+  "rationale": "A fixed end time forces prioritization during the day and treats a small number of creative hours as the real budget.",
+  "origin": "Tobi Lutke left at 5:30 for family dinner while building Shopify.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Productivity research shows steep diminishing returns past long weekly hours; the hard-stop mechanism is practitioner-driven and contested.",
+    "sources": [
+      {
+        "label": "Lutke on creative hours",
+        "url": "https://www.cnbc.com/2019/12/26/shopify-ceo-you-dont-have-to-work-80-hours-a-week-to-be-successful.html"
+      }
+    ]
+  },
+  "indications": [
+    "The workday ends whenever the work runs out, which is never.",
+    "Evening hours produce the week's worst output."
+  ],
+  "guide": {
+    "url": "https://www.cnbc.com/2019/12/26/shopify-ceo-you-dont-have-to-work-80-hours-a-week-to-be-successful.html",
+    "source": "CNBC"
+  }
+}

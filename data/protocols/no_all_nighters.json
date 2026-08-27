@@ -1,8 +1,11 @@
 {
   "id": "no_all_nighters",
-  "title": "Never trade sleep for a stuck problem; retry after a full night.",
-  "subtitle": "Sleep-first debugging",
-  "rationale": "Overnight consolidation routinely solves in minutes what a fatigued brain could not in hours; the all-nighter is a bad trade.",
+  "name": "No All-Nighters",
+  "title": "Sleep on a stuck problem instead of working through the night.",
+  "benefit": "Clearer thinking and better problem-solving the next morning.",
+  "subtitle": "Sleep Rule",
+  "rationale": "Overnight consolidation routinely solves in minutes what a fatigued brain could not solve in hours.",
+  "origin": "Andrej Karpathy refuses all-nighters and retries in the morning.",
   "kind": "sleep",
   "targets": [
     "Problem solving",
@@ -21,6 +24,10 @@
       {
         "label": "Caffeine timing and sleep trial",
         "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+      },
+      {
+        "label": "Gates on sleep after Why We Sleep",
+        "url": "https://www.cnbc.com/2019/12/19/the-book-that-changed-bill-gates-mind-about-sleeping.html"
       }
     ]
   },

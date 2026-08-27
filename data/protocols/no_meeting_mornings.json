@@ -1,8 +1,10 @@
 {
   "id": "no_meeting_mornings",
-  "title": "Keep mornings meeting-free; take meetings after lunch.",
-  "subtitle": "Day architecture",
-  "rationale": "Give the highest-energy hours to creation and stack coordination into the afternoon, where a meeting costs less momentum.",
+  "name": "No-Meeting Mornings",
+  "title": "Keep mornings meeting-free and take meetings after lunch.",
+  "benefit": "Consistent deep work every morning.",
+  "subtitle": "Day Structure",
+  "rationale": "Giving the highest-energy hours to creation and stacking coordination after lunch costs less momentum overall.",
   "kind": "calendar_defense",
   "targets": [
     "Deep work",

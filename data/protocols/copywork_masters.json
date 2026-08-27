@@ -1,8 +1,11 @@
 {
   "id": "copywork_masters",
+  "name": "Rebuild Great Work",
   "title": "Reconstruct a master's work from notes, then compare.",
-  "subtitle": "Franklin's method",
-  "rationale": "Rebuild excellent work in your craft from brief notes and diff your version against the original for self-generated feedback.",
+  "benefit": "Faster improvement in your craft.",
+  "subtitle": "Craft Practice",
+  "rationale": "Rebuilding excellent work from notes and comparing against the original produces immediate, specific feedback on your own gaps.",
+  "origin": "Benjamin Franklin taught himself to write this way from the Spectator.",
   "kind": "deep_work",
   "targets": [
     "Skill",

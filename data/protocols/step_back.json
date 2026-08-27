@@ -1,0 +1,33 @@
+{
+  "id": "step_back",
+  "name": "Step Back",
+  "title": "When emotion spikes, physically step back, look up, breathe, re-scan.",
+  "benefit": "Better decisions under pressure.",
+  "subtitle": "Emotional Reset",
+  "rationale": "A physical step back and a breath restores the whole-picture view that emotional spikes narrow.",
+  "origin": "Jocko Willink teaches detachment as a physical move first.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Stress"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Self-distancing research supports stepping outside oneself for regulation under stress; the physical anchor is Willink's.",
+    "sources": [
+      {
+        "label": "Willink on detachment",
+        "url": "https://warriormindset.us/detachment-2/"
+      }
+    ]
+  },
+  "indications": [
+    "Conflicts pull you into tunnel vision.",
+    "Your worst calls happen at maximum emotion."
+  ],
+  "guide": {
+    "url": "https://warriormindset.us/detachment-2/",
+    "source": "Warrior Mindset"
+  }
+}

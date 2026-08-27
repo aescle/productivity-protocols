@@ -1,8 +1,10 @@
 {
   "id": "nsdr_session",
+  "name": "10–20-Minute NSDR Session",
   "title": "Use a 10-to-20-minute NSDR session instead of pushing through.",
-  "subtitle": "Structured rest",
-  "rationale": "Swap a low-quality afternoon grind for a guided non-sleep deep rest or yoga nidra session that actually restores.",
+  "benefit": "Recovered energy and focus without more caffeine.",
+  "subtitle": "Structured Rest",
+  "rationale": "A guided deep-rest session restores more than pushing through a low-quality afternoon does.",
   "kind": "recovery",
   "targets": [
     "Energy",

@@ -1,0 +1,30 @@
+{
+  "id": "five_minute_deal",
+  "name": "Five-Minute Deal",
+  "title": "Deal yourself five minutes on the avoided task, quitting allowed.",
+  "benefit": "Easier starts on work you have been avoiding.",
+  "subtitle": "Task Initiation",
+  "rationale": "Starting is the real barrier, so an honest five-minute commitment with permission to stop usually produces a finished task.",
+  "origin": "Kevin Systrom uses the five-minute deal on work he avoids.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Systrom's practice; consistent with task-initiation research and the pull of started work, untested directly.",
+    "sources": [
+      {
+        "label": "Systrom's five-minute deal",
+        "url": "https://www.inc.com/jessica-stillman/the-5-minute-hack-instagram-founder-kevin-systrom-uses-to-beat-procrastination.html"
+      }
+    ]
+  },
+  "indications": [
+    "One specific task has survived a week of todo lists.",
+    "Once started, you rarely stop at five minutes."
+  ],
+  "guide": null
+}

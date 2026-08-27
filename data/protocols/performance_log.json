@@ -1,0 +1,30 @@
+{
+  "id": "performance_log",
+  "name": "Performance Log",
+  "title": "Log daily what you did, how it felt, and what got in the way.",
+  "benefit": "Faster improvement from each cycle of work.",
+  "subtitle": "Training Log",
+  "rationale": "A daily record of conditions and results is the raw material that makes each training cycle better than the last.",
+  "origin": "Eliud Kipchoge keeps a handwritten training log.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Progress-monitoring meta-analyses show tracking materially improves goal attainment; the log format is Kipchoge's.",
+    "sources": [
+      {
+        "label": "Kipchoge interview notes",
+        "url": "https://mischavandenburg.com/zet/podcast-kipchoge-marathon-running/"
+      }
+    ]
+  },
+  "indications": [
+    "Weeks blur together with no record of what worked.",
+    "The same blockers recur unexamined."
+  ],
+  "guide": null
+}

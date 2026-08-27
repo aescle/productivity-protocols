@@ -1,0 +1,33 @@
+{
+  "id": "creative_hours_ledger",
+  "name": "Creative Hours Ledger",
+  "title": "Log your creative hours and mood every night.",
+  "benefit": "Consistent creative output through busy periods.",
+  "subtitle": "Output Tracking",
+  "rationale": "Tracking creative hours against a rolling annual floor is what keeps the work happening through busy seasons.",
+  "origin": "Jim Collins holds a floor of 1,000 creative hours a year.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Progress-monitoring research shows tracking materially improves goal attainment; the rolling-floor design is Collins'.",
+    "sources": [
+      {
+        "label": "Jim Collins interview notes",
+        "url": "https://podcastnotes.org/2019/02/19/collins/"
+      }
+    ]
+  },
+  "indications": [
+    "Creative work silently drops to zero in busy months.",
+    "You cannot say how many real creative hours last quarter held."
+  ],
+  "guide": {
+    "url": "https://podcastnotes.org/2019/02/19/collins/",
+    "source": "Podcast Notes"
+  }
+}

@@ -1,8 +1,10 @@
 {
   "id": "sauna_regular",
+  "name": "Sauna 2-3x",
   "title": "Sauna two to three times per week.",
-  "subtitle": "Heat exposure standard",
-  "rationale": "Move from occasional sessions to the frequency range where cohort benefits start to appear.",
+  "benefit": "Better recovery and sleep during heavy weeks.",
+  "subtitle": "Heat Exposure",
+  "rationale": "Two to three weekly sessions is where the dose-response association in cohort data begins to show.",
   "kind": "recovery",
   "family": "heat_exposure",
   "tier": "intermediate",

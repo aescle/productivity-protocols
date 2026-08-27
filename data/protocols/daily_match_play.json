@@ -1,0 +1,37 @@
+{
+  "id": "daily_match_play",
+  "name": "Daily Competitive Sport",
+  "title": "Anchor daily fitness in a competitive game, not a workout.",
+  "benefit": "Fitness you sustain for decades, and a better mood.",
+  "subtitle": "Training Adherence",
+  "rationale": "Competition supplies the motivation that solo training has to manufacture, which is why match play survives decades.",
+  "origin": "Larry Ellison has played tennis nearly daily into his eighties.",
+  "kind": "training",
+  "targets": [
+    "Fitness",
+    "Energy"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Cohort data associate racket sports with the largest life-expectancy gains of any leisure sport; the daily competitive frame is Ellison's.",
+    "sources": [
+      {
+        "label": "Copenhagen leisure-sport life-expectancy cohort",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30193744/"
+      },
+      {
+        "label": "Inside Tennis interview with Larry Ellison",
+        "url": "https://www.insidetennis.com/2014/03/the-larry-ellison-interview-inside-tennis-talks-with-the-wizard-of-wow/"
+      }
+    ]
+  },
+  "indications": [
+    "Solo training keeps dying of boredom.",
+    "Competition reliably gets you out the door."
+  ],
+  "guide": {
+    "url": "https://www.insidetennis.com/2014/03/the-larry-ellison-interview-inside-tennis-talks-with-the-wizard-of-wow/",
+    "source": "Inside Tennis"
+  }
+}

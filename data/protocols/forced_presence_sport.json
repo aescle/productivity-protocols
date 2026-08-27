@@ -1,0 +1,37 @@
+{
+  "id": "forced_presence_sport",
+  "name": "Forced-Presence Sport",
+  "title": "Train a sport that physically punishes wandering attention.",
+  "benefit": "A genuine mental break and better fitness.",
+  "subtitle": "Mental Recovery",
+  "rationale": "A sport that punishes lost attention makes work rumination physically impossible, which passive rest does not.",
+  "origin": "Mark Zuckerberg trains jiu-jitsu and surfs.",
+  "kind": "training",
+  "targets": [
+    "Fitness",
+    "Energy"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Detachment research finds absorbing activities outperform passive rest for recovery; the sport-selection rule is Zuckerberg's.",
+    "sources": [
+      {
+        "label": "How Zuckerberg organizes his days",
+        "url": "https://www.forbes.com/sites/kerryadolan/2023/09/28/eight-hours-of-sleep-and-no-back-to-back-meetings-how-mark-zuckerberg-organizes-his-days/"
+      },
+      {
+        "label": "Work detachment meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28133454/"
+      }
+    ]
+  },
+  "indications": [
+    "Workouts happen but the head stays at work throughout.",
+    "Only absorbing activities actually switch the loop off."
+  ],
+  "guide": {
+    "url": "https://www.forbes.com/sites/kerryadolan/2023/09/28/eight-hours-of-sleep-and-no-back-to-back-meetings-how-mark-zuckerberg-organizes-his-days/",
+    "source": "Forbes"
+  }
+}

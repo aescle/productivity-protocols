@@ -1,8 +1,10 @@
 {
   "id": "interruption_office_hours",
+  "name": "Office Hours",
   "title": "Route interruptions to a daily office hour.",
-  "subtitle": "Interruption boundary",
-  "rationale": "Give questions a reliable daily window so they stop arriving as random fragmentation across the day.",
+  "benefit": "Fewer interruptions without becoming unreachable.",
+  "subtitle": "Interruption Boundary",
+  "rationale": "A reliable daily window gives questions somewhere to go, so they stop arriving as random fragmentation.",
   "kind": "calendar_defense",
   "targets": [
     "Focus",

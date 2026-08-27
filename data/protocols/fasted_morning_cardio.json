@@ -1,0 +1,33 @@
+{
+  "id": "fasted_morning_cardio",
+  "name": "20-Minute Fasted Morning Cardio",
+  "title": "Do 20 easy fasted minutes of cardio before breakfast.",
+  "benefit": "More energy and a clearer head from the start.",
+  "subtitle": "Morning Training",
+  "rationale": "Twenty easy minutes before eating is short enough to survive a busy calendar and long enough to start the day awake.",
+  "origin": "Brian Chesky opens the day with fasted stairs or hill walking.",
+  "kind": "training",
+  "targets": [
+    "Fitness",
+    "Energy"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Chesky's routine; fasted cardio shows no body-composition advantage in trials, while morning movement itself is well supported.",
+    "sources": [
+      {
+        "label": "Brian Chesky's daily routine",
+        "url": "https://fortune.com/well/article/airbnb-ceo-brian-chesky-daily-routine/"
+      }
+    ]
+  },
+  "indications": [
+    "Mornings need a physical ignition before coffee thinking.",
+    "Longer workouts keep getting displaced; twenty minutes won't be."
+  ],
+  "guide": {
+    "url": "https://fortune.com/well/article/airbnb-ceo-brian-chesky-daily-routine/",
+    "source": "Fortune"
+  }
+}

@@ -1,8 +1,10 @@
 {
   "id": "alcohol_sleep_cutoff",
+  "name": "Alcohol Cutoff",
   "title": "Stop alcohol at least three hours before bed.",
-  "subtitle": "Alcohol timing",
-  "rationale": "Keep alcohol clear of the sleep window so it stops fragmenting the second half of the night.",
+  "benefit": "Better sleep quality and sharper mornings.",
+  "subtitle": "Alcohol Timing",
+  "rationale": "Alcohol close to bedtime suppresses REM and fragments the second half of the night even at moderate doses.",
   "kind": "nutrition",
   "targets": [
     "Sleep quality",

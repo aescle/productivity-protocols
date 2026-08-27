@@ -1,0 +1,30 @@
+{
+  "id": "silent_user_watch",
+  "name": "Watch Users Silently",
+  "title": "Watch a real first use of what you shipped.",
+  "benefit": "A product that fits real users better.",
+  "subtitle": "User Research",
+  "rationale": "Watching what a person actually does, rather than asking, is what reveals the adjustments worth making.",
+  "origin": "Jiro Ono adjusts each piece to how the diner is eating.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Usability canon: observing actual behavior outperforms asking; Jiro is the craft-form of it.",
+    "sources": [
+      {
+        "label": "Lessons from Sukiyabashi Jiro",
+        "url": "https://www.leanblog.org/2025/01/dreaming-of-jiros-sushi-tokyo/"
+      }
+    ]
+  },
+  "indications": [
+    "User knowledge arrives only through dashboards and tickets.",
+    "You have never watched a stranger's first session."
+  ],
+  "guide": null
+}

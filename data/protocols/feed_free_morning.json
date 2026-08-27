@@ -1,8 +1,10 @@
 {
   "id": "feed_free_morning",
+  "name": "Three-Hour Focus Block",
   "title": "Keep one three-hour work period low-distraction.",
-  "subtitle": "Sustained focus",
-  "rationale": "Protect the same focus boundary across a substantial work period, whenever it occurs.",
+  "benefit": "Sustained focus on work that needs real depth.",
+  "subtitle": "Focus Boundary",
+  "rationale": "A single long protected period produces work that several fragmented hours cannot, whenever in the day it falls.",
   "kind": "deep_work",
   "family": "attention_defense",
   "tier": "intermediate",

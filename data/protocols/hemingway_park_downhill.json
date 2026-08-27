@@ -1,0 +1,33 @@
+{
+  "id": "hemingway_park_downhill",
+  "name": "Stop Mid-Task",
+  "title": "Stop mid-flow and write down the next step.",
+  "benefit": "An easier, faster start the next day.",
+  "subtitle": "Session Exit",
+  "rationale": "Stopping while the next step is still obvious leaves a thread to pick up, so the next session starts warm.",
+  "origin": "Ernest Hemingway stopped each day knowing what came next.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Hemingway's stated practice; consistent with the Zeigarnik effect on interrupted tasks staying mentally active, untested as a protocol.",
+    "sources": [
+      {
+        "label": "Hemingway's routine",
+        "url": "https://fs.blog/hemingways-routine/"
+      }
+    ]
+  },
+  "indications": [
+    "Sessions end by squeezing the tank empty.",
+    "Restarting the next day takes 30 minutes of re-finding the thread."
+  ],
+  "guide": {
+    "url": "https://fs.blog/hemingways-routine/",
+    "source": "Farnam Street"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "second_shift",
+  "name": "Second Shift",
+  "title": "Run a scheduled late-night shift reserved for thinking, not meetings.",
+  "benefit": "Quiet hours for deep thinking.",
+  "subtitle": "Night Schedule",
+  "rationale": "A protected late shift provides quiet thinking hours the daytime calendar cannot, if chronotype and sleep genuinely allow it.",
+  "origin": "Demis Hassabis has run a 10pm research shift for a decade.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 180,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Hassabis' documented practice; works with a late chronotype and costs sleep for most people, hence the warnings.",
+    "sources": [
+      {
+        "label": "Hassabis' second workday",
+        "url": "https://finance.yahoo.com/news/ceo-google-deepmind-juggles-another-170607769.html"
+      }
+    ]
+  },
+  "indications": [
+    "You are genuinely, verifiably a night person.",
+    "Daytime is unavoidably consumed by meetings."
+  ],
+  "avoidWhen": [
+    "A normal or early chronotype.",
+    "It compresses sleep below your full need.",
+    "Morning obligations you cannot move."
+  ],
+  "guide": null
+}

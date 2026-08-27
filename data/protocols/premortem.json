@@ -1,0 +1,33 @@
+{
+  "id": "premortem",
+  "name": "Failure Premortem",
+  "title": "Write the project's failure story before you commit to it.",
+  "benefit": "Fewer avoidable project failures.",
+  "subtitle": "Risk Check",
+  "rationale": "Imagining the project has already failed surfaces risks and reservations that ordinary critique does not reach.",
+  "origin": "Gary Klein developed the premortem from prospective-hindsight research.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Research on prospective hindsight shows roughly 30 percent better identification of failure causes; the exercise is Klein's design.",
+    "sources": [
+      {
+        "label": "Klein's project premortem",
+        "url": "https://hbr.org/2007/09/performing-a-project-premortem"
+      }
+    ]
+  },
+  "indications": [
+    "Plans get critiqued politely and fail predictably.",
+    "A major commitment is a week from locking in."
+  ],
+  "guide": {
+    "url": "https://hbr.org/2007/09/performing-a-project-premortem",
+    "source": "Harvard Business Review"
+  }
+}

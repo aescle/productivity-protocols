@@ -1,8 +1,10 @@
 {
   "id": "zone5_intervals",
+  "name": "VO2 Max Intervals",
   "title": "Train VO2 max weekly.",
-  "subtitle": "Anaerobic capacity",
-  "rationale": "Keep high-end capacity trained with one hard, bounded interval session when recovery permits.",
+  "benefit": "Better fitness and more capacity for hard days.",
+  "subtitle": "High Intensity",
+  "rationale": "One bounded hard session a week trains the top-end capacity that steady work never touches.",
   "kind": "training",
   "targets": [
     "VO2 max",

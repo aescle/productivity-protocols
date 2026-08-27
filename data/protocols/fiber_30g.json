@@ -1,8 +1,10 @@
 {
   "id": "fiber_30g",
+  "name": "30 Grams of Fiber",
   "title": "Reach 30 grams of fiber per day.",
-  "subtitle": "Fiber floor",
-  "rationale": "Push daily fiber toward the intake range with the strongest all-cause outcome data in nutrition.",
+  "benefit": "Steadier energy and better long-term health.",
+  "subtitle": "Daily Food",
+  "rationale": "Fiber intake in this range has the strongest all-cause outcome data of any single dietary change.",
   "kind": "nutrition",
   "targets": [
     "Metabolic health",

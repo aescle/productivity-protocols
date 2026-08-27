@@ -1,8 +1,10 @@
 {
   "id": "expressive_journaling",
+  "name": "15-Minute Expressive Journaling",
   "title": "Write for 15 minutes about what is weighing on you.",
-  "subtitle": "Expressive writing",
-  "rationale": "Externalize a live stressor in writing so it stops looping in working memory.",
+  "benefit": "A clearer head when something is weighing on you.",
+  "subtitle": "Stress Release",
+  "rationale": "Writing a live stressor down externalizes it, which stops it from occupying working memory during work.",
   "kind": "recovery",
   "targets": [
     "Stress",

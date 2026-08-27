@@ -1,0 +1,33 @@
+{
+  "id": "working_coach",
+  "name": "Working Coach",
+  "title": "Have a senior peer observe a real session and correct you after.",
+  "benefit": "Renewed improvement after a long plateau.",
+  "subtitle": "Skill Feedback",
+  "rationale": "Expert improvement requires external feedback that self-assessment cannot supply, which is why plateaus follow the end of training.",
+  "origin": "Atul Gawande hired a coach to watch him operate at his peak.",
+  "kind": "social",
+  "targets": [
+    "Network",
+    "Judgment"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Deliberate-practice research holds that expert improvement needs external feedback self-assessment cannot supply; Gawande is the modern case.",
+    "sources": [
+      {
+        "label": "Gawande's Personal Best",
+        "url": "https://physicianleadership.com/personal-best-by-dr-atul-gawande-article-published-in-the-new-yorker/"
+      }
+    ]
+  },
+  "indications": [
+    "Your craft plateaued the year training ended.",
+    "Nobody has watched you actually work in years."
+  ],
+  "guide": {
+    "url": "https://physicianleadership.com/personal-best-by-dr-atul-gawande-article-published-in-the-new-yorker/",
+    "source": "Atul Gawande"
+  }
+}

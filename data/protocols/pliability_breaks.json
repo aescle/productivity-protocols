@@ -1,0 +1,34 @@
+{
+  "id": "pliability_breaks",
+  "name": "Mobility Breaks",
+  "title": "Scatter short mobility and soft-tissue work through desk hours.",
+  "benefit": "Less stiffness and fewer desk-related injuries.",
+  "subtitle": "Desk Maintenance",
+  "rationale": "Short mobility work spread through the day treats tissue quality as maintenance rather than waiting for injury.",
+  "origin": "Tom Brady built his career around daily pliability work.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Stress"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Brady's pliability construct is not recognized physiology, but breaking up prolonged sitting has real metabolic and vascular support.",
+    "sources": [
+      {
+        "label": "Tom Brady's TB12 method",
+        "url": "https://www.cbsnews.com/boston/news/tom-brady-the-tb12-method-hydration-simon-and-schuster/"
+      },
+      {
+        "label": "Micro-breaks meta-analysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36044424/"
+      }
+    ]
+  },
+  "indications": [
+    "Desk stretches run three-plus hours unbroken.",
+    "Neck, hips, or back stiffen by evening."
+  ],
+  "guide": null
+}

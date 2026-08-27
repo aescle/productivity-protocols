@@ -1,8 +1,10 @@
 {
   "id": "walking_meetings",
+  "name": "Walking Meetings",
   "title": "Convert one-on-ones into walking meetings.",
-  "subtitle": "Meeting movement",
-  "rationale": "Reclaim meeting hours as movement and use the walking state for open-ended discussion.",
+  "benefit": "More movement and better conversations.",
+  "subtitle": "Meeting Movement",
+  "rationale": "Discussion-format meetings need no screen, so walking them converts sitting time into movement.",
   "kind": "walk",
   "targets": [
     "Movement",

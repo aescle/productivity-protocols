@@ -1,8 +1,10 @@
 {
   "id": "mindfulness_10min",
+  "name": "10-Minute Sit",
   "title": "Meditate 10 minutes per day.",
-  "subtitle": "Mindfulness floor",
-  "rationale": "Build a small daily attention practice before judging whether meditation earns a bigger slot.",
+  "benefit": "Lower baseline stress and better focus.",
+  "subtitle": "Meditation Dose",
+  "rationale": "A short daily practice is enough to show whether meditation earns a larger slot in your schedule.",
   "kind": "recovery",
   "family": "mindfulness",
   "tier": "beginner",

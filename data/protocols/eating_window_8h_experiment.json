@@ -1,8 +1,10 @@
 {
   "id": "eating_window_8h_experiment",
+  "name": "8-Hour Window Experiment",
   "title": "Test an 8-hour eating window.",
-  "subtitle": "Eating-window experiment",
-  "rationale": "Run the narrower experiment only after covered personal evidence supports shorter windows or the user explicitly chooses it.",
+  "benefit": "Better recovery and more morning clarity.",
+  "subtitle": "Eating Window",
+  "rationale": "A tighter window is worth testing only once a wider one is stable, and two weeks is enough to see the effect.",
   "kind": "nutrition",
   "family": "eating_window",
   "tier": "advanced",

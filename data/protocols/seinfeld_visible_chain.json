@@ -1,0 +1,33 @@
+{
+  "id": "seinfeld_visible_chain",
+  "name": "Don't Break the Chain",
+  "title": "Mark an X on a wall calendar every day you do the work.",
+  "benefit": "Consistent daily practice and compounding skill.",
+  "subtitle": "Streak Tracking",
+  "rationale": "A growing visible streak makes the daily rep something you refuse to lose rather than something you decide.",
+  "origin": "Jerry Seinfeld marked a wall calendar for every day of writing.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Popularized by Seinfeld; streak maintenance leans on well-documented loss aversion and self-monitoring effects.",
+    "sources": [
+      {
+        "label": "The Seinfeld strategy",
+        "url": "https://jamesclear.com/stop-procrastinating-seinfeld-strategy"
+      }
+    ]
+  },
+  "indications": [
+    "A core skill needs daily reps, not bursts.",
+    "Consistency collapses whenever motivation dips."
+  ],
+  "guide": {
+    "url": "https://jamesclear.com/stop-procrastinating-seinfeld-strategy",
+    "source": "James Clear"
+  }
+}

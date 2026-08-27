@@ -1,8 +1,10 @@
 {
   "id": "ultradian_work_cycles",
+  "name": "90-Minute Cycles",
   "title": "Work in 90-minute cycles with real breaks between.",
-  "subtitle": "Work-rest pacing",
-  "rationale": "Match hard cognitive pushes to roughly 90-minute arcs and take a genuine break between them instead of grinding flat-out.",
+  "benefit": "More high-quality work from fewer hours.",
+  "subtitle": "Work Pacing",
+  "rationale": "Matching hard pushes to roughly ninety-minute arcs with real breaks between produces more than grinding flat out.",
   "kind": "deep_work",
   "targets": [
     "Focus",

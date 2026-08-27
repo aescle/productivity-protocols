@@ -1,0 +1,33 @@
+{
+  "id": "buffer_blocks",
+  "name": "90-Minute Buffer Blocks",
+  "title": "Schedule 90 minutes of empty buffer daily and defend it like a meeting.",
+  "benefit": "Time to think instead of only reacting.",
+  "subtitle": "Calendar Space",
+  "rationale": "Empty calendar blocks are the only way the proactive part of the job survives a schedule that would otherwise fill itself.",
+  "origin": "Jeff Weiner scheduled daily blocks of nothing at LinkedIn.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Weiner's stated system; aligned with attention-restoration and incubation reasoning, practitioner-only.",
+    "sources": [
+      {
+        "label": "Weiner on scheduling nothing",
+        "url": "https://www.linkedin.com/pulse/20130403215758-22330283-the-importance-of-scheduling-nothing"
+      }
+    ]
+  },
+  "indications": [
+    "Back-to-back days leave zero thinking time.",
+    "Strategy happens only on vacation."
+  ],
+  "guide": {
+    "url": "https://www.linkedin.com/pulse/20130403215758-22330283-the-importance-of-scheduling-nothing",
+    "source": "LinkedIn"
+  }
+}

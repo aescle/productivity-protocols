@@ -1,0 +1,33 @@
+{
+  "id": "bookend_questions",
+  "name": "Morning and Evening Questions",
+  "title": "Write one plan in the morning and one review at night.",
+  "benefit": "A more deliberate day and steady week-to-week improvement.",
+  "subtitle": "Daily Review",
+  "rationale": "A morning question forces prioritization before reactivity sets in, and an evening one turns the day into feedback.",
+  "origin": "Benjamin Franklin ran the same two questions daily for decades.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "End-of-day written reflection improved performance roughly 20 percent in field experiments; the paired-question form is Franklin's.",
+    "sources": [
+      {
+        "label": "Franklin's daily schedule",
+        "url": "https://www.mayooshin.com/benjamin-franklins-daily-schedule"
+      }
+    ]
+  },
+  "indications": [
+    "Days start reactive and end unexamined.",
+    "A two-question habit is sustainable where journaling was not."
+  ],
+  "guide": {
+    "url": "https://www.mayooshin.com/benjamin-franklins-daily-schedule",
+    "source": "Mayo Oshin"
+  }
+}

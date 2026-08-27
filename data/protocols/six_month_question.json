@@ -1,0 +1,30 @@
+{
+  "id": "six_month_question",
+  "name": "Six-Month Question",
+  "title": "Write why your ten-year plan cannot happen in six months.",
+  "benefit": "Faster progress on goals you had over-scheduled.",
+  "subtitle": "Timeline Check",
+  "rationale": "Asking why a ten-year plan cannot happen in six months separates real constraints from assumed ones.",
+  "origin": "Peter Thiel poses the question to founders.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Thiel's question; practitioner-only.",
+    "sources": [
+      {
+        "label": "Thiel on Tim Ferriss (transcript)",
+        "url": "https://tim.blog/wp-content/uploads/2018/07/28-peter-thiel.pdf"
+      }
+    ]
+  },
+  "indications": [
+    "The long-term plan has comfortable decade-shaped pacing.",
+    "Nobody has ever asked why the timeline is the timeline."
+  ],
+  "guide": null
+}

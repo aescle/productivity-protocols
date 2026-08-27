@@ -1,0 +1,35 @@
+{
+  "id": "dual_track_rehearsal",
+  "name": "Dual-Track Rehearsal",
+  "title": "Mentally rehearse the perfect run and the likely failures.",
+  "benefit": "Composure and better performance under pressure.",
+  "subtitle": "Mental Rehearsal",
+  "rationale": "Rehearsing the likely failures as well as the ideal run means the real event triggers a prepared response instead of panic.",
+  "origin": "Michael Phelps rehearsed a flooded-goggles race and then swam one for gold.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Mental-practice meta-analyses show real performance gains from cognitive rehearsal, largest for cognitively loaded tasks.",
+    "sources": [
+      {
+        "label": "Mental practice meta-analytic evidence",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8804895/"
+      },
+      {
+        "label": "Phelps' videotape visualization",
+        "url": "https://sourcesofinsight.com/how-michael-phelps-used-visualization/"
+      }
+    ]
+  },
+  "indications": [
+    "A high-stakes event is days away.",
+    "Surprises reliably rattle your execution.",
+    "Preparation currently means slides, not scenarios."
+  ],
+  "guide": null
+}

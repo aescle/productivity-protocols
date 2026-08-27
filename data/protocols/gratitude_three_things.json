@@ -1,8 +1,10 @@
 {
   "id": "gratitude_three_things",
+  "name": "Three Good Things",
   "title": "Write down three good things from the day.",
-  "subtitle": "Gratitude practice",
-  "rationale": "Bias the end-of-day review toward what worked, cheaply and in under five minutes.",
+  "benefit": "Better mood and perspective at day's end.",
+  "subtitle": "Evening Review",
+  "rationale": "Ending the day on what worked shifts the closing frame away from the unfinished list by default.",
   "kind": "recovery",
   "targets": [
     "Mood",

@@ -1,8 +1,10 @@
 {
   "id": "earlier_eating_window",
+  "name": "Earlier Eating Window",
   "title": "Move your eating window earlier.",
-  "subtitle": "Eating-window timing",
-  "rationale": "Move the full window earlier when its learned midpoint or last meal predicts stronger following sleep and recovery.",
+  "benefit": "Better sleep and clearer mornings.",
+  "subtitle": "Eating Window",
+  "rationale": "Circadian timing changes the metabolic response to food, so an earlier last meal supports sleep and recovery.",
   "kind": "nutrition",
   "family": "eating_window",
   "tier": "intermediate",

@@ -1,8 +1,10 @@
 {
   "id": "body_doubling",
+  "name": "Body Doubling",
   "title": "Book a co-working session for work you keep avoiding.",
-  "subtitle": "Social accountability",
-  "rationale": "Work alongside another person, in the room or on a call, and let quiet social presence hold you to the task.",
+  "benefit": "Work you keep avoiding actually gets done.",
+  "subtitle": "Social Accountability",
+  "rationale": "Quiet social presence makes the task harder to abandon, which is why avoided work finally gets done in company.",
   "kind": "deep_work",
   "targets": [
     "Task initiation",

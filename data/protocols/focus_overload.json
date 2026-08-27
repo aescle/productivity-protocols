@@ -1,0 +1,33 @@
+{
+  "id": "focus_overload",
+  "name": "Build Focus Gradually",
+  "title": "Extend focused sitting gradually, like a runner extends mileage.",
+  "benefit": "More concentration stamina for long projects.",
+  "subtitle": "Focus Training",
+  "rationale": "Concentration is trainable the way endurance is, by extending duration gradually on top of an aerobic base.",
+  "origin": "Haruki Murakami trains focus the way he trains for marathons.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Aerobic exercise reliably supports executive function; direct attention-training evidence is mixed, so the progression model is partly practitioner.",
+    "sources": [
+      {
+        "label": "Murakami on focus and endurance",
+        "url": "https://famouswritingroutines.com/writing-routines/haruki-murakami-writing-routine/"
+      }
+    ]
+  },
+  "indications": [
+    "Focus capacity is treated as fixed instead of trained.",
+    "Long projects die at the stamina wall, not the idea wall."
+  ],
+  "guide": {
+    "url": "https://famouswritingroutines.com/writing-routines/haruki-murakami-writing-routine/",
+    "source": "Famous Writing Routines"
+  }
+}

@@ -1,8 +1,11 @@
 {
   "id": "inspiration_immediacy",
+  "name": "Inspiration Immediacy",
   "title": "Act on inspiration within minutes, not on the calendar.",
-  "subtitle": "Perishable inspiration",
-  "rationale": "Genuine interest is the highest-leverage work state; captured immediately it produces effortless output, scheduled later it decays.",
+  "benefit": "Better work produced with less effort.",
+  "subtitle": "Momentum Capture",
+  "rationale": "Genuine interest is the highest-output state there is, and it decays long before a scheduled slot arrives.",
+  "origin": "Naval Ravikant calls inspiration perishable.",
   "kind": "deep_work",
   "targets": [
     "Output",

@@ -1,8 +1,10 @@
 {
   "id": "caffeine_increase",
+  "name": "Effective Caffeine Dose",
   "title": "Increase caffeine to your effective dose.",
-  "subtitle": "Caffeine dose",
-  "rationale": "Use the learned dose range only when higher recorded doses improve the following work window without a later sleep cost.",
+  "benefit": "More alertness for demanding work.",
+  "subtitle": "Caffeine Dose",
+  "rationale": "A dose you already tolerate can be timed to support a work window without costing sleep later.",
   "kind": "nutrition",
   "targets": [
     "Caffeine dose",

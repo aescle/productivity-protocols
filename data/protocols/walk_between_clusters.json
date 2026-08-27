@@ -1,8 +1,10 @@
 {
   "id": "walk_between_clusters",
+  "name": "45-Minute Movement Day",
   "title": "Move for 45 minutes per day.",
-  "subtitle": "Daily activity",
-  "rationale": "Raise daily movement without relying on one workout by using walks and work breaks.",
+  "benefit": "More energy and better focus through the afternoon.",
+  "subtitle": "Daily Activity",
+  "rationale": "Accumulating movement in the gaps raises the daily total without depending on a single workout.",
   "kind": "walk",
   "family": "daily_activity",
   "tier": "intermediate",

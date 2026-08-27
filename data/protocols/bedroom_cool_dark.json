@@ -1,8 +1,10 @@
 {
   "id": "bedroom_cool_dark",
+  "name": "Bedroom Setup",
   "title": "Set the bedroom cold, dark, and quiet.",
-  "subtitle": "Sleep environment",
-  "rationale": "Fix the physical environment once so every night starts from a pro-sleep baseline without willpower.",
+  "benefit": "Deeper, less broken sleep.",
+  "subtitle": "Sleep Environment",
+  "rationale": "Heat and light disrupt sleep stages, so fixing the room once removes the problem permanently without willpower.",
   "kind": "sleep",
   "targets": [
     "Sleep quality",

@@ -1,8 +1,10 @@
 {
   "id": "protein_anchor",
+  "name": "Protein Anchor",
   "title": "Move toward your better-performing protein range.",
-  "subtitle": "Meal composition",
-  "rationale": "Adjust protein only when your recorded meal or daily range supports better training, recovery, sleep, or steady work.",
+  "benefit": "Better recovery and more training capacity.",
+  "subtitle": "Meal Composition",
+  "rationale": "Adequate protein spread across meals is what lets training add capacity rather than accumulate fatigue.",
   "kind": "nutrition",
   "targets": [
     "Protein",

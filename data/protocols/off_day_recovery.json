@@ -1,8 +1,10 @@
 {
   "id": "off_day_recovery",
+  "name": "Full Day Off",
   "title": "Take a full weekend day off.",
-  "subtitle": "Full day off",
-  "rationale": "Working on a day you usually leave open has cost more downstream output than it created. Take the day off.",
+  "benefit": "Better energy and output the following week.",
+  "subtitle": "Weekly Recovery",
+  "rationale": "A genuine day away from work raises the following week's output when the previous stretch has drained it.",
   "kind": "recovery",
   "targets": [
     "Recovery",

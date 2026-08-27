@@ -1,8 +1,11 @@
 {
   "id": "top_idea_audit",
-  "title": "Audit what your mind drifts to; realign until it is your top problem.",
-  "subtitle": "Ambient thought check",
-  "rationale": "Background thinking does the real work on hard problems, and you can only curate what owns it, not command it.",
+  "name": "Top-Idea Audit",
+  "title": "Check what your mind drifts to when it is free.",
+  "benefit": "Better progress on your most important problem.",
+  "subtitle": "Attention Check",
+  "rationale": "Background thinking does the real work on hard problems, and you can only choose what occupies it indirectly.",
+  "origin": "Paul Graham wrote about the top idea in your mind.",
   "kind": "deep_work",
   "targets": [
     "Prioritization",

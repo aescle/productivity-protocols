@@ -1,0 +1,33 @@
+{
+  "id": "delay_send",
+  "name": "Delay-Send Email",
+  "title": "Schedule your email to arrive during working hours.",
+  "benefit": "Flexible hours without pressuring your team.",
+  "subtitle": "Async Etiquette",
+  "rationale": "Recipients read off-hours email as urgent, so scheduling delivery preserves your flexibility without transmitting pressure.",
+  "origin": "Satya Nadella uses delay-send rather than changing when he works.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 2,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Email-urgency-bias research shows receivers overestimate expected response speed of off-hours mail; delay-send removes the signal.",
+    "sources": [
+      {
+        "label": "Nadella and Adam Grant on the future of work",
+        "url": "https://www.microsoft.com/en-us/worklab/satya-nadella-talks-to-adam-grant-about-the-future-of-work"
+      }
+    ]
+  },
+  "indications": [
+    "Your midnight emails generate midnight replies.",
+    "The team mirrors your hours whether you want it or not."
+  ],
+  "guide": {
+    "url": "https://www.microsoft.com/en-us/worklab/satya-nadella-talks-to-adam-grant-about-the-future-of-work",
+    "source": "Microsoft WorkLab"
+  }
+}

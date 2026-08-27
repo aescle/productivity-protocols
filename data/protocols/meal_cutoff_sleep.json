@@ -1,8 +1,10 @@
 {
   "id": "meal_cutoff_sleep",
+  "name": "Two-Hour Meal Cutoff",
   "title": "Finish eating two hours before bed.",
-  "subtitle": "Sleep nutrition",
-  "rationale": "Keep digestion out of the wind-down window when sleep or glucose stability is the constraint.",
+  "benefit": "Better sleep quality and steadier morning energy.",
+  "subtitle": "Meal Timing",
+  "rationale": "Glucose handling is poorer at night, so ending the eating window earlier keeps digestion out of the sleep window.",
   "kind": "nutrition",
   "family": "meal_timing",
   "tier": "beginner",

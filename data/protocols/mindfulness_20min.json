@@ -1,8 +1,10 @@
 {
   "id": "mindfulness_20min",
+  "name": "20-Minute Sit",
   "title": "Meditate 20 minutes per day.",
-  "subtitle": "Mindfulness standard",
-  "rationale": "Extend an established daily sit toward the doses used in most studied programs.",
+  "benefit": "More composure under pressure.",
+  "subtitle": "Meditation Dose",
+  "rationale": "Twenty minutes matches the dose used in most formally studied mindfulness programs.",
   "kind": "recovery",
   "family": "mindfulness",
   "tier": "intermediate",

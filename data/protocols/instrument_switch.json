@@ -1,0 +1,30 @@
+{
+  "id": "instrument_switch",
+  "name": "Switch to Another Skill",
+  "title": "Switch to an absorbing skill when you are stuck.",
+  "benefit": "Solutions that arrive when you step away.",
+  "subtitle": "Creative Break",
+  "rationale": "A brief switch to an absorbing unrelated skill lets the problem incubate, which is when the answer often surfaces.",
+  "origin": "Albert Einstein played violin when stuck and returned with ideas.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Stress"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Incubation meta-analysis shows low-demand alternate tasks improve insight problem-solving; the instrument is optional.",
+    "sources": [
+      {
+        "label": "Einstein and his violin",
+        "url": "https://www.nationalgeographic.com/adventure/article/einstein-genius-violin-music-physics-science"
+      }
+    ]
+  },
+  "indications": [
+    "Stuckness is currently answered with harder staring.",
+    "A loved skilled activity sits within reach of the desk."
+  ],
+  "guide": null
+}

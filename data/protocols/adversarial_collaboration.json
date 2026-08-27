@@ -1,0 +1,33 @@
+{
+  "id": "adversarial_collaboration",
+  "name": "Adversarial Collaboration",
+  "title": "Design a test both sides accept before running the disagreement.",
+  "benefit": "Resolved disagreements and better decisions.",
+  "subtitle": "Dispute Resolution",
+  "rationale": "Agreeing on the test before running it means both sides accept the result, which ends the argument for good.",
+  "origin": "Daniel Kahneman formalized the method with his intellectual opponents.",
+  "kind": "social",
+  "targets": [
+    "Network",
+    "Judgment"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "A published scientific methodology with a growing literature; direct transfer to team disputes is straightforward.",
+    "sources": [
+      {
+        "label": "Kahneman on adversarial collaboration",
+        "url": "https://www.edge.org/adversarial-collaboration-daniel-kahneman"
+      }
+    ]
+  },
+  "indications": [
+    "The same argument has run three cycles unresolved.",
+    "Both parties are smart and both are certain."
+  ],
+  "guide": {
+    "url": "https://www.edge.org/adversarial-collaboration-daniel-kahneman",
+    "source": "Edge"
+  }
+}

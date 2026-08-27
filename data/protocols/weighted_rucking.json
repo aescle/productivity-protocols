@@ -1,8 +1,11 @@
 {
   "id": "weighted_rucking",
+  "name": "45-Minute Weighted Rucking",
   "title": "Walk 45 minutes with a loaded pack twice a week.",
-  "subtitle": "Loaded carry cardio",
-  "rationale": "Start near 10 percent of body weight: zone-2-adjacent cardio, axial loading, and time outdoors in one low-skill session.",
+  "benefit": "Better fitness and a clearer head from time outside.",
+  "subtitle": "Loaded Cardio",
+  "rationale": "Loaded walking combines aerobic work with axial loading in a single low-skill session.",
+  "origin": "Peter Attia recommends starting near ten percent of body weight.",
   "kind": "training",
   "targets": [
     "Cardiovascular fitness",

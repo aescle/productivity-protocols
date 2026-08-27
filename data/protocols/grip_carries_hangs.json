@@ -1,8 +1,11 @@
 {
   "id": "grip_carries_hangs",
+  "name": "Carries and Hangs",
   "title": "Add farmer's carries and dead hangs weekly.",
-  "subtitle": "Grip and carry strength",
-  "rationale": "Grip strength is among the strongest physical mortality markers; carries and hangs train it plus shoulders and trunk.",
+  "benefit": "A stronger grip and more durable shoulders.",
+  "subtitle": "Strength Work",
+  "rationale": "Grip strength tracks total-body strength closely, and carries and hangs train it along with shoulders and trunk.",
+  "origin": "Peter Attia treats grip work as a longevity marker.",
   "kind": "training",
   "targets": [
     "Strength",

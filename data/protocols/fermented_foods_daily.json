@@ -1,8 +1,10 @@
 {
   "id": "fermented_foods_daily",
+  "name": "Fermented Foods",
   "title": "Add live-culture fermented foods to most days.",
-  "subtitle": "Microbiome diversity",
-  "rationale": "Yogurt, kefir, kimchi, or sauerkraut servings raise microbiome diversity and lower inflammatory markers.",
+  "benefit": "Lower inflammation and better gut health.",
+  "subtitle": "Daily Food",
+  "rationale": "Live-culture foods raise gut microbiome diversity and lowered inflammatory markers in a controlled trial.",
   "kind": "nutrition",
   "targets": [
     "Gut health",

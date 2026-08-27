@@ -1,0 +1,30 @@
+{
+  "id": "three_meals_no_snacks",
+  "name": "Three Meals, No Snacks",
+  "title": "Eat three whole-food meals a day and skip the grazing.",
+  "benefit": "Stable energy and less thinking about food.",
+  "subtitle": "Meal Structure",
+  "rationale": "Three defined meals remove the recurring food decisions that grazing spreads across the whole day.",
+  "origin": "John Mackey has eaten this way since he was twenty-three.",
+  "kind": "nutrition",
+  "targets": [
+    "Energy",
+    "Recovery"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Mackey's lifelong pattern; whole-food plant-forward eating has real support, the no-snack frame itself is practitioner-only.",
+    "sources": [
+      {
+        "label": "John Mackey's health routine",
+        "url": "https://www.cnbc.com/2019/08/14/inside-whole-foods-ceo-john-mackeys-health-and-fitness-routine.html"
+      }
+    ]
+  },
+  "indications": [
+    "Grazing smears energy and appetite across the day.",
+    "Food decisions recur hourly instead of thrice daily."
+  ],
+  "guide": null
+}

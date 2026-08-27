@@ -1,8 +1,10 @@
 {
   "id": "admin_batching",
+  "name": "Admin Batching",
   "title": "Batch admin into one daily window.",
-  "subtitle": "Schedule protocol",
-  "rationale": "Batch shallow work so it stops leaking into the highest-readiness blocks.",
+  "benefit": "Protected peak hours for real work.",
+  "subtitle": "Schedule Boundary",
+  "rationale": "Shallow work expands to fill whatever gaps it finds, so containing it to one window protects the hours when focus is highest.",
   "kind": "calendar_defense",
   "family": "calendar_defense",
   "tier": "beginner",

@@ -1,8 +1,10 @@
 {
   "id": "screen_shutdown",
+  "name": "30-Minute Screen Shutdown",
   "title": "Shut down screens 30 minutes before bed.",
-  "subtitle": "Sleep guardrail",
-  "rationale": "Remove the light and cognitive input that keep the nervous system online late.",
+  "benefit": "Easier sleep onset and better rest.",
+  "subtitle": "Sleep Routine",
+  "rationale": "Removing screens before bed cuts both the light exposure and the alerting content that delay sleep.",
   "kind": "sleep",
   "family": "sleep_shutdown",
   "tier": "beginner",

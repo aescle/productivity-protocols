@@ -1,0 +1,33 @@
+{
+  "id": "cooling_off_drawer",
+  "name": "Let Drafts Cool",
+  "title": "Finish the draft, then don't look at it for weeks.",
+  "benefit": "Better final work and fewer flaws you missed.",
+  "subtitle": "Revision Method",
+  "rationale": "Distance from your own draft lets you read it as an outsider, which is when structural flaws become visible.",
+  "origin": "Stephen King leaves finished manuscripts in a drawer for six weeks.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Familiarity effects in self-review and incubation research support fresh-eyes revision; the fixed interval is King's.",
+    "sources": [
+      {
+        "label": "Stephen King's writing routine",
+        "url": "https://famouswritingroutines.com/writing-routines/stephen-king-writing-routine/"
+      }
+    ]
+  },
+  "indications": [
+    "Your rereads see what you meant, not what you wrote.",
+    "Big documents ship straight from the heat of completion."
+  ],
+  "guide": {
+    "url": "https://famouswritingroutines.com/writing-routines/stephen-king-writing-routine/",
+    "source": "Famous Writing Routines"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "meeting_walkout",
+  "name": "Meeting Walkout",
+  "title": "Leave any meeting the moment you add or receive no value.",
+  "benefit": "Hours back from meetings with no value.",
+  "subtitle": "Meeting Exit",
+  "rationale": "Leaving the moment you stop adding or receiving value reclaims hours that politeness would otherwise spend.",
+  "origin": "Elon Musk made it explicit policy in a company-wide email.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Practitioner rule from Musk's leaked productivity email; no research, high social cost, real time savings.",
+    "sources": [
+      {
+        "label": "Musk's productivity rules email",
+        "url": "https://www.cnbc.com/2018/04/18/elon-musks-productivity-rules-according-to-tesla-email.html"
+      }
+    ]
+  },
+  "indications": [
+    "Meetings are attended to the end out of politeness.",
+    "Calendar honesty beats calendar harmony in your culture."
+  ],
+  "guide": {
+    "url": "https://www.cnbc.com/2018/04/18/elon-musks-productivity-rules-according-to-tesla-email.html",
+    "source": "CNBC"
+  }
+}

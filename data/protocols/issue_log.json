@@ -1,0 +1,33 @@
+{
+  "id": "issue_log",
+  "name": "Issue Log",
+  "title": "Log every error the moment it surfaces.",
+  "benefit": "Fewer repeated mistakes.",
+  "subtitle": "Error Tracking",
+  "rationale": "Logging every error with severity and owner turns individual mistakes into a queue that gets systematically fixed.",
+  "origin": "Ray Dalio made unlogged errors the real offense at Bridgewater.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Error-management-culture research links open error handling to performance; the personal log adapts Dalio's org tool.",
+    "sources": [
+      {
+        "label": "Dalio's issue log principle",
+        "url": "https://www.principles.com/principles/a7c3050c-97d4-4011-ad8c-3852676e992b/"
+      }
+    ]
+  },
+  "indications": [
+    "The same class of mistake recurs quarterly.",
+    "Errors get fixed silently and teach nothing."
+  ],
+  "guide": {
+    "url": "https://www.principles.com/principles/a7c3050c-97d4-4011-ad8c-3852676e992b/",
+    "source": "Principles"
+  }
+}

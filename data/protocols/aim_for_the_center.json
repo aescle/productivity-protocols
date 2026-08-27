@@ -1,0 +1,33 @@
+{
+  "id": "aim_for_the_center",
+  "name": "Work on the Core Problem",
+  "title": "Work each session on the task nearest the problem's hard core.",
+  "benefit": "Faster progress on the part that actually matters.",
+  "subtitle": "Task Selection",
+  "rationale": "Results are nonlinear near the hard core of a problem, so peripheral tasks feel productive while producing far less.",
+  "origin": "Paul Graham describes it in How to Work Hard.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Graham's essay claim, consistent with deliberate-practice work at the edge of ability; untested directly.",
+    "sources": [
+      {
+        "label": "Paul Graham, How to Work Hard",
+        "url": "https://paulgraham.com/hwh.html"
+      }
+    ]
+  },
+  "indications": [
+    "Busy weeks keep ending with the core untouched.",
+    "Peripheral tasks always feel more available than central ones."
+  ],
+  "guide": {
+    "url": "https://paulgraham.com/hwh.html",
+    "source": "Paul Graham"
+  }
+}

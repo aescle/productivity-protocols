@@ -1,0 +1,33 @@
+{
+  "id": "hamming_audit",
+  "name": "Important Problems Audit",
+  "title": "Write down whether you are working on an important problem.",
+  "benefit": "More time on important work and less on busywork.",
+  "subtitle": "Priority Check",
+  "rationale": "Writing down whether you are working on an important problem exposes busywork that is real but small.",
+  "origin": "Richard Hamming asked the question of colleagues at Bell Labs.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 20,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Hamming's practice via Graham; practitioner-only.",
+    "sources": [
+      {
+        "label": "Paul Graham, Good and Bad Procrastination",
+        "url": "https://paulgraham.com/procrastination.html"
+      }
+    ]
+  },
+  "indications": [
+    "Every task on the list is real and none of them matter.",
+    "The important problem has a name you avoid saying."
+  ],
+  "guide": {
+    "url": "https://paulgraham.com/procrastination.html",
+    "source": "Paul Graham"
+  }
+}

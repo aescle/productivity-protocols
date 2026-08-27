@@ -1,8 +1,10 @@
 {
   "id": "blueberries_daily",
+  "name": "Daily Blueberries",
   "title": "Eat a cup of blueberries daily.",
-  "subtitle": "Anthocyanin dose",
-  "rationale": "A cheap, pleasant polyphenol dose with small-trial support for memory in older adults.",
+  "benefit": "Better memory as you get older.",
+  "subtitle": "Daily Food",
+  "rationale": "Anthocyanins are linked to better memory scores in trials with older adults, and the dose is one cup.",
   "kind": "nutrition",
   "targets": [
     "Memory",
@@ -25,7 +27,7 @@
   },
   "indications": [
     "Berry and polyphenol intake is low.",
-    "Long-horizon brain health is an explicit goal."
+    "Cognitive longevity matters and cheap levers are welcome."
   ],
   "guide": {
     "url": "https://www.foundmyfitness.com/topics/polyphenols-brain-aging",

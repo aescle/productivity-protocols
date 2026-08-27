@@ -1,0 +1,33 @@
+{
+  "id": "bug_book",
+  "name": "Self-Observation Log",
+  "title": "Log your own working patterns in the third person.",
+  "benefit": "Better scheduling around when you actually perform.",
+  "subtitle": "Self Observation",
+  "rationale": "Observing yourself in the third person turns vague self-knowledge into patterns you can design a schedule around.",
+  "origin": "Jim Collins studies himself as a specimen he calls the bug.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Stress"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Self-distancing research shows third-person framing improves regulation and reasoning; the naturalist's-log format is Collins'.",
+    "sources": [
+      {
+        "label": "Jim Collins interview notes",
+        "url": "https://podcastnotes.org/2019/02/19/collins/"
+      }
+    ]
+  },
+  "indications": [
+    "Your energy patterns are folklore, not data.",
+    "First-person journaling collapses into mood venting."
+  ],
+  "guide": {
+    "url": "https://podcastnotes.org/2019/02/19/collins/",
+    "source": "Podcast Notes"
+  }
+}

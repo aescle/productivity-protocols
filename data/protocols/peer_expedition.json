@@ -1,0 +1,37 @@
+{
+  "id": "peer_expedition",
+  "name": "Annual Trip with Peers",
+  "title": "Take a yearly multi-day outdoor trip with the same sharp peers.",
+  "benefit": "Real rest and valuable learning from peers.",
+  "subtitle": "Yearly Retreat",
+  "rationale": "A multi-day trip combines genuine recovery with unstructured time among people you learn from.",
+  "origin": "Henry Ford camped yearly with Edison, Firestone, and Burroughs.",
+  "kind": "social",
+  "targets": [
+    "Network",
+    "Judgment"
+  ],
+  "durationMinutes": 480,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Ford's documented tradition; nature-restoration and strong-tie research support the halves, the combination is practitioner design.",
+    "sources": [
+      {
+        "label": "The Henry Ford on the Vagabonds",
+        "url": "https://www.thehenryford.org/collections/explore/popular-research-topics/the-vagabonds"
+      },
+      {
+        "label": "120 minutes in nature and wellbeing study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31197192/"
+      }
+    ]
+  },
+  "indications": [
+    "Peer conversations never exceed dinner length.",
+    "Recovery and relationships keep losing to the same calendar."
+  ],
+  "guide": {
+    "url": "https://www.thehenryford.org/collections/explore/popular-research-topics/the-vagabonds",
+    "source": "The Henry Ford"
+  }
+}

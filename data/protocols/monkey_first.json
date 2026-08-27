@@ -1,0 +1,33 @@
+{
+  "id": "monkey_first",
+  "name": "Hardest Part First",
+  "title": "Attack the hardest, most uncertain part first.",
+  "benefit": "Less money and time lost on unworkable ideas.",
+  "subtitle": "Risk Order",
+  "rationale": "Attacking the hardest uncertainty first reaches the answer before serious time and money are committed.",
+  "origin": "Astro Teller frames it as training the monkey, not building the pedestal.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Teller's stated method; consistent with value-of-information reasoning, practitioner-only.",
+    "sources": [
+      {
+        "label": "Teller's monkey-first rule",
+        "url": "https://www.inc.com/business-insider/alphabet-google-x-moonshot-labs-how-people-work-productivity-monkey-first.html"
+      }
+    ]
+  },
+  "indications": [
+    "Visible easy progress is fronting for an unexamined hard core.",
+    "The killer uncertainty is scheduled last."
+  ],
+  "guide": {
+    "url": "https://www.inc.com/business-insider/alphabet-google-x-moonshot-labs-how-people-work-productivity-monkey-first.html",
+    "source": "Inc."
+  }
+}

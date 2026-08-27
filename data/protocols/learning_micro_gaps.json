@@ -1,8 +1,10 @@
 {
   "id": "learning_micro_gaps",
+  "name": "10-Second Learning Micro-Gaps",
   "title": "Insert 10-second pauses every few minutes when learning.",
-  "subtitle": "Micro-offline gains",
-  "rationale": "Brief eyes-open rest gaps let the brain replay just-practiced material, compressing extra repetitions into the session.",
+  "benefit": "Faster learning of new material.",
+  "subtitle": "Study Method",
+  "rationale": "Brief eyes-open pauses let the brain replay just-practiced material, compressing extra repetitions into the session.",
   "kind": "deep_work",
   "targets": [
     "Learning speed",

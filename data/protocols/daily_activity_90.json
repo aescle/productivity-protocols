@@ -1,8 +1,10 @@
 {
   "id": "daily_activity_90",
+  "name": "60-Minute Movement Day",
   "title": "Move for 60 minutes per day.",
-  "subtitle": "Advanced daily activity",
-  "rationale": "Use the day’s open edges for movement until a genuinely active day is the baseline.",
+  "benefit": "Strong daily energy and a consistently clear head.",
+  "subtitle": "Daily Activity",
+  "rationale": "Using the day's open edges for movement makes an active day the baseline rather than something a workout has to supply.",
   "kind": "walk",
   "family": "daily_activity",
   "tier": "advanced",

@@ -1,8 +1,10 @@
 {
   "id": "carb_timing",
+  "name": "Carb Timing",
   "title": "Move carbs out of your drag window.",
-  "subtitle": "Meal composition",
-  "rationale": "Shift carbohydrate intake away from the work or evening window where your recorded response is weaker.",
+  "benefit": "Fewer energy crashes during work hours.",
+  "subtitle": "Meal Timing",
+  "rationale": "The metabolic response to carbohydrate differs by time of day, so moving it away from weak windows reduces energy dips.",
   "kind": "nutrition",
   "targets": [
     "Meal composition",

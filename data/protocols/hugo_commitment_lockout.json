@@ -1,0 +1,33 @@
+{
+  "id": "hugo_commitment_lockout",
+  "name": "Remove Your Escape Routes",
+  "title": "Remove your own escape routes before a deadline sprint.",
+  "benefit": "Finished work by the deadline.",
+  "subtitle": "Commitment Device",
+  "rationale": "Making the exit expensive converts a slipping deadline into finished work more reliably than willpower does.",
+  "origin": "Victor Hugo locked away his clothes to finish a book early.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 240,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Commitment-device research shows pre-commitment beats in-the-moment willpower; Hugo is the canonical case.",
+    "sources": [
+      {
+        "label": "Victor Hugo's commitment device",
+        "url": "https://followmentalgarden.substack.com/p/victor-hugo-procrastination"
+      }
+    ]
+  },
+  "indications": [
+    "A real deadline is slipping to reachable distractions.",
+    "Willpower reliably loses to the same three escape hatches."
+  ],
+  "guide": {
+    "url": "https://followmentalgarden.substack.com/p/victor-hugo-procrastination",
+    "source": "Mental Garden"
+  }
+}

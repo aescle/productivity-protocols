@@ -1,8 +1,10 @@
 {
   "id": "magnesium_evening",
+  "name": "200–400-Milligram Evening Magnesium",
   "title": "Test 200 to 400 milligrams of magnesium in the evening.",
-  "subtitle": "Sleep supplement experiment",
-  "rationale": "Run a bounded experiment on an inexpensive, low-risk supplement with suggestive but thin sleep evidence.",
+  "benefit": "Possibly deeper and more restful sleep.",
+  "subtitle": "Sleep Supplement",
+  "rationale": "Magnesium is cheap and low-risk enough to test directly against your own sleep data over a couple of weeks.",
   "kind": "nutrition",
   "targets": [
     "Sleep quality",

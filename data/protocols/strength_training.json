@@ -1,8 +1,10 @@
 {
   "id": "strength_training",
+  "name": "Weekly Lift",
   "title": "Lift once per week.",
-  "subtitle": "Strength floor",
-  "rationale": "Keep the weekly strength floor explicit instead of treating all training as cardio.",
+  "benefit": "More energy and fewer aches from desk work.",
+  "subtitle": "Strength Floor",
+  "rationale": "An explicit weekly strength floor prevents training from collapsing entirely into cardio.",
   "kind": "training",
   "family": "strength_capacity",
   "tier": "beginner",
@@ -29,7 +31,7 @@
   "indications": [
     "No structured resistance work happens in a typical week.",
     "Training is exclusively cardio.",
-    "Strength or muscle mass is an explicit goal."
+    "Energy and posture sag across long desk weeks."
   ],
   "guide": {
     "source": "The Fitness Wiki",

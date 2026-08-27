@@ -1,8 +1,10 @@
 {
   "id": "mouth_taping",
+  "name": "Mouth Taping",
   "title": "Test mouth taping to force nasal breathing overnight.",
-  "subtitle": "Nasal breathing experiment",
-  "rationale": "Try a low-cost nudge toward nasal breathing during sleep, treated honestly as an experiment rather than a proven lever.",
+  "benefit": "Possibly quieter and more restful sleep.",
+  "subtitle": "Sleep Experiment",
+  "rationale": "The evidence is thin, but the practice is cheap enough to test directly for anyone who breathes comfortably through the nose.",
   "kind": "sleep",
   "targets": [
     "Sleep quality",

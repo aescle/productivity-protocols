@@ -1,0 +1,33 @@
+{
+  "id": "after_action_review",
+  "name": "After-Action Review",
+  "title": "Debrief every push against what was supposed to happen.",
+  "benefit": "Better performance on each successive project.",
+  "subtitle": "Work Debrief",
+  "rationale": "Reviewing immediately, while memory is still honest, is what turns an experience into a lesson the team keeps.",
+  "origin": "The US Army developed the four-question format.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Debriefing meta-analysis found structured reviews improve subsequent performance by roughly 20-25 percent.",
+    "sources": [
+      {
+        "label": "Wharton on after-action reviews",
+        "url": "https://executiveeducation.wharton.upenn.edu/thought-leadership/wharton-at-work/2021/07/after-action-reviews-simple-tool/"
+      }
+    ]
+  },
+  "indications": [
+    "Launches end with relief and zero review.",
+    "The same launch mistakes repeat verbatim."
+  ],
+  "guide": {
+    "url": "https://executiveeducation.wharton.upenn.edu/thought-leadership/wharton-at-work/2021/07/after-action-reviews-simple-tool/",
+    "source": "Wharton"
+  }
+}

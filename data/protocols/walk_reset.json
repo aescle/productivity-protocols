@@ -1,8 +1,10 @@
 {
   "id": "walk_reset",
+  "name": "30-Minute Daily Movement Floor",
   "title": "Move for 30 minutes per day.",
-  "subtitle": "Daily activity floor",
-  "rationale": "Build a minimum daily movement dose that supports energy across the workday.",
+  "benefit": "Steadier energy and a clearer head.",
+  "subtitle": "Daily Activity",
+  "rationale": "A minimum daily movement dose supports energy across the workday regardless of whether a workout happens.",
   "kind": "walk",
   "family": "daily_activity",
   "tier": "beginner",

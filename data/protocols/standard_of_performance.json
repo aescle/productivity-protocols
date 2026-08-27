@@ -1,0 +1,33 @@
+{
+  "id": "standard_of_performance",
+  "name": "Standard of Performance",
+  "title": "Write explicit standards for how you do the work.",
+  "benefit": "More consistent quality of work.",
+  "subtitle": "Work Standards",
+  "rationale": "Writing down what excellence looks like in each part of the work makes quality a controllable input rather than a hoped-for result.",
+  "origin": "Bill Walsh took the 49ers from worst to champions with his Standard of Performance.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Walsh's Standard of Performance from The Score Takes Care of Itself; widely adopted by operators, practitioner-only as a protocol.",
+    "sources": [
+      {
+        "label": "Bill Walsh's Standard of Performance",
+        "url": "https://www.sachinrekhi.com/p/bill-walsh-the-score-takes-care-of-itself"
+      }
+    ]
+  },
+  "indications": [
+    "Outcomes are obsessed over; the inputs that produce them are undefined.",
+    "Quality varies with mood because 'done well' was never written down."
+  ],
+  "guide": {
+    "url": "https://www.sachinrekhi.com/p/bill-walsh-the-score-takes-care-of-itself",
+    "source": "Sachin Rekhi"
+  }
+}

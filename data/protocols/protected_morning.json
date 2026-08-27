@@ -1,0 +1,33 @@
+{
+  "id": "protected_morning",
+  "name": "Protected Morning",
+  "title": "Start reactive work at a fixed late hour.",
+  "benefit": "More done in fewer, better hours.",
+  "subtitle": "Day Structure",
+  "rationale": "Owning the hours before reactive work starts produces a shorter day that outperforms a longer scattered one.",
+  "origin": "Daniel Ek opens for business at 10:30 in the morning.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 180,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Ek's stated structure; morning-exercise cognition effects are documented, the block design is practitioner-only.",
+    "sources": [
+      {
+        "label": "Daniel Ek on Tim Ferriss",
+        "url": "https://tim.blog/2020/12/06/daniel-ek-transcript/"
+      }
+    ]
+  },
+  "indications": [
+    "The day starts inside the inbox and never escapes.",
+    "Input, training, and thinking get whatever is left, which is nothing."
+  ],
+  "guide": {
+    "url": "https://tim.blog/2020/12/06/daniel-ek-transcript/",
+    "source": "Tim Ferriss Show"
+  }
+}

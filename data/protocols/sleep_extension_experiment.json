@@ -1,8 +1,10 @@
 {
   "id": "sleep_extension_experiment",
+  "name": "45-Minute Sleep Extension",
   "title": "Add 45 minutes of time in bed for two weeks.",
-  "subtitle": "Sleep extension experiment",
-  "rationale": "Test whether current sleep is quietly short by extending the window and watching performance respond.",
+  "benefit": "More energy and sharper thinking if you are under-slept.",
+  "subtitle": "Sleep Experiment",
+  "rationale": "Extending time in bed for two weeks is the only reliable way to find out whether your sleep is quietly short.",
   "kind": "sleep",
   "targets": [
     "Sleep duration",

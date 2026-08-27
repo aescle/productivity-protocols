@@ -1,0 +1,30 @@
+{
+  "id": "decision_uniform",
+  "name": "Decision Minimalism",
+  "title": "Delete the trivial daily choices you keep remaking.",
+  "benefit": "More mental capacity for decisions that matter.",
+  "subtitle": "Choice Reduction",
+  "rationale": "Deleting trivial recurring choices preserves judgment for the decisions that actually carry consequences.",
+  "origin": "Mark Zuckerberg wears the same outfit to remove the choice.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Rests on decision-fatigue literature whose replications are mixed; the practice is cheap and popular among operators regardless.",
+    "sources": [
+      {
+        "label": "Zuckerberg on decision minimalism",
+        "url": "https://qz.com/292993/why-mark-zuckerberg-wears-the-same-teeshirt-every-day"
+      }
+    ]
+  },
+  "indications": [
+    "Mornings burn energy on choices with no payoff.",
+    "Trivial decisions get revisited daily."
+  ],
+  "guide": null
+}

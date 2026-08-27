@@ -1,8 +1,11 @@
 {
   "id": "decision_memo",
+  "name": "Decision Memo",
   "title": "Write a narrative memo before any significant decision.",
-  "subtitle": "Bezos memo",
-  "rationale": "Full sentences force complete thinking that bullet points hide; the memo becomes the meeting's floor.",
+  "benefit": "Better decisions and shorter meetings.",
+  "subtitle": "Decision Practice",
+  "rationale": "Full sentences force complete thinking that bullet points allow you to skip, so the gaps show up before the meeting.",
+  "origin": "Jeff Bezos replaced slides with six-page narrative memos at Amazon.",
   "kind": "deep_work",
   "targets": [
     "Decision quality",

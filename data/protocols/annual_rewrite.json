@@ -1,0 +1,33 @@
+{
+  "id": "annual_rewrite",
+  "name": "Annual Rewrite",
+  "title": "Rewrite your personal plan from a blank page once a year.",
+  "benefit": "Time spent on current priorities rather than old ones.",
+  "subtitle": "Yearly Planning",
+  "rationale": "Planning from a blank page each year strips out commitments that persist only because they already exist.",
+  "origin": "Marc Andreessen rewrites his plan yearly and cancels overcommitments mid-year.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Andreessen's practice; loosely supported by goal-setting research on explicit current goals.",
+    "sources": [
+      {
+        "label": "Marc Andreessen on productivity and scheduling",
+        "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/"
+      }
+    ]
+  },
+  "indications": [
+    "This year's calendar is running last year's priorities.",
+    "Commitments accrete and are never re-justified."
+  ],
+  "guide": {
+    "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/",
+    "source": "Marc Andreessen"
+  }
+}

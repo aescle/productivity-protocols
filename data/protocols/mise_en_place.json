@@ -1,0 +1,33 @@
+{
+  "id": "mise_en_place",
+  "name": "Set Up Before You Start",
+  "title": "Stage everything the block needs before you start.",
+  "benefit": "Uninterrupted work once you start.",
+  "subtitle": "Work Setup",
+  "rationale": "Staging everything before starting removes the mid-task scavenging that fragments otherwise good work blocks.",
+  "origin": "Professional kitchens run on the same discipline.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Kitchen practice adapted to knowledge work; adjacent to setup-time-reduction thinking, untested formally.",
+    "sources": [
+      {
+        "label": "Work Clean and mise en place",
+        "url": "https://www.forbes.com/sites/shawnsetaro/2016/04/27/work-clean/"
+      }
+    ]
+  },
+  "indications": [
+    "Blocks bleed minutes hunting tabs, docs, and chargers.",
+    "Sessions end in a mess the next session pays for."
+  ],
+  "guide": {
+    "url": "https://www.forbes.com/sites/shawnsetaro/2016/04/27/work-clean/",
+    "source": "Forbes"
+  }
+}

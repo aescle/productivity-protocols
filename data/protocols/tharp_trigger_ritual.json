@@ -1,0 +1,33 @@
+{
+  "id": "tharp_trigger_ritual",
+  "name": "Starting Ritual",
+  "title": "Fire one automatic first action that commits the session.",
+  "benefit": "An easier start and less time lost getting going.",
+  "subtitle": "Start Cue",
+  "rationale": "One trivial automatic action that commits the session removes the daily decision to begin.",
+  "origin": "Twyla Tharp's ritual was telling the cab driver the gym address.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Implementation-intention research shows pre-committed cues sharply raise follow-through; Tharp supplies the canonical form.",
+    "sources": [
+      {
+        "label": "Twyla Tharp's trigger ritual",
+        "url": "https://jamesclear.com/twyla-tharp"
+      }
+    ]
+  },
+  "indications": [
+    "The gap between intending and starting eats 20 minutes.",
+    "Sessions begun always finish; sessions unbegun multiply."
+  ],
+  "guide": {
+    "url": "https://jamesclear.com/twyla-tharp",
+    "source": "James Clear"
+  }
+}

@@ -1,8 +1,10 @@
 {
   "id": "caffeine_reduce",
+  "name": "Caffeine Reduction",
   "title": "Reduce caffeine to your sleep-safe dose.",
-  "subtitle": "Caffeine dose",
-  "rationale": "Use the lower learned dose range when higher recorded doses cost more sleep or recovery than they return in performance.",
+  "benefit": "Calmer focus and better sleep.",
+  "subtitle": "Caffeine Dose",
+  "rationale": "The effect of caffeine on sleep scales with dose, so a lower one can protect recovery without losing much alertness.",
   "kind": "nutrition",
   "targets": [
     "Caffeine dose",

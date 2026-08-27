@@ -1,8 +1,10 @@
 {
   "id": "sleep_regular_90",
+  "name": "90-Minute Wake Window",
   "title": "Keep wake time within a 90-minute window.",
-  "subtitle": "Sleep regularity floor",
-  "rationale": "Reduce large swings in wake time before trying to make sleep timing precise.",
+  "benefit": "Better sleep and steadier energy across the week.",
+  "subtitle": "Sleep Timing",
+  "rationale": "Reducing large swings in wake time matters more than precision when the current pattern is chaotic.",
   "kind": "sleep",
   "family": "sleep_regularity",
   "tier": "beginner",

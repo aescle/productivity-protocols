@@ -1,8 +1,11 @@
 {
   "id": "spaced_note_review",
+  "name": "Spaced Note Review",
   "title": "Review a daily batch of your old notes and highlights.",
-  "subtitle": "Spaced resurfacing",
-  "rationale": "Spaced re-exposure keeps your best collected ideas active when decisions arise, instead of buried in an archive.",
+  "benefit": "Better recall of your best ideas.",
+  "subtitle": "Note Practice",
+  "rationale": "Spaced re-exposure keeps collected ideas active and available when decisions arrive.",
+  "origin": "David Senra resurfaces book highlights daily.",
   "kind": "deep_work",
   "targets": [
     "Retention",

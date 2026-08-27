@@ -1,8 +1,10 @@
 {
   "id": "carb_composition",
+  "name": "Carb Composition",
   "title": "Move toward your better-performing carb share.",
-  "subtitle": "Macro composition",
-  "rationale": "Adjust overall carbohydrate share only when covered multi-day nutrition records support a better personal range.",
+  "benefit": "Steadier energy from the same food.",
+  "subtitle": "Meal Composition",
+  "rationale": "The share of carbohydrate in the diet changes energy stability and recovery, and personal response varies.",
   "kind": "nutrition",
   "targets": [
     "Carbohydrate share",

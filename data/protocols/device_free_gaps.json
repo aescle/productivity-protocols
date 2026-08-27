@@ -1,0 +1,33 @@
+{
+  "id": "device_free_gaps",
+  "name": "Device-Free Gaps",
+  "title": "Leave the ten-minute gaps of the day empty of screens.",
+  "benefit": "More original thinking and better ideas.",
+  "subtitle": "Attention Hygiene",
+  "rationale": "The small gaps of the day are where undirected thinking happens, and a phone fills every one of them.",
+  "origin": "Christopher Nolan carries no smartphone.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Mind-wandering research links unstimulated idle time to incubation, and phone-presence studies show working-memory costs.",
+    "sources": [
+      {
+        "label": "Nolan on avoiding smartphones",
+        "url": "https://www.entrepreneur.com/science-technology/award-winning-director-christopher-nolan-explains-why-he/241446"
+      }
+    ]
+  },
+  "indications": [
+    "Every wait, ride, and queue defaults to the phone.",
+    "Shower-grade ideas stopped arriving years ago."
+  ],
+  "guide": {
+    "url": "https://www.entrepreneur.com/science-technology/award-winning-director-christopher-nolan-explains-why-he/241446",
+    "source": "Entrepreneur"
+  }
+}

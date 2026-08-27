@@ -1,0 +1,33 @@
+{
+  "id": "weekly_hours_cap",
+  "name": "Weekly Hours Cap",
+  "title": "Cap sustained work near fifty hours a week.",
+  "benefit": "More real output and lower burnout risk.",
+  "subtitle": "Effort Ceiling",
+  "rationale": "Output per hour collapses past roughly fifty weekly hours, so the extra time is borrowed rather than added.",
+  "origin": "Dustin Moskovitz argued the case from Asana.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "moderate",
+    "summary": "Hours-output research shows productivity flattens or reverses past roughly 50 weekly hours; Moskovitz supplies the founder case.",
+    "sources": [
+      {
+        "label": "Dustin Moskovitz, Work Hard Live Well",
+        "url": "https://medium.com/building-asana/work-hard-live-well-ead679cb506d"
+      }
+    ]
+  },
+  "indications": [
+    "Sixty-hour weeks are the standing default.",
+    "The extra evening hours produce the week's worst work."
+  ],
+  "guide": {
+    "url": "https://medium.com/building-asana/work-hard-live-well-ead679cb506d",
+    "source": "Dustin Moskovitz"
+  }
+}

@@ -1,8 +1,10 @@
 {
   "id": "afternoon_nap",
+  "name": "10–20-Minute Power Nap",
   "title": "Take a 10-to-20-minute early-afternoon nap.",
-  "subtitle": "Strategic nap",
-  "rationale": "Use a short, early, bounded nap to buy back alertness without paying for it at night.",
+  "benefit": "Restored alertness for the second half of the day.",
+  "subtitle": "Strategic Nap",
+  "rationale": "A nap short enough to avoid deep sleep restores alertness without leaving grogginess or stealing from the night.",
   "kind": "sleep",
   "targets": [
     "Alertness",

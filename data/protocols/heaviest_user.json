@@ -1,0 +1,30 @@
+{
+  "id": "heaviest_user",
+  "name": "Use Your Own Product",
+  "title": "Use your own product harder than any customer ever will.",
+  "benefit": "Better product quality and fewer bugs customers find.",
+  "subtitle": "Product Testing",
+  "rationale": "Using your own product harder than any customer surfaces defects and design truths before customers meet them.",
+  "origin": "Yvon Chouinard field-tested Patagonia gear on his own expeditions.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 240,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Chouinard's documented practice; practitioner-only.",
+    "sources": [
+      {
+        "label": "Let My People Go Surfing notes",
+        "url": "https://www.alexjhughes.com/books/2023/1/10/let-my-people-go-surfing-yvon-chouinard"
+      }
+    ]
+  },
+  "indications": [
+    "Your own product usage is lighter than your median customer's.",
+    "Quality reports arrive from support tickets, not your own hands."
+  ],
+  "guide": null
+}

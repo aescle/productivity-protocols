@@ -1,0 +1,33 @@
+{
+  "id": "thought_experiment",
+  "name": "Thought Experiment",
+  "title": "Run the design to its extreme case in your head.",
+  "benefit": "Fewer costly mistakes in design.",
+  "subtitle": "Design Check",
+  "rationale": "Pushing a design to its extreme case in your head finds contradictions before anything gets built.",
+  "origin": "Albert Einstein rode alongside a light beam and found relativity.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Cognitive-science work documents mental simulation as a real discovery mechanism in expert practice.",
+    "sources": [
+      {
+        "label": "Einstein's light-beam thought experiment",
+        "url": "https://sites.pitt.edu/~jdnorton/Goodies/Chasing_the_light/"
+      }
+    ]
+  },
+  "indications": [
+    "Designs meet their edge cases only in production.",
+    "The team prototypes before anyone has imagined the limit."
+  ],
+  "guide": {
+    "url": "https://sites.pitt.edu/~jdnorton/Goodies/Chasing_the_light/",
+    "source": "John Norton"
+  }
+}

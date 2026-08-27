@@ -1,8 +1,11 @@
 {
   "id": "nondefault_meeting_lengths",
+  "name": "15–20-Minute Meeting Defaults",
   "title": "Book meetings at 15 or 20 minutes, not the default 30.",
-  "subtitle": "Meeting sizing",
-  "rationale": "Meetings expand to their scheduled slot; size them to the topic and reclaim the difference.",
+  "benefit": "Fewer wasted meeting hours.",
+  "subtitle": "Meeting Sizing",
+  "rationale": "Meetings expand to fill whatever slot they are given, so sizing the slot to the topic returns the difference.",
+  "origin": "Sam Altman books fifteen and twenty minute meetings.",
   "kind": "calendar_defense",
   "targets": [
     "Calendar",

@@ -1,8 +1,10 @@
 {
   "id": "sauna_intro",
+  "name": "15–20-Minute Weekly Sauna",
   "title": "Take one 15-to-20-minute sauna session this week.",
-  "subtitle": "Heat exposure floor",
-  "rationale": "Start deliberate heat exposure as a repeatable recovery practice, not an occasional spa event.",
+  "benefit": "Better sleep and lower stress.",
+  "subtitle": "Heat Exposure",
+  "rationale": "One weekly session is enough to make heat a repeatable recovery practice rather than an occasional treat.",
   "kind": "recovery",
   "family": "heat_exposure",
   "tier": "beginner",

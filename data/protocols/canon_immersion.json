@@ -1,0 +1,33 @@
+{
+  "id": "canon_immersion",
+  "name": "Study the Greats",
+  "title": "Study the all-time best of your craft, not the current feed.",
+  "benefit": "Better taste and more original work.",
+  "subtitle": "Craft Input",
+  "rationale": "Benchmarking against the best work ever made produces a different standard than competing with whatever is currently popular.",
+  "origin": "Rick Rubin studies the all-time canon rather than current releases.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Rubin's practice; expertise research supports studying exemplars, the feed-replacement framing is his.",
+    "sources": [
+      {
+        "label": "Rick Rubin on Tim Ferriss (transcript)",
+        "url": "https://tim.blog/wp-content/uploads/2018/07/76-rick-rubin.pdf"
+      }
+    ]
+  },
+  "indications": [
+    "Craft input is 90 percent contemporary feed.",
+    "Your work increasingly resembles everyone else's."
+  ],
+  "guide": {
+    "url": "https://tim.blog/wp-content/uploads/2018/07/76-rick-rubin.pdf",
+    "source": "Tim Ferriss Show"
+  }
+}

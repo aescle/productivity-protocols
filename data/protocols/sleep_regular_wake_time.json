@@ -1,8 +1,10 @@
 {
   "id": "sleep_regular_wake_time",
+  "name": "45-Minute Wake Window",
   "title": "Keep wake time within a 45-minute window.",
-  "subtitle": "Sleep anchor",
-  "rationale": "A stable wake time keeps the circadian system anchored even when bedtime drifts.",
+  "benefit": "More consistent sleep and clearer mornings.",
+  "subtitle": "Sleep Timing",
+  "rationale": "A stable wake time keeps the circadian system anchored even when bedtime moves.",
   "kind": "sleep",
   "family": "sleep_regularity",
   "tier": "intermediate",

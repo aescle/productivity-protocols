@@ -1,0 +1,33 @@
+{
+  "id": "parallel_book_pile",
+  "name": "Parallel Book Pile",
+  "title": "Read many books at once and abandon them freely.",
+  "benefit": "More reading and broader knowledge.",
+  "subtitle": "Reading Habit",
+  "rationale": "Removing the obligation to finish any book keeps total reading volume high, because interest picks the next one.",
+  "origin": "Marc Andreessen keeps many books in progress and abandons freely.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Andreessen's habit; consistent with interest-driven motivation research, untested.",
+    "sources": [
+      {
+        "label": "Marc Andreessen on productivity and scheduling",
+        "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/"
+      }
+    ]
+  },
+  "indications": [
+    "One dutiful book has blocked all reading for a month.",
+    "Reading died when it became a completion exercise."
+  ],
+  "guide": {
+    "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/",
+    "source": "Marc Andreessen"
+  }
+}

@@ -1,8 +1,11 @@
 {
   "id": "first_block_creation",
+  "name": "90-Minute First-Block Creation",
   "title": "Give the first 90 work minutes to creation, not communication.",
-  "subtitle": "First-block boundary",
-  "rationale": "Spend the day's freshest attention on the hardest work before the inbox sets the agenda.",
+  "benefit": "Real daily progress on your hardest problem.",
+  "subtitle": "Day Structure",
+  "rationale": "The day's freshest attention goes to the hardest problem only if it is spent before the inbox sets the agenda.",
+  "origin": "Jensen Huang finishes his top priority before reaching the office.",
   "kind": "deep_work",
   "targets": [
     "Deep work",
@@ -21,6 +24,10 @@
       {
         "label": "Interruption-reduction systematic review",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      },
+      {
+        "label": "Jensen Huang on winning the morning",
+        "url": "https://finance.yahoo.com/news/nvidia-ceo-jensen-huang-says-144532462.html"
       }
     ]
   },

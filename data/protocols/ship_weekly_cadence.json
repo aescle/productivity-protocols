@@ -1,8 +1,11 @@
 {
   "id": "ship_weekly_cadence",
+  "name": "Weekly Ship",
   "title": "Ship one finished artifact every week, same day, no exceptions.",
-  "subtitle": "Fixed shipping cadence",
+  "benefit": "More finished work and faster skill growth.",
+  "subtitle": "Shipping Cadence",
   "rationale": "A dated public cadence converts open-ended work into finished reps, and volume is where quality comes from.",
+  "origin": "Thomas Edison held himself to a minor invention every ten days.",
   "kind": "deep_work",
   "targets": [
     "Output",

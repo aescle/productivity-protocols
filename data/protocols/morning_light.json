@@ -1,8 +1,10 @@
 {
   "id": "morning_light",
+  "name": "Morning Light",
   "title": "Get outdoor light after waking.",
-  "subtitle": "Circadian rhythm",
-  "rationale": "Anchor the day with morning light before relying on stimulants or late-day fixes.",
+  "benefit": "Better sleep at night and easier mornings.",
+  "subtitle": "Light Exposure",
+  "rationale": "Morning light advances circadian timing, which makes waking easier and moves sleep earlier.",
   "kind": "sleep",
   "targets": [
     "Sleep timing",

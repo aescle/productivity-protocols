@@ -1,8 +1,10 @@
 {
   "id": "single_tasking",
+  "name": "One Task at a Time",
   "title": "Run one task on one screen at a time.",
-  "subtitle": "Attention discipline",
-  "rationale": "Close everything unrelated to the current task; task switching taxes accuracy and speed even when it feels efficient.",
+  "benefit": "Faster work with fewer mistakes.",
+  "subtitle": "Attention Discipline",
+  "rationale": "Task switching costs measurable time and accuracy even when it feels efficient.",
   "kind": "deep_work",
   "targets": [
     "Focus",

@@ -1,8 +1,10 @@
 {
   "id": "social_recovery",
+  "name": "Social Recovery",
   "title": "Include real social recovery each week.",
-  "subtitle": "Recovery protocol",
-  "rationale": "Social recovery is part of the health base, not a bonus after everything else is done.",
+  "benefit": "Better mood and genuine recovery.",
+  "subtitle": "Weekly Recovery",
+  "rationale": "Unstructured time with people who matter restores something that solitary rest does not.",
   "kind": "social",
   "targets": [
     "Mood",

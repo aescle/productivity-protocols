@@ -1,0 +1,33 @@
+{
+  "id": "trollope_paced_units",
+  "name": "15-Minute Pacing",
+  "title": "Hold a small fixed output per 15-minute unit, clock in view.",
+  "benefit": "Steady, substantial output from short sessions.",
+  "subtitle": "Output Pacing",
+  "rationale": "Pacing output against a clock in small units turns production into a rhythm rather than a daily effort of will.",
+  "origin": "Anthony Trollope wrote 250 words each quarter hour before work.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 180,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Trollope's documented method; frequent sub-goals with immediate feedback align with motivation research, untested directly.",
+    "sources": [
+      {
+        "label": "Trollope's 15-minute units",
+        "url": "https://jamesclear.com/anthony-trollope"
+      }
+    ]
+  },
+  "indications": [
+    "Long sessions drift and stall mid-way.",
+    "Output is countable in small units."
+  ],
+  "guide": {
+    "url": "https://jamesclear.com/anthony-trollope",
+    "source": "James Clear"
+  }
+}

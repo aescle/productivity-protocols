@@ -3,9 +3,11 @@
 export const PROTOCOLS = [
   {
     "id": "admin_batching",
+    "name": "Admin Batching",
     "title": "Batch admin into one daily window.",
-    "subtitle": "Schedule protocol",
-    "rationale": "Batch shallow work so it stops leaking into the highest-readiness blocks.",
+    "benefit": "Protected peak hours for real work.",
+    "subtitle": "Schedule Boundary",
+    "rationale": "Shallow work expands to fill whatever gaps it finds, so containing it to one window protects the hours when focus is highest.",
     "kind": "calendar_defense",
     "family": "calendar_defense",
     "tier": "beginner",
@@ -35,10 +37,75 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "admiration_notes",
+    "name": "Admiration Notes",
+    "title": "Send short unsolicited notes to people whose work you admire.",
+    "benefit": "Valuable relationships with people you respect.",
+    "subtitle": "Outreach Habit",
+    "rationale": "A specific, genuine note with no request attached is rare enough that accomplished people usually answer it.",
+    "origin": "Patrick Collison calls it one of his highest-return habits.",
+    "kind": "social",
+    "targets": [
+      "Network",
+      "Mood"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Collison's practice; practitioner-only.",
+      "sources": [
+        {
+          "label": "Collison on the Knowledge Project",
+          "url": "https://fs.blog/knowledge-project-podcast/patrick-collison/"
+        }
+      ]
+    },
+    "indications": [
+      "Your network grows only through inbound and accident.",
+      "You finish great work with no one to tell."
+    ],
+    "guide": null
+  },
+  {
+    "id": "adversarial_collaboration",
+    "name": "Adversarial Collaboration",
+    "title": "Design a test both sides accept before running the disagreement.",
+    "benefit": "Resolved disagreements and better decisions.",
+    "subtitle": "Dispute Resolution",
+    "rationale": "Agreeing on the test before running it means both sides accept the result, which ends the argument for good.",
+    "origin": "Daniel Kahneman formalized the method with his intellectual opponents.",
+    "kind": "social",
+    "targets": [
+      "Network",
+      "Judgment"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "A published scientific methodology with a growing literature; direct transfer to team disputes is straightforward.",
+      "sources": [
+        {
+          "label": "Kahneman on adversarial collaboration",
+          "url": "https://www.edge.org/adversarial-collaboration-daniel-kahneman"
+        }
+      ]
+    },
+    "indications": [
+      "The same argument has run three cycles unresolved.",
+      "Both parties are smart and both are certain."
+    ],
+    "guide": {
+      "url": "https://www.edge.org/adversarial-collaboration-daniel-kahneman",
+      "source": "Edge"
+    }
+  },
+  {
     "id": "aerobic_150",
+    "name": "150 Aerobic Minutes",
     "title": "Complete 150 aerobic minutes per week.",
-    "subtitle": "Aerobic standard",
-    "rationale": "Build enough weekly aerobic volume that cardiovascular work is a dependable base.",
+    "benefit": "More energy, better mood, and less stress.",
+    "subtitle": "Aerobic Volume",
+    "rationale": "This is the weekly volume where most of the documented cardiovascular and energy benefits appear.",
     "kind": "training",
     "family": "aerobic_volume",
     "tier": "intermediate",
@@ -65,8 +132,8 @@ export const PROTOCOLS = [
     },
     "indications": [
       "A 30-minute weekly aerobic floor is established.",
-      "Cardiovascular fitness is a stated goal.",
-      "Current volume sits well below guideline levels."
+      "Energy fades before the workday does.",
+      "Stressful stretches take longer to shake off."
     ],
     "guide": {
       "source": "Cleveland Clinic",
@@ -75,9 +142,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "aerobic_300",
+    "name": "300 Aerobic Minutes",
     "title": "Complete 300 aerobic minutes per week.",
-    "subtitle": "High aerobic volume",
-    "rationale": "Use a high weekly aerobic base to compound cardiovascular capacity without making every session hard.",
+    "benefit": "High energy, strong fitness, and clearer thinking.",
+    "subtitle": "Aerobic Volume",
+    "rationale": "Doubling the weekly aerobic base adds further benefit without requiring any session to be hard.",
     "kind": "training",
     "family": "aerobic_volume",
     "tier": "advanced",
@@ -104,8 +173,8 @@ export const PROTOCOLS = [
     },
     "indications": [
       "150 weekly aerobic minutes are already routine.",
-      "Further cardiovascular headroom is the goal.",
-      "Training time is available without crowding out recovery."
+      "Runs and rides double as your best thinking time.",
+      "Recovery absorbs more volume without denting output."
     ],
     "guide": {
       "source": "Cleveland Clinic",
@@ -113,10 +182,45 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "after_action_review",
+    "name": "After-Action Review",
+    "title": "Debrief every push against what was supposed to happen.",
+    "benefit": "Better performance on each successive project.",
+    "subtitle": "Work Debrief",
+    "rationale": "Reviewing immediately, while memory is still honest, is what turns an experience into a lesson the team keeps.",
+    "origin": "The US Army developed the four-question format.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Debriefing meta-analysis found structured reviews improve subsequent performance by roughly 20-25 percent.",
+      "sources": [
+        {
+          "label": "Wharton on after-action reviews",
+          "url": "https://executiveeducation.wharton.upenn.edu/thought-leadership/wharton-at-work/2021/07/after-action-reviews-simple-tool/"
+        }
+      ]
+    },
+    "indications": [
+      "Launches end with relief and zero review.",
+      "The same launch mistakes repeat verbatim."
+    ],
+    "guide": {
+      "url": "https://executiveeducation.wharton.upenn.edu/thought-leadership/wharton-at-work/2021/07/after-action-reviews-simple-tool/",
+      "source": "Wharton"
+    }
+  },
+  {
     "id": "afternoon_nap",
+    "name": "10–20-Minute Power Nap",
     "title": "Take a 10-to-20-minute early-afternoon nap.",
-    "subtitle": "Strategic nap",
-    "rationale": "Use a short, early, bounded nap to buy back alertness without paying for it at night.",
+    "benefit": "Restored alertness for the second half of the day.",
+    "subtitle": "Strategic Nap",
+    "rationale": "A nap short enough to avoid deep sleep restores alertness without leaving grogginess or stealing from the night.",
     "kind": "sleep",
     "targets": [
       "Alertness",
@@ -149,10 +253,45 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "aim_for_the_center",
+    "name": "Work on the Core Problem",
+    "title": "Work each session on the task nearest the problem's hard core.",
+    "benefit": "Faster progress on the part that actually matters.",
+    "subtitle": "Task Selection",
+    "rationale": "Results are nonlinear near the hard core of a problem, so peripheral tasks feel productive while producing far less.",
+    "origin": "Paul Graham describes it in How to Work Hard.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Graham's essay claim, consistent with deliberate-practice work at the edge of ability; untested directly.",
+      "sources": [
+        {
+          "label": "Paul Graham, How to Work Hard",
+          "url": "https://paulgraham.com/hwh.html"
+        }
+      ]
+    },
+    "indications": [
+      "Busy weeks keep ending with the core untouched.",
+      "Peripheral tasks always feel more available than central ones."
+    ],
+    "guide": {
+      "url": "https://paulgraham.com/hwh.html",
+      "source": "Paul Graham"
+    }
+  },
+  {
     "id": "alcohol_free_weeknights",
+    "name": "Dry Weeknights",
     "title": "Keep worknights alcohol-free.",
-    "subtitle": "Alcohol dose boundary",
-    "rationale": "Concentrate drinking into deliberate occasions so recovery and next-day output stop paying a nightly tax.",
+    "benefit": "Clearer thinking on every workday.",
+    "subtitle": "Alcohol Limit",
+    "rationale": "Concentrating drinking into deliberate occasions removes a nightly tax on recovery and next-day output.",
     "kind": "nutrition",
     "targets": [
       "Sleep quality",
@@ -182,9 +321,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "alcohol_sleep_cutoff",
+    "name": "Alcohol Cutoff",
     "title": "Stop alcohol at least three hours before bed.",
-    "subtitle": "Alcohol timing",
-    "rationale": "Keep alcohol clear of the sleep window so it stops fragmenting the second half of the night.",
+    "benefit": "Better sleep quality and sharper mornings.",
+    "subtitle": "Alcohol Timing",
+    "rationale": "Alcohol close to bedtime suppresses REM and fragments the second half of the night even at moderate doses.",
     "kind": "nutrition",
     "targets": [
       "Sleep quality",
@@ -213,10 +354,109 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "angelou_spartan_offsite",
+    "name": "Separate Workspace",
+    "title": "Keep a bare separate workspace used only for the hardest work.",
+    "benefit": "Faster, deeper focus when you sit down.",
+    "subtitle": "Work Environment",
+    "rationale": "A room used for nothing else becomes a cue for the work, so focus starts on arrival instead of being summoned.",
+    "origin": "Maya Angelou wrote in a bare rented hotel room.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 240,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Angelou's lifelong method; context-conditioning research supports environments as behavioral cues, the ritual itself is untested.",
+      "sources": [
+        {
+          "label": "Maya Angelou's writing routine",
+          "url": "https://famouswritingroutines.com/writing-routines/maya-angelou-writing-routine/"
+        }
+      ]
+    },
+    "indications": [
+      "Home and office are saturated with distraction cues.",
+      "Focus reliably improves in borrowed spaces like flights and libraries."
+    ],
+    "guide": {
+      "url": "https://famouswritingroutines.com/writing-routines/maya-angelou-writing-routine/",
+      "source": "Famous Writing Routines"
+    }
+  },
+  {
+    "id": "annual_challenge",
+    "name": "Annual Challenge",
+    "title": "Set one public, measurable personal challenge each year.",
+    "benefit": "New capabilities outside your daily work.",
+    "subtitle": "Yearly Goal",
+    "rationale": "A public, measurable, year-long goal forces growth in areas the job would never require.",
+    "origin": "Mark Zuckerberg ran one every year, from Mandarin to 365 miles.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Zuckerberg's practice; specific difficult goals and public commitment both have research support, the annual format does not.",
+      "sources": [
+        {
+          "label": "Zuckerberg's annual challenges",
+          "url": "https://time.com/4167229/mark-zuckerberg-new-year-run-365-miles/"
+        }
+      ]
+    },
+    "indications": [
+      "Skill growth outside the job stalled years ago.",
+      "Public accountability reliably works on you."
+    ],
+    "guide": null
+  },
+  {
+    "id": "annual_rewrite",
+    "name": "Annual Rewrite",
+    "title": "Rewrite your personal plan from a blank page once a year.",
+    "benefit": "Time spent on current priorities rather than old ones.",
+    "subtitle": "Yearly Planning",
+    "rationale": "Planning from a blank page each year strips out commitments that persist only because they already exist.",
+    "origin": "Marc Andreessen rewrites his plan yearly and cancels overcommitments mid-year.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Andreessen's practice; loosely supported by goal-setting research on explicit current goals.",
+      "sources": [
+        {
+          "label": "Marc Andreessen on productivity and scheduling",
+          "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/"
+        }
+      ]
+    },
+    "indications": [
+      "This year's calendar is running last year's priorities.",
+      "Commitments accrete and are never re-justified."
+    ],
+    "guide": {
+      "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/",
+      "source": "Marc Andreessen"
+    }
+  },
+  {
     "id": "annual_think_week",
+    "name": "Think Week",
     "title": "Take a solo think week once or twice a year.",
-    "subtitle": "Strategic isolation",
-    "rationale": "Days of isolation with only reading and open problems make strategic thought possible in a way tactical weeks never do.",
+    "benefit": "Better strategic decisions.",
+    "subtitle": "Strategic Retreat",
+    "rationale": "Several uninterrupted days with only reading and open problems make strategic thought possible in a way tactical weeks never do.",
+    "origin": "Bill Gates took twice-yearly Think Weeks in a cabin.",
     "kind": "deep_work",
     "targets": [
       "Strategy",
@@ -245,9 +485,12 @@ export const PROTOCOLS = [
   },
   {
     "id": "anti_todo_list",
-    "title": "Log each task as you finish it; review the list at day's end.",
-    "subtitle": "Anti-todo list",
-    "rationale": "Record what you actually completed, not what you planned, and end the day on evidence of progress.",
+    "name": "Anti-Todo List",
+    "title": "Write down each task as you finish it.",
+    "benefit": "Better motivation and a clearer sense of progress.",
+    "subtitle": "Progress Log",
+    "rationale": "Recording what you finished, rather than what you planned, gives the day visible evidence of progress.",
+    "origin": "Marc Andreessen kept his on the back of a daily index card.",
     "kind": "deep_work",
     "targets": [
       "Motivation",
@@ -276,10 +519,42 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "archive_mining",
+    "name": "Read Outside Your Field",
+    "title": "Mine primary sources far outside your field for raw material.",
+    "benefit": "More original ideas and distinctive work.",
+    "subtitle": "Source Diversity",
+    "rationale": "Material nobody else in your field is reading gives your work a depth that competitors reading the same sources cannot match.",
+    "origin": "Bob Dylan spent a year reading Civil War newspapers on microfilm.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Innovation research finds distant-domain recombination rates as more original; the archive habit is Dylan's form.",
+      "sources": [
+        {
+          "label": "Dylan's library education",
+          "url": "https://uh.edu/engines/epi3218.htm"
+        }
+      ]
+    },
+    "indications": [
+      "All input comes from the same sources as everyone else's.",
+      "Your work has started resembling the field's average."
+    ],
+    "guide": null
+  },
+  {
     "id": "background_sound_design",
+    "name": "Soundscape Design",
     "title": "Pick one deliberate soundscape per focus block.",
-    "subtitle": "Auditory environment",
-    "rationale": "Choose silence, noise, or familiar instrumental sound on purpose, instead of letting novel audio compete for attention.",
+    "benefit": "Faster focus in a distracting environment.",
+    "subtitle": "Work Environment",
+    "rationale": "Novel audio competes for attention, while a deliberately chosen constant one stops the environment from interrupting.",
     "kind": "deep_work",
     "targets": [
       "Focus",
@@ -306,9 +581,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "bedroom_cool_dark",
+    "name": "Bedroom Setup",
     "title": "Set the bedroom cold, dark, and quiet.",
-    "subtitle": "Sleep environment",
-    "rationale": "Fix the physical environment once so every night starts from a pro-sleep baseline without willpower.",
+    "benefit": "Deeper, less broken sleep.",
+    "subtitle": "Sleep Environment",
+    "rationale": "Heat and light disrupt sleep stages, so fixing the room once removes the problem permanently without willpower.",
     "kind": "sleep",
     "targets": [
       "Sleep quality",
@@ -338,9 +615,12 @@ export const PROTOCOLS = [
   },
   {
     "id": "best_hour_for_yourself",
+    "name": "Best Hour for Yourself",
     "title": "Sell your best hour to yourself before anyone else.",
-    "subtitle": "Munger's hour",
-    "rationale": "Reserve the single sharpest hour of the day for your own long-term project; everyone else gets the rest.",
+    "benefit": "Steady progress on your own most important work.",
+    "subtitle": "Time Allocation",
+    "rationale": "Reserving the sharpest hour for your own work means the highest-value time is not automatically sold to someone else's agenda.",
+    "origin": "Charlie Munger sold the best hour of the day to himself.",
     "kind": "deep_work",
     "targets": [
       "Compounding",
@@ -369,9 +649,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "binaural_beats_focus",
+    "name": "40 Hz Focus Audio",
     "title": "Play 40 Hz binaural beats for five minutes before deep work.",
-    "subtitle": "Auditory ramp",
-    "rationale": "Use a cheap, low-risk auditory cue to mark and ramp into a focus bout.",
+    "benefit": "A quicker start into focused work.",
+    "subtitle": "Start Ritual",
+    "rationale": "A consistent audio cue at the start of a block marks the transition and shortens the ramp into focus.",
     "kind": "deep_work",
     "targets": [
       "Focus",
@@ -396,9 +678,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "blueberries_daily",
+    "name": "Daily Blueberries",
     "title": "Eat a cup of blueberries daily.",
-    "subtitle": "Anthocyanin dose",
-    "rationale": "A cheap, pleasant polyphenol dose with small-trial support for memory in older adults.",
+    "benefit": "Better memory as you get older.",
+    "subtitle": "Daily Food",
+    "rationale": "Anthocyanins are linked to better memory scores in trials with older adults, and the dose is one cup.",
     "kind": "nutrition",
     "targets": [
       "Memory",
@@ -421,7 +705,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Berry and polyphenol intake is low.",
-      "Long-horizon brain health is an explicit goal."
+      "Cognitive longevity matters and cheap levers are welcome."
     ],
     "guide": {
       "url": "https://www.foundmyfitness.com/topics/polyphenols-brain-aging",
@@ -430,9 +714,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "body_doubling",
+    "name": "Body Doubling",
     "title": "Book a co-working session for work you keep avoiding.",
-    "subtitle": "Social accountability",
-    "rationale": "Work alongside another person, in the room or on a call, and let quiet social presence hold you to the task.",
+    "benefit": "Work you keep avoiding actually gets done.",
+    "subtitle": "Social Accountability",
+    "rationale": "Quiet social presence makes the task harder to abandon, which is why avoided work finally gets done in company.",
     "kind": "deep_work",
     "targets": [
       "Task initiation",
@@ -461,10 +747,108 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "bookend_questions",
+    "name": "Morning and Evening Questions",
+    "title": "Write one plan in the morning and one review at night.",
+    "benefit": "A more deliberate day and steady week-to-week improvement.",
+    "subtitle": "Daily Review",
+    "rationale": "A morning question forces prioritization before reactivity sets in, and an evening one turns the day into feedback.",
+    "origin": "Benjamin Franklin ran the same two questions daily for decades.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "End-of-day written reflection improved performance roughly 20 percent in field experiments; the paired-question form is Franklin's.",
+      "sources": [
+        {
+          "label": "Franklin's daily schedule",
+          "url": "https://www.mayooshin.com/benjamin-franklins-daily-schedule"
+        }
+      ]
+    },
+    "indications": [
+      "Days start reactive and end unexamined.",
+      "A two-question habit is sustainable where journaling was not."
+    ],
+    "guide": {
+      "url": "https://www.mayooshin.com/benjamin-franklins-daily-schedule",
+      "source": "Mayo Oshin"
+    }
+  },
+  {
+    "id": "braintrust_session",
+    "name": "Candid Peer Review",
+    "title": "Show rough work to candid peers who hold zero authority over you.",
+    "benefit": "Better work through honest early feedback.",
+    "subtitle": "Peer Feedback",
+    "rationale": "Feedback is candid when the people giving it have no authority to mandate changes, so the maker keeps ownership.",
+    "origin": "Pixar runs its films through a braintrust with no mandate power.",
+    "kind": "social",
+    "targets": [
+      "Network",
+      "Judgment"
+    ],
+    "durationMinutes": 90,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Pixar's documented practice; adjacent to psychological-safety research, the no-authority rule is their design.",
+      "sources": [
+        {
+          "label": "Inside the Pixar braintrust",
+          "url": "https://www.fastcompany.com/3027135/inside-the-pixar-braintrust"
+        }
+      ]
+    },
+    "indications": [
+      "Feedback arrives late, softened, or attached to power.",
+      "Drafts go from private to shipped with no middle exposure."
+    ],
+    "guide": {
+      "url": "https://www.fastcompany.com/3027135/inside-the-pixar-braintrust",
+      "source": "Fast Company"
+    }
+  },
+  {
+    "id": "breakfast_club",
+    "name": "Morning Training Group",
+    "title": "Run a standing before-work training block with two or three peers.",
+    "benefit": "Consistent training and better energy.",
+    "subtitle": "Group Training",
+    "rationale": "A standing group makes the extra session survive the days motivation does not, and everyone's baseline rises together.",
+    "origin": "Michael Jordan trained before practice with Pippen and Harper.",
+    "kind": "training",
+    "targets": [
+      "Fitness",
+      "Energy"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Peer-commitment and group-adherence research supports the mechanism; the format is Jordan's.",
+      "sources": [
+        {
+          "label": "Jordan's Breakfast Club",
+          "url": "https://www.si.com/media/2016/08/09/jordan-brand-bringing-mjs-famous-breakfast-club-workout-online"
+        }
+      ]
+    },
+    "indications": [
+      "Solo extra work keeps dissolving after two weeks.",
+      "Two or three peers want the same edge."
+    ],
+    "guide": null
+  },
+  {
     "id": "broccoli_sprouts",
+    "name": "Broccoli Sprouts",
     "title": "Eat a half cup of broccoli sprouts most days.",
-    "subtitle": "Sulforaphane source",
-    "rationale": "Use the most potent dietary NRF2 inducer as a cheap, food-first antioxidant-pathway lever.",
+    "benefit": "Lower inflammation.",
+    "subtitle": "Daily Food",
+    "rationale": "Sprouts are the most concentrated dietary source of the compound that activates the body's antioxidant pathways.",
     "kind": "nutrition",
     "targets": [
       "Detoxification",
@@ -494,10 +878,78 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "buffer_blocks",
+    "name": "90-Minute Buffer Blocks",
+    "title": "Schedule 90 minutes of empty buffer daily and defend it like a meeting.",
+    "benefit": "Time to think instead of only reacting.",
+    "subtitle": "Calendar Space",
+    "rationale": "Empty calendar blocks are the only way the proactive part of the job survives a schedule that would otherwise fill itself.",
+    "origin": "Jeff Weiner scheduled daily blocks of nothing at LinkedIn.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 90,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Weiner's stated system; aligned with attention-restoration and incubation reasoning, practitioner-only.",
+      "sources": [
+        {
+          "label": "Weiner on scheduling nothing",
+          "url": "https://www.linkedin.com/pulse/20130403215758-22330283-the-importance-of-scheduling-nothing"
+        }
+      ]
+    },
+    "indications": [
+      "Back-to-back days leave zero thinking time.",
+      "Strategy happens only on vacation."
+    ],
+    "guide": {
+      "url": "https://www.linkedin.com/pulse/20130403215758-22330283-the-importance-of-scheduling-nothing",
+      "source": "LinkedIn"
+    }
+  },
+  {
+    "id": "bug_book",
+    "name": "Self-Observation Log",
+    "title": "Log your own working patterns in the third person.",
+    "benefit": "Better scheduling around when you actually perform.",
+    "subtitle": "Self Observation",
+    "rationale": "Observing yourself in the third person turns vague self-knowledge into patterns you can design a schedule around.",
+    "origin": "Jim Collins studies himself as a specimen he calls the bug.",
+    "kind": "recovery",
+    "targets": [
+      "Recovery",
+      "Stress"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Self-distancing research shows third-person framing improves regulation and reasoning; the naturalist's-log format is Collins'.",
+      "sources": [
+        {
+          "label": "Jim Collins interview notes",
+          "url": "https://podcastnotes.org/2019/02/19/collins/"
+        }
+      ]
+    },
+    "indications": [
+      "Your energy patterns are folklore, not data.",
+      "First-person journaling collapses into mood venting."
+    ],
+    "guide": {
+      "url": "https://podcastnotes.org/2019/02/19/collins/",
+      "source": "Podcast Notes"
+    }
+  },
+  {
     "id": "caffeine_cutoff",
+    "name": "Caffeine Cutoff",
     "title": "Keep caffeine inside your effective window.",
-    "subtitle": "Caffeine timing",
-    "rationale": "Place caffeine where your recorded dose supports work while staying clear of your learned sleep cutoff.",
+    "benefit": "Daytime alertness without losing sleep.",
+    "subtitle": "Caffeine Timing",
+    "rationale": "Caffeine has a long half-life, so a dose that feels harmless in the afternoon can still be active at bedtime.",
     "kind": "sleep",
     "targets": [
       "Caffeine timing",
@@ -527,9 +979,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "caffeine_increase",
+    "name": "Effective Caffeine Dose",
     "title": "Increase caffeine to your effective dose.",
-    "subtitle": "Caffeine dose",
-    "rationale": "Use the learned dose range only when higher recorded doses improve the following work window without a later sleep cost.",
+    "benefit": "More alertness for demanding work.",
+    "subtitle": "Caffeine Dose",
+    "rationale": "A dose you already tolerate can be timed to support a work window without costing sleep later.",
     "kind": "nutrition",
     "targets": [
       "Caffeine dose",
@@ -554,9 +1008,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "caffeine_nap",
+    "name": "15–20-Minute Caffeine Nap",
     "title": "Drink coffee, then nap 15 to 20 minutes.",
-    "subtitle": "Combined reset",
-    "rationale": "Caffeine taken right before a short nap peaks as you wake, stacking two alertness tools into one 20-minute window.",
+    "benefit": "Strong alertness for a demanding afternoon.",
+    "subtitle": "Combined Reset",
+    "rationale": "Caffeine takes about twenty minutes to take effect, so it peaks exactly as a short nap ends.",
     "kind": "sleep",
     "targets": [
       "Alertness",
@@ -590,9 +1046,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "caffeine_reduce",
+    "name": "Caffeine Reduction",
     "title": "Reduce caffeine to your sleep-safe dose.",
-    "subtitle": "Caffeine dose",
-    "rationale": "Use the lower learned dose range when higher recorded doses cost more sleep or recovery than they return in performance.",
+    "benefit": "Calmer focus and better sleep.",
+    "subtitle": "Caffeine Dose",
+    "rationale": "The effect of caffeine on sleep scales with dose, so a lower one can protect recovery without losing much alertness.",
     "kind": "nutrition",
     "targets": [
       "Caffeine dose",
@@ -618,10 +1076,45 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "canon_immersion",
+    "name": "Study the Greats",
+    "title": "Study the all-time best of your craft, not the current feed.",
+    "benefit": "Better taste and more original work.",
+    "subtitle": "Craft Input",
+    "rationale": "Benchmarking against the best work ever made produces a different standard than competing with whatever is currently popular.",
+    "origin": "Rick Rubin studies the all-time canon rather than current releases.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Rubin's practice; expertise research supports studying exemplars, the feed-replacement framing is his.",
+      "sources": [
+        {
+          "label": "Rick Rubin on Tim Ferriss (transcript)",
+          "url": "https://tim.blog/wp-content/uploads/2018/07/76-rick-rubin.pdf"
+        }
+      ]
+    },
+    "indications": [
+      "Craft input is 90 percent contemporary feed.",
+      "Your work increasingly resembles everyone else's."
+    ],
+    "guide": {
+      "url": "https://tim.blog/wp-content/uploads/2018/07/76-rick-rubin.pdf",
+      "source": "Tim Ferriss Show"
+    }
+  },
+  {
     "id": "carb_composition",
+    "name": "Carb Composition",
     "title": "Move toward your better-performing carb share.",
-    "subtitle": "Macro composition",
-    "rationale": "Adjust overall carbohydrate share only when covered multi-day nutrition records support a better personal range.",
+    "benefit": "Steadier energy from the same food.",
+    "subtitle": "Meal Composition",
+    "rationale": "The share of carbohydrate in the diet changes energy stability and recovery, and personal response varies.",
     "kind": "nutrition",
     "targets": [
       "Carbohydrate share",
@@ -647,9 +1140,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "carb_timing",
+    "name": "Carb Timing",
     "title": "Move carbs out of your drag window.",
-    "subtitle": "Meal composition",
-    "rationale": "Shift carbohydrate intake away from the work or evening window where your recorded response is weaker.",
+    "benefit": "Fewer energy crashes during work hours.",
+    "subtitle": "Meal Timing",
+    "rationale": "The metabolic response to carbohydrate differs by time of day, so moving it away from weak windows reduces energy dips.",
     "kind": "nutrition",
     "targets": [
       "Meal composition",
@@ -674,10 +1169,75 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "cardio_learning_stack",
+    "name": "Cardio Learning Stack",
+    "title": "Pair daily morning cardio with audiobooks or podcasts.",
+    "benefit": "Better fitness and steady learning in one hour.",
+    "subtitle": "Habit Stack",
+    "rationale": "Pairing a habit you want with one you already enjoy makes both survive a crowded morning.",
+    "origin": "Brian Armstrong pairs daily cardio with audiobooks.",
+    "kind": "training",
+    "targets": [
+      "Fitness",
+      "Energy"
+    ],
+    "durationMinutes": 45,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Temptation-bundling has randomized-trial support for boosting exercise adherence; the specific stack is Armstrong's.",
+      "sources": [
+        {
+          "label": "Armstrong's routine",
+          "url": "https://fortune.com/2022/10/31/coinbase-coin-ceo-brian-armstrong-turn-company-around/"
+        }
+      ]
+    },
+    "indications": [
+      "Cardio and reading each keep losing to the calendar alone.",
+      "Mornings have one free slot, not two."
+    ],
+    "guide": null
+  },
+  {
+    "id": "cleese_oasis_sessions",
+    "name": "90-Minute Thinking Time",
+    "title": "Seal 90 minutes of space-time for open play on one problem.",
+    "benefit": "More original solutions to hard problems.",
+    "subtitle": "Creative Block",
+    "rationale": "Creative work needs a protected space where the problem stays open, which efficient execution mode closes too early.",
+    "origin": "John Cleese described the open and closed modes in his 1991 lecture.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 90,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Grounded in MacKinnon's creativity research on tolerating ambiguity longer; the session format is Cleese's design.",
+      "sources": [
+        {
+          "label": "John Cleese on creativity",
+          "url": "https://www.themarginalian.org/2012/04/12/john-cleese-on-creativity-1991/"
+        }
+      ]
+    },
+    "indications": [
+      "All work time is execution; none is exploration.",
+      "Hard problems get closed too early with the first workable answer."
+    ],
+    "guide": {
+      "url": "https://www.themarginalian.org/2012/04/12/john-cleese-on-creativity-1991/",
+      "source": "The Marginalian"
+    }
+  },
+  {
     "id": "cold_plunge_11min",
+    "name": "11-Minute Cold Week",
     "title": "Accumulate 11 total minutes of cold immersion per week.",
-    "subtitle": "High cold volume",
-    "rationale": "Cap deliberate cold at a bounded weekly total split across sessions, so the practice stays a stimulus instead of becoming a time sink.",
+    "benefit": "Noticeably better mood and resilience.",
+    "subtitle": "Cold Volume",
+    "rationale": "A bounded weekly total keeps deliberate cold a stimulus instead of letting it expand into a time-consuming hobby.",
     "kind": "recovery",
     "family": "cold_exposure",
     "tier": "advanced",
@@ -717,9 +1277,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "cold_plunge_weekly",
+    "name": "Weekly Cold Plunge",
     "title": "Do two or three short cold immersions per week.",
-    "subtitle": "Cold immersion standard",
-    "rationale": "Move from shower finishes to deliberate immersions of one to three minutes, keeping each dose short and controlled.",
+    "benefit": "Better mood and higher stress tolerance.",
+    "subtitle": "Cold Immersion",
+    "rationale": "Short controlled immersions produce the catecholamine response without requiring long or dangerous exposure.",
     "kind": "recovery",
     "family": "cold_exposure",
     "tier": "intermediate",
@@ -759,9 +1321,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "cold_shower_finish",
+    "name": "30–60-Second Cold Finish",
     "title": "End your shower with 30 to 60 seconds cold.",
-    "subtitle": "Cold exposure floor",
-    "rationale": "Use the cheapest possible cold dose to build tolerance and test the alertness effect before investing in immersion.",
+    "benefit": "Sharper alertness in the morning.",
+    "subtitle": "Cold Exposure",
+    "rationale": "A brief cold finish is the cheapest possible dose of cold exposure and requires no equipment at all.",
     "kind": "recovery",
     "family": "cold_exposure",
     "tier": "beginner",
@@ -799,10 +1363,79 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "comeback_break",
+    "name": "Comeback Break",
+    "title": "After a major push, take a real multi-week off-block.",
+    "benefit": "Renewed energy and better work afterward.",
+    "subtitle": "Planned Deload",
+    "rationale": "A genuine multi-week break produces the next peak, because you return hungry rather than merely less tired.",
+    "origin": "Roger Federer took six months off before winning the Australian Open.",
+    "kind": "recovery",
+    "targets": [
+      "Recovery",
+      "Stress"
+    ],
+    "durationMinutes": 480,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Federer's framing; consistent with planned-deload reasoning in overtraining literature, untested for knowledge work.",
+      "sources": [
+        {
+          "label": "Federer on selective scheduling",
+          "url": "https://time.com/4659015/roger-federer-interview-tennis/"
+        },
+        {
+          "label": "Work detachment meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28133454/"
+        }
+      ]
+    },
+    "indications": [
+      "A brutal push just ended and the tank reads empty.",
+      "Output quality has declined for a month straight."
+    ],
+    "guide": null
+  },
+  {
+    "id": "competitor_walk",
+    "name": "Competitor Walk",
+    "title": "Walk a competitor's product and take one idea away.",
+    "benefit": "A steady flow of proven ideas.",
+    "subtitle": "Market Research",
+    "rationale": "Looking only for what a competitor does well turns rivalry into a free source of proven ideas.",
+    "origin": "Sam Walton walked rivals' stores with a pocket notebook.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Walton's documented lifelong habit; practitioner-only.",
+      "sources": [
+        {
+          "label": "Made in America notes",
+          "url": "https://rationalwalk.com/made-in-america-sam-waltons-story/"
+        }
+      ]
+    },
+    "indications": [
+      "Competitor knowledge arrives as screenshots, never as visits.",
+      "Rivalry currently produces dismissal instead of adoption."
+    ],
+    "guide": {
+      "url": "https://rationalwalk.com/made-in-america-sam-waltons-story/",
+      "source": "Rational Walk"
+    }
+  },
+  {
     "id": "consistent_ten_hour_window",
+    "name": "10-Hour Eating Window",
     "title": "Keep eating inside a consistent 10-hour window.",
-    "subtitle": "Eating window",
-    "rationale": "Test a stable eating window when longer or more variable covered windows predict weaker sleep, recovery, or output.",
+    "benefit": "More predictable energy and better sleep.",
+    "subtitle": "Eating Window",
+    "rationale": "A stable daily eating window steadies energy and removes late grazing that interferes with sleep.",
     "kind": "nutrition",
     "family": "eating_window",
     "tier": "beginner",
@@ -831,10 +1464,87 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "contrast_rounds",
+    "name": "Sauna and Cold Rounds",
+    "title": "Run four to six sauna-to-cold rounds to break a hijacked day.",
+    "benefit": "A reset mood and much lower stress.",
+    "subtitle": "Mood Reset",
+    "rationale": "Repeated heat and cold cycles produce a strong physiological shift that interrupts a bad mood faster than pushing through it.",
+    "origin": "Rick Rubin calls it the greatest mood elevator he knows.",
+    "kind": "recovery",
+    "targets": [
+      "Recovery",
+      "Stress"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Sauna and cold each have supportive literature separately; the combined contrast protocol as mood reset is practitioner-driven.",
+      "sources": [
+        {
+          "label": "Rick Rubin on Tim Ferriss (transcript)",
+          "url": "https://tim.blog/wp-content/uploads/2018/07/76-rick-rubin.pdf"
+        },
+        {
+          "label": "Sauna bathing and cardiovascular mortality cohort",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25705824/"
+        }
+      ]
+    },
+    "indications": [
+      "A bad morning is metastasizing into a bad week.",
+      "Sauna and cold access are both available."
+    ],
+    "avoidWhen": [
+      "Cardiovascular disease or arrhythmia unless cleared by a physician.",
+      "Pregnancy."
+    ],
+    "guide": {
+      "url": "https://tim.blog/wp-content/uploads/2018/07/76-rick-rubin.pdf",
+      "source": "Tim Ferriss Show"
+    }
+  },
+  {
+    "id": "cooling_off_drawer",
+    "name": "Let Drafts Cool",
+    "title": "Finish the draft, then don't look at it for weeks.",
+    "benefit": "Better final work and fewer flaws you missed.",
+    "subtitle": "Revision Method",
+    "rationale": "Distance from your own draft lets you read it as an outsider, which is when structural flaws become visible.",
+    "origin": "Stephen King leaves finished manuscripts in a drawer for six weeks.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Familiarity effects in self-review and incubation research support fresh-eyes revision; the fixed interval is King's.",
+      "sources": [
+        {
+          "label": "Stephen King's writing routine",
+          "url": "https://famouswritingroutines.com/writing-routines/stephen-king-writing-routine/"
+        }
+      ]
+    },
+    "indications": [
+      "Your rereads see what you meant, not what you wrote.",
+      "Big documents ship straight from the heat of completion."
+    ],
+    "guide": {
+      "url": "https://famouswritingroutines.com/writing-routines/stephen-king-writing-routine/",
+      "source": "Famous Writing Routines"
+    }
+  },
+  {
     "id": "copywork_masters",
+    "name": "Rebuild Great Work",
     "title": "Reconstruct a master's work from notes, then compare.",
-    "subtitle": "Franklin's method",
-    "rationale": "Rebuild excellent work in your craft from brief notes and diff your version against the original for self-generated feedback.",
+    "benefit": "Faster improvement in your craft.",
+    "subtitle": "Craft Practice",
+    "rationale": "Rebuilding excellent work from notes and comparing against the original produces immediate, specific feedback on your own gaps.",
+    "origin": "Benjamin Franklin taught himself to write this way from the Spectator.",
     "kind": "deep_work",
     "targets": [
       "Skill",
@@ -863,9 +1573,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "creatine_daily",
+    "name": "3–5-Gram Daily Creatine",
     "title": "Take 3 to 5 grams of creatine monohydrate daily.",
-    "subtitle": "Supplement staple",
-    "rationale": "Use the single best-studied performance supplement to support strength, training volume, and possibly cognition.",
+    "benefit": "More strength and possibly sharper thinking.",
+    "subtitle": "Daily Supplement",
+    "rationale": "Creatine monohydrate is the most studied performance supplement there is, with consistent strength and lean-mass results.",
     "kind": "nutrition",
     "targets": [
       "Strength",
@@ -896,10 +1608,45 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "creative_hours_ledger",
+    "name": "Creative Hours Ledger",
+    "title": "Log your creative hours and mood every night.",
+    "benefit": "Consistent creative output through busy periods.",
+    "subtitle": "Output Tracking",
+    "rationale": "Tracking creative hours against a rolling annual floor is what keeps the work happening through busy seasons.",
+    "origin": "Jim Collins holds a floor of 1,000 creative hours a year.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Progress-monitoring research shows tracking materially improves goal attainment; the rolling-floor design is Collins'.",
+      "sources": [
+        {
+          "label": "Jim Collins interview notes",
+          "url": "https://podcastnotes.org/2019/02/19/collins/"
+        }
+      ]
+    },
+    "indications": [
+      "Creative work silently drops to zero in busy months.",
+      "You cannot say how many real creative hours last quarter held."
+    ],
+    "guide": {
+      "url": "https://podcastnotes.org/2019/02/19/collins/",
+      "source": "Podcast Notes"
+    }
+  },
+  {
     "id": "cyclic_sighing_practice",
+    "name": "15-Minute Cyclic Sighing",
     "title": "Practice 15 minutes of cyclic sighing.",
-    "subtitle": "Breathwork protocol",
-    "rationale": "Use exhale-emphasized breathing as a repeatable stress and mood tool, not just an emergency reset.",
+    "benefit": "Lower stress within minutes.",
+    "subtitle": "Breathing Practice",
+    "rationale": "Emphasizing the exhale shifts the nervous system toward calm faster than most other brief interventions tested.",
     "kind": "recovery",
     "targets": [
       "Stress",
@@ -929,9 +1676,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "daily_activity_90",
+    "name": "60-Minute Movement Day",
     "title": "Move for 60 minutes per day.",
-    "subtitle": "Advanced daily activity",
-    "rationale": "Use the day’s open edges for movement until a genuinely active day is the baseline.",
+    "benefit": "Strong daily energy and a consistently clear head.",
+    "subtitle": "Daily Activity",
+    "rationale": "Using the day's open edges for movement makes an active day the baseline rather than something a workout has to supply.",
     "kind": "walk",
     "family": "daily_activity",
     "tier": "advanced",
@@ -967,10 +1716,49 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "daily_match_play",
+    "name": "Daily Competitive Sport",
+    "title": "Anchor daily fitness in a competitive game, not a workout.",
+    "benefit": "Fitness you sustain for decades, and a better mood.",
+    "subtitle": "Training Adherence",
+    "rationale": "Competition supplies the motivation that solo training has to manufacture, which is why match play survives decades.",
+    "origin": "Larry Ellison has played tennis nearly daily into his eighties.",
+    "kind": "training",
+    "targets": [
+      "Fitness",
+      "Energy"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Cohort data associate racket sports with the largest life-expectancy gains of any leisure sport; the daily competitive frame is Ellison's.",
+      "sources": [
+        {
+          "label": "Copenhagen leisure-sport life-expectancy cohort",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30193744/"
+        },
+        {
+          "label": "Inside Tennis interview with Larry Ellison",
+          "url": "https://www.insidetennis.com/2014/03/the-larry-ellison-interview-inside-tennis-talks-with-the-wizard-of-wow/"
+        }
+      ]
+    },
+    "indications": [
+      "Solo training keeps dying of boredom.",
+      "Competition reliably gets you out the door."
+    ],
+    "guide": {
+      "url": "https://www.insidetennis.com/2014/03/the-larry-ellison-interview-inside-tennis-talks-with-the-wizard-of-wow/",
+      "source": "Inside Tennis"
+    }
+  },
+  {
     "id": "daily_steps_8000",
+    "name": "8,000 Steps",
     "title": "Hit 8,000 steps per day.",
-    "subtitle": "Step floor",
-    "rationale": "Use a step floor as the simplest observable proxy for a genuinely active day.",
+    "benefit": "More energy now and better health long term.",
+    "subtitle": "Daily Activity",
+    "rationale": "Step count is the simplest observable proxy for a genuinely active day, and mortality curves improve up to this range.",
     "kind": "walk",
     "targets": [
       "Activity",
@@ -999,9 +1787,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "daily_top_three",
+    "name": "Daily Top Three",
     "title": "Pick tomorrow's top three tasks before today ends.",
-    "subtitle": "Daily prioritization",
-    "rationale": "Decide what matters while today's context is loaded, so tomorrow starts with execution instead of triage.",
+    "benefit": "A focused start and more meaningful progress.",
+    "subtitle": "Daily Planning",
+    "rationale": "Choosing tomorrow's work while today's context is still loaded means the morning starts in execution rather than triage.",
     "kind": "deep_work",
     "targets": [
       "Prioritization",
@@ -1038,10 +1828,118 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "darwin_three_bouts",
+    "name": "Three Bouts",
+    "title": "Plan three focused bouts and finish hard work by mid-afternoon.",
+    "benefit": "High output at a pace you can sustain for years.",
+    "subtitle": "Day Structure",
+    "rationale": "A small number of protected bouts, separated by light work, produces high lifetime output at a sustainable pace.",
+    "origin": "Charles Darwin wrote nineteen books on three 90-minute bouts a day.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 90,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Matches deliberate-practice records clustering near four daily hours of hard work among elite performers; the specific structure is biographical.",
+      "sources": [
+        {
+          "label": "Darwin's working day",
+          "url": "https://nautil.us/darwin-was-a-slacker-and-you-should-be-too-236532"
+        }
+      ]
+    },
+    "indications": [
+      "Deep work is attempted as one long undifferentiated slab.",
+      "Output quality collapses in the late afternoon anyway.",
+      "Sustainability matters more than any single sprint."
+    ],
+    "guide": {
+      "url": "https://nautil.us/darwin-was-a-slacker-and-you-should-be-too-236532",
+      "source": "Nautilus"
+    }
+  },
+  {
+    "id": "dawn_start",
+    "name": "Dawn Start",
+    "title": "Start before dawn and arrive first, as the standing default.",
+    "benefit": "Uninterrupted hours before the day makes demands.",
+    "subtitle": "Early Schedule",
+    "rationale": "Starting before dawn buys hours that nobody else can claim, provided bedtime moves earlier to match.",
+    "origin": "Chung Ju-yung rose at three and walked to work while building Hyundai.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Chung's documented lifelong routine; the early-riser edge is practitioner lore and costly without a matching sleep schedule, hence the warnings.",
+      "sources": [
+        {
+          "label": "Chung Ju-yung profile",
+          "url": "https://www.justgogrind.com/p/chung-ju-yung"
+        },
+        {
+          "label": "Learning from Chung Ju-yung",
+          "url": "https://mastersinvest.com/newblog/2025/6/3/learning-from-hyundais-chung-ju-yung"
+        }
+      ]
+    },
+    "indications": [
+      "Early hours are your best and currently sleep through themselves.",
+      "An early bedtime is genuinely sustainable."
+    ],
+    "avoidWhen": [
+      "It compresses sleep below your full need.",
+      "A late chronotype."
+    ],
+    "guide": null
+  },
+  {
+    "id": "debug_mode",
+    "name": "Debug Mode",
+    "title": "Watch your thoughts go by and label what triggered each.",
+    "benefit": "Less anxiety and better focus.",
+    "subtitle": "Thought Tracing",
+    "rationale": "Naming the trigger behind each thought interrupts anxious loops without requiring a formal meditation practice.",
+    "origin": "Naval Ravikant describes running his mind in debug mode.",
+    "kind": "recovery",
+    "targets": [
+      "Recovery",
+      "Stress"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Parallels cognitive-defusion techniques with clinical support; Naval's framing makes it land for engineers.",
+      "sources": [
+        {
+          "label": "Naval Ravikant on the Knowledge Project",
+          "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/"
+        }
+      ]
+    },
+    "indications": [
+      "The same mental loops replay through routine tasks.",
+      "Meditation as-such never stuck, but debugging might."
+    ],
+    "guide": {
+      "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/",
+      "source": "The Knowledge Project"
+    }
+  },
+  {
     "id": "decision_memo",
+    "name": "Decision Memo",
     "title": "Write a narrative memo before any significant decision.",
-    "subtitle": "Bezos memo",
-    "rationale": "Full sentences force complete thinking that bullet points hide; the memo becomes the meeting's floor.",
+    "benefit": "Better decisions and shorter meetings.",
+    "subtitle": "Decision Practice",
+    "rationale": "Full sentences force complete thinking that bullet points allow you to skip, so the gaps show up before the meeting.",
+    "origin": "Jeff Bezos replaced slides with six-page narrative memos at Amazon.",
     "kind": "deep_work",
     "targets": [
       "Decision quality",
@@ -1069,10 +1967,72 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "decision_uniform",
+    "name": "Decision Minimalism",
+    "title": "Delete the trivial daily choices you keep remaking.",
+    "benefit": "More mental capacity for decisions that matter.",
+    "subtitle": "Choice Reduction",
+    "rationale": "Deleting trivial recurring choices preserves judgment for the decisions that actually carry consequences.",
+    "origin": "Mark Zuckerberg wears the same outfit to remove the choice.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Rests on decision-fatigue literature whose replications are mixed; the practice is cheap and popular among operators regardless.",
+      "sources": [
+        {
+          "label": "Zuckerberg on decision minimalism",
+          "url": "https://qz.com/292993/why-mark-zuckerberg-wears-the-same-teeshirt-every-day"
+        }
+      ]
+    },
+    "indications": [
+      "Mornings burn energy on choices with no payoff.",
+      "Trivial decisions get revisited daily."
+    ],
+    "guide": null
+  },
+  {
+    "id": "decompression_run",
+    "name": "Evening Run",
+    "title": "Run the same evening route daily, any weather, then shower and eat.",
+    "benefit": "Lower stress and a clearer head by evening.",
+    "subtitle": "Evening Training",
+    "rationale": "A fixed route at a fixed time makes the run automatic, and the effort clears the day's stress before home.",
+    "origin": "Phil Knight ran six miles every evening while building Nike.",
+    "kind": "training",
+    "targets": [
+      "Fitness",
+      "Energy"
+    ],
+    "durationMinutes": 45,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Regular aerobic exercise reliably reduces stress reactivity; the fixed evening slot is Knight's design.",
+      "sources": [
+        {
+          "label": "Phil Knight's Shoe Dog lessons",
+          "url": "https://marekveneny.medium.com/what-can-phil-knight-the-creator-of-nike-teach-you-about-life-and-business-9623c6232ba5"
+        }
+      ]
+    },
+    "indications": [
+      "Work stress currently rides into the evening unprocessed.",
+      "Morning training keeps losing to the calendar."
+    ],
+    "guide": null
+  },
+  {
     "id": "defocus_decompression",
+    "name": "Break After Focus",
     "title": "Reset after focused work.",
-    "subtitle": "Focus exit",
-    "rationale": "Leave the screen for 15 minutes: walk outside, sit without input, or have a real conversation.",
+    "benefit": "Restored focus for your next block of work.",
+    "subtitle": "Focus Recovery",
+    "rationale": "Genuine disengagement, rather than a screen-based break, is what allows attention to recover for the next block.",
     "kind": "recovery",
     "targets": [
       "Focus",
@@ -1101,10 +2061,46 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "delay_send",
+    "name": "Delay-Send Email",
+    "title": "Schedule your email to arrive during working hours.",
+    "benefit": "Flexible hours without pressuring your team.",
+    "subtitle": "Async Etiquette",
+    "rationale": "Recipients read off-hours email as urgent, so scheduling delivery preserves your flexibility without transmitting pressure.",
+    "origin": "Satya Nadella uses delay-send rather than changing when he works.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Email-urgency-bias research shows receivers overestimate expected response speed of off-hours mail; delay-send removes the signal.",
+      "sources": [
+        {
+          "label": "Nadella and Adam Grant on the future of work",
+          "url": "https://www.microsoft.com/en-us/worklab/satya-nadella-talks-to-adam-grant-about-the-future-of-work"
+        }
+      ]
+    },
+    "indications": [
+      "Your midnight emails generate midnight replies.",
+      "The team mirrors your hours whether you want it or not."
+    ],
+    "guide": {
+      "url": "https://www.microsoft.com/en-us/worklab/satya-nadella-talks-to-adam-grant-about-the-future-of-work",
+      "source": "Microsoft WorkLab"
+    }
+  },
+  {
     "id": "deliberate_hobby_switch",
+    "name": "Absorbing Hobby",
     "title": "End hard workdays in an absorbing unrelated hobby.",
-    "subtitle": "Active recovery switch",
-    "rationale": "Only a genuinely absorbing alternative interest interrupts work rumination; idle rest leaves the loop running.",
+    "benefit": "Real mental recovery in the evening.",
+    "subtitle": "Evening Recovery",
+    "rationale": "Only a genuinely absorbing alternative interrupts work rumination, which passive rest leaves running.",
+    "origin": "Winston Churchill credited painting with restoring him through crises.",
     "kind": "recovery",
     "targets": [
       "Detachment",
@@ -1137,9 +2133,12 @@ export const PROTOCOLS = [
   },
   {
     "id": "deliberate_study_hour",
+    "name": "Daily Study Hour",
     "title": "Block a daily hour of deliberate study in your field.",
-    "subtitle": "Input before output",
-    "rationale": "Protected daily input compounds into the pattern library that differentiates all later output.",
+    "benefit": "Deeper expertise in your field.",
+    "subtitle": "Learning Block",
+    "rationale": "Protected daily input compounds into a body of knowledge that later work draws on and competitors cannot copy quickly.",
+    "origin": "David Senra reads a biography a week as game tape.",
     "kind": "deep_work",
     "targets": [
       "Learning",
@@ -1171,10 +2170,113 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "device_free_gaps",
+    "name": "Device-Free Gaps",
+    "title": "Leave the ten-minute gaps of the day empty of screens.",
+    "benefit": "More original thinking and better ideas.",
+    "subtitle": "Attention Hygiene",
+    "rationale": "The small gaps of the day are where undirected thinking happens, and a phone fills every one of them.",
+    "origin": "Christopher Nolan carries no smartphone.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Mind-wandering research links unstimulated idle time to incubation, and phone-presence studies show working-memory costs.",
+      "sources": [
+        {
+          "label": "Nolan on avoiding smartphones",
+          "url": "https://www.entrepreneur.com/science-technology/award-winning-director-christopher-nolan-explains-why-he/241446"
+        }
+      ]
+    },
+    "indications": [
+      "Every wait, ride, and queue defaults to the phone.",
+      "Shower-grade ideas stopped arriving years ago."
+    ],
+    "guide": {
+      "url": "https://www.entrepreneur.com/science-technology/award-winning-director-christopher-nolan-explains-why-he/241446",
+      "source": "Entrepreneur"
+    }
+  },
+  {
+    "id": "dissent_scorecard",
+    "name": "−10 to +10 Dissent Scorecard",
+    "title": "Before big decisions, collect -10 to +10 ratings with written reasons.",
+    "benefit": "Fewer bad decisions from false consensus.",
+    "subtitle": "Decision Practice",
+    "rationale": "Numbered ratings with written reasoning surface disagreement that a verbal round of nods conceals.",
+    "origin": "Reed Hastings built the practice at Netflix after Qwikster.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Hastings' documented practice; related to devil's-advocacy research, the scorecard form is his.",
+      "sources": [
+        {
+          "label": "Hastings' dissent scorecard",
+          "url": "https://www.cnbc.com/2024/04/20/how-to-make-big-decisions-the-tactic-reed-hastings-used-at-netflix.html"
+        }
+      ]
+    },
+    "indications": [
+      "Big calls pass on nods that later prove hollow.",
+      "Dissent exists but has no safe channel."
+    ],
+    "guide": {
+      "url": "https://www.cnbc.com/2024/04/20/how-to-make-big-decisions-the-tactic-reed-hastings-used-at-netflix.html",
+      "source": "CNBC"
+    }
+  },
+  {
+    "id": "dual_track_rehearsal",
+    "name": "Dual-Track Rehearsal",
+    "title": "Mentally rehearse the perfect run and the likely failures.",
+    "benefit": "Composure and better performance under pressure.",
+    "subtitle": "Mental Rehearsal",
+    "rationale": "Rehearsing the likely failures as well as the ideal run means the real event triggers a prepared response instead of panic.",
+    "origin": "Michael Phelps rehearsed a flooded-goggles race and then swam one for gold.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Mental-practice meta-analyses show real performance gains from cognitive rehearsal, largest for cognitively loaded tasks.",
+      "sources": [
+        {
+          "label": "Mental practice meta-analytic evidence",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8804895/"
+        },
+        {
+          "label": "Phelps' videotape visualization",
+          "url": "https://sourcesofinsight.com/how-michael-phelps-used-visualization/"
+        }
+      ]
+    },
+    "indications": [
+      "A high-stakes event is days away.",
+      "Surprises reliably rattle your execution.",
+      "Preparation currently means slides, not scenarios."
+    ],
+    "guide": null
+  },
+  {
     "id": "earlier_eating_window",
+    "name": "Earlier Eating Window",
     "title": "Move your eating window earlier.",
-    "subtitle": "Eating-window timing",
-    "rationale": "Move the full window earlier when its learned midpoint or last meal predicts stronger following sleep and recovery.",
+    "benefit": "Better sleep and clearer mornings.",
+    "subtitle": "Eating Window",
+    "rationale": "Circadian timing changes the metabolic response to food, so an earlier last meal supports sleep and recovery.",
     "kind": "nutrition",
     "family": "eating_window",
     "tier": "intermediate",
@@ -1204,9 +2306,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "eating_window_8h_experiment",
+    "name": "8-Hour Window Experiment",
     "title": "Test an 8-hour eating window.",
-    "subtitle": "Eating-window experiment",
-    "rationale": "Run the narrower experiment only after covered personal evidence supports shorter windows or the user explicitly chooses it.",
+    "benefit": "Better recovery and more morning clarity.",
+    "subtitle": "Eating Window",
+    "rationale": "A tighter window is worth testing only once a wider one is stable, and two weeks is enough to see the effect.",
     "kind": "nutrition",
     "family": "eating_window",
     "tier": "advanced",
@@ -1233,10 +2337,42 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "eighty_percent_days",
+    "name": "80 Percent Days",
+    "title": "Run ordinary days at eighty percent effort.",
+    "benefit": "Sustainable output and energy for the real peaks.",
+    "subtitle": "Effort Pacing",
+    "rationale": "Reserving full intensity for genuinely rare moments is what allows daily work to continue for decades.",
+    "origin": "Eliud Kipchoge separates training days from competition days.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 480,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Kipchoge's stated philosophy, mirroring low-intensity-dominant training evidence; the knowledge-work transfer is practitioner-only.",
+      "sources": [
+        {
+          "label": "Kipchoge interview notes",
+          "url": "https://mischavandenburg.com/zet/podcast-kipchoge-marathon-running/"
+        }
+      ]
+    },
+    "indications": [
+      "Every week runs at redline until something breaks.",
+      "Peaks arrive exhausted instead of sharp."
+    ],
+    "guide": null
+  },
+  {
     "id": "email_batching",
+    "name": "Email Batching",
     "title": "Check email at two or three set times per day.",
-    "subtitle": "Communication boundary",
-    "rationale": "Convert email from an ambient interrupt stream into a bounded task with scheduled windows.",
+    "benefit": "Protected focus and lower stress.",
+    "subtitle": "Communication Boundary",
+    "rationale": "Scheduled windows turn email from an ambient interrupt stream into a bounded task with a start and an end.",
     "kind": "deep_work",
     "targets": [
       "Focus",
@@ -1267,9 +2403,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "evening_light_dimming",
+    "name": "Evening Dimming",
     "title": "Dim lights for the last hour.",
-    "subtitle": "Circadian guardrail",
-    "rationale": "Use darkness as the evening signal instead of asking willpower to shut the day down.",
+    "benefit": "Faster, easier sleep onset.",
+    "subtitle": "Light Exposure",
+    "rationale": "Light is the primary circadian signal, so dimming it does the work that willpower otherwise has to.",
     "kind": "sleep",
     "targets": [
       "Sleep timing",
@@ -1299,9 +2437,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "exercise_snacks",
+    "name": "Exercise Snacks",
     "title": "Add two or three one-minute movement bursts to the workday.",
-    "subtitle": "Exercise snacks",
-    "rationale": "Break sedentary stretches with stair climbs or squats hard enough to raise heart rate, no gym required.",
+    "benefit": "An energy and focus reset between meetings.",
+    "subtitle": "Movement Breaks",
+    "rationale": "Brief bursts hard enough to raise heart rate break up sedentary stretches without requiring a gym or a change of clothes.",
     "kind": "training",
     "targets": [
       "Metabolic health",
@@ -1330,10 +2470,45 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "expert_cold_call",
+    "name": "Expert Cold Call",
+    "title": "Cold-contact one master outside your field with a specific craft question.",
+    "benefit": "Knowledge and relationships you cannot get elsewhere.",
+    "subtitle": "Outreach Habit",
+    "rationale": "A specific question about craft is answerable, which is why direct requests to masters outside your field often work.",
+    "origin": "Kobe Bryant cold-called champions in other domains.",
+    "kind": "social",
+    "targets": [
+      "Network",
+      "Judgment"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Kobe's documented habit; practitioner-only.",
+      "sources": [
+        {
+          "label": "Kobe and A-Rod on cold-calling experts",
+          "url": "https://www.cnbc.com/2017/08/04/alex-rodriguez-and-kobe-bryant-cold-call-famous-people.html"
+        }
+      ]
+    },
+    "indications": [
+      "Your questions currently go to books instead of the living best.",
+      "A specific craft problem has a nameable master."
+    ],
+    "guide": {
+      "url": "https://www.cnbc.com/2017/08/04/alex-rodriguez-and-kobe-bryant-cold-call-famous-people.html",
+      "source": "CNBC"
+    }
+  },
+  {
     "id": "expressive_journaling",
+    "name": "15-Minute Expressive Journaling",
     "title": "Write for 15 minutes about what is weighing on you.",
-    "subtitle": "Expressive writing",
-    "rationale": "Externalize a live stressor in writing so it stops looping in working memory.",
+    "benefit": "A clearer head when something is weighing on you.",
+    "subtitle": "Stress Release",
+    "rationale": "Writing a live stressor down externalizes it, which stops it from occupying working memory during work.",
     "kind": "recovery",
     "targets": [
       "Stress",
@@ -1359,10 +2534,45 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "fasted_morning_cardio",
+    "name": "20-Minute Fasted Morning Cardio",
+    "title": "Do 20 easy fasted minutes of cardio before breakfast.",
+    "benefit": "More energy and a clearer head from the start.",
+    "subtitle": "Morning Training",
+    "rationale": "Twenty easy minutes before eating is short enough to survive a busy calendar and long enough to start the day awake.",
+    "origin": "Brian Chesky opens the day with fasted stairs or hill walking.",
+    "kind": "training",
+    "targets": [
+      "Fitness",
+      "Energy"
+    ],
+    "durationMinutes": 20,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Chesky's routine; fasted cardio shows no body-composition advantage in trials, while morning movement itself is well supported.",
+      "sources": [
+        {
+          "label": "Brian Chesky's daily routine",
+          "url": "https://fortune.com/well/article/airbnb-ceo-brian-chesky-daily-routine/"
+        }
+      ]
+    },
+    "indications": [
+      "Mornings need a physical ignition before coffee thinking.",
+      "Longer workouts keep getting displaced; twenty minutes won't be."
+    ],
+    "guide": {
+      "url": "https://fortune.com/well/article/airbnb-ceo-brian-chesky-daily-routine/",
+      "source": "Fortune"
+    }
+  },
+  {
     "id": "feed_free_morning",
+    "name": "Three-Hour Focus Block",
     "title": "Keep one three-hour work period low-distraction.",
-    "subtitle": "Sustained focus",
-    "rationale": "Protect the same focus boundary across a substantial work period, whenever it occurs.",
+    "benefit": "Sustained focus on work that needs real depth.",
+    "subtitle": "Focus Boundary",
+    "rationale": "A single long protected period produces work that several fragmented hours cannot, whenever in the day it falls.",
     "kind": "deep_work",
     "family": "attention_defense",
     "tier": "intermediate",
@@ -1399,9 +2609,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "fermented_foods_daily",
+    "name": "Fermented Foods",
     "title": "Add live-culture fermented foods to most days.",
-    "subtitle": "Microbiome diversity",
-    "rationale": "Yogurt, kefir, kimchi, or sauerkraut servings raise microbiome diversity and lower inflammatory markers.",
+    "benefit": "Lower inflammation and better gut health.",
+    "subtitle": "Daily Food",
+    "rationale": "Live-culture foods raise gut microbiome diversity and lowered inflammatory markers in a controlled trial.",
     "kind": "nutrition",
     "targets": [
       "Gut health",
@@ -1429,10 +2641,45 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "feynman_twelve_problems",
+    "name": "Open Problems List",
+    "title": "Keep a dozen open problems and test new ideas against them.",
+    "benefit": "Occasional breakthroughs from ordinary reading.",
+    "subtitle": "Problem Registry",
+    "rationale": "Holding a dozen open problems means every new technique gets tested against them the moment it arrives.",
+    "origin": "Richard Feynman kept twelve favorite problems in mind.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Feynman's method via Rota; consistent with opportunistic-assimilation accounts of insight, untested directly.",
+      "sources": [
+        {
+          "label": "Feynman's twelve problems",
+          "url": "https://fortelabs.com/blog/12-favorite-problems-how-to-spark-genius-with-the-power-of-open-questions/"
+        }
+      ]
+    },
+    "indications": [
+      "Reading volume is high but rarely changes what gets built.",
+      "Good problems get abandoned instead of parked."
+    ],
+    "guide": {
+      "url": "https://fortelabs.com/blog/12-favorite-problems-how-to-spark-genius-with-the-power-of-open-questions/",
+      "source": "Forte Labs"
+    }
+  },
+  {
     "id": "fiber_30g",
+    "name": "30 Grams of Fiber",
     "title": "Reach 30 grams of fiber per day.",
-    "subtitle": "Fiber floor",
-    "rationale": "Push daily fiber toward the intake range with the strongest all-cause outcome data in nutrition.",
+    "benefit": "Steadier energy and better long-term health.",
+    "subtitle": "Daily Food",
+    "rationale": "Fiber intake in this range has the strongest all-cause outcome data of any single dietary change.",
     "kind": "nutrition",
     "targets": [
       "Metabolic health",
@@ -1462,9 +2709,12 @@ export const PROTOCOLS = [
   },
   {
     "id": "first_block_creation",
+    "name": "90-Minute First-Block Creation",
     "title": "Give the first 90 work minutes to creation, not communication.",
-    "subtitle": "First-block boundary",
-    "rationale": "Spend the day's freshest attention on the hardest work before the inbox sets the agenda.",
+    "benefit": "Real daily progress on your hardest problem.",
+    "subtitle": "Day Structure",
+    "rationale": "The day's freshest attention goes to the hardest problem only if it is spent before the inbox sets the agenda.",
+    "origin": "Jensen Huang finishes his top priority before reaching the office.",
     "kind": "deep_work",
     "targets": [
       "Deep work",
@@ -1483,6 +2733,10 @@ export const PROTOCOLS = [
         {
           "label": "Interruption-reduction systematic review",
           "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+        },
+        {
+          "label": "Jensen Huang on winning the morning",
+          "url": "https://finance.yahoo.com/news/nvidia-ceo-jensen-huang-says-144532462.html"
         }
       ]
     },
@@ -1497,10 +2751,178 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "five_minute_blocks",
+    "name": "Five-Minute Blocks",
+    "title": "Plan the whole day in advance as five-minute blocks.",
+    "benefit": "Less wasted time and more intentional days.",
+    "subtitle": "Time Blocking",
+    "rationale": "Assigning every activity to a specific slot removes the unaccounted hours that otherwise disappear.",
+    "origin": "Elon Musk plans his day in five-minute blocks.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Implementation-intention research supports pre-assigned when-and-where plans; five-minute granularity is extreme practitioner practice.",
+      "sources": [
+        {
+          "label": "Musk's five-minute time blocks",
+          "url": "https://www.mayooshin.com/time-blocking-elon-musk-manage-time"
+        }
+      ]
+    },
+    "indications": [
+      "Unscheduled hours evaporate without a trace.",
+      "Parkinson's law owns the calendar."
+    ],
+    "guide": {
+      "url": "https://www.mayooshin.com/time-blocking-elon-musk-manage-time",
+      "source": "Mayo Oshin"
+    }
+  },
+  {
+    "id": "five_minute_deal",
+    "name": "Five-Minute Deal",
+    "title": "Deal yourself five minutes on the avoided task, quitting allowed.",
+    "benefit": "Easier starts on work you have been avoiding.",
+    "subtitle": "Task Initiation",
+    "rationale": "Starting is the real barrier, so an honest five-minute commitment with permission to stop usually produces a finished task.",
+    "origin": "Kevin Systrom uses the five-minute deal on work he avoids.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Systrom's practice; consistent with task-initiation research and the pull of started work, untested directly.",
+      "sources": [
+        {
+          "label": "Systrom's five-minute deal",
+          "url": "https://www.inc.com/jessica-stillman/the-5-minute-hack-instagram-founder-kevin-systrom-uses-to-beat-procrastination.html"
+        }
+      ]
+    },
+    "indications": [
+      "One specific task has survived a week of todo lists.",
+      "Once started, you rarely stop at five minutes."
+    ],
+    "guide": null
+  },
+  {
+    "id": "focus_overload",
+    "name": "Build Focus Gradually",
+    "title": "Extend focused sitting gradually, like a runner extends mileage.",
+    "benefit": "More concentration stamina for long projects.",
+    "subtitle": "Focus Training",
+    "rationale": "Concentration is trainable the way endurance is, by extending duration gradually on top of an aerobic base.",
+    "origin": "Haruki Murakami trains focus the way he trains for marathons.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Aerobic exercise reliably supports executive function; direct attention-training evidence is mixed, so the progression model is partly practitioner.",
+      "sources": [
+        {
+          "label": "Murakami on focus and endurance",
+          "url": "https://famouswritingroutines.com/writing-routines/haruki-murakami-writing-routine/"
+        }
+      ]
+    },
+    "indications": [
+      "Focus capacity is treated as fixed instead of trained.",
+      "Long projects die at the stamina wall, not the idea wall."
+    ],
+    "guide": {
+      "url": "https://famouswritingroutines.com/writing-routines/haruki-murakami-writing-routine/",
+      "source": "Famous Writing Routines"
+    }
+  },
+  {
+    "id": "forced_presence_sport",
+    "name": "Forced-Presence Sport",
+    "title": "Train a sport that physically punishes wandering attention.",
+    "benefit": "A genuine mental break and better fitness.",
+    "subtitle": "Mental Recovery",
+    "rationale": "A sport that punishes lost attention makes work rumination physically impossible, which passive rest does not.",
+    "origin": "Mark Zuckerberg trains jiu-jitsu and surfs.",
+    "kind": "training",
+    "targets": [
+      "Fitness",
+      "Energy"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Detachment research finds absorbing activities outperform passive rest for recovery; the sport-selection rule is Zuckerberg's.",
+      "sources": [
+        {
+          "label": "How Zuckerberg organizes his days",
+          "url": "https://www.forbes.com/sites/kerryadolan/2023/09/28/eight-hours-of-sleep-and-no-back-to-back-meetings-how-mark-zuckerberg-organizes-his-days/"
+        },
+        {
+          "label": "Work detachment meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28133454/"
+        }
+      ]
+    },
+    "indications": [
+      "Workouts happen but the head stays at work throughout.",
+      "Only absorbing activities actually switch the loop off."
+    ],
+    "guide": {
+      "url": "https://www.forbes.com/sites/kerryadolan/2023/09/28/eight-hours-of-sleep-and-no-back-to-back-meetings-how-mark-zuckerberg-organizes-his-days/",
+      "source": "Forbes"
+    }
+  },
+  {
+    "id": "gaiman_nothing_rule",
+    "name": "Work or Nothing",
+    "title": "Allow yourself the work or nothing at all.",
+    "benefit": "Easier starts and more writing finished.",
+    "subtitle": "Focus Rule",
+    "rationale": "When the only permitted alternative is sitting still, boredom quickly makes the work the most interesting option available.",
+    "origin": "Neil Gaiman allows himself to write or do nothing at all.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Gaiman's writing rule; idle-state research links boredom to idea generation, the rule itself is practitioner-only.",
+      "sources": [
+        {
+          "label": "Neil Gaiman's writing rule",
+          "url": "https://famouswritingroutines.com/writing-routines/neil-gaiman-writing-routine/"
+        }
+      ]
+    },
+    "indications": [
+      "Avoidance leaks into productive-feeling busywork.",
+      "Discipline to start is scarcer than time."
+    ],
+    "guide": {
+      "url": "https://famouswritingroutines.com/writing-routines/neil-gaiman-writing-routine/",
+      "source": "Famous Writing Routines"
+    }
+  },
+  {
     "id": "gratitude_three_things",
+    "name": "Three Good Things",
     "title": "Write down three good things from the day.",
-    "subtitle": "Gratitude practice",
-    "rationale": "Bias the end-of-day review toward what worked, cheaply and in under five minutes.",
+    "benefit": "Better mood and perspective at day's end.",
+    "subtitle": "Evening Review",
+    "rationale": "Ending the day on what worked shifts the closing frame away from the unfinished list by default.",
     "kind": "recovery",
     "targets": [
       "Mood",
@@ -1528,10 +2950,46 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "great_thoughts_time",
+    "name": "Big Questions Time",
+    "title": "Reserve Friday afternoon for only the biggest questions in your field.",
+    "benefit": "Progress on the problems that actually matter.",
+    "subtitle": "Strategic Block",
+    "rationale": "Reserving a standing slot for the biggest questions is what separates people who do important work from equally capable people who do not.",
+    "origin": "Richard Hamming held Great Thoughts Friday at Bell Labs.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Hamming's documented practice among Nobel-adjacent colleagues; practitioner-only.",
+      "sources": [
+        {
+          "label": "Hamming, You and Your Research",
+          "url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html"
+        }
+      ]
+    },
+    "indications": [
+      "All hours go to this quarter; none go to the decade.",
+      "Big questions get airtime only at offsites."
+    ],
+    "guide": {
+      "url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+      "source": "Richard Hamming"
+    }
+  },
+  {
     "id": "grip_carries_hangs",
+    "name": "Carries and Hangs",
     "title": "Add farmer's carries and dead hangs weekly.",
-    "subtitle": "Grip and carry strength",
-    "rationale": "Grip strength is among the strongest physical mortality markers; carries and hangs train it plus shoulders and trunk.",
+    "benefit": "A stronger grip and more durable shoulders.",
+    "subtitle": "Strength Work",
+    "rationale": "Grip strength tracks total-body strength closely, and carries and hangs train it along with shoulders and trunk.",
+    "origin": "Peter Attia treats grip work as a longevity marker.",
     "kind": "training",
     "targets": [
       "Strength",
@@ -1566,10 +3024,112 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "hamming_audit",
+    "name": "Important Problems Audit",
+    "title": "Write down whether you are working on an important problem.",
+    "benefit": "More time on important work and less on busywork.",
+    "subtitle": "Priority Check",
+    "rationale": "Writing down whether you are working on an important problem exposes busywork that is real but small.",
+    "origin": "Richard Hamming asked the question of colleagues at Bell Labs.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 20,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Hamming's practice via Graham; practitioner-only.",
+      "sources": [
+        {
+          "label": "Paul Graham, Good and Bad Procrastination",
+          "url": "https://paulgraham.com/procrastination.html"
+        }
+      ]
+    },
+    "indications": [
+      "Every task on the list is real and none of them matter.",
+      "The important problem has a name you avoid saying."
+    ],
+    "guide": {
+      "url": "https://paulgraham.com/procrastination.html",
+      "source": "Paul Graham"
+    }
+  },
+  {
+    "id": "hands_on_stack",
+    "name": "Hands on the Stack",
+    "title": "Keep personally building in your product's stack, whatever your title.",
+    "benefit": "Better technical judgment.",
+    "subtitle": "Founder Craft",
+    "rationale": "Building in the real system keeps technical judgment accurate in a way status reports about it cannot.",
+    "origin": "Sergey Brin still submits code at Google.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Brin's stated practice; practitioner-only.",
+      "sources": [
+        {
+          "label": "Sergey Brin at All-In",
+          "url": "https://singjupost.com/transcript-of-sergey-brins-interview-at-all-in-live-from-miami/"
+        }
+      ]
+    },
+    "indications": [
+      "Your technical instincts now arrive secondhand.",
+      "It has been months since you touched the actual product."
+    ],
+    "guide": {
+      "url": "https://singjupost.com/transcript-of-sergey-brins-interview-at-all-in-live-from-miami/",
+      "source": "All-In transcript"
+    }
+  },
+  {
+    "id": "hard_stop_dinner",
+    "name": "Hard Stop",
+    "title": "End the workday at a fixed hard stop, every day.",
+    "benefit": "Sharper prioritization and sustainable energy.",
+    "subtitle": "Workday Boundary",
+    "rationale": "A fixed end time forces prioritization during the day and treats a small number of creative hours as the real budget.",
+    "origin": "Tobi Lutke left at 5:30 for family dinner while building Shopify.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Productivity research shows steep diminishing returns past long weekly hours; the hard-stop mechanism is practitioner-driven and contested.",
+      "sources": [
+        {
+          "label": "Lutke on creative hours",
+          "url": "https://www.cnbc.com/2019/12/26/shopify-ceo-you-dont-have-to-work-80-hours-a-week-to-be-successful.html"
+        }
+      ]
+    },
+    "indications": [
+      "The workday ends whenever the work runs out, which is never.",
+      "Evening hours produce the week's worst output."
+    ],
+    "guide": {
+      "url": "https://www.cnbc.com/2019/12/26/shopify-ceo-you-dont-have-to-work-80-hours-a-week-to-be-successful.html",
+      "source": "CNBC"
+    }
+  },
+  {
     "id": "hard_work_daily_cap",
+    "name": "Hard-Work Cap",
     "title": "Cap your hardest thinking at four to five hours per day.",
-    "subtitle": "Cognitive load ceiling",
-    "rationale": "Beyond the cap, fatigue degrades judgment on hard problems; stop the hard work and switch to lighter tasks.",
+    "benefit": "Better decisions and less work you must redo.",
+    "subtitle": "Effort Ceiling",
+    "rationale": "Past a few hours of genuinely hard thinking, fatigue degrades judgment enough that extra hours produce work you will redo.",
+    "origin": "Paul Graham caps hard work at four or five hours.",
     "kind": "deep_work",
     "targets": [
       "Work quality",
@@ -1598,10 +3158,108 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "heaviest_user",
+    "name": "Use Your Own Product",
+    "title": "Use your own product harder than any customer ever will.",
+    "benefit": "Better product quality and fewer bugs customers find.",
+    "subtitle": "Product Testing",
+    "rationale": "Using your own product harder than any customer surfaces defects and design truths before customers meet them.",
+    "origin": "Yvon Chouinard field-tested Patagonia gear on his own expeditions.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 240,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Chouinard's documented practice; practitioner-only.",
+      "sources": [
+        {
+          "label": "Let My People Go Surfing notes",
+          "url": "https://www.alexjhughes.com/books/2023/1/10/let-my-people-go-surfing-yvon-chouinard"
+        }
+      ]
+    },
+    "indications": [
+      "Your own product usage is lighter than your median customer's.",
+      "Quality reports arrive from support tickets, not your own hands."
+    ],
+    "guide": null
+  },
+  {
+    "id": "hemingway_park_downhill",
+    "name": "Stop Mid-Task",
+    "title": "Stop mid-flow and write down the next step.",
+    "benefit": "An easier, faster start the next day.",
+    "subtitle": "Session Exit",
+    "rationale": "Stopping while the next step is still obvious leaves a thread to pick up, so the next session starts warm.",
+    "origin": "Ernest Hemingway stopped each day knowing what came next.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Hemingway's stated practice; consistent with the Zeigarnik effect on interrupted tasks staying mentally active, untested as a protocol.",
+      "sources": [
+        {
+          "label": "Hemingway's routine",
+          "url": "https://fs.blog/hemingways-routine/"
+        }
+      ]
+    },
+    "indications": [
+      "Sessions end by squeezing the tank empty.",
+      "Restarting the next day takes 30 minutes of re-finding the thread."
+    ],
+    "guide": {
+      "url": "https://fs.blog/hemingways-routine/",
+      "source": "Farnam Street"
+    }
+  },
+  {
+    "id": "high_iq_window",
+    "name": "Hard Decisions in the Morning",
+    "title": "Schedule your hardest decisions for late morning.",
+    "benefit": "Better decisions on your most important calls.",
+    "subtitle": "Decision Timing",
+    "rationale": "Analytic decision quality peaks in the late morning for most people and falls off sharply by evening.",
+    "origin": "Jeff Bezos reserves the ten-to-noon window for hard decisions.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Time-of-day cognition research supports morning analytic peaks for most chronotypes; the scheduling rule is Bezos' design.",
+      "sources": [
+        {
+          "label": "Bezos on 10 a.m. decisions",
+          "url": "https://www.cnbc.com/2018/11/20/why-jeff-bezos-schedules-challenging-meetings-at-10-am.html"
+        }
+      ]
+    },
+    "indications": [
+      "Hard decisions land whenever meetings happen to fall.",
+      "Late-day calls keep getting reversed the next morning."
+    ],
+    "guide": {
+      "url": "https://www.cnbc.com/2018/11/20/why-jeff-bezos-schedules-challenging-meetings-at-10-am.html",
+      "source": "CNBC"
+    }
+  },
+  {
     "id": "hot_bath_sleep",
+    "name": "Pre-Sleep Heat",
     "title": "Use heat before bed.",
-    "subtitle": "Thermal wind-down",
-    "rationale": "A hot bath, shower, or sauna window can support the temperature drop into sleep.",
+    "benefit": "Faster sleep and deeper rest.",
+    "subtitle": "Sleep Routine",
+    "rationale": "Warming the body before bed accelerates the temperature drop that initiates sleep.",
     "kind": "sleep",
     "targets": [
       "Sleep depth",
@@ -1633,10 +3291,78 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "hours_at_the_desk",
+    "name": "Fixed Desk Hours",
+    "title": "Commit to fixed desk hours and judge the day by attendance.",
+    "benefit": "Consistent output regardless of mood.",
+    "subtitle": "Attendance Rule",
+    "rationale": "Judging the day by attendance rather than output removes the daily negotiation about whether to work.",
+    "origin": "George Lucas sat at his desk eight hours a day despite hating writing.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 240,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Studies of academic writers found scheduled sessions produced several times the output of mood-based bingeing.",
+      "sources": [
+        {
+          "label": "George Lucas's writing tower",
+          "url": "https://calnewport.com/the-forgotten-tale-of-george-lucass-writing-tower/"
+        }
+      ]
+    },
+    "indications": [
+      "The dreaded project moves only under deadline panic.",
+      "Output-judged days end in avoidance; attendance is controllable."
+    ],
+    "guide": {
+      "url": "https://calnewport.com/the-forgotten-tale-of-george-lucass-writing-tower/",
+      "source": "Cal Newport"
+    }
+  },
+  {
+    "id": "hugo_commitment_lockout",
+    "name": "Remove Your Escape Routes",
+    "title": "Remove your own escape routes before a deadline sprint.",
+    "benefit": "Finished work by the deadline.",
+    "subtitle": "Commitment Device",
+    "rationale": "Making the exit expensive converts a slipping deadline into finished work more reliably than willpower does.",
+    "origin": "Victor Hugo locked away his clothes to finish a book early.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 240,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Commitment-device research shows pre-commitment beats in-the-moment willpower; Hugo is the canonical case.",
+      "sources": [
+        {
+          "label": "Victor Hugo's commitment device",
+          "url": "https://followmentalgarden.substack.com/p/victor-hugo-procrastination"
+        }
+      ]
+    },
+    "indications": [
+      "A real deadline is slipping to reachable distractions.",
+      "Willpower reliably loses to the same three escape hatches."
+    ],
+    "guide": {
+      "url": "https://followmentalgarden.substack.com/p/victor-hugo-procrastination",
+      "source": "Mental Garden"
+    }
+  },
+  {
     "id": "hydration_baseline",
+    "name": "Hydration Floor",
     "title": "Drink roughly a glass of water per waking hour, front-loaded.",
-    "subtitle": "Hydration floor",
-    "rationale": "Even 1 to 2 percent dehydration measurably dents attention and mood; steady daytime intake avoids it without night waking.",
+    "benefit": "Better focus and mood through the day.",
+    "subtitle": "Daily Hydration",
+    "rationale": "Even mild dehydration measurably reduces attention and mood, and steady daytime intake avoids it without night waking.",
     "kind": "nutrition",
     "targets": [
       "Alertness",
@@ -1671,10 +3397,50 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "immersion_sprint",
+    "name": "Immersion Sprint",
+    "title": "Give a resistant problem one continuous multi-day immersion.",
+    "benefit": "Breakthroughs on problems that resist normal hours.",
+    "subtitle": "Deep Session",
+    "rationale": "Continuous days on one problem reach a depth that scheduled hours never touch, at a cost that makes it a rare tool.",
+    "origin": "Edwin Land worked marathon sessions with meals brought to him.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 480,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Land's documented method; consistent with switching-cost reasoning, and costly if overused, hence the warnings.",
+      "sources": [
+        {
+          "label": "Edwin Land's deep research",
+          "url": "https://calnewport.com/edwin-lands-deep-research/"
+        }
+      ]
+    },
+    "indications": [
+      "A defining problem has resisted months of scheduled hours.",
+      "The calendar can genuinely clear for days."
+    ],
+    "avoidWhen": [
+      "As a recurring pace rather than a rare tool.",
+      "It compresses sleep below your full need."
+    ],
+    "guide": {
+      "url": "https://calnewport.com/edwin-lands-deep-research/",
+      "source": "Cal Newport"
+    }
+  },
+  {
     "id": "inspiration_immediacy",
+    "name": "Inspiration Immediacy",
     "title": "Act on inspiration within minutes, not on the calendar.",
-    "subtitle": "Perishable inspiration",
-    "rationale": "Genuine interest is the highest-leverage work state; captured immediately it produces effortless output, scheduled later it decays.",
+    "benefit": "Better work produced with less effort.",
+    "subtitle": "Momentum Capture",
+    "rationale": "Genuine interest is the highest-output state there is, and it decays long before a scheduled slot arrives.",
+    "origin": "Naval Ravikant calls inspiration perishable.",
     "kind": "deep_work",
     "targets": [
       "Output",
@@ -1699,10 +3465,42 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "instrument_switch",
+    "name": "Switch to Another Skill",
+    "title": "Switch to an absorbing skill when you are stuck.",
+    "benefit": "Solutions that arrive when you step away.",
+    "subtitle": "Creative Break",
+    "rationale": "A brief switch to an absorbing unrelated skill lets the problem incubate, which is when the answer often surfaces.",
+    "origin": "Albert Einstein played violin when stuck and returned with ideas.",
+    "kind": "recovery",
+    "targets": [
+      "Recovery",
+      "Stress"
+    ],
+    "durationMinutes": 20,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Incubation meta-analysis shows low-demand alternate tasks improve insight problem-solving; the instrument is optional.",
+      "sources": [
+        {
+          "label": "Einstein and his violin",
+          "url": "https://www.nationalgeographic.com/adventure/article/einstein-genius-violin-music-physics-science"
+        }
+      ]
+    },
+    "indications": [
+      "Stuckness is currently answered with harder staring.",
+      "A loved skilled activity sits within reach of the desk."
+    ],
+    "guide": null
+  },
+  {
     "id": "interruption_office_hours",
+    "name": "Office Hours",
     "title": "Route interruptions to a daily office hour.",
-    "subtitle": "Interruption boundary",
-    "rationale": "Give questions a reliable daily window so they stop arriving as random fragmentation across the day.",
+    "benefit": "Fewer interruptions without becoming unreachable.",
+    "subtitle": "Interruption Boundary",
+    "rationale": "A reliable daily window gives questions somewhere to go, so they stop arriving as random fragmentation.",
     "kind": "calendar_defense",
     "targets": [
       "Focus",
@@ -1735,10 +3533,46 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "issue_log",
+    "name": "Issue Log",
+    "title": "Log every error the moment it surfaces.",
+    "benefit": "Fewer repeated mistakes.",
+    "subtitle": "Error Tracking",
+    "rationale": "Logging every error with severity and owner turns individual mistakes into a queue that gets systematically fixed.",
+    "origin": "Ray Dalio made unlogged errors the real offense at Bridgewater.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Error-management-culture research links open error handling to performance; the personal log adapts Dalio's org tool.",
+      "sources": [
+        {
+          "label": "Dalio's issue log principle",
+          "url": "https://www.principles.com/principles/a7c3050c-97d4-4011-ad8c-3852676e992b/"
+        }
+      ]
+    },
+    "indications": [
+      "The same class of mistake recurs quarterly.",
+      "Errors get fixed silently and teach nothing."
+    ],
+    "guide": {
+      "url": "https://www.principles.com/principles/a7c3050c-97d4-4011-ad8c-3852676e992b/",
+      "source": "Principles"
+    }
+  },
+  {
     "id": "just_review_starter",
+    "name": "Just Review It",
     "title": "When stuck starting, just review what you have so far.",
-    "subtitle": "Initiation ramp",
-    "rationale": "Lower the bar to opening the work; found errors and loose ends pull you into real progress without willpower.",
+    "benefit": "An easier start on stalled work.",
+    "subtitle": "Task Initiation",
+    "rationale": "Lowering the commitment to merely looking at the work bypasses the activation barrier, and found errors pull you in.",
+    "origin": "Paul Graham uses the trick on work he cannot start.",
     "kind": "deep_work",
     "targets": [
       "Task initiation",
@@ -1765,10 +3599,111 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "kill_criteria",
+    "name": "Kill Criteria",
+    "title": "Write the quit rule before you start.",
+    "benefit": "Less time lost to projects that will not work.",
+    "subtitle": "Exit Rule",
+    "rationale": "A quit rule written in advance converts an emotional in-the-moment judgment into a precommitted trigger.",
+    "origin": "Annie Duke recommends kill criteria as states and dates.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 20,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Escalation-of-commitment research supports precommitted exits; the states-and-dates format is Duke's.",
+      "sources": [
+        {
+          "label": "Annie Duke on kill criteria",
+          "url": "https://www.charterworks.com/quit-annie-duke/"
+        }
+      ]
+    },
+    "indications": [
+      "Projects persist on sunk cost long past their answer.",
+      "Quitting decisions keep getting deferred to 'one more month'."
+    ],
+    "guide": {
+      "url": "https://www.charterworks.com/quit-annie-duke/",
+      "source": "Charter"
+    }
+  },
+  {
+    "id": "king_daily_quota",
+    "name": "Daily Quota",
+    "title": "Set a fixed daily output quota and hit it before stopping.",
+    "benefit": "Reliable output that does not depend on mood.",
+    "subtitle": "Output Floor",
+    "rationale": "A fixed daily number makes output independent of mood, which is what produces book-scale volume.",
+    "origin": "Stephen King writes 2,000 words a day including holidays.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 180,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Goal-setting research strongly supports specific, difficult goals over vague effort; the daily-quota ritual is practitioner canon.",
+      "sources": [
+        {
+          "label": "Stephen King's daily quota",
+          "url": "https://writersdailypractice.com/writers-routines/stephen-king/"
+        }
+      ]
+    },
+    "indications": [
+      "Daily output swings with energy and mood.",
+      "The core craft metric is countable."
+    ],
+    "guide": {
+      "url": "https://writersdailypractice.com/writers-routines/stephen-king/",
+      "source": "Writer's Daily Practice"
+    }
+  },
+  {
+    "id": "lamott_one_inch_frame",
+    "name": "Shrink the Task",
+    "title": "Shrink the task to one paragraph, one function, one test.",
+    "benefit": "Momentum on projects that felt too big.",
+    "subtitle": "Task Sizing",
+    "rationale": "Radically small first targets dissolve the overwhelm that stops big projects from starting at all.",
+    "origin": "Anne Lamott writes what fits in a one-inch picture frame.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Small-wins research shows minor visible progress is a dominant motivation driver; Lamott supplies the working form.",
+      "sources": [
+        {
+          "label": "Anne Lamott's short assignments",
+          "url": "https://notes.andymatuschak.org/zWxo7SzXzdGq1cHd3TUXquw"
+        }
+      ]
+    },
+    "indications": [
+      "A project stalls every time its full size comes into view.",
+      "Session one of anything new keeps getting deferred."
+    ],
+    "guide": {
+      "url": "https://notes.andymatuschak.org/zWxo7SzXzdGq1cHd3TUXquw",
+      "source": "Andy Matuschak"
+    }
+  },
+  {
     "id": "learning_micro_gaps",
+    "name": "10-Second Learning Micro-Gaps",
     "title": "Insert 10-second pauses every few minutes when learning.",
-    "subtitle": "Micro-offline gains",
-    "rationale": "Brief eyes-open rest gaps let the brain replay just-practiced material, compressing extra repetitions into the session.",
+    "benefit": "Faster learning of new material.",
+    "subtitle": "Study Method",
+    "rationale": "Brief eyes-open pauses let the brain replay just-practiced material, compressing extra repetitions into the session.",
     "kind": "deep_work",
     "targets": [
       "Learning speed",
@@ -1800,9 +3735,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "lighter_post_meal_work",
+    "name": "Meal Timing Plan",
     "title": "Walk after two meals and finish eating two hours before bed.",
-    "subtitle": "Meal architecture",
-    "rationale": "Make meal timing deliberate across the day instead of fixing one isolated meal.",
+    "benefit": "Even energy from lunch through the evening.",
+    "subtitle": "Meal Timing",
+    "rationale": "Making meal timing deliberate across the whole day works better than correcting one isolated meal.",
     "kind": "nutrition",
     "family": "meal_timing",
     "tier": "advanced",
@@ -1838,9 +3775,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "magnesium_evening",
+    "name": "200–400-Milligram Evening Magnesium",
     "title": "Test 200 to 400 milligrams of magnesium in the evening.",
-    "subtitle": "Sleep supplement experiment",
-    "rationale": "Run a bounded experiment on an inexpensive, low-risk supplement with suggestive but thin sleep evidence.",
+    "benefit": "Possibly deeper and more restful sleep.",
+    "subtitle": "Sleep Supplement",
+    "rationale": "Magnesium is cheap and low-risk enough to test directly against your own sleep data over a couple of weeks.",
     "kind": "nutrition",
     "targets": [
       "Sleep quality",
@@ -1871,10 +3810,75 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "maker_critic_split",
+    "name": "Separate Drafting and Editing",
+    "title": "Draft in one session and edit in a later one.",
+    "benefit": "Better ideas and a higher final standard.",
+    "subtitle": "Work Modes",
+    "rationale": "Generating and judging in the same session kills raw ideas early, so the two modes need separate sittings.",
+    "origin": "Jerry Seinfeld separates writing from editing entirely.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 90,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Evaluation-apprehension research shows expected judgment suppresses idea generation; the mode split removes it.",
+      "sources": [
+        {
+          "label": "Seinfeld's writing systems",
+          "url": "https://colindorman.com/horn/seinfelds-systems-for-success/"
+        }
+      ]
+    },
+    "indications": [
+      "Drafts get strangled by mid-sentence editing.",
+      "The inner critic attends the brainstorm."
+    ],
+    "guide": {
+      "url": "https://colindorman.com/horn/seinfelds-systems-for-success/",
+      "source": "Colin Dorman"
+    }
+  },
+  {
+    "id": "manufactured_rivalry",
+    "name": "Pick a Rival",
+    "title": "Frame the big task as a contest against a named doubter.",
+    "benefit": "Higher intensity and effort on important work.",
+    "subtitle": "Motivation Device",
+    "rationale": "A named rival converts a routine task into a contest, which reliably raises effort and persistence.",
+    "origin": "Michael Jordan invented slights when real ones ran out.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Rivalry research shows identified rivals measurably raise motivation and performance; the self-manufactured version is Jordan's.",
+      "sources": [
+        {
+          "label": "Jordan's manufactured slights",
+          "url": "https://www.cbssports.com/nba/news/five-slights-michael-jordan-turned-into-fuel-include-labradford-smith-fiction-george-karls-dinner-diss"
+        }
+      ]
+    },
+    "indications": [
+      "Flat stakes produce flat effort.",
+      "Competition reliably switches you on."
+    ],
+    "guide": null
+  },
+  {
     "id": "meal_cutoff_sleep",
+    "name": "Two-Hour Meal Cutoff",
     "title": "Finish eating two hours before bed.",
-    "subtitle": "Sleep nutrition",
-    "rationale": "Keep digestion out of the wind-down window when sleep or glucose stability is the constraint.",
+    "benefit": "Better sleep quality and steadier morning energy.",
+    "subtitle": "Meal Timing",
+    "rationale": "Glucose handling is poorer at night, so ending the eating window earlier keeps digestion out of the sleep window.",
     "kind": "nutrition",
     "family": "meal_timing",
     "tier": "beginner",
@@ -1907,9 +3911,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "meeting_free_creation_days",
+    "name": "Meeting-Free Creation Days",
     "title": "Keep two creation days meeting-free each week.",
-    "subtitle": "Calendar architecture",
-    "rationale": "Move beyond managing fragmentation and remove it from entire creation days.",
+    "benefit": "Two full days of real progress each week.",
+    "subtitle": "Calendar Structure",
+    "rationale": "Removing meetings from entire days goes beyond managing fragmentation and eliminates it.",
     "kind": "calendar_defense",
     "family": "calendar_defense",
     "tier": "advanced",
@@ -1945,10 +3951,78 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "meeting_role_declaration",
+    "name": "Meeting Role Declaration",
+    "title": "Name your role before you enter the meeting.",
+    "benefit": "Shorter meetings and clearer decisions.",
+    "subtitle": "Meeting Practice",
+    "rationale": "Naming your role before the meeting scopes your contribution, which shortens the meeting and prevents accidental decisions.",
+    "origin": "Daniel Ek names his role before entering any meeting.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Ek's personal adaptation of role-clarity practice; practitioner-only.",
+      "sources": [
+        {
+          "label": "Daniel Ek on Tim Ferriss",
+          "url": "https://tim.blog/2020/12/06/daniel-ek-transcript/"
+        }
+      ]
+    },
+    "indications": [
+      "You leave meetings having accidentally taken three decisions.",
+      "Attendance is constant but your role in each room is fuzzy."
+    ],
+    "guide": {
+      "url": "https://tim.blog/2020/12/06/daniel-ek-transcript/",
+      "source": "Tim Ferriss Show"
+    }
+  },
+  {
+    "id": "meeting_walkout",
+    "name": "Meeting Walkout",
+    "title": "Leave any meeting the moment you add or receive no value.",
+    "benefit": "Hours back from meetings with no value.",
+    "subtitle": "Meeting Exit",
+    "rationale": "Leaving the moment you stop adding or receiving value reclaims hours that politeness would otherwise spend.",
+    "origin": "Elon Musk made it explicit policy in a company-wide email.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Practitioner rule from Musk's leaked productivity email; no research, high social cost, real time savings.",
+      "sources": [
+        {
+          "label": "Musk's productivity rules email",
+          "url": "https://www.cnbc.com/2018/04/18/elon-musks-productivity-rules-according-to-tesla-email.html"
+        }
+      ]
+    },
+    "indications": [
+      "Meetings are attended to the end out of politeness.",
+      "Calendar honesty beats calendar harmony in your culture."
+    ],
+    "guide": {
+      "url": "https://www.cnbc.com/2018/04/18/elon-musks-productivity-rules-according-to-tesla-email.html",
+      "source": "CNBC"
+    }
+  },
+  {
     "id": "mindfulness_10min",
+    "name": "10-Minute Sit",
     "title": "Meditate 10 minutes per day.",
-    "subtitle": "Mindfulness floor",
-    "rationale": "Build a small daily attention practice before judging whether meditation earns a bigger slot.",
+    "benefit": "Lower baseline stress and better focus.",
+    "subtitle": "Meditation Dose",
+    "rationale": "A short daily practice is enough to show whether meditation earns a larger slot in your schedule.",
     "kind": "recovery",
     "family": "mindfulness",
     "tier": "beginner",
@@ -1985,9 +4059,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "mindfulness_20min",
+    "name": "20-Minute Sit",
     "title": "Meditate 20 minutes per day.",
-    "subtitle": "Mindfulness standard",
-    "rationale": "Extend an established daily sit toward the doses used in most studied programs.",
+    "benefit": "More composure under pressure.",
+    "subtitle": "Meditation Dose",
+    "rationale": "Twenty minutes matches the dose used in most formally studied mindfulness programs.",
     "kind": "recovery",
     "family": "mindfulness",
     "tier": "intermediate",
@@ -2019,9 +4095,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "mindfulness_30min",
+    "name": "30-Minute Sit",
     "title": "Meditate 30 minutes per day.",
-    "subtitle": "High practice volume",
-    "rationale": "Hold a full program-level daily dose once shorter sits stop being a challenge.",
+    "benefit": "Strong control of your attention under real pressure.",
+    "subtitle": "Meditation Dose",
+    "rationale": "A full program-level dose is worth holding once shorter sits have stopped being a challenge.",
     "kind": "recovery",
     "family": "mindfulness",
     "tier": "advanced",
@@ -2052,10 +4130,78 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "mirror_question",
+    "name": "Mirror Question",
+    "title": "Ask each morning whether you would choose today's plan.",
+    "benefit": "Better alignment between your work and what matters.",
+    "subtitle": "Life Audit",
+    "rationale": "A run of days where the honest answer is no is the clearest available signal that something needs to change.",
+    "origin": "Steve Jobs asked the question in the mirror each morning.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Jobs' stated practice; death-reflection studies show shifts toward intrinsic goals, the daily ritual is his.",
+      "sources": [
+        {
+          "label": "Jobs' 2005 Stanford commencement",
+          "url": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says"
+        }
+      ]
+    },
+    "indications": [
+      "The current path continues on inertia, unexamined.",
+      "Big changes keep waiting for a sign."
+    ],
+    "guide": {
+      "url": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says",
+      "source": "Stanford News"
+    }
+  },
+  {
+    "id": "mise_en_place",
+    "name": "Set Up Before You Start",
+    "title": "Stage everything the block needs before you start.",
+    "benefit": "Uninterrupted work once you start.",
+    "subtitle": "Work Setup",
+    "rationale": "Staging everything before starting removes the mid-task scavenging that fragments otherwise good work blocks.",
+    "origin": "Professional kitchens run on the same discipline.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Kitchen practice adapted to knowledge work; adjacent to setup-time-reduction thinking, untested formally.",
+      "sources": [
+        {
+          "label": "Work Clean and mise en place",
+          "url": "https://www.forbes.com/sites/shawnsetaro/2016/04/27/work-clean/"
+        }
+      ]
+    },
+    "indications": [
+      "Blocks bleed minutes hunting tabs, docs, and chargers.",
+      "Sessions end in a mess the next session pays for."
+    ],
+    "guide": {
+      "url": "https://www.forbes.com/sites/shawnsetaro/2016/04/27/work-clean/",
+      "source": "Forbes"
+    }
+  },
+  {
     "id": "moderate_midday_meal",
+    "name": "Light Lunch",
     "title": "Keep lunch moderate on days that need a sharp afternoon.",
-    "subtitle": "Post-lunch dip control",
-    "rationale": "Stop short of fullness at midday so digestion does not amplify the natural afternoon alertness dip.",
+    "benefit": "A sharp afternoon instead of a slump.",
+    "subtitle": "Meal Size",
+    "rationale": "A large midday meal amplifies the natural afternoon alertness dip, and a moderate one does not.",
     "kind": "nutrition",
     "targets": [
       "Alertness",
@@ -2080,10 +4226,45 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "monkey_first",
+    "name": "Hardest Part First",
+    "title": "Attack the hardest, most uncertain part first.",
+    "benefit": "Less money and time lost on unworkable ideas.",
+    "subtitle": "Risk Order",
+    "rationale": "Attacking the hardest uncertainty first reaches the answer before serious time and money are committed.",
+    "origin": "Astro Teller frames it as training the monkey, not building the pedestal.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Teller's stated method; consistent with value-of-information reasoning, practitioner-only.",
+      "sources": [
+        {
+          "label": "Teller's monkey-first rule",
+          "url": "https://www.inc.com/business-insider/alphabet-google-x-moonshot-labs-how-people-work-productivity-monkey-first.html"
+        }
+      ]
+    },
+    "indications": [
+      "Visible easy progress is fronting for an unexamined hard core.",
+      "The killer uncertainty is scheduled last."
+    ],
+    "guide": {
+      "url": "https://www.inc.com/business-insider/alphabet-google-x-moonshot-labs-how-people-work-productivity-monkey-first.html",
+      "source": "Inc."
+    }
+  },
+  {
     "id": "morning_light",
+    "name": "Morning Light",
     "title": "Get outdoor light after waking.",
-    "subtitle": "Circadian rhythm",
-    "rationale": "Anchor the day with morning light before relying on stimulants or late-day fixes.",
+    "benefit": "Better sleep at night and easier mornings.",
+    "subtitle": "Light Exposure",
+    "rationale": "Morning light advances circadian timing, which makes waking easier and moves sleep earlier.",
     "kind": "sleep",
     "targets": [
       "Sleep timing",
@@ -2112,9 +4293,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "mouth_taping",
+    "name": "Mouth Taping",
     "title": "Test mouth taping to force nasal breathing overnight.",
-    "subtitle": "Nasal breathing experiment",
-    "rationale": "Try a low-cost nudge toward nasal breathing during sleep, treated honestly as an experiment rather than a proven lever.",
+    "benefit": "Possibly quieter and more restful sleep.",
+    "subtitle": "Sleep Experiment",
+    "rationale": "The evidence is thin, but the practice is cheap enough to test directly for anyone who breathes comfortably through the nose.",
     "kind": "sleep",
     "targets": [
       "Sleep quality",
@@ -2148,10 +4331,46 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "murakami_metronome_days",
+    "name": "Identical Days",
+    "title": "Run identical days for the length of a project.",
+    "benefit": "Reliable deep focus over long projects.",
+    "subtitle": "Daily Structure",
+    "rationale": "Unvarying repetition acts as its own trigger, dropping you into a working state without spending willpower on it.",
+    "origin": "Haruki Murakami holds identical days for the length of a novel.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 300,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Murakami's stated method across decades of books; habit research supports stable context cues cutting initiation cost, the full regime is untested.",
+      "sources": [
+        {
+          "label": "Murakami's daily routine",
+          "url": "https://www.openculture.com/2021/07/haruki-murakamis-daily-routine-up-at-400-a-m-5-6-hours-of-writing-then-a-10k-run.html"
+        }
+      ]
+    },
+    "indications": [
+      "A months-long project needs sustained daily output.",
+      "Every day currently starts with negotiating the schedule from scratch.",
+      "Willpower is doing work that routine should."
+    ],
+    "guide": {
+      "url": "https://www.openculture.com/2021/07/haruki-murakamis-daily-routine-up-at-400-a-m-5-6-hours-of-writing-then-a-10k-run.html",
+      "source": "Open Culture"
+    }
+  },
+  {
     "id": "nature_dose",
+    "name": "120-Minute Nature Dose",
     "title": "Spend 120 minutes per week in nature.",
-    "subtitle": "Nature dose",
-    "rationale": "Treat time in green space as a weekly recovery dose rather than a vacation-only event.",
+    "benefit": "Lower stress and better mood.",
+    "subtitle": "Weekly Recovery",
+    "rationale": "Two hours a week in green space is the threshold where self-reported health and wellbeing measurably improve.",
     "kind": "recovery",
     "targets": [
       "Stress",
@@ -2180,10 +4399,43 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "new_decade_new_sport",
+    "name": "Learn a New Sport",
+    "title": "Take up one entirely new sport at each new stage of life.",
+    "benefit": "Lasting fitness and a sharper mind as you age.",
+    "subtitle": "Lifelong Training",
+    "rationale": "Learning a genuinely new sport preserves both physical capacity and the ability to be a beginner.",
+    "origin": "Akio Morita took up tennis at 55, skiing at 60, and scuba at 68.",
+    "kind": "training",
+    "targets": [
+      "Fitness",
+      "Energy"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Novel-skill acquisition in older adults improves cognitive function in trials; Morita is the executive case.",
+      "sources": [
+        {
+          "label": "Akio Morita biography",
+          "url": "https://www.encyclopedia.com/people/social-sciences-and-law/business-leaders/akio-morita"
+        }
+      ]
+    },
+    "indications": [
+      "Physical practice has narrowed to one comfortable groove.",
+      "Being a beginner at anything ended years ago."
+    ],
+    "guide": null
+  },
+  {
     "id": "no_all_nighters",
-    "title": "Never trade sleep for a stuck problem; retry after a full night.",
-    "subtitle": "Sleep-first debugging",
-    "rationale": "Overnight consolidation routinely solves in minutes what a fatigued brain could not in hours; the all-nighter is a bad trade.",
+    "name": "No All-Nighters",
+    "title": "Sleep on a stuck problem instead of working through the night.",
+    "benefit": "Clearer thinking and better problem-solving the next morning.",
+    "subtitle": "Sleep Rule",
+    "rationale": "Overnight consolidation routinely solves in minutes what a fatigued brain could not solve in hours.",
+    "origin": "Andrej Karpathy refuses all-nighters and retries in the morning.",
     "kind": "sleep",
     "targets": [
       "Problem solving",
@@ -2202,6 +4454,10 @@ export const PROTOCOLS = [
         {
           "label": "Caffeine timing and sleep trial",
           "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+        },
+        {
+          "label": "Gates on sleep after Why We Sleep",
+          "url": "https://www.cnbc.com/2019/12/19/the-book-that-changed-bill-gates-mind-about-sleeping.html"
         }
       ]
     },
@@ -2216,9 +4472,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "no_meeting_mornings",
-    "title": "Keep mornings meeting-free; take meetings after lunch.",
-    "subtitle": "Day architecture",
-    "rationale": "Give the highest-energy hours to creation and stack coordination into the afternoon, where a meeting costs less momentum.",
+    "name": "No-Meeting Mornings",
+    "title": "Keep mornings meeting-free and take meetings after lunch.",
+    "benefit": "Consistent deep work every morning.",
+    "subtitle": "Day Structure",
+    "rationale": "Giving the highest-energy hours to creation and stacking coordination after lunch costs less momentum overall.",
     "kind": "calendar_defense",
     "targets": [
       "Deep work",
@@ -2252,9 +4510,12 @@ export const PROTOCOLS = [
   },
   {
     "id": "nondefault_meeting_lengths",
+    "name": "15–20-Minute Meeting Defaults",
     "title": "Book meetings at 15 or 20 minutes, not the default 30.",
-    "subtitle": "Meeting sizing",
-    "rationale": "Meetings expand to their scheduled slot; size them to the topic and reclaim the difference.",
+    "benefit": "Fewer wasted meeting hours.",
+    "subtitle": "Meeting Sizing",
+    "rationale": "Meetings expand to fill whatever slot they are given, so sizing the slot to the topic returns the difference.",
+    "origin": "Sam Altman books fifteen and twenty minute meetings.",
     "kind": "calendar_defense",
     "targets": [
       "Calendar",
@@ -2283,9 +4544,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "notification_batching",
+    "name": "Notification Batching",
     "title": "Batch phone notifications to three deliveries per day.",
-    "subtitle": "Notification boundary",
-    "rationale": "Let notifications arrive on your schedule instead of the sender's, without going fully unreachable.",
+    "benefit": "Far fewer interruptions and better focus.",
+    "subtitle": "Interruption Boundary",
+    "rationale": "Scheduled delivery lets notifications arrive on your terms without going fully unreachable.",
     "kind": "deep_work",
     "targets": [
       "Focus",
@@ -2316,9 +4579,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "nsdr_session",
+    "name": "10–20-Minute NSDR Session",
     "title": "Use a 10-to-20-minute NSDR session instead of pushing through.",
-    "subtitle": "Structured rest",
-    "rationale": "Swap a low-quality afternoon grind for a guided non-sleep deep rest or yoga nidra session that actually restores.",
+    "benefit": "Recovered energy and focus without more caffeine.",
+    "subtitle": "Structured Rest",
+    "rationale": "A guided deep-rest session restores more than pushing through a low-quality afternoon does.",
     "kind": "recovery",
     "targets": [
       "Energy",
@@ -2347,10 +4612,78 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "oblique_card",
+    "name": "Random Prompt",
+    "title": "When stuck, draw one lateral prompt and apply it before grinding on.",
+    "benefit": "New approaches when you are stuck.",
+    "subtitle": "Creative Unblock",
+    "rationale": "A random lateral prompt breaks the tunnel vision that pressure creates and reopens abandoned approaches.",
+    "origin": "Brian Eno created the Oblique Strategies deck for studio use.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Eno's studio tool; loosely related to random-stimulus creativity techniques, untested formally.",
+      "sources": [
+        {
+          "label": "Oblique Strategies",
+          "url": "https://en.wikipedia.org/wiki/Oblique_Strategies"
+        }
+      ]
+    },
+    "indications": [
+      "Stuckness triggers harder pushing on the same door.",
+      "Pressure narrows your option set to one."
+    ],
+    "guide": {
+      "url": "https://en.wikipedia.org/wiki/Oblique_Strategies",
+      "source": "Wikipedia"
+    }
+  },
+  {
+    "id": "oblique_entry",
+    "name": "Start on the Side Problem",
+    "title": "Enter an intimidating problem through an adjacent subproblem.",
+    "benefit": "Momentum on work that felt intimidating.",
+    "subtitle": "Task Initiation",
+    "rationale": "Starting on an adjacent smaller piece captures the interest of the big problem without its ignition cost.",
+    "origin": "Paul Graham describes entering hard problems obliquely.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Graham's tactic; aligned with task-aversiveness findings in procrastination research.",
+      "sources": [
+        {
+          "label": "Paul Graham, Good and Bad Procrastination",
+          "url": "https://paulgraham.com/procrastination.html"
+        }
+      ]
+    },
+    "indications": [
+      "The big problem triggers avoidance on contact.",
+      "Adjacent smaller pieces of it look almost fun."
+    ],
+    "guide": {
+      "url": "https://paulgraham.com/procrastination.html",
+      "source": "Paul Graham"
+    }
+  },
+  {
     "id": "off_day_creation",
+    "name": "Weekend Deep-Work Block",
     "title": "Use a weekend block for focused work.",
-    "subtitle": "Weekly push",
-    "rationale": "Working on a day you usually leave open has added more output than it displaced afterward. Use a deliberate, bounded block.",
+    "benefit": "Extra output without a recovery cost.",
+    "subtitle": "Weekly Push",
+    "rationale": "A bounded block on a normally open day can add output when the following days show no recovery cost.",
     "kind": "deep_work",
     "targets": [
       "Deep work",
@@ -2379,9 +4712,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "off_day_recovery",
+    "name": "Full Day Off",
     "title": "Take a full weekend day off.",
-    "subtitle": "Full day off",
-    "rationale": "Working on a day you usually leave open has cost more downstream output than it created. Take the day off.",
+    "benefit": "Better energy and output the following week.",
+    "subtitle": "Weekly Recovery",
+    "rationale": "A genuine day away from work raises the following week's output when the previous stretch has drained it.",
     "kind": "recovery",
     "targets": [
       "Recovery",
@@ -2410,9 +4745,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "omega3_daily",
+    "name": "Daily Omega-3",
     "title": "Take about 2 grams of combined EPA and DHA daily.",
-    "subtitle": "Omega-3 baseline",
-    "rationale": "Raise omega-3 status toward the range associated with lower cardiovascular and all-cause mortality.",
+    "benefit": "Better long-term heart and brain health.",
+    "subtitle": "Daily Supplement",
+    "rationale": "Higher blood omega-3 levels are associated with lower cardiovascular and all-cause mortality in pooled cohort data.",
     "kind": "nutrition",
     "targets": [
       "Cardiovascular health",
@@ -2447,10 +4784,244 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "one_detail_upgrade",
+    "name": "One-Detail Upgrade",
+    "title": "Over-invest in one small detail of your work at a time.",
+    "benefit": "Continuous improvement in your craft.",
+    "subtitle": "Craft Practice",
+    "rationale": "Aiming improvement at one controllable detail at a time is what makes decades of repetition keep producing gains.",
+    "origin": "Jiro Ono raised octopus massage from thirty minutes to forty-five.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Matches deliberate-practice findings that improvement requires targeted sub-component refinement, not raw repetition.",
+      "sources": [
+        {
+          "label": "Massaging the octopus",
+          "url": "https://www.thisisgoingtobebig.com/blog/2012/3/21/massaging-the-octopus-jiro-dreams-of-startups.html"
+        }
+      ]
+    },
+    "indications": [
+      "Repetition has plateaued into maintenance.",
+      "'Get better' has no current specific target."
+    ],
+    "guide": {
+      "url": "https://www.thisisgoingtobebig.com/blog/2012/3/21/massaging-the-octopus-jiro-dreams-of-startups.html",
+      "source": "This Is Going To Be Big"
+    }
+  },
+  {
+    "id": "one_variable_loop",
+    "name": "One-Variable Loop",
+    "title": "Change exactly one thing per iteration and record the result.",
+    "benefit": "Faster learning from every iteration.",
+    "subtitle": "Iteration Method",
+    "rationale": "Changing one thing per iteration is the only way an iteration teaches you what actually caused the result.",
+    "origin": "James Dyson built 5,127 prototypes one change at a time.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Textbook experimental design applied to personal iteration; Dyson is the famous industrial case.",
+      "sources": [
+        {
+          "label": "Dyson's 5,127 prototypes",
+          "url": "https://www.entrepreneur.com/leadership/james-dyson-created-5127-versions-of-a-product-that-failed/424645"
+        }
+      ]
+    },
+    "indications": [
+      "Iterations change five things and teach nothing.",
+      "You cannot say which past change caused the improvement."
+    ],
+    "guide": {
+      "url": "https://www.entrepreneur.com/leadership/james-dyson-created-5127-versions-of-a-product-that-failed/424645",
+      "source": "Entrepreneur"
+    }
+  },
+  {
+    "id": "overnight_question",
+    "name": "Overnight Question",
+    "title": "Write your most important question at night and answer it at dawn.",
+    "benefit": "Better solutions to your hardest problems.",
+    "subtitle": "Incubation Loop",
+    "rationale": "Posing the question at the end of the day recruits overnight incubation, and answering before any input keeps it clean.",
+    "origin": "Josh Waitzkin ends the day with his most important question.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Incubation research supports delayed-return benefits on hard problems; the pre-input morning discipline is Waitzkin's.",
+      "sources": [
+        {
+          "label": "Waitzkin on Tim Ferriss",
+          "url": "https://tim.blog/2019/07/03/the-tim-ferriss-show-transcripts-josh-waitzkin-how-to-cram-2-months-of-learning-into-1-day-375/"
+        }
+      ]
+    },
+    "indications": [
+      "Mornings open on input instead of your own thinking.",
+      "Your hardest question never gets scheduled attention."
+    ],
+    "guide": {
+      "url": "https://tim.blog/2019/07/03/the-tim-ferriss-show-transcripts-josh-waitzkin-how-to-cram-2-months-of-learning-into-1-day-375/",
+      "source": "Tim Ferriss Show"
+    }
+  },
+  {
+    "id": "parallel_book_pile",
+    "name": "Parallel Book Pile",
+    "title": "Read many books at once and abandon them freely.",
+    "benefit": "More reading and broader knowledge.",
+    "subtitle": "Reading Habit",
+    "rationale": "Removing the obligation to finish any book keeps total reading volume high, because interest picks the next one.",
+    "origin": "Marc Andreessen keeps many books in progress and abandons freely.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Andreessen's habit; consistent with interest-driven motivation research, untested.",
+      "sources": [
+        {
+          "label": "Marc Andreessen on productivity and scheduling",
+          "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/"
+        }
+      ]
+    },
+    "indications": [
+      "One dutiful book has blocked all reading for a month.",
+      "Reading died when it became a completion exercise."
+    ],
+    "guide": {
+      "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/",
+      "source": "Marc Andreessen"
+    }
+  },
+  {
+    "id": "parallel_variants",
+    "name": "Parallel Variants",
+    "title": "Make ten real versions, cut to three, refine, then commit to one.",
+    "benefit": "Better final designs.",
+    "subtitle": "Design Method",
+    "rationale": "Real parallel alternatives produce a better final design than iterating on the first idea ever does.",
+    "origin": "Apple's design process ran ten versions down to three, then one.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 180,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Parallel-prototyping research found parallel variants beat serial iteration on rated outcomes; 10-3-1 is Apple's form.",
+      "sources": [
+        {
+          "label": "Apple's 10-3-1 design process",
+          "url": "https://www.designorate.com/how-does-apples-design-process-work/"
+        }
+      ]
+    },
+    "indications": [
+      "Designs iterate on the first idea forever.",
+      "Options are made to flatter a favorite."
+    ],
+    "guide": {
+      "url": "https://www.designorate.com/how-does-apples-design-process-work/",
+      "source": "Designorate"
+    }
+  },
+  {
+    "id": "peer_expedition",
+    "name": "Annual Trip with Peers",
+    "title": "Take a yearly multi-day outdoor trip with the same sharp peers.",
+    "benefit": "Real rest and valuable learning from peers.",
+    "subtitle": "Yearly Retreat",
+    "rationale": "A multi-day trip combines genuine recovery with unstructured time among people you learn from.",
+    "origin": "Henry Ford camped yearly with Edison, Firestone, and Burroughs.",
+    "kind": "social",
+    "targets": [
+      "Network",
+      "Judgment"
+    ],
+    "durationMinutes": 480,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Ford's documented tradition; nature-restoration and strong-tie research support the halves, the combination is practitioner design.",
+      "sources": [
+        {
+          "label": "The Henry Ford on the Vagabonds",
+          "url": "https://www.thehenryford.org/collections/explore/popular-research-topics/the-vagabonds"
+        },
+        {
+          "label": "120 minutes in nature and wellbeing study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31197192/"
+        }
+      ]
+    },
+    "indications": [
+      "Peer conversations never exceed dinner length.",
+      "Recovery and relationships keep losing to the same calendar."
+    ],
+    "guide": {
+      "url": "https://www.thehenryford.org/collections/explore/popular-research-topics/the-vagabonds",
+      "source": "The Henry Ford"
+    }
+  },
+  {
+    "id": "performance_log",
+    "name": "Performance Log",
+    "title": "Log daily what you did, how it felt, and what got in the way.",
+    "benefit": "Faster improvement from each cycle of work.",
+    "subtitle": "Training Log",
+    "rationale": "A daily record of conditions and results is the raw material that makes each training cycle better than the last.",
+    "origin": "Eliud Kipchoge keeps a handwritten training log.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Progress-monitoring meta-analyses show tracking materially improves goal attainment; the log format is Kipchoge's.",
+      "sources": [
+        {
+          "label": "Kipchoge interview notes",
+          "url": "https://mischavandenburg.com/zet/podcast-kipchoge-marathon-running/"
+        }
+      ]
+    },
+    "indications": [
+      "Weeks blur together with no record of what worked.",
+      "The same blockers recur unexamined."
+    ],
+    "guide": null
+  },
+  {
     "id": "phone_free_focus_block",
+    "name": "90-Minute Phone-Free Block",
     "title": "Keep one 90-minute work block distraction-free.",
-    "subtitle": "Distraction boundary",
-    "rationale": "Improve the quality of one real work block by keeping phone interruptions and desktop drift out.",
+    "benefit": "Protected, deeper time on your hardest work.",
+    "subtitle": "Focus Boundary",
+    "rationale": "Removing the phone from reach raises the quality of one real work block more than adding hours does.",
     "kind": "deep_work",
     "family": "attention_defense",
     "tier": "beginner",
@@ -2483,9 +5054,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "phone_outside_bedroom",
+    "name": "Phone Out of Bedroom",
     "title": "Charge the phone outside the bedroom.",
-    "subtitle": "Bedroom boundary",
-    "rationale": "Remove the highest-friction sleep competitor from arm's reach and break the wake-to-scroll reflex.",
+    "benefit": "Better sleep and a sharper start to the day.",
+    "subtitle": "Sleep Environment",
+    "rationale": "Putting the phone in another room removes the sleep competitor closest to hand and breaks the wake-to-scroll reflex.",
     "kind": "sleep",
     "targets": [
       "Sleep quality",
@@ -2511,10 +5084,76 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "pillow_self_talk",
+    "name": "Nightly Self-Check",
+    "title": "After a win, talk yourself down in the second person at lights-out.",
+    "benefit": "Better judgment during periods of success.",
+    "subtitle": "Ego Check",
+    "rationale": "Talking to yourself in the second person creates enough distance to keep a winning streak from distorting judgment.",
+    "origin": "John D. Rockefeller warned himself nightly during his fastest rise.",
+    "kind": "recovery",
+    "targets": [
+      "Recovery",
+      "Stress"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Distanced second-person self-talk improves regulation in controlled studies; Rockefeller ran it nightly for years.",
+      "sources": [
+        {
+          "label": "Senra on Rockefeller's autobiography",
+          "url": "https://world.hey.com/davidsenra/the-autobiography-of-john-d-rockefeller-7180b65b"
+        }
+      ]
+    },
+    "indications": [
+      "A win streak is inflating risk appetite.",
+      "Confidence and judgment are drifting apart."
+    ],
+    "guide": null
+  },
+  {
+    "id": "pliability_breaks",
+    "name": "Mobility Breaks",
+    "title": "Scatter short mobility and soft-tissue work through desk hours.",
+    "benefit": "Less stiffness and fewer desk-related injuries.",
+    "subtitle": "Desk Maintenance",
+    "rationale": "Short mobility work spread through the day treats tissue quality as maintenance rather than waiting for injury.",
+    "origin": "Tom Brady built his career around daily pliability work.",
+    "kind": "recovery",
+    "targets": [
+      "Recovery",
+      "Stress"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Brady's pliability construct is not recognized physiology, but breaking up prolonged sitting has real metabolic and vascular support.",
+      "sources": [
+        {
+          "label": "Tom Brady's TB12 method",
+          "url": "https://www.cbsnews.com/boston/news/tom-brady-the-tb12-method-hydration-simon-and-schuster/"
+        },
+        {
+          "label": "Micro-breaks meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36044424/"
+        }
+      ]
+    },
+    "indications": [
+      "Desk stretches run three-plus hours unbroken.",
+      "Neck, hips, or back stiffen by evening."
+    ],
+    "guide": null
+  },
+  {
     "id": "post_meal_walk",
+    "name": "Post-Meal Walk",
     "title": "Walk after one meal per day.",
-    "subtitle": "Meal protocol",
-    "rationale": "Establish one repeatable post-meal walk before extending the practice across the day.",
+    "benefit": "Steadier afternoon energy and focus.",
+    "subtitle": "Meal Protocol",
+    "rationale": "Walking soon after eating blunts the glucose spike that produces the post-meal energy crash.",
     "kind": "walk",
     "family": "meal_timing",
     "tier": "intermediate",
@@ -2546,10 +5185,76 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "post_workout_refuel",
+    "name": "30-Minute Post-Workout Refuel",
+    "title": "Eat protein and carbs within 30 minutes after hard training.",
+    "benefit": "Better recovery and more energy after training.",
+    "subtitle": "Refuel Window",
+    "rationale": "Refueling promptly after hard training restores glycogen and prevents the afternoon from being paid for by the morning.",
+    "origin": "Mike Mancias built the rule into LeBron James's routine.",
+    "kind": "nutrition",
+    "targets": [
+      "Energy",
+      "Recovery"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Post-exercise refueling for glycogen restoration is supported; the strict 30-minute window is weaker in recent literature.",
+      "sources": [
+        {
+          "label": "LeBron James and Mike Mancias on Tim Ferriss",
+          "url": "https://tim.blog/2018/11/30/the-tim-ferriss-show-transcripts-lebron-james-and-mike-mancias/"
+        }
+      ]
+    },
+    "indications": [
+      "Morning training is followed by an unfed sprint into meetings.",
+      "Post-workout afternoons feel heavier than rest-day ones."
+    ],
+    "guide": null
+  },
+  {
+    "id": "pre_dawn_session",
+    "name": "Pre-Dawn Session",
+    "title": "Add one session that ends when everyone else's alarm goes off.",
+    "benefit": "More skill built than peers of equal talent.",
+    "subtitle": "Extra Session",
+    "rationale": "An extra session before the day starts stacks on top of normal work, provided sleep is genuinely protected.",
+    "origin": "Kobe Bryant trained at four in the morning.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Kobe's documented practice; consistent with practice-volume reasoning, and dangerous without protected sleep, hence the warnings.",
+      "sources": [
+        {
+          "label": "Remembering Kobe Bryant (ESPN)",
+          "url": "https://www.espn.com/nba/story/_/id/28569694/remembering-kobe-bryant-relentless-curious-infinitely-complicated"
+        }
+      ]
+    },
+    "indications": [
+      "An earlier-than-everyone hour is genuinely available without cutting sleep.",
+      "The craft gap you want closed is measured in reps."
+    ],
+    "avoidWhen": [
+      "It compresses sleep below your full need.",
+      "A normal or late chronotype."
+    ],
+    "guide": null
+  },
+  {
     "id": "pre_sleep_breathing",
+    "name": "Pre-Sleep Breathing",
     "title": "Use slow breathing before sleep.",
-    "subtitle": "Sleep breathwork",
-    "rationale": "Give the sleep window an explicit physiological downshift instead of ending on screens or work.",
+    "benefit": "A calmer mind and quicker sleep.",
+    "subtitle": "Sleep Routine",
+    "rationale": "Slow breathing before bed gives the sleep window an explicit physiological downshift.",
     "kind": "sleep",
     "targets": [
       "Sleep latency",
@@ -2578,10 +5283,144 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "premortem",
+    "name": "Failure Premortem",
+    "title": "Write the project's failure story before you commit to it.",
+    "benefit": "Fewer avoidable project failures.",
+    "subtitle": "Risk Check",
+    "rationale": "Imagining the project has already failed surfaces risks and reservations that ordinary critique does not reach.",
+    "origin": "Gary Klein developed the premortem from prospective-hindsight research.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Research on prospective hindsight shows roughly 30 percent better identification of failure causes; the exercise is Klein's design.",
+      "sources": [
+        {
+          "label": "Klein's project premortem",
+          "url": "https://hbr.org/2007/09/performing-a-project-premortem"
+        }
+      ]
+    },
+    "indications": [
+      "Plans get critiqued politely and fail predictably.",
+      "A major commitment is a week from locking in."
+    ],
+    "guide": {
+      "url": "https://hbr.org/2007/09/performing-a-project-premortem",
+      "source": "Harvard Business Review"
+    }
+  },
+  {
+    "id": "preset_session_end",
+    "name": "Preset End Time",
+    "title": "Fix the session's end time before you start.",
+    "benefit": "Higher effort and better focus while you work.",
+    "subtitle": "Session Boundary",
+    "rationale": "Knowing exactly when the session ends is what allows full effort during it, because the demand is bounded.",
+    "origin": "Jerry Seinfeld refuses open-ended work sessions.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Binding-deadline research supports externally fixed limits; the alarm-as-reward framing is Seinfeld's.",
+      "sources": [
+        {
+          "label": "Seinfeld's writing systems",
+          "url": "https://colindorman.com/horn/seinfelds-systems-for-success/"
+        }
+      ]
+    },
+    "indications": [
+      "Open-ended sessions produce two good hours and four gray ones.",
+      "Starting feels heavy because stopping is undefined."
+    ],
+    "guide": {
+      "url": "https://colindorman.com/horn/seinfelds-systems-for-success/",
+      "source": "Colin Dorman"
+    }
+  },
+  {
+    "id": "project_rotation",
+    "name": "Project Rotation",
+    "title": "Keep two or three projects live and switch by mental state.",
+    "benefit": "More productive hours when one project stalls.",
+    "subtitle": "Work Switching",
+    "rationale": "Fatigue is often specific to one problem, so switching projects recovers productivity that forcing would waste.",
+    "origin": "John Carmack rotates between live projects by mental state.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Carmack's practice; partial support from task-variety research on attention restoration.",
+      "sources": [
+        {
+          "label": "John Carmack on Lex Fridman",
+          "url": "https://podscripts.co/podcasts/lex-fridman-podcast/309-john-carmack-doom-quake-vr-agi-programming-video-games-and-rockets"
+        }
+      ]
+    },
+    "indications": [
+      "Walls on one project currently end the whole day.",
+      "Two or more meaningful projects are genuinely live."
+    ],
+    "guide": {
+      "url": "https://podscripts.co/podcasts/lex-fridman-podcast/309-john-carmack-doom-quake-vr-agi-programming-video-games-and-rockets",
+      "source": "Lex Fridman Podcast"
+    }
+  },
+  {
+    "id": "protected_morning",
+    "name": "Protected Morning",
+    "title": "Start reactive work at a fixed late hour.",
+    "benefit": "More done in fewer, better hours.",
+    "subtitle": "Day Structure",
+    "rationale": "Owning the hours before reactive work starts produces a shorter day that outperforms a longer scattered one.",
+    "origin": "Daniel Ek opens for business at 10:30 in the morning.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 180,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Ek's stated structure; morning-exercise cognition effects are documented, the block design is practitioner-only.",
+      "sources": [
+        {
+          "label": "Daniel Ek on Tim Ferriss",
+          "url": "https://tim.blog/2020/12/06/daniel-ek-transcript/"
+        }
+      ]
+    },
+    "indications": [
+      "The day starts inside the inbox and never escapes.",
+      "Input, training, and thinking get whatever is left, which is nothing."
+    ],
+    "guide": {
+      "url": "https://tim.blog/2020/12/06/daniel-ek-transcript/",
+      "source": "Tim Ferriss Show"
+    }
+  },
+  {
     "id": "protein_anchor",
+    "name": "Protein Anchor",
     "title": "Move toward your better-performing protein range.",
-    "subtitle": "Meal composition",
-    "rationale": "Adjust protein only when your recorded meal or daily range supports better training, recovery, sleep, or steady work.",
+    "benefit": "Better recovery and more training capacity.",
+    "subtitle": "Meal Composition",
+    "rationale": "Adequate protein spread across meals is what lets training add capacity rather than accumulate fatigue.",
     "kind": "nutrition",
     "targets": [
       "Protein",
@@ -2607,10 +5446,78 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "quality_fade_stop",
+    "name": "Stop When Quality Drops",
+    "title": "Stop for the day when your output quality drops.",
+    "benefit": "Better quality work and less rework.",
+    "subtitle": "Effort Ceiling",
+    "rationale": "Grading output as you go finds your true daily capacity, and hours past the fade produce work you will redo.",
+    "origin": "Paul Graham stops on the quality fade rather than the clock.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Diminishing-returns findings on long hours support quality-based stopping; the self-grading mechanism is Graham's.",
+      "sources": [
+        {
+          "label": "Paul Graham, How to Work Hard",
+          "url": "https://paulgraham.com/hwh.html"
+        }
+      ]
+    },
+    "indications": [
+      "Evening output regularly gets reverted next morning.",
+      "Stopping currently requires external interruption."
+    ],
+    "guide": {
+      "url": "https://paulgraham.com/hwh.html",
+      "source": "Paul Graham"
+    }
+  },
+  {
+    "id": "question_ratio",
+    "name": "Question Ratio",
+    "title": "Ask more questions than you make statements.",
+    "benefit": "More learned from every conversation.",
+    "subtitle": "Conversation Habit",
+    "rationale": "Deliberately asking more than you state converts a conversation from broadcasting into learning.",
+    "origin": "Jim Collins was told to double his question-to-statement ratio.",
+    "kind": "social",
+    "targets": [
+      "Network",
+      "Judgment"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Question-asking research shows higher rates raise information gain and liking; the tracked ratio is Collins' mechanism.",
+      "sources": [
+        {
+          "label": "Jim Collins interview notes",
+          "url": "https://podcastnotes.org/2019/02/19/collins/"
+        }
+      ]
+    },
+    "indications": [
+      "Meetings end with your opinions delivered and nothing learned.",
+      "Access to great people keeps producing shallow exchanges."
+    ],
+    "guide": {
+      "url": "https://podcastnotes.org/2019/02/19/collins/",
+      "source": "Podcast Notes"
+    }
+  },
+  {
     "id": "retrieval_practice",
+    "name": "Retrieval Practice",
     "title": "Close the material and self-test instead of re-reading.",
-    "subtitle": "Testing effect",
-    "rationale": "Effortful recall, not re-exposure, is what durably encodes new material and exposes the gaps.",
+    "benefit": "Better retention of what you learn.",
+    "subtitle": "Study Method",
+    "rationale": "Effortful recall, not re-reading, is what durably encodes material and reveals what you have not learned.",
     "kind": "deep_work",
     "targets": [
       "Retention",
@@ -2641,10 +5548,42 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "saturday_numbers",
+    "name": "Weekly Numbers Review",
+    "title": "One fixed early morning a week, read every number line by line.",
+    "benefit": "Better decisions from knowing your numbers firsthand.",
+    "subtitle": "Weekly Review",
+    "rationale": "Reading the raw numbers before anyone interprets them means the week starts with a first-hand picture.",
+    "origin": "Sam Walton read every weekly number before dawn on Saturdays.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Walton's stated routine; loosely supported by feedback-cadence reasoning, practitioner-only.",
+      "sources": [
+        {
+          "label": "Sam Walton's principles",
+          "url": "https://www.afoundersmap.com/founders/sam-walton"
+        }
+      ]
+    },
+    "indications": [
+      "Metrics arrive filtered through other people's summaries.",
+      "Corrective decisions drift into midweek."
+    ],
+    "guide": null
+  },
+  {
     "id": "sauna_frequent",
+    "name": "Sauna 4x+",
     "title": "Sauna four or more times per week, 19-plus minutes.",
-    "subtitle": "High heat volume",
-    "rationale": "Use the frequency and duration range where the cohort curves flatten out, if access and schedule allow it.",
+    "benefit": "Strong recovery now and better heart health later.",
+    "subtitle": "Heat Volume",
+    "rationale": "The lowest cardiovascular mortality in cohort data appeared at four or more sessions a week of nineteen minutes or longer.",
     "kind": "recovery",
     "family": "heat_exposure",
     "tier": "advanced",
@@ -2683,9 +5622,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "sauna_intro",
+    "name": "15–20-Minute Weekly Sauna",
     "title": "Take one 15-to-20-minute sauna session this week.",
-    "subtitle": "Heat exposure floor",
-    "rationale": "Start deliberate heat exposure as a repeatable recovery practice, not an occasional spa event.",
+    "benefit": "Better sleep and lower stress.",
+    "subtitle": "Heat Exposure",
+    "rationale": "One weekly session is enough to make heat a repeatable recovery practice rather than an occasional treat.",
     "kind": "recovery",
     "family": "heat_exposure",
     "tier": "beginner",
@@ -2725,9 +5666,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "sauna_regular",
+    "name": "Sauna 2-3x",
     "title": "Sauna two to three times per week.",
-    "subtitle": "Heat exposure standard",
-    "rationale": "Move from occasional sessions to the frequency range where cohort benefits start to appear.",
+    "benefit": "Better recovery and sleep during heavy weeks.",
+    "subtitle": "Heat Exposure",
+    "rationale": "Two to three weekly sessions is where the dose-response association in cohort data begins to show.",
     "kind": "recovery",
     "family": "heat_exposure",
     "tier": "intermediate",
@@ -2765,10 +5708,46 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "scheduled_recovery",
+    "name": "Scheduled Recovery",
+    "title": "Put recovery on the calendar with meeting-grade status.",
+    "benefit": "Sustained energy and fewer burnout cycles.",
+    "subtitle": "Recovery Planning",
+    "rationale": "Recovery survives a full calendar only when it is booked with the same status as meetings.",
+    "origin": "LeBron James's staff schedule recovery like games.",
+    "kind": "recovery",
+    "targets": [
+      "Recovery",
+      "Stress"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Recovery-stress balance research supports deliberate recovery scheduling; the calendar mechanism is practitioner design.",
+      "sources": [
+        {
+          "label": "LeBron James and Mike Mancias on Tim Ferriss",
+          "url": "https://tim.blog/2018/11/30/the-tim-ferriss-show-transcripts-lebron-james-and-mike-mancias/"
+        },
+        {
+          "label": "Marc Andreessen on productivity and scheduling",
+          "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/"
+        }
+      ]
+    },
+    "indications": [
+      "Recovery happens only when work runs out, which is never.",
+      "Energy trends down across each quarter."
+    ],
+    "guide": null
+  },
+  {
     "id": "screen_shutdown",
+    "name": "30-Minute Screen Shutdown",
     "title": "Shut down screens 30 minutes before bed.",
-    "subtitle": "Sleep guardrail",
-    "rationale": "Remove the light and cognitive input that keep the nervous system online late.",
+    "benefit": "Easier sleep onset and better rest.",
+    "subtitle": "Sleep Routine",
+    "rationale": "Removing screens before bed cuts both the light exposure and the alerting content that delay sleep.",
     "kind": "sleep",
     "family": "sleep_shutdown",
     "tier": "beginner",
@@ -2800,10 +5779,178 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "scripted_first_hour",
+    "name": "Scripted First Hour",
+    "title": "Script the first hour into a fixed, decision-free sequence.",
+    "benefit": "An easier and more consistent start to the day.",
+    "subtitle": "Morning Routine",
+    "rationale": "A fixed, decision-free opening sequence means the day starts before motivation is consulted.",
+    "origin": "Arnold Schwarzenegger executes the same automatic morning.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Habit-automaticity and implementation-intention research supports cue-bound decision-free routines; the hour-long script is practitioner form.",
+      "sources": [
+        {
+          "label": "Schwarzenegger's automatic morning",
+          "url": "https://www.insidehook.com/wellness/arnold-schwarzenegger-morning-routine"
+        }
+      ]
+    },
+    "indications": [
+      "Mornings open with negotiation about what to do first.",
+      "Routines survive only as long as motivation does."
+    ],
+    "guide": null
+  },
+  {
+    "id": "scripted_openers",
+    "name": "20-Move Scripted Openers",
+    "title": "Script your first 20 moves of a high-stakes engagement in advance.",
+    "benefit": "Better execution when the stakes are highest.",
+    "subtitle": "Execution Plan",
+    "rationale": "Deciding the opening moves in calm conditions keeps early execution clinical and saves improvisation for real surprises.",
+    "origin": "Bill Walsh scripted the 49ers' first twenty-five plays.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Walsh's documented method; consistent with precommitment reasoning, untested outside football.",
+      "sources": [
+        {
+          "label": "Walsh's scripted game openers",
+          "url": "https://www.markovitzconsulting.com/blog/std-work-bill-walsh"
+        }
+      ]
+    },
+    "indications": [
+      "High-stakes moments run on adrenaline-quality judgment.",
+      "The first hour of big days is improvised."
+    ],
+    "guide": {
+      "url": "https://www.markovitzconsulting.com/blog/std-work-bill-walsh",
+      "source": "Markovitz Consulting"
+    }
+  },
+  {
+    "id": "second_shift",
+    "name": "Second Shift",
+    "title": "Run a scheduled late-night shift reserved for thinking, not meetings.",
+    "benefit": "Quiet hours for deep thinking.",
+    "subtitle": "Night Schedule",
+    "rationale": "A protected late shift provides quiet thinking hours the daytime calendar cannot, if chronotype and sleep genuinely allow it.",
+    "origin": "Demis Hassabis has run a 10pm research shift for a decade.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 180,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Hassabis' documented practice; works with a late chronotype and costs sleep for most people, hence the warnings.",
+      "sources": [
+        {
+          "label": "Hassabis' second workday",
+          "url": "https://finance.yahoo.com/news/ceo-google-deepmind-juggles-another-170607769.html"
+        }
+      ]
+    },
+    "indications": [
+      "You are genuinely, verifiably a night person.",
+      "Daytime is unavoidably consumed by meetings."
+    ],
+    "avoidWhen": [
+      "A normal or early chronotype.",
+      "It compresses sleep below your full need.",
+      "Morning obligations you cannot move."
+    ],
+    "guide": null
+  },
+  {
+    "id": "seinfeld_visible_chain",
+    "name": "Don't Break the Chain",
+    "title": "Mark an X on a wall calendar every day you do the work.",
+    "benefit": "Consistent daily practice and compounding skill.",
+    "subtitle": "Streak Tracking",
+    "rationale": "A growing visible streak makes the daily rep something you refuse to lose rather than something you decide.",
+    "origin": "Jerry Seinfeld marked a wall calendar for every day of writing.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Popularized by Seinfeld; streak maintenance leans on well-documented loss aversion and self-monitoring effects.",
+      "sources": [
+        {
+          "label": "The Seinfeld strategy",
+          "url": "https://jamesclear.com/stop-procrastinating-seinfeld-strategy"
+        }
+      ]
+    },
+    "indications": [
+      "A core skill needs daily reps, not bursts.",
+      "Consistency collapses whenever motivation dips."
+    ],
+    "guide": {
+      "url": "https://jamesclear.com/stop-procrastinating-seinfeld-strategy",
+      "source": "James Clear"
+    }
+  },
+  {
+    "id": "selective_calendar",
+    "name": "Selective Calendar",
+    "title": "Commit only where you can genuinely win.",
+    "benefit": "Better work on the things that matter most.",
+    "subtitle": "Commitment Filter",
+    "rationale": "Entering fewer things fully preserves the freshness that winning the ones that matter requires.",
+    "origin": "Roger Federer played fewer tournaments to peak late in his career.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Federer's stated late-career strategy; practitioner-only.",
+      "sources": [
+        {
+          "label": "Federer on selective scheduling",
+          "url": "https://time.com/4659015/roger-federer-interview-tennis/"
+        },
+        {
+          "label": "Kipchoge interview notes",
+          "url": "https://mischavandenburg.com/zet/podcast-kipchoge-marathon-running/"
+        }
+      ]
+    },
+    "indications": [
+      "The calendar is full of mid-value commitments.",
+      "Every yes is diluting the two things that matter."
+    ],
+    "guide": null
+  },
+  {
     "id": "ship_weekly_cadence",
+    "name": "Weekly Ship",
     "title": "Ship one finished artifact every week, same day, no exceptions.",
-    "subtitle": "Fixed shipping cadence",
+    "benefit": "More finished work and faster skill growth.",
+    "subtitle": "Shipping Cadence",
     "rationale": "A dated public cadence converts open-ended work into finished reps, and volume is where quality comes from.",
+    "origin": "Thomas Edison held himself to a minor invention every ten days.",
     "kind": "deep_work",
     "targets": [
       "Output",
@@ -2833,9 +5980,12 @@ export const PROTOCOLS = [
   },
   {
     "id": "shutdown_ritual",
+    "name": "Shutdown Ritual",
     "title": "End each workday with a five-minute shutdown ritual.",
-    "subtitle": "Workday boundary",
-    "rationale": "Review open loops, park tomorrow's first move, and declare the day closed so work stops leaking into the evening.",
+    "benefit": "Genuine rest in the evening and an easier morning.",
+    "subtitle": "Workday Boundary",
+    "rationale": "A short closing routine parks open loops and declares the day over, which stops work leaking into the evening.",
+    "origin": "Cal Newport formalized the shutdown ritual.",
     "kind": "recovery",
     "targets": [
       "Detachment",
@@ -2868,10 +6018,42 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "silent_user_watch",
+    "name": "Watch Users Silently",
+    "title": "Watch a real first use of what you shipped.",
+    "benefit": "A product that fits real users better.",
+    "subtitle": "User Research",
+    "rationale": "Watching what a person actually does, rather than asking, is what reveals the adjustments worth making.",
+    "origin": "Jiro Ono adjusts each piece to how the diner is eating.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Usability canon: observing actual behavior outperforms asking; Jiro is the craft-form of it.",
+      "sources": [
+        {
+          "label": "Lessons from Sukiyabashi Jiro",
+          "url": "https://www.leanblog.org/2025/01/dreaming-of-jiros-sushi-tokyo/"
+        }
+      ]
+    },
+    "indications": [
+      "User knowledge arrives only through dashboards and tickets.",
+      "You have never watched a stranger's first session."
+    ],
+    "guide": null
+  },
+  {
     "id": "single_tasking",
+    "name": "One Task at a Time",
     "title": "Run one task on one screen at a time.",
-    "subtitle": "Attention discipline",
-    "rationale": "Close everything unrelated to the current task; task switching taxes accuracy and speed even when it feels efficient.",
+    "benefit": "Faster work with fewer mistakes.",
+    "subtitle": "Attention Discipline",
+    "rationale": "Task switching costs measurable time and accuracy even when it feels efficient.",
     "kind": "deep_work",
     "targets": [
       "Focus",
@@ -2901,10 +6083,75 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "six_month_question",
+    "name": "Six-Month Question",
+    "title": "Write why your ten-year plan cannot happen in six months.",
+    "benefit": "Faster progress on goals you had over-scheduled.",
+    "subtitle": "Timeline Check",
+    "rationale": "Asking why a ten-year plan cannot happen in six months separates real constraints from assumed ones.",
+    "origin": "Peter Thiel poses the question to founders.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 20,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Thiel's question; practitioner-only.",
+      "sources": [
+        {
+          "label": "Thiel on Tim Ferriss (transcript)",
+          "url": "https://tim.blog/wp-content/uploads/2018/07/28-peter-thiel.pdf"
+        }
+      ]
+    },
+    "indications": [
+      "The long-term plan has comfortable decade-shaped pacing.",
+      "Nobody has ever asked why the timeline is the timeline."
+    ],
+    "guide": null
+  },
+  {
+    "id": "skinner_output_graph",
+    "name": "Output Graph",
+    "title": "Log true desk hours and graph cumulative output daily.",
+    "benefit": "Early warning when your output is slipping.",
+    "subtitle": "Output Tracking",
+    "rationale": "Plotting cumulative output makes a declining slope visible immediately rather than at the end of a bad month.",
+    "origin": "B.F. Skinner ran his own working life as an experiment.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Self-monitoring is among the best-replicated behavior-change techniques; the graph is Skinner's instrument for it.",
+      "sources": [
+        {
+          "label": "B.F. Skinner's measured routine",
+          "url": "https://abrilliantmind.blog/daily-rituals-of-scientists-the-meticulous-routine-of-b-f-skinner/"
+        }
+      ]
+    },
+    "indications": [
+      "Perceived busy hours and true work hours have diverged.",
+      "Output trends are invisible until a bad month ends."
+    ],
+    "guide": {
+      "url": "https://abrilliantmind.blog/daily-rituals-of-scientists-the-meticulous-routine-of-b-f-skinner/",
+      "source": "A Brilliant Mind"
+    }
+  },
+  {
     "id": "sleep_extension_experiment",
+    "name": "45-Minute Sleep Extension",
     "title": "Add 45 minutes of time in bed for two weeks.",
-    "subtitle": "Sleep extension experiment",
-    "rationale": "Test whether current sleep is quietly short by extending the window and watching performance respond.",
+    "benefit": "More energy and sharper thinking if you are under-slept.",
+    "subtitle": "Sleep Experiment",
+    "rationale": "Extending time in bed for two weeks is the only reliable way to find out whether your sleep is quietly short.",
     "kind": "sleep",
     "targets": [
       "Sleep duration",
@@ -2934,9 +6181,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "sleep_hygiene",
+    "name": "90-Minute Shutdown",
     "title": "Start a 90-minute sleep shutdown.",
-    "subtitle": "Extended shutdown",
-    "rationale": "Remove screens early enough that late input no longer owns the transition into sleep.",
+    "benefit": "Deeper sleep and sharper thinking the next day.",
+    "subtitle": "Sleep Routine",
+    "rationale": "Ending screen input well before bed removes the late stimulation that otherwise owns the transition into sleep.",
     "kind": "sleep",
     "family": "sleep_shutdown",
     "tier": "advanced",
@@ -2968,9 +6217,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "sleep_precision",
+    "name": "20-Minute Wake Window",
     "title": "Keep wake time within a 20-minute window.",
-    "subtitle": "Precise sleep anchor",
-    "rationale": "Make wake timing exceptionally stable so circadian drift stops taxing the next day.",
+    "benefit": "Deep, reliable sleep and a clear head daily.",
+    "subtitle": "Sleep Timing",
+    "rationale": "Very stable wake timing keeps circadian drift from taxing the following day.",
     "kind": "sleep",
     "family": "sleep_regularity",
     "tier": "advanced",
@@ -3002,9 +6253,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "sleep_regular_90",
+    "name": "90-Minute Wake Window",
     "title": "Keep wake time within a 90-minute window.",
-    "subtitle": "Sleep regularity floor",
-    "rationale": "Reduce large swings in wake time before trying to make sleep timing precise.",
+    "benefit": "Better sleep and steadier energy across the week.",
+    "subtitle": "Sleep Timing",
+    "rationale": "Reducing large swings in wake time matters more than precision when the current pattern is chaotic.",
     "kind": "sleep",
     "family": "sleep_regularity",
     "tier": "beginner",
@@ -3037,9 +6290,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "sleep_regular_wake_time",
+    "name": "45-Minute Wake Window",
     "title": "Keep wake time within a 45-minute window.",
-    "subtitle": "Sleep anchor",
-    "rationale": "A stable wake time keeps the circadian system anchored even when bedtime drifts.",
+    "benefit": "More consistent sleep and clearer mornings.",
+    "subtitle": "Sleep Timing",
+    "rationale": "A stable wake time keeps the circadian system anchored even when bedtime moves.",
     "kind": "sleep",
     "family": "sleep_regularity",
     "tier": "intermediate",
@@ -3071,10 +6326,78 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "slow_endurance_volume",
+    "name": "Slow Endurance Volume",
+    "title": "Log big weekly endurance volume at deliberately slow pace.",
+    "benefit": "High fitness without draining your work energy.",
+    "subtitle": "Aerobic Pacing",
+    "rationale": "Keeping most endurance volume genuinely easy builds capacity without consuming the recovery that work requires.",
+    "origin": "Alex Karp trains Norwegian-style at a deliberately slow pace.",
+    "kind": "training",
+    "targets": [
+      "Fitness",
+      "Energy"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Mirrors polarized-training evidence that elite endurance athletes keep most volume at low intensity; the executive framing is Karp's.",
+      "sources": [
+        {
+          "label": "How Alex Karp trains",
+          "url": "https://www.axios.com/2023/02/02/palantir-ceo-alex-karp-exercise"
+        }
+      ]
+    },
+    "indications": [
+      "Every session trends toward medium-hard and recovery suffers.",
+      "Training time is available but intensity budget is not."
+    ],
+    "guide": {
+      "url": "https://www.axios.com/2023/02/02/palantir-ceo-alex-karp-exercise",
+      "source": "Axios"
+    }
+  },
+  {
+    "id": "small_rooms",
+    "name": "Test in Small Rooms",
+    "title": "Test the big pitch in dozens of tiny rooms first, expecting bombs.",
+    "benefit": "Better performance when it counts.",
+    "subtitle": "Material Testing",
+    "rationale": "Testing rough material in dozens of low-stakes rooms means every element has already survived an audience.",
+    "origin": "Chris Rock works out material in small clubs before big shows.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Rock's documented process; structurally identical to low-fidelity iteration, untested as a transfer.",
+      "sources": [
+        {
+          "label": "Chris Rock's small-room process",
+          "url": "https://bakadesuyo.com/2012/07/how-does-chris-rock-create-such-brilliant-com/"
+        }
+      ]
+    },
+    "indications": [
+      "The big pitch will meet its first audience on the day it counts.",
+      "Material feels perfect because it has never been tested."
+    ],
+    "guide": {
+      "url": "https://bakadesuyo.com/2012/07/how-does-chris-rock-create-such-brilliant-com/",
+      "source": "Barking Up the Wrong Tree"
+    }
+  },
+  {
     "id": "social_recovery",
+    "name": "Social Recovery",
     "title": "Include real social recovery each week.",
-    "subtitle": "Recovery protocol",
-    "rationale": "Social recovery is part of the health base, not a bonus after everything else is done.",
+    "benefit": "Better mood and genuine recovery.",
+    "subtitle": "Weekly Recovery",
+    "rationale": "Unstructured time with people who matter restores something that solitary rest does not.",
     "kind": "social",
     "targets": [
       "Mood",
@@ -3103,9 +6426,12 @@ export const PROTOCOLS = [
   },
   {
     "id": "spaced_note_review",
+    "name": "Spaced Note Review",
     "title": "Review a daily batch of your old notes and highlights.",
-    "subtitle": "Spaced resurfacing",
-    "rationale": "Spaced re-exposure keeps your best collected ideas active when decisions arise, instead of buried in an archive.",
+    "benefit": "Better recall of your best ideas.",
+    "subtitle": "Note Practice",
+    "rationale": "Spaced re-exposure keeps collected ideas active and available when decisions arrive.",
+    "origin": "David Senra resurfaces book highlights daily.",
     "kind": "deep_work",
     "targets": [
       "Retention",
@@ -3134,10 +6460,78 @@ export const PROTOCOLS = [
     "guide": null
   },
   {
+    "id": "standard_of_performance",
+    "name": "Standard of Performance",
+    "title": "Write explicit standards for how you do the work.",
+    "benefit": "More consistent quality of work.",
+    "subtitle": "Work Standards",
+    "rationale": "Writing down what excellence looks like in each part of the work makes quality a controllable input rather than a hoped-for result.",
+    "origin": "Bill Walsh took the 49ers from worst to champions with his Standard of Performance.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 90,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Walsh's Standard of Performance from The Score Takes Care of Itself; widely adopted by operators, practitioner-only as a protocol.",
+      "sources": [
+        {
+          "label": "Bill Walsh's Standard of Performance",
+          "url": "https://www.sachinrekhi.com/p/bill-walsh-the-score-takes-care-of-itself"
+        }
+      ]
+    },
+    "indications": [
+      "Outcomes are obsessed over; the inputs that produce them are undefined.",
+      "Quality varies with mood because 'done well' was never written down."
+    ],
+    "guide": {
+      "url": "https://www.sachinrekhi.com/p/bill-walsh-the-score-takes-care-of-itself",
+      "source": "Sachin Rekhi"
+    }
+  },
+  {
+    "id": "step_back",
+    "name": "Step Back",
+    "title": "When emotion spikes, physically step back, look up, breathe, re-scan.",
+    "benefit": "Better decisions under pressure.",
+    "subtitle": "Emotional Reset",
+    "rationale": "A physical step back and a breath restores the whole-picture view that emotional spikes narrow.",
+    "origin": "Jocko Willink teaches detachment as a physical move first.",
+    "kind": "recovery",
+    "targets": [
+      "Recovery",
+      "Stress"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Self-distancing research supports stepping outside oneself for regulation under stress; the physical anchor is Willink's.",
+      "sources": [
+        {
+          "label": "Willink on detachment",
+          "url": "https://warriormindset.us/detachment-2/"
+        }
+      ]
+    },
+    "indications": [
+      "Conflicts pull you into tunnel vision.",
+      "Your worst calls happen at maximum emotion."
+    ],
+    "guide": {
+      "url": "https://warriormindset.us/detachment-2/",
+      "source": "Warrior Mindset"
+    }
+  },
+  {
     "id": "strength_2x",
+    "name": "Twice-Weekly Lift",
     "title": "Lift twice per week.",
-    "subtitle": "Strength standard",
-    "rationale": "Make twice-weekly strength work part of the operating baseline.",
+    "benefit": "Visible strength and steadier energy.",
+    "subtitle": "Strength Volume",
+    "rationale": "Two sessions a week is the point where strength work becomes a genuine baseline rather than an occasional effort.",
     "kind": "training",
     "family": "strength_capacity",
     "tier": "intermediate",
@@ -3173,9 +6567,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "strength_3x",
+    "name": "3x Strength Week",
     "title": "Lift three or more times per week.",
-    "subtitle": "High strength volume",
-    "rationale": "Use three or more structured sessions to progress strength rather than merely maintain it.",
+    "benefit": "Real strength gains and better physical resilience.",
+    "subtitle": "Strength Volume",
+    "rationale": "Three or more structured sessions progress strength rather than merely maintaining it.",
     "kind": "training",
     "family": "strength_capacity",
     "tier": "advanced",
@@ -3211,9 +6607,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "strength_training",
+    "name": "Weekly Lift",
     "title": "Lift once per week.",
-    "subtitle": "Strength floor",
-    "rationale": "Keep the weekly strength floor explicit instead of treating all training as cardio.",
+    "benefit": "More energy and fewer aches from desk work.",
+    "subtitle": "Strength Floor",
+    "rationale": "An explicit weekly strength floor prevents training from collapsing entirely into cardio.",
     "kind": "training",
     "family": "strength_capacity",
     "tier": "beginner",
@@ -3240,7 +6638,7 @@ export const PROTOCOLS = [
     "indications": [
       "No structured resistance work happens in a typical week.",
       "Training is exclusively cardio.",
-      "Strength or muscle mass is an explicit goal."
+      "Energy and posture sag across long desk weeks."
     ],
     "guide": {
       "source": "The Fitness Wiki",
@@ -3249,9 +6647,12 @@ export const PROTOCOLS = [
   },
   {
     "id": "structured_procrastination",
+    "name": "Structured Procrastination",
     "title": "Keep a Later list and work it when you dodge the top task.",
-    "subtitle": "Procrastination channel",
-    "rationale": "Avoidance energy is inevitable; aim it at worthwhile second-tier work instead of feeds.",
+    "benefit": "Useful output even when you avoid the main task.",
+    "subtitle": "Avoidance Channel",
+    "rationale": "Avoidance energy is inevitable, so directing it at worthwhile second-tier work produces output instead of feeds.",
+    "origin": "Marc Andreessen keeps a Later list for exactly this.",
     "kind": "deep_work",
     "targets": [
       "Output",
@@ -3278,10 +6679,75 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "switch_sides_argument",
+    "name": "Switch-Sides Argument",
+    "title": "Argue your position hard, then swap sides and argue the other's.",
+    "benefit": "Better decisions and less lingering conflict.",
+    "subtitle": "Dispute Resolution",
+    "rationale": "Arguing the opposing side forces you to build its strongest version, which removes ego from the decision.",
+    "origin": "The Wright brothers argued this way and often swapped conclusions.",
+    "kind": "social",
+    "targets": [
+      "Network",
+      "Judgment"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Dialectical-inquiry research shows higher decision quality than consensus seeking; the swap ritual is the Wrights'.",
+      "sources": [
+        {
+          "label": "How the Wright brothers argued",
+          "url": "https://www.rightattitudes.com/2012/02/15/argue-like-the-wright-brothers/"
+        }
+      ]
+    },
+    "indications": [
+      "Technical disagreements settle by seniority or fatigue.",
+      "Both sides defend positions instead of testing them."
+    ],
+    "guide": null
+  },
+  {
+    "id": "tharp_trigger_ritual",
+    "name": "Starting Ritual",
+    "title": "Fire one automatic first action that commits the session.",
+    "benefit": "An easier start and less time lost getting going.",
+    "subtitle": "Start Cue",
+    "rationale": "One trivial automatic action that commits the session removes the daily decision to begin.",
+    "origin": "Twyla Tharp's ritual was telling the cab driver the gym address.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Implementation-intention research shows pre-committed cues sharply raise follow-through; Tharp supplies the canonical form.",
+      "sources": [
+        {
+          "label": "Twyla Tharp's trigger ritual",
+          "url": "https://jamesclear.com/twyla-tharp"
+        }
+      ]
+    },
+    "indications": [
+      "The gap between intending and starting eats 20 minutes.",
+      "Sessions begun always finish; sessions unbegun multiply."
+    ],
+    "guide": {
+      "url": "https://jamesclear.com/twyla-tharp",
+      "source": "James Clear"
+    }
+  },
+  {
     "id": "theanine_apigenin_stack",
+    "name": "200/50 mg Theanine-Apigenin",
     "title": "Test theanine 200 mg with apigenin 50 mg before bed.",
-    "subtitle": "Sleep stack experiment",
-    "rationale": "Run the popular non-prescription sleep stack as a bounded experiment against your own sleep data.",
+    "benefit": "Possibly faster and easier sleep onset.",
+    "subtitle": "Sleep Supplement",
+    "rationale": "The evidence is thin but the components are cheap and low-risk enough to test against your own sleep data.",
     "kind": "nutrition",
     "targets": [
       "Sleep onset",
@@ -3316,10 +6782,50 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "themed_weekdays",
+    "name": "Themed Days",
+    "title": "Give each weekday one theme and route work into its day.",
+    "benefit": "Less context switching and better focus.",
+    "subtitle": "Week Structure",
+    "rationale": "Routing work into a matching day means context gets built once a week instead of rebuilt several times a day.",
+    "origin": "Jack Dorsey ran two companies on themed weekdays.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Dorsey's system; task-switching costs are well documented, day-theming as a fix is practitioner-only.",
+      "sources": [
+        {
+          "label": "Dorsey's themed days",
+          "url": "https://www.forbes.com/sites/kevinkruse/2015/10/12/jack-dorsey-productivity-secret/"
+        },
+        {
+          "label": "Interruption-reduction systematic review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+        }
+      ]
+    },
+    "indications": [
+      "Multiple workstreams interleave through every day.",
+      "The same context gets rebuilt four times a week."
+    ],
+    "guide": {
+      "url": "https://www.forbes.com/sites/kevinkruse/2015/10/12/jack-dorsey-productivity-secret/",
+      "source": "Forbes"
+    }
+  },
+  {
     "id": "thinking_walk",
+    "name": "Thinking Walk",
     "title": "Take a daily walk on a fixed route with one problem loaded.",
-    "subtitle": "Ambulatory thinking",
-    "rationale": "A known route removes navigation decisions so attention can chew on the problem while the body moves.",
+    "benefit": "Clearer thinking on problems that resist the desk.",
+    "subtitle": "Problem Solving",
+    "rationale": "A known route removes navigation decisions, which frees attention to work on the problem while the body moves.",
+    "origin": "Paul Graham walks a fixed route with one problem loaded.",
     "kind": "walk",
     "targets": [
       "Creativity",
@@ -3351,10 +6857,106 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "thought_experiment",
+    "name": "Thought Experiment",
+    "title": "Run the design to its extreme case in your head.",
+    "benefit": "Fewer costly mistakes in design.",
+    "subtitle": "Design Check",
+    "rationale": "Pushing a design to its extreme case in your head finds contradictions before anything gets built.",
+    "origin": "Albert Einstein rode alongside a light beam and found relativity.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 30,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Cognitive-science work documents mental simulation as a real discovery mechanism in expert practice.",
+      "sources": [
+        {
+          "label": "Einstein's light-beam thought experiment",
+          "url": "https://sites.pitt.edu/~jdnorton/Goodies/Chasing_the_light/"
+        }
+      ]
+    },
+    "indications": [
+      "Designs meet their edge cases only in production.",
+      "The team prototypes before anyone has imagined the limit."
+    ],
+    "guide": {
+      "url": "https://sites.pitt.edu/~jdnorton/Goodies/Chasing_the_light/",
+      "source": "John Norton"
+    }
+  },
+  {
+    "id": "three_decisions_daily",
+    "name": "Three Decisions a Day",
+    "title": "Cap yourself at about three good decisions per day.",
+    "benefit": "Higher-quality decisions on what matters.",
+    "subtitle": "Decision Budget",
+    "rationale": "Treating a few high-quality decisions as the whole job protects the slack that makes those decisions good.",
+    "origin": "Jeff Bezos aims for three good decisions a day.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Bezos' stated operating model, crediting Buffett; practitioner-only.",
+      "sources": [
+        {
+          "label": "Bezos on three good decisions",
+          "url": "https://fortune.com/2026/06/08/jeff-bezos-daily-routine-decision-making-warren-buffett-inspiration/"
+        }
+      ]
+    },
+    "indications": [
+      "Days fill with dozens of shallow decisions and no good ones.",
+      "The calendar has zero slack around the calls that matter."
+    ],
+    "guide": null
+  },
+  {
+    "id": "three_meals_no_snacks",
+    "name": "Three Meals, No Snacks",
+    "title": "Eat three whole-food meals a day and skip the grazing.",
+    "benefit": "Stable energy and less thinking about food.",
+    "subtitle": "Meal Structure",
+    "rationale": "Three defined meals remove the recurring food decisions that grazing spreads across the whole day.",
+    "origin": "John Mackey has eaten this way since he was twenty-three.",
+    "kind": "nutrition",
+    "targets": [
+      "Energy",
+      "Recovery"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Mackey's lifelong pattern; whole-food plant-forward eating has real support, the no-snack frame itself is practitioner-only.",
+      "sources": [
+        {
+          "label": "John Mackey's health routine",
+          "url": "https://www.cnbc.com/2019/08/14/inside-whole-foods-ceo-john-mackeys-health-and-fitness-routine.html"
+        }
+      ]
+    },
+    "indications": [
+      "Grazing smears energy and appetite across the day.",
+      "Food decisions recur hourly instead of thrice daily."
+    ],
+    "guide": null
+  },
+  {
     "id": "top_idea_audit",
-    "title": "Audit what your mind drifts to; realign until it is your top problem.",
-    "subtitle": "Ambient thought check",
-    "rationale": "Background thinking does the real work on hard problems, and you can only curate what owns it, not command it.",
+    "name": "Top-Idea Audit",
+    "title": "Check what your mind drifts to when it is free.",
+    "benefit": "Better progress on your most important problem.",
+    "subtitle": "Attention Check",
+    "rationale": "Background thinking does the real work on hard problems, and you can only choose what occupies it indirectly.",
+    "origin": "Paul Graham wrote about the top idea in your mind.",
     "kind": "deep_work",
     "targets": [
       "Prioritization",
@@ -3383,9 +6985,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "transition_ritual",
+    "name": "Meeting Clustering",
     "title": "Cluster meetings into two daily windows.",
-    "subtitle": "Meeting architecture",
-    "rationale": "Contain meetings so they stop fragmenting every open edge of the workday.",
+    "benefit": "Longer uninterrupted stretches for real work.",
+    "subtitle": "Calendar Structure",
+    "rationale": "Containing meetings into clusters stops them from fragmenting every open edge of the workday.",
     "kind": "calendar_defense",
     "family": "calendar_defense",
     "tier": "intermediate",
@@ -3419,10 +7023,142 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "travel_kit",
+    "name": "Travel Kit",
+    "title": "Carry the gear that keeps your core routine running on the road.",
+    "benefit": "Consistent energy and routine while traveling.",
+    "subtitle": "Travel Routine",
+    "rationale": "Carrying the equipment your routine depends on is what keeps the routine intact away from home.",
+    "origin": "John Mackey packs a rice cooker and books hotels near good food.",
+    "kind": "nutrition",
+    "targets": [
+      "Energy",
+      "Recovery"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Environment-design research shows context protection preserves habits under disruption; the kit is Mackey's form.",
+      "sources": [
+        {
+          "label": "John Mackey's health routine",
+          "url": "https://www.cnbc.com/2019/08/14/inside-whole-foods-ceo-john-mackeys-health-and-fitness-routine.html"
+        }
+      ]
+    },
+    "indications": [
+      "Every trip demolishes diet, training, and sleep for a week.",
+      "Road defaults are whatever the hotel offers."
+    ],
+    "guide": {
+      "url": "https://www.cnbc.com/2019/08/14/inside-whole-foods-ceo-john-mackeys-health-and-fitness-routine.html",
+      "source": "CNBC"
+    }
+  },
+  {
+    "id": "trollope_paced_units",
+    "name": "15-Minute Pacing",
+    "title": "Hold a small fixed output per 15-minute unit, clock in view.",
+    "benefit": "Steady, substantial output from short sessions.",
+    "subtitle": "Output Pacing",
+    "rationale": "Pacing output against a clock in small units turns production into a rhythm rather than a daily effort of will.",
+    "origin": "Anthony Trollope wrote 250 words each quarter hour before work.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 180,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Trollope's documented method; frequent sub-goals with immediate feedback align with motivation research, untested directly.",
+      "sources": [
+        {
+          "label": "Trollope's 15-minute units",
+          "url": "https://jamesclear.com/anthony-trollope"
+        }
+      ]
+    },
+    "indications": [
+      "Long sessions drift and stall mid-way.",
+      "Output is countable in small units."
+    ],
+    "guide": {
+      "url": "https://jamesclear.com/anthony-trollope",
+      "source": "James Clear"
+    }
+  },
+  {
+    "id": "two_for_one_hydration",
+    "name": "Two-for-One Hydration",
+    "title": "Drink two glasses of water per coffee or alcoholic drink.",
+    "benefit": "Steadier energy without tracking anything.",
+    "subtitle": "Hydration Rule",
+    "rationale": "A simple pairing rule keeps intake adequate without any tracking, which is why it survives real days.",
+    "origin": "Tom Brady counterbalances every coffee with water.",
+    "kind": "nutrition",
+    "targets": [
+      "Energy",
+      "Recovery"
+    ],
+    "durationMinutes": 2,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Brady's TB12 rule; caffeine's diuretic effect is mild in habitual users, so this is a memorable heuristic rather than physiology.",
+      "sources": [
+        {
+          "label": "Tom Brady's TB12 method",
+          "url": "https://www.cbsnews.com/boston/news/tom-brady-the-tb12-method-hydration-simon-and-schuster/"
+        }
+      ]
+    },
+    "indications": [
+      "Coffee outnumbers water until mid-afternoon.",
+      "Tracking rules fail but simple pairing rules stick."
+    ],
+    "guide": null
+  },
+  {
+    "id": "two_way_doors",
+    "name": "Reversible or Not",
+    "title": "Decide reversible questions fast and irreversible ones slowly.",
+    "benefit": "Faster decisions without more mistakes.",
+    "subtitle": "Decision Triage",
+    "rationale": "Most decisions are reversible, and waiting for near-certainty on those costs more than the occasional walk-back.",
+    "origin": "Jeff Bezos separates one-way from two-way doors.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 10,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Bezos' shareholder-letter framework; consistent with option-value reasoning, untested as a personal protocol.",
+      "sources": [
+        {
+          "label": "Bezos on one-way and two-way doors",
+          "url": "https://www.fastcompany.com/90578272/how-jeff-bezos-makes-decisions"
+        }
+      ]
+    },
+    "indications": [
+      "Reversible calls wait weeks for certainty.",
+      "Every decision gets the same deliberation weight."
+    ],
+    "guide": {
+      "url": "https://www.fastcompany.com/90578272/how-jeff-bezos-makes-decisions",
+      "source": "Fast Company"
+    }
+  },
+  {
     "id": "ubiquitous_capture",
+    "name": "Always-On Capture",
     "title": "Capture every idea the moment it occurs, always.",
-    "subtitle": "Always-on notebook",
-    "rationale": "Working memory drops ideas within minutes; a capture tool always in reach preserves them and frees attention.",
+    "benefit": "Fewer lost ideas and a clearer head.",
+    "subtitle": "Idea Capture",
+    "rationale": "Working memory drops ideas within minutes, so a capture tool always in reach preserves them and frees attention.",
+    "origin": "Leonardo da Vinci hung a notebook from his belt.",
     "kind": "deep_work",
     "targets": [
       "Ideas",
@@ -3448,9 +7184,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "ultradian_work_cycles",
+    "name": "90-Minute Cycles",
     "title": "Work in 90-minute cycles with real breaks between.",
-    "subtitle": "Work-rest pacing",
-    "rationale": "Match hard cognitive pushes to roughly 90-minute arcs and take a genuine break between them instead of grinding flat-out.",
+    "benefit": "More high-quality work from fewer hours.",
+    "subtitle": "Work Pacing",
+    "rationale": "Matching hard pushes to roughly ninety-minute arcs with real breaks between produces more than grinding flat out.",
     "kind": "deep_work",
     "targets": [
       "Focus",
@@ -3479,10 +7217,78 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "verify_the_tables",
+    "name": "Check the Reference Data",
+    "title": "When results contradict the reference data, re-measure the fundamentals cheaply.",
+    "benefit": "Faster progress and fewer dead ends.",
+    "subtitle": "First Principles",
+    "rationale": "Re-measuring the fundamentals yourself is worth weeks when the reference numbers everyone trusts turn out to be wrong.",
+    "origin": "The Wright brothers built a wind tunnel after Lilienthal's tables failed.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 120,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "The canonical case of cheap component-level testing before system integration; practitioner lineage.",
+      "sources": [
+        {
+          "label": "NASA on the Wrights' 1901 wind tunnel",
+          "url": "https://www.grc.nasa.gov/www/k-12/airplane/wrights/test1901.html"
+        }
+      ]
+    },
+    "indications": [
+      "Iterations keep failing against numbers everyone trusts.",
+      "The reference data has never been independently checked."
+    ],
+    "guide": {
+      "url": "https://www.grc.nasa.gov/www/k-12/airplane/wrights/test1901.html",
+      "source": "NASA"
+    }
+  },
+  {
+    "id": "virtue_ledger",
+    "name": "Standards Tracker",
+    "title": "Mark your standards on a grid every day.",
+    "benefit": "Measurable progress on your own standards.",
+    "subtitle": "Self Observation",
+    "rationale": "Marking faults daily against written standards turns character-level goals into a visible trend line.",
+    "origin": "Benjamin Franklin tracked thirteen virtues on a grid.",
+    "kind": "deep_work",
+    "targets": [
+      "Output",
+      "Focus"
+    ],
+    "durationMinutes": 5,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Self-monitoring is among the best-evidenced behavior-change techniques; Franklin's grid is its oldest famous form.",
+      "sources": [
+        {
+          "label": "Franklin's thirteen-virtues chart",
+          "url": "https://journalinghabit.com/benjamin-franklin-habit-tracker/"
+        }
+      ]
+    },
+    "indications": [
+      "Your standards live as intentions instead of measurements.",
+      "The same personal fault survives every resolution."
+    ],
+    "guide": {
+      "url": "https://journalinghabit.com/benjamin-franklin-habit-tracker/",
+      "source": "Journaling Habit"
+    }
+  },
+  {
     "id": "vitamin_d_test_correct",
+    "name": "Vitamin D Correction",
     "title": "Test vitamin D and supplement to sufficiency.",
-    "subtitle": "Vitamin D correction",
-    "rationale": "Correct a measured deficiency with 1,000 to 4,000 IU daily instead of guessing at a dose.",
+    "benefit": "Better mood and immune function.",
+    "subtitle": "Tested Supplement",
+    "rationale": "Testing first and dosing to the result corrects a real deficiency without guessing at a number.",
     "kind": "nutrition",
     "targets": [
       "Immune function",
@@ -3519,9 +7325,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "walk_between_clusters",
+    "name": "45-Minute Movement Day",
     "title": "Move for 45 minutes per day.",
-    "subtitle": "Daily activity",
-    "rationale": "Raise daily movement without relying on one workout by using walks and work breaks.",
+    "benefit": "More energy and better focus through the afternoon.",
+    "subtitle": "Daily Activity",
+    "rationale": "Accumulating movement in the gaps raises the daily total without depending on a single workout.",
     "kind": "walk",
     "family": "daily_activity",
     "tier": "intermediate",
@@ -3558,9 +7366,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "walk_reset",
+    "name": "30-Minute Daily Movement Floor",
     "title": "Move for 30 minutes per day.",
-    "subtitle": "Daily activity floor",
-    "rationale": "Build a minimum daily movement dose that supports energy across the workday.",
+    "benefit": "Steadier energy and a clearer head.",
+    "subtitle": "Daily Activity",
+    "rationale": "A minimum daily movement dose supports energy across the workday regardless of whether a workout happens.",
     "kind": "walk",
     "family": "daily_activity",
     "tier": "beginner",
@@ -3596,10 +7406,86 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "walking_commute",
+    "name": "Walking Commute",
+    "title": "Replace the commute with an unplugged walk.",
+    "benefit": "Clearer thinking and lower stress before work.",
+    "subtitle": "Commute Conversion",
+    "rationale": "An unplugged walk before work produces the day's clearest thinking, which a commute otherwise spends on a screen.",
+    "origin": "Jack Dorsey walked five miles to work with no email.",
+    "kind": "walk",
+    "targets": [
+      "Clarity",
+      "Movement"
+    ],
+    "durationMinutes": 75,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Active-commuting studies link walking commutes to better mood and wellbeing; the unplugged rule is practitioner design.",
+      "sources": [
+        {
+          "label": "Dorsey's walking commute",
+          "url": "https://www.cnbc.com/2018/07/11/jack-dorsey-walks-5-miles-to-work-every-dayand-he-says-its-the-best-.html"
+        },
+        {
+          "label": "Walking and creative thinking experiments",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24749966/"
+        }
+      ]
+    },
+    "indications": [
+      "The commute is dead scroll time.",
+      "Days start reactive with no thinking margin."
+    ],
+    "guide": {
+      "url": "https://www.cnbc.com/2018/07/11/jack-dorsey-walks-5-miles-to-work-every-dayand-he-says-its-the-best-.html",
+      "source": "CNBC"
+    }
+  },
+  {
+    "id": "walking_desk_calls",
+    "name": "Walking Desk",
+    "title": "Route routine calls through a treadmill or walking setup.",
+    "benefit": "More movement and less frustration from calls.",
+    "subtitle": "Meeting Movement",
+    "rationale": "Routing shallow meetings through a walking setup recovers movement from a call-heavy day.",
+    "origin": "Stephen Wolfram takes meetings at two miles per hour.",
+    "kind": "walk",
+    "targets": [
+      "Clarity",
+      "Movement"
+    ],
+    "durationMinutes": 60,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Walking's mood and creativity effects are documented; the walking-desk meeting arrangement is Wolfram's design, with his own N-of-1 data.",
+      "sources": [
+        {
+          "label": "Wolfram's personal infrastructure",
+          "url": "https://writings.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/"
+        },
+        {
+          "label": "Walking and creative thinking experiments",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24749966/"
+        }
+      ]
+    },
+    "indications": [
+      "Call-heavy days end with near-zero movement.",
+      "Certain recurring meetings reliably spike frustration."
+    ],
+    "guide": {
+      "url": "https://writings.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/",
+      "source": "Stephen Wolfram"
+    }
+  },
+  {
     "id": "walking_meetings",
+    "name": "Walking Meetings",
     "title": "Convert one-on-ones into walking meetings.",
-    "subtitle": "Meeting movement",
-    "rationale": "Reclaim meeting hours as movement and use the walking state for open-ended discussion.",
+    "benefit": "More movement and better conversations.",
+    "subtitle": "Meeting Movement",
+    "rationale": "Discussion-format meetings need no screen, so walking them converts sitting time into movement.",
     "kind": "walk",
     "targets": [
       "Movement",
@@ -3628,10 +7514,46 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "weekly_hours_cap",
+    "name": "Weekly Hours Cap",
+    "title": "Cap sustained work near fifty hours a week.",
+    "benefit": "More real output and lower burnout risk.",
+    "subtitle": "Effort Ceiling",
+    "rationale": "Output per hour collapses past roughly fifty weekly hours, so the extra time is borrowed rather than added.",
+    "origin": "Dustin Moskovitz argued the case from Asana.",
+    "kind": "calendar_defense",
+    "targets": [
+      "Calendar",
+      "Deep work"
+    ],
+    "durationMinutes": 15,
+    "evidence": {
+      "grade": "moderate",
+      "summary": "Hours-output research shows productivity flattens or reverses past roughly 50 weekly hours; Moskovitz supplies the founder case.",
+      "sources": [
+        {
+          "label": "Dustin Moskovitz, Work Hard Live Well",
+          "url": "https://medium.com/building-asana/work-hard-live-well-ead679cb506d"
+        }
+      ]
+    },
+    "indications": [
+      "Sixty-hour weeks are the standing default.",
+      "The extra evening hours produce the week's worst work."
+    ],
+    "guide": {
+      "url": "https://medium.com/building-asana/work-hard-live-well-ead679cb506d",
+      "source": "Dustin Moskovitz"
+    }
+  },
+  {
     "id": "weekly_planning_block",
+    "name": "30-Minute Weekly Plan",
     "title": "Plan the week in one 30-minute Monday block.",
-    "subtitle": "Weekly architecture",
-    "rationale": "See the whole week once, place the important work first, and stop re-deciding priorities every morning.",
+    "benefit": "Important work that actually gets done.",
+    "subtitle": "Weekly Planning",
+    "rationale": "Seeing the whole week at once places important work before the urgent fills it in.",
+    "origin": "Cal Newport plans the week in advance every Monday.",
     "kind": "deep_work",
     "targets": [
       "Output",
@@ -3665,9 +7587,12 @@ export const PROTOCOLS = [
   },
   {
     "id": "weighted_rucking",
+    "name": "45-Minute Weighted Rucking",
     "title": "Walk 45 minutes with a loaded pack twice a week.",
-    "subtitle": "Loaded carry cardio",
-    "rationale": "Start near 10 percent of body weight: zone-2-adjacent cardio, axial loading, and time outdoors in one low-skill session.",
+    "benefit": "Better fitness and a clearer head from time outside.",
+    "subtitle": "Loaded Cardio",
+    "rationale": "Loaded walking combines aerobic work with axial loading in a single low-skill session.",
+    "origin": "Peter Attia recommends starting near ten percent of body weight.",
     "kind": "training",
     "targets": [
       "Cardiovascular fitness",
@@ -3699,9 +7624,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "wind_down",
+    "name": "60-Minute Screen-Free Hour",
     "title": "Shut down screens 60 minutes before bed.",
-    "subtitle": "Full wind-down",
-    "rationale": "Move the screen boundary earlier so the nervous system has a real downshift before sleep.",
+    "benefit": "Faster sleep and a clearer head in the morning.",
+    "subtitle": "Sleep Routine",
+    "rationale": "Moving the screen boundary earlier gives the nervous system a real downshift before sleep.",
     "kind": "sleep",
     "family": "sleep_shutdown",
     "tier": "intermediate",
@@ -3732,10 +7659,78 @@ export const PROTOCOLS = [
     }
   },
   {
+    "id": "working_coach",
+    "name": "Working Coach",
+    "title": "Have a senior peer observe a real session and correct you after.",
+    "benefit": "Renewed improvement after a long plateau.",
+    "subtitle": "Skill Feedback",
+    "rationale": "Expert improvement requires external feedback that self-assessment cannot supply, which is why plateaus follow the end of training.",
+    "origin": "Atul Gawande hired a coach to watch him operate at his peak.",
+    "kind": "social",
+    "targets": [
+      "Network",
+      "Judgment"
+    ],
+    "durationMinutes": 90,
+    "evidence": {
+      "grade": "emerging",
+      "summary": "Deliberate-practice research holds that expert improvement needs external feedback self-assessment cannot supply; Gawande is the modern case.",
+      "sources": [
+        {
+          "label": "Gawande's Personal Best",
+          "url": "https://physicianleadership.com/personal-best-by-dr-atul-gawande-article-published-in-the-new-yorker/"
+        }
+      ]
+    },
+    "indications": [
+      "Your craft plateaued the year training ended.",
+      "Nobody has watched you actually work in years."
+    ],
+    "guide": {
+      "url": "https://physicianleadership.com/personal-best-by-dr-atul-gawande-article-published-in-the-new-yorker/",
+      "source": "Atul Gawande"
+    }
+  },
+  {
+    "id": "workout_gate",
+    "name": "Workout Gate",
+    "title": "No workday until the workout is done. No exceptions.",
+    "benefit": "Consistent training and better daily energy.",
+    "subtitle": "Training Rule",
+    "rationale": "Making the workout a hard precondition rather than an appointment is what stops it losing to the calendar.",
+    "origin": "Naval Ravikant will not start work until training is done.",
+    "kind": "training",
+    "targets": [
+      "Fitness",
+      "Energy"
+    ],
+    "durationMinutes": 45,
+    "evidence": {
+      "grade": "anecdotal",
+      "summary": "Naval's rule; if-then gating has strong adherence research behind it, the specific gate is practitioner design.",
+      "sources": [
+        {
+          "label": "Naval Ravikant on the Knowledge Project",
+          "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/"
+        }
+      ]
+    },
+    "indications": [
+      "Exercise is scheduled daily and skipped daily.",
+      "Soft appointments keep losing to the inbox; only hard gates survive."
+    ],
+    "guide": {
+      "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/",
+      "source": "The Knowledge Project"
+    }
+  },
+  {
     "id": "zero_feed_day",
+    "name": "Distraction-Free Day",
     "title": "Make one workday distraction-free.",
-    "subtitle": "Workday focus boundary",
-    "rationale": "Keep feeds closed and incidental device drift negligible across one real workday each week.",
+    "benefit": "A full day of undistracted, high-quality work.",
+    "subtitle": "Focus Boundary",
+    "rationale": "A full day with feeds closed produces undiluted output that a partially protected day cannot.",
     "kind": "deep_work",
     "family": "attention_defense",
     "tier": "advanced",
@@ -3772,9 +7767,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "zone2_aerobic",
+    "name": "30 Aerobic Minutes",
     "title": "Complete 30 aerobic minutes per week.",
-    "subtitle": "Aerobic floor",
-    "rationale": "Build the weekly movement floor without needing a max-intensity workout.",
+    "benefit": "Better mood and clearer thinking.",
+    "subtitle": "Aerobic Volume",
+    "rationale": "A modest weekly aerobic floor is enough to establish the habit without needing a hard session.",
     "kind": "training",
     "family": "aerobic_volume",
     "tier": "beginner",
@@ -3800,7 +7797,8 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Weekly aerobic minutes are near zero.",
-      "A workout habit needs a floor that survives busy weeks."
+      "A workout habit needs a floor that survives busy weeks.",
+      "Afternoon energy runs out before the work does."
     ],
     "guide": {
       "source": "Cleveland Clinic",
@@ -3809,9 +7807,11 @@ export const PROTOCOLS = [
   },
   {
     "id": "zone5_intervals",
+    "name": "VO2 Max Intervals",
     "title": "Train VO2 max weekly.",
-    "subtitle": "Anaerobic capacity",
-    "rationale": "Keep high-end capacity trained with one hard, bounded interval session when recovery permits.",
+    "benefit": "Better fitness and more capacity for hard days.",
+    "subtitle": "High Intensity",
+    "rationale": "One bounded hard session a week trains the top-end capacity that steady work never touches.",
     "kind": "training",
     "targets": [
       "VO2 max",

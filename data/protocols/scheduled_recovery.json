@@ -1,0 +1,34 @@
+{
+  "id": "scheduled_recovery",
+  "name": "Scheduled Recovery",
+  "title": "Put recovery on the calendar with meeting-grade status.",
+  "benefit": "Sustained energy and fewer burnout cycles.",
+  "subtitle": "Recovery Planning",
+  "rationale": "Recovery survives a full calendar only when it is booked with the same status as meetings.",
+  "origin": "LeBron James's staff schedule recovery like games.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Stress"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Recovery-stress balance research supports deliberate recovery scheduling; the calendar mechanism is practitioner design.",
+    "sources": [
+      {
+        "label": "LeBron James and Mike Mancias on Tim Ferriss",
+        "url": "https://tim.blog/2018/11/30/the-tim-ferriss-show-transcripts-lebron-james-and-mike-mancias/"
+      },
+      {
+        "label": "Marc Andreessen on productivity and scheduling",
+        "url": "https://a16z.com/marc-andreessen-on-productivity-scheduling-reading-habits-work-and-more/"
+      }
+    ]
+  },
+  "indications": [
+    "Recovery happens only when work runs out, which is never.",
+    "Energy trends down across each quarter."
+  ],
+  "guide": null
+}

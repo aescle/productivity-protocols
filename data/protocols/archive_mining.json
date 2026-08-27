@@ -1,0 +1,30 @@
+{
+  "id": "archive_mining",
+  "name": "Read Outside Your Field",
+  "title": "Mine primary sources far outside your field for raw material.",
+  "benefit": "More original ideas and distinctive work.",
+  "subtitle": "Source Diversity",
+  "rationale": "Material nobody else in your field is reading gives your work a depth that competitors reading the same sources cannot match.",
+  "origin": "Bob Dylan spent a year reading Civil War newspapers on microfilm.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Innovation research finds distant-domain recombination rates as more original; the archive habit is Dylan's form.",
+    "sources": [
+      {
+        "label": "Dylan's library education",
+        "url": "https://uh.edu/engines/epi3218.htm"
+      }
+    ]
+  },
+  "indications": [
+    "All input comes from the same sources as everyone else's.",
+    "Your work has started resembling the field's average."
+  ],
+  "guide": null
+}

@@ -1,8 +1,10 @@
 {
   "id": "cold_shower_finish",
+  "name": "30–60-Second Cold Finish",
   "title": "End your shower with 30 to 60 seconds cold.",
-  "subtitle": "Cold exposure floor",
-  "rationale": "Use the cheapest possible cold dose to build tolerance and test the alertness effect before investing in immersion.",
+  "benefit": "Sharper alertness in the morning.",
+  "subtitle": "Cold Exposure",
+  "rationale": "A brief cold finish is the cheapest possible dose of cold exposure and requires no equipment at all.",
   "kind": "recovery",
   "family": "cold_exposure",
   "tier": "beginner",

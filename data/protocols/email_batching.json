@@ -1,8 +1,10 @@
 {
   "id": "email_batching",
+  "name": "Email Batching",
   "title": "Check email at two or three set times per day.",
-  "subtitle": "Communication boundary",
-  "rationale": "Convert email from an ambient interrupt stream into a bounded task with scheduled windows.",
+  "benefit": "Protected focus and lower stress.",
+  "subtitle": "Communication Boundary",
+  "rationale": "Scheduled windows turn email from an ambient interrupt stream into a bounded task with a start and an end.",
   "kind": "deep_work",
   "targets": [
     "Focus",

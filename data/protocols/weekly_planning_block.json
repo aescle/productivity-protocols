@@ -1,8 +1,11 @@
 {
   "id": "weekly_planning_block",
+  "name": "30-Minute Weekly Plan",
   "title": "Plan the week in one 30-minute Monday block.",
-  "subtitle": "Weekly architecture",
-  "rationale": "See the whole week once, place the important work first, and stop re-deciding priorities every morning.",
+  "benefit": "Important work that actually gets done.",
+  "subtitle": "Weekly Planning",
+  "rationale": "Seeing the whole week at once places important work before the urgent fills it in.",
+  "origin": "Cal Newport plans the week in advance every Monday.",
   "kind": "deep_work",
   "targets": [
     "Output",

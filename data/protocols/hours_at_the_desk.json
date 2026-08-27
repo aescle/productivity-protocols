@@ -1,0 +1,33 @@
+{
+  "id": "hours_at_the_desk",
+  "name": "Fixed Desk Hours",
+  "title": "Commit to fixed desk hours and judge the day by attendance.",
+  "benefit": "Consistent output regardless of mood.",
+  "subtitle": "Attendance Rule",
+  "rationale": "Judging the day by attendance rather than output removes the daily negotiation about whether to work.",
+  "origin": "George Lucas sat at his desk eight hours a day despite hating writing.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 240,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Studies of academic writers found scheduled sessions produced several times the output of mood-based bingeing.",
+    "sources": [
+      {
+        "label": "George Lucas's writing tower",
+        "url": "https://calnewport.com/the-forgotten-tale-of-george-lucass-writing-tower/"
+      }
+    ]
+  },
+  "indications": [
+    "The dreaded project moves only under deadline panic.",
+    "Output-judged days end in avoidance; attendance is controllable."
+  ],
+  "guide": {
+    "url": "https://calnewport.com/the-forgotten-tale-of-george-lucass-writing-tower/",
+    "source": "Cal Newport"
+  }
+}

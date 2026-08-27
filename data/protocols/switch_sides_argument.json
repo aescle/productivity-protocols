@@ -1,0 +1,30 @@
+{
+  "id": "switch_sides_argument",
+  "name": "Switch-Sides Argument",
+  "title": "Argue your position hard, then swap sides and argue the other's.",
+  "benefit": "Better decisions and less lingering conflict.",
+  "subtitle": "Dispute Resolution",
+  "rationale": "Arguing the opposing side forces you to build its strongest version, which removes ego from the decision.",
+  "origin": "The Wright brothers argued this way and often swapped conclusions.",
+  "kind": "social",
+  "targets": [
+    "Network",
+    "Judgment"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Dialectical-inquiry research shows higher decision quality than consensus seeking; the swap ritual is the Wrights'.",
+    "sources": [
+      {
+        "label": "How the Wright brothers argued",
+        "url": "https://www.rightattitudes.com/2012/02/15/argue-like-the-wright-brothers/"
+      }
+    ]
+  },
+  "indications": [
+    "Technical disagreements settle by seniority or fatigue.",
+    "Both sides defend positions instead of testing them."
+  ],
+  "guide": null
+}

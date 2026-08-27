@@ -1,0 +1,33 @@
+{
+  "id": "one_variable_loop",
+  "name": "One-Variable Loop",
+  "title": "Change exactly one thing per iteration and record the result.",
+  "benefit": "Faster learning from every iteration.",
+  "subtitle": "Iteration Method",
+  "rationale": "Changing one thing per iteration is the only way an iteration teaches you what actually caused the result.",
+  "origin": "James Dyson built 5,127 prototypes one change at a time.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Textbook experimental design applied to personal iteration; Dyson is the famous industrial case.",
+    "sources": [
+      {
+        "label": "Dyson's 5,127 prototypes",
+        "url": "https://www.entrepreneur.com/leadership/james-dyson-created-5127-versions-of-a-product-that-failed/424645"
+      }
+    ]
+  },
+  "indications": [
+    "Iterations change five things and teach nothing.",
+    "You cannot say which past change caused the improvement."
+  ],
+  "guide": {
+    "url": "https://www.entrepreneur.com/leadership/james-dyson-created-5127-versions-of-a-product-that-failed/424645",
+    "source": "Entrepreneur"
+  }
+}

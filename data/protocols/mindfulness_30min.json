@@ -1,8 +1,10 @@
 {
   "id": "mindfulness_30min",
+  "name": "30-Minute Sit",
   "title": "Meditate 30 minutes per day.",
-  "subtitle": "High practice volume",
-  "rationale": "Hold a full program-level daily dose once shorter sits stop being a challenge.",
+  "benefit": "Strong control of your attention under real pressure.",
+  "subtitle": "Meditation Dose",
+  "rationale": "A full program-level dose is worth holding once shorter sits have stopped being a challenge.",
   "kind": "recovery",
   "family": "mindfulness",
   "tier": "advanced",

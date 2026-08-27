@@ -1,0 +1,33 @@
+{
+  "id": "oblique_entry",
+  "name": "Start on the Side Problem",
+  "title": "Enter an intimidating problem through an adjacent subproblem.",
+  "benefit": "Momentum on work that felt intimidating.",
+  "subtitle": "Task Initiation",
+  "rationale": "Starting on an adjacent smaller piece captures the interest of the big problem without its ignition cost.",
+  "origin": "Paul Graham describes entering hard problems obliquely.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Graham's tactic; aligned with task-aversiveness findings in procrastination research.",
+    "sources": [
+      {
+        "label": "Paul Graham, Good and Bad Procrastination",
+        "url": "https://paulgraham.com/procrastination.html"
+      }
+    ]
+  },
+  "indications": [
+    "The big problem triggers avoidance on contact.",
+    "Adjacent smaller pieces of it look almost fun."
+  ],
+  "guide": {
+    "url": "https://paulgraham.com/procrastination.html",
+    "source": "Paul Graham"
+  }
+}

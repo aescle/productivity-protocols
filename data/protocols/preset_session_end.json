@@ -1,0 +1,33 @@
+{
+  "id": "preset_session_end",
+  "name": "Preset End Time",
+  "title": "Fix the session's end time before you start.",
+  "benefit": "Higher effort and better focus while you work.",
+  "subtitle": "Session Boundary",
+  "rationale": "Knowing exactly when the session ends is what allows full effort during it, because the demand is bounded.",
+  "origin": "Jerry Seinfeld refuses open-ended work sessions.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 60,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Binding-deadline research supports externally fixed limits; the alarm-as-reward framing is Seinfeld's.",
+    "sources": [
+      {
+        "label": "Seinfeld's writing systems",
+        "url": "https://colindorman.com/horn/seinfelds-systems-for-success/"
+      }
+    ]
+  },
+  "indications": [
+    "Open-ended sessions produce two good hours and four gray ones.",
+    "Starting feels heavy because stopping is undefined."
+  ],
+  "guide": {
+    "url": "https://colindorman.com/horn/seinfelds-systems-for-success/",
+    "source": "Colin Dorman"
+  }
+}

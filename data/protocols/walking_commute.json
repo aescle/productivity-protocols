@@ -1,0 +1,37 @@
+{
+  "id": "walking_commute",
+  "name": "Walking Commute",
+  "title": "Replace the commute with an unplugged walk.",
+  "benefit": "Clearer thinking and lower stress before work.",
+  "subtitle": "Commute Conversion",
+  "rationale": "An unplugged walk before work produces the day's clearest thinking, which a commute otherwise spends on a screen.",
+  "origin": "Jack Dorsey walked five miles to work with no email.",
+  "kind": "walk",
+  "targets": [
+    "Clarity",
+    "Movement"
+  ],
+  "durationMinutes": 75,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Active-commuting studies link walking commutes to better mood and wellbeing; the unplugged rule is practitioner design.",
+    "sources": [
+      {
+        "label": "Dorsey's walking commute",
+        "url": "https://www.cnbc.com/2018/07/11/jack-dorsey-walks-5-miles-to-work-every-dayand-he-says-its-the-best-.html"
+      },
+      {
+        "label": "Walking and creative thinking experiments",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24749966/"
+      }
+    ]
+  },
+  "indications": [
+    "The commute is dead scroll time.",
+    "Days start reactive with no thinking margin."
+  ],
+  "guide": {
+    "url": "https://www.cnbc.com/2018/07/11/jack-dorsey-walks-5-miles-to-work-every-dayand-he-says-its-the-best-.html",
+    "source": "CNBC"
+  }
+}

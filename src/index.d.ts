@@ -12,9 +12,12 @@ export type BankGuide = {
 
 export type BankProtocol = {
   id: string;
+  name: string;
   title: string;
+  benefit: string;
   subtitle: string;
   rationale: string;
+  origin?: string;
   kind: string;
   family?: string;
   tier?: "beginner" | "intermediate" | "advanced";

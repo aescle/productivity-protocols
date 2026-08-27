@@ -1,0 +1,30 @@
+{
+  "id": "pillow_self_talk",
+  "name": "Nightly Self-Check",
+  "title": "After a win, talk yourself down in the second person at lights-out.",
+  "benefit": "Better judgment during periods of success.",
+  "subtitle": "Ego Check",
+  "rationale": "Talking to yourself in the second person creates enough distance to keep a winning streak from distorting judgment.",
+  "origin": "John D. Rockefeller warned himself nightly during his fastest rise.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Stress"
+  ],
+  "durationMinutes": 5,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Distanced second-person self-talk improves regulation in controlled studies; Rockefeller ran it nightly for years.",
+    "sources": [
+      {
+        "label": "Senra on Rockefeller's autobiography",
+        "url": "https://world.hey.com/davidsenra/the-autobiography-of-john-d-rockefeller-7180b65b"
+      }
+    ]
+  },
+  "indications": [
+    "A win streak is inflating risk appetite.",
+    "Confidence and judgment are drifting apart."
+  ],
+  "guide": null
+}

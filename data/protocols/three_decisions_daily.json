@@ -1,0 +1,30 @@
+{
+  "id": "three_decisions_daily",
+  "name": "Three Decisions a Day",
+  "title": "Cap yourself at about three good decisions per day.",
+  "benefit": "Higher-quality decisions on what matters.",
+  "subtitle": "Decision Budget",
+  "rationale": "Treating a few high-quality decisions as the whole job protects the slack that makes those decisions good.",
+  "origin": "Jeff Bezos aims for three good decisions a day.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 15,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Bezos' stated operating model, crediting Buffett; practitioner-only.",
+    "sources": [
+      {
+        "label": "Bezos on three good decisions",
+        "url": "https://fortune.com/2026/06/08/jeff-bezos-daily-routine-decision-making-warren-buffett-inspiration/"
+      }
+    ]
+  },
+  "indications": [
+    "Days fill with dozens of shallow decisions and no good ones.",
+    "The calendar has zero slack around the calls that matter."
+  ],
+  "guide": null
+}

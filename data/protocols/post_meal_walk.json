@@ -1,8 +1,10 @@
 {
   "id": "post_meal_walk",
+  "name": "Post-Meal Walk",
   "title": "Walk after one meal per day.",
-  "subtitle": "Meal protocol",
-  "rationale": "Establish one repeatable post-meal walk before extending the practice across the day.",
+  "benefit": "Steadier afternoon energy and focus.",
+  "subtitle": "Meal Protocol",
+  "rationale": "Walking soon after eating blunts the glucose spike that produces the post-meal energy crash.",
   "kind": "walk",
   "family": "meal_timing",
   "tier": "intermediate",

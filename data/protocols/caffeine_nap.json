@@ -1,8 +1,10 @@
 {
   "id": "caffeine_nap",
+  "name": "15–20-Minute Caffeine Nap",
   "title": "Drink coffee, then nap 15 to 20 minutes.",
-  "subtitle": "Combined reset",
-  "rationale": "Caffeine taken right before a short nap peaks as you wake, stacking two alertness tools into one 20-minute window.",
+  "benefit": "Strong alertness for a demanding afternoon.",
+  "subtitle": "Combined Reset",
+  "rationale": "Caffeine takes about twenty minutes to take effect, so it peaks exactly as a short nap ends.",
   "kind": "sleep",
   "targets": [
     "Alertness",

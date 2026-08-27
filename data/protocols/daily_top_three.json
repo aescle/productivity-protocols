@@ -1,8 +1,10 @@
 {
   "id": "daily_top_three",
+  "name": "Daily Top Three",
   "title": "Pick tomorrow's top three tasks before today ends.",
-  "subtitle": "Daily prioritization",
-  "rationale": "Decide what matters while today's context is loaded, so tomorrow starts with execution instead of triage.",
+  "benefit": "A focused start and more meaningful progress.",
+  "subtitle": "Daily Planning",
+  "rationale": "Choosing tomorrow's work while today's context is still loaded means the morning starts in execution rather than triage.",
   "kind": "deep_work",
   "targets": [
     "Prioritization",

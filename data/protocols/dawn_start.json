@@ -1,0 +1,38 @@
+{
+  "id": "dawn_start",
+  "name": "Dawn Start",
+  "title": "Start before dawn and arrive first, as the standing default.",
+  "benefit": "Uninterrupted hours before the day makes demands.",
+  "subtitle": "Early Schedule",
+  "rationale": "Starting before dawn buys hours that nobody else can claim, provided bedtime moves earlier to match.",
+  "origin": "Chung Ju-yung rose at three and walked to work while building Hyundai.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 120,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Chung's documented lifelong routine; the early-riser edge is practitioner lore and costly without a matching sleep schedule, hence the warnings.",
+    "sources": [
+      {
+        "label": "Chung Ju-yung profile",
+        "url": "https://www.justgogrind.com/p/chung-ju-yung"
+      },
+      {
+        "label": "Learning from Chung Ju-yung",
+        "url": "https://mastersinvest.com/newblog/2025/6/3/learning-from-hyundais-chung-ju-yung"
+      }
+    ]
+  },
+  "indications": [
+    "Early hours are your best and currently sleep through themselves.",
+    "An early bedtime is genuinely sustainable."
+  ],
+  "avoidWhen": [
+    "It compresses sleep below your full need.",
+    "A late chronotype."
+  ],
+  "guide": null
+}

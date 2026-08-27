@@ -1,8 +1,10 @@
 {
   "id": "off_day_creation",
+  "name": "Weekend Deep-Work Block",
   "title": "Use a weekend block for focused work.",
-  "subtitle": "Weekly push",
-  "rationale": "Working on a day you usually leave open has added more output than it displaced afterward. Use a deliberate, bounded block.",
+  "benefit": "Extra output without a recovery cost.",
+  "subtitle": "Weekly Push",
+  "rationale": "A bounded block on a normally open day can add output when the following days show no recovery cost.",
   "kind": "deep_work",
   "targets": [
     "Deep work",

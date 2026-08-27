@@ -1,0 +1,33 @@
+{
+  "id": "five_minute_blocks",
+  "name": "Five-Minute Blocks",
+  "title": "Plan the whole day in advance as five-minute blocks.",
+  "benefit": "Less wasted time and more intentional days.",
+  "subtitle": "Time Blocking",
+  "rationale": "Assigning every activity to a specific slot removes the unaccounted hours that otherwise disappear.",
+  "origin": "Elon Musk plans his day in five-minute blocks.",
+  "kind": "calendar_defense",
+  "targets": [
+    "Calendar",
+    "Deep work"
+  ],
+  "durationMinutes": 30,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Implementation-intention research supports pre-assigned when-and-where plans; five-minute granularity is extreme practitioner practice.",
+    "sources": [
+      {
+        "label": "Musk's five-minute time blocks",
+        "url": "https://www.mayooshin.com/time-blocking-elon-musk-manage-time"
+      }
+    ]
+  },
+  "indications": [
+    "Unscheduled hours evaporate without a trace.",
+    "Parkinson's law owns the calendar."
+  ],
+  "guide": {
+    "url": "https://www.mayooshin.com/time-blocking-elon-musk-manage-time",
+    "source": "Mayo Oshin"
+  }
+}

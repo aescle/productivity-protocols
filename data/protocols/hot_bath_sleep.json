@@ -1,8 +1,10 @@
 {
   "id": "hot_bath_sleep",
+  "name": "Pre-Sleep Heat",
   "title": "Use heat before bed.",
-  "subtitle": "Thermal wind-down",
-  "rationale": "A hot bath, shower, or sauna window can support the temperature drop into sleep.",
+  "benefit": "Faster sleep and deeper rest.",
+  "subtitle": "Sleep Routine",
+  "rationale": "Warming the body before bed accelerates the temperature drop that initiates sleep.",
   "kind": "sleep",
   "targets": [
     "Sleep depth",

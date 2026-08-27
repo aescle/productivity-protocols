@@ -1,0 +1,33 @@
+{
+  "id": "two_way_doors",
+  "name": "Reversible or Not",
+  "title": "Decide reversible questions fast and irreversible ones slowly.",
+  "benefit": "Faster decisions without more mistakes.",
+  "subtitle": "Decision Triage",
+  "rationale": "Most decisions are reversible, and waiting for near-certainty on those costs more than the occasional walk-back.",
+  "origin": "Jeff Bezos separates one-way from two-way doors.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Bezos' shareholder-letter framework; consistent with option-value reasoning, untested as a personal protocol.",
+    "sources": [
+      {
+        "label": "Bezos on one-way and two-way doors",
+        "url": "https://www.fastcompany.com/90578272/how-jeff-bezos-makes-decisions"
+      }
+    ]
+  },
+  "indications": [
+    "Reversible calls wait weeks for certainty.",
+    "Every decision gets the same deliberation weight."
+  ],
+  "guide": {
+    "url": "https://www.fastcompany.com/90578272/how-jeff-bezos-makes-decisions",
+    "source": "Fast Company"
+  }
+}

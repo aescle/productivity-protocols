@@ -1,8 +1,10 @@
 {
   "id": "alcohol_free_weeknights",
+  "name": "Dry Weeknights",
   "title": "Keep worknights alcohol-free.",
-  "subtitle": "Alcohol dose boundary",
-  "rationale": "Concentrate drinking into deliberate occasions so recovery and next-day output stop paying a nightly tax.",
+  "benefit": "Clearer thinking on every workday.",
+  "subtitle": "Alcohol Limit",
+  "rationale": "Concentrating drinking into deliberate occasions removes a nightly tax on recovery and next-day output.",
   "kind": "nutrition",
   "targets": [
     "Sleep quality",

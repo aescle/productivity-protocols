@@ -1,0 +1,33 @@
+{
+  "id": "cleese_oasis_sessions",
+  "name": "90-Minute Thinking Time",
+  "title": "Seal 90 minutes of space-time for open play on one problem.",
+  "benefit": "More original solutions to hard problems.",
+  "subtitle": "Creative Block",
+  "rationale": "Creative work needs a protected space where the problem stays open, which efficient execution mode closes too early.",
+  "origin": "John Cleese described the open and closed modes in his 1991 lecture.",
+  "kind": "deep_work",
+  "targets": [
+    "Output",
+    "Focus"
+  ],
+  "durationMinutes": 90,
+  "evidence": {
+    "grade": "anecdotal",
+    "summary": "Grounded in MacKinnon's creativity research on tolerating ambiguity longer; the session format is Cleese's design.",
+    "sources": [
+      {
+        "label": "John Cleese on creativity",
+        "url": "https://www.themarginalian.org/2012/04/12/john-cleese-on-creativity-1991/"
+      }
+    ]
+  },
+  "indications": [
+    "All work time is execution; none is exploration.",
+    "Hard problems get closed too early with the first workable answer."
+  ],
+  "guide": {
+    "url": "https://www.themarginalian.org/2012/04/12/john-cleese-on-creativity-1991/",
+    "source": "The Marginalian"
+  }
+}

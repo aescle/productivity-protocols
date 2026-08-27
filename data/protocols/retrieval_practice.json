@@ -1,8 +1,10 @@
 {
   "id": "retrieval_practice",
+  "name": "Retrieval Practice",
   "title": "Close the material and self-test instead of re-reading.",
-  "subtitle": "Testing effect",
-  "rationale": "Effortful recall, not re-exposure, is what durably encodes new material and exposes the gaps.",
+  "benefit": "Better retention of what you learn.",
+  "subtitle": "Study Method",
+  "rationale": "Effortful recall, not re-reading, is what durably encodes material and reveals what you have not learned.",
   "kind": "deep_work",
   "targets": [
     "Retention",

@@ -1,0 +1,33 @@
+{
+  "id": "debug_mode",
+  "name": "Debug Mode",
+  "title": "Watch your thoughts go by and label what triggered each.",
+  "benefit": "Less anxiety and better focus.",
+  "subtitle": "Thought Tracing",
+  "rationale": "Naming the trigger behind each thought interrupts anxious loops without requiring a formal meditation practice.",
+  "origin": "Naval Ravikant describes running his mind in debug mode.",
+  "kind": "recovery",
+  "targets": [
+    "Recovery",
+    "Stress"
+  ],
+  "durationMinutes": 10,
+  "evidence": {
+    "grade": "emerging",
+    "summary": "Parallels cognitive-defusion techniques with clinical support; Naval's framing makes it land for engineers.",
+    "sources": [
+      {
+        "label": "Naval Ravikant on the Knowledge Project",
+        "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/"
+      }
+    ]
+  },
+  "indications": [
+    "The same mental loops replay through routine tasks.",
+    "Meditation as-such never stuck, but debugging might."
+  ],
+  "guide": {
+    "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/",
+    "source": "The Knowledge Project"
+  }
+}

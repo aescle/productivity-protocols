@@ -1,8 +1,10 @@
 {
   "id": "aerobic_150",
+  "name": "150 Aerobic Minutes",
   "title": "Complete 150 aerobic minutes per week.",
-  "subtitle": "Aerobic standard",
-  "rationale": "Build enough weekly aerobic volume that cardiovascular work is a dependable base.",
+  "benefit": "More energy, better mood, and less stress.",
+  "subtitle": "Aerobic Volume",
+  "rationale": "This is the weekly volume where most of the documented cardiovascular and energy benefits appear.",
   "kind": "training",
   "family": "aerobic_volume",
   "tier": "intermediate",
@@ -29,8 +31,8 @@
   },
   "indications": [
     "A 30-minute weekly aerobic floor is established.",
-    "Cardiovascular fitness is a stated goal.",
-    "Current volume sits well below guideline levels."
+    "Energy fades before the workday does.",
+    "Stressful stretches take longer to shake off."
   ],
   "guide": {
     "source": "Cleveland Clinic",

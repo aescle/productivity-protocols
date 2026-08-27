@@ -1,8 +1,11 @@
 {
   "id": "annual_think_week",
+  "name": "Think Week",
   "title": "Take a solo think week once or twice a year.",
-  "subtitle": "Strategic isolation",
-  "rationale": "Days of isolation with only reading and open problems make strategic thought possible in a way tactical weeks never do.",
+  "benefit": "Better strategic decisions.",
+  "subtitle": "Strategic Retreat",
+  "rationale": "Several uninterrupted days with only reading and open problems make strategic thought possible in a way tactical weeks never do.",
+  "origin": "Bill Gates took twice-yearly Think Weeks in a cabin.",
   "kind": "deep_work",
   "targets": [
     "Strategy",
