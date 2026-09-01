@@ -6,7 +6,7 @@
   "subtitle": "Output Tracking",
   "rationale": "Plotting cumulative output makes a declining slope visible immediately rather than at the end of a bad month.",
   "origin": "B.F. Skinner ran his own working life as an experiment.",
-  "kind": "deep_work",
+  "kind": "review",
   "targets": [
     "Output",
     "Focus"

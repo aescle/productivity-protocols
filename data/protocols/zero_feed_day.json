@@ -5,7 +5,8 @@
   "benefit": "A full day of undistracted, high-quality work.",
   "subtitle": "Focus Boundary",
   "rationale": "A full day with feeds closed produces undiluted output that a partially protected day cannot.",
-  "kind": "deep_work",
+  "origin": "Donald Knuth has worked without email since 1990.",
+  "kind": "focus",
   "family": "attention_defense",
   "tier": "advanced",
   "tierTarget": "1 distraction-free workday per week",
@@ -26,6 +27,10 @@
       {
         "label": "Interruption-reduction systematic review",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+      },
+      {
+        "label": "Knuth on giving up email",
+        "url": "https://cs.stanford.edu/~knuth/email.html"
       }
     ]
   },

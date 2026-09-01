@@ -6,7 +6,7 @@
   "subtitle": "Task Initiation",
   "rationale": "Lowering the commitment to merely looking at the work bypasses the activation barrier, and found errors pull you in.",
   "origin": "Paul Graham uses the trick on work he cannot start.",
-  "kind": "deep_work",
+  "kind": "starting",
   "targets": [
     "Task initiation",
     "Procrastination"

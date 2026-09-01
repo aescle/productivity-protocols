@@ -6,7 +6,7 @@
   "subtitle": "Founder Craft",
   "rationale": "Building in the real system keeps technical judgment accurate in a way status reports about it cannot.",
   "origin": "Sergey Brin still submits code at Google.",
-  "kind": "deep_work",
+  "kind": "review",
   "targets": [
     "Output",
     "Focus"

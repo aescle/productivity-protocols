@@ -5,7 +5,7 @@
   "benefit": "A focused start and more meaningful progress.",
   "subtitle": "Daily Planning",
   "rationale": "Choosing tomorrow's work while today's context is still loaded means the morning starts in execution rather than triage.",
-  "kind": "deep_work",
+  "kind": "priorities",
   "targets": [
     "Prioritization",
     "Output",

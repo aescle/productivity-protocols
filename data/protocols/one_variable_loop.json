@@ -6,7 +6,7 @@
   "subtitle": "Iteration Method",
   "rationale": "Changing one thing per iteration is the only way an iteration teaches you what actually caused the result.",
   "origin": "James Dyson built 5,127 prototypes one change at a time.",
-  "kind": "deep_work",
+  "kind": "review",
   "targets": [
     "Output",
     "Focus"

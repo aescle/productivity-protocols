@@ -6,7 +6,7 @@
   "subtitle": "Daily Review",
   "rationale": "A morning question forces prioritization before reactivity sets in, and an evening one turns the day into feedback.",
   "origin": "Benjamin Franklin ran the same two questions daily for decades.",
-  "kind": "deep_work",
+  "kind": "priorities",
   "targets": [
     "Output",
     "Focus"

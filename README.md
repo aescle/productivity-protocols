@@ -2,6 +2,8 @@
 
 227 things people actually do to work better, each graded by how much proof is behind it.
 
+Built by [Aescle](https://aescle.com), a health and performance coach for founders.
+
 ## Install
 
 ```bash
@@ -131,7 +133,7 @@ Or read the JSON directly. `data/protocols/<id>.json` is the source of truth and
   "id": "post_meal_walk",
   "name": "Post-Meal Walk",
   "title": "Walk after one meal per day.",
-  "benefit": "No post-lunch crash; a steadier afternoon.",
+  "benefit": "Steadier afternoon energy and focus.",
   "kind": "walk",
   "family": "meal_timing",
   "tier": "intermediate",
@@ -149,8 +151,11 @@ Browse all 227 at **https://protocols.aescle.com**.
 ## What is in the bank
 
 The center of gravity is work performance. Longevity levers earn their place by protecting the
-ability to keep performing, and their benefits are framed that way. Kinds span `deep_work`,
-`calendar_defense`, `sleep`, `training`, `recovery`, `nutrition`, `walk`, and `social`.
+ability to keep performing, and their benefits are framed that way.
+
+Work kinds: `priorities`, `decisions`, `starting`, `focus`, `rhythm`, `ideas`, `learning`,
+`review`, `calendar_defense`, `social`. Body kinds: `sleep`, `training`, `recovery`, `nutrition`,
+`walk`.
 
 Sources span the performance canon: founder essays, the Huberman and Attia literature, the
 Founders-podcast roster, athletes, and the deep-work research. Every URL is verified live and

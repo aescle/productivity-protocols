@@ -6,7 +6,7 @@
   "subtitle": "Output Floor",
   "rationale": "A fixed daily number makes output independent of mood, which is what produces book-scale volume.",
   "origin": "Stephen King writes 2,000 words a day including holidays.",
-  "kind": "deep_work",
+  "kind": "rhythm",
   "targets": [
     "Output",
     "Focus"

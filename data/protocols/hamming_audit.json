@@ -6,7 +6,7 @@
   "subtitle": "Priority Check",
   "rationale": "Writing down whether you are working on an important problem exposes busywork that is real but small.",
   "origin": "Richard Hamming asked the question of colleagues at Bell Labs.",
-  "kind": "deep_work",
+  "kind": "priorities",
   "targets": [
     "Output",
     "Focus"

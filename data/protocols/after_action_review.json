@@ -6,7 +6,7 @@
   "subtitle": "Work Debrief",
   "rationale": "Reviewing immediately, while memory is still honest, is what turns an experience into a lesson the team keeps.",
   "origin": "The US Army developed the four-question format.",
-  "kind": "deep_work",
+  "kind": "review",
   "targets": [
     "Output",
     "Focus"

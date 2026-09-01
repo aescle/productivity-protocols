@@ -5,7 +5,7 @@
   "benefit": "Faster focus in a distracting environment.",
   "subtitle": "Work Environment",
   "rationale": "Novel audio competes for attention, while a deliberately chosen constant one stops the environment from interrupting.",
-  "kind": "deep_work",
+  "kind": "focus",
   "targets": [
     "Focus",
     "Distraction",

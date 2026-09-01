@@ -6,7 +6,7 @@
   "subtitle": "Session Exit",
   "rationale": "Stopping while the next step is still obvious leaves a thread to pick up, so the next session starts warm.",
   "origin": "Ernest Hemingway stopped each day knowing what came next.",
-  "kind": "deep_work",
+  "kind": "starting",
   "targets": [
     "Output",
     "Focus"

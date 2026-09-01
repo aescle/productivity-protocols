@@ -44,7 +44,7 @@ export const TOOLS = [
         kind: {
           type: "string",
           description:
-            "Optional. Behavior category: deep_work, sleep, nutrition, training, recovery, walk, calendar_defense, social.",
+            "Optional. Behavior category: focus, starting, rhythm, priorities, decisions, ideas, learning, review, calendar_defense, sleep, training, recovery, nutrition, walk, social.",
         },
         family: {
           type: "string",

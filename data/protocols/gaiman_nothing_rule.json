@@ -6,7 +6,7 @@
   "subtitle": "Focus Rule",
   "rationale": "When the only permitted alternative is sitting still, boredom quickly makes the work the most interesting option available.",
   "origin": "Neil Gaiman allows himself to write or do nothing at all.",
-  "kind": "deep_work",
+  "kind": "starting",
   "targets": [
     "Output",
     "Focus"

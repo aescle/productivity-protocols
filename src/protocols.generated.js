@@ -187,7 +187,7 @@ export const PROTOCOLS = [
     "subtitle": "Work Debrief",
     "rationale": "Reviewing immediately, while memory is still honest, is what turns an experience into a lesson the team keeps.",
     "origin": "The US Army developed the four-question format.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -258,7 +258,7 @@ export const PROTOCOLS = [
     "subtitle": "Task Selection",
     "rationale": "Results are nonlinear near the hard core of a problem, so peripheral tasks feel productive while producing far less.",
     "origin": "Paul Graham describes it in How to Work Hard.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Focus"
@@ -358,7 +358,7 @@ export const PROTOCOLS = [
     "subtitle": "Work Environment",
     "rationale": "A room used for nothing else becomes a cue for the work, so focus starts on arrival instead of being summoned.",
     "origin": "Maya Angelou wrote in a bare rented hotel room.",
-    "kind": "deep_work",
+    "kind": "focus",
     "targets": [
       "Output",
       "Focus"
@@ -391,7 +391,7 @@ export const PROTOCOLS = [
     "subtitle": "Yearly Goal",
     "rationale": "A public, measurable, year-long goal forces growth in areas the job would never require.",
     "origin": "Mark Zuckerberg ran one every year, from Mandarin to 365 miles.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Output",
       "Focus"
@@ -421,7 +421,7 @@ export const PROTOCOLS = [
     "subtitle": "Yearly Planning",
     "rationale": "Planning from a blank page each year strips out commitments that persist only because they already exist.",
     "origin": "Marc Andreessen rewrites his plan yearly and cancels overcommitments mid-year.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Focus"
@@ -454,7 +454,7 @@ export const PROTOCOLS = [
     "subtitle": "Strategic Retreat",
     "rationale": "Several uninterrupted days with only reading and open problems make strategic thought possible in a way tactical weeks never do.",
     "origin": "Bill Gates took twice-yearly Think Weeks in a cabin.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Strategy",
       "Clarity",
@@ -488,7 +488,7 @@ export const PROTOCOLS = [
     "subtitle": "Progress Log",
     "rationale": "Recording what you finished, rather than what you planned, gives the day visible evidence of progress.",
     "origin": "Marc Andreessen kept his on the back of a daily index card.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Motivation",
       "Momentum",
@@ -523,7 +523,7 @@ export const PROTOCOLS = [
     "subtitle": "Source Diversity",
     "rationale": "Material nobody else in your field is reading gives your work a depth that competitors reading the same sources cannot match.",
     "origin": "Bob Dylan spent a year reading Civil War newspapers on microfilm.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Output",
       "Focus"
@@ -552,7 +552,7 @@ export const PROTOCOLS = [
     "benefit": "Faster focus in a distracting environment.",
     "subtitle": "Work Environment",
     "rationale": "Novel audio competes for attention, while a deliberately chosen constant one stops the environment from interrupting.",
-    "kind": "deep_work",
+    "kind": "focus",
     "targets": [
       "Focus",
       "Distraction",
@@ -618,7 +618,7 @@ export const PROTOCOLS = [
     "subtitle": "Time Allocation",
     "rationale": "Reserving the sharpest hour for your own work means the highest-value time is not automatically sold to someone else's agenda.",
     "origin": "Charlie Munger sold the best hour of the day to himself.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Compounding",
       "Deep work",
@@ -651,7 +651,7 @@ export const PROTOCOLS = [
     "benefit": "A quicker start into focused work.",
     "subtitle": "Start Ritual",
     "rationale": "A consistent audio cue at the start of a block marks the transition and shortens the ramp into focus.",
-    "kind": "deep_work",
+    "kind": "focus",
     "targets": [
       "Focus",
       "Task initiation"
@@ -716,7 +716,7 @@ export const PROTOCOLS = [
     "benefit": "Work you keep avoiding actually gets done.",
     "subtitle": "Social Accountability",
     "rationale": "Quiet social presence makes the task harder to abandon, which is why avoided work finally gets done in company.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Task initiation",
       "Focus",
@@ -751,7 +751,7 @@ export const PROTOCOLS = [
     "subtitle": "Daily Review",
     "rationale": "A morning question forces prioritization before reactivity sets in, and an evening one turns the day into feedback.",
     "origin": "Benjamin Franklin ran the same two questions daily for decades.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Focus"
@@ -1080,7 +1080,7 @@ export const PROTOCOLS = [
     "subtitle": "Craft Input",
     "rationale": "Benchmarking against the best work ever made produces a different standard than competing with whatever is currently popular.",
     "origin": "Rick Rubin studies the all-time canon rather than current releases.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Output",
       "Focus"
@@ -1203,7 +1203,7 @@ export const PROTOCOLS = [
     "subtitle": "Creative Block",
     "rationale": "Creative work needs a protected space where the problem stays open, which efficient execution mode closes too early.",
     "origin": "John Cleese described the open and closed modes in his 1991 lecture.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Output",
       "Focus"
@@ -1399,7 +1399,7 @@ export const PROTOCOLS = [
     "subtitle": "Market Research",
     "rationale": "Looking only for what a competitor does well turns rivalry into a free source of proven ideas.",
     "origin": "Sam Walton walked rivals' stores with a pocket notebook.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -1507,7 +1507,7 @@ export const PROTOCOLS = [
     "subtitle": "Revision Method",
     "rationale": "Distance from your own draft lets you read it as an outsider, which is when structural flaws become visible.",
     "origin": "Stephen King leaves finished manuscripts in a drawer for six weeks.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Output",
       "Focus"
@@ -1540,7 +1540,7 @@ export const PROTOCOLS = [
     "subtitle": "Craft Practice",
     "rationale": "Rebuilding excellent work from notes and comparing against the original produces immediate, specific feedback on your own gaps.",
     "origin": "Benjamin Franklin taught himself to write this way from the Spectator.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Skill",
       "Craft",
@@ -1610,7 +1610,7 @@ export const PROTOCOLS = [
     "subtitle": "Output Tracking",
     "rationale": "Tracking creative hours against a rolling annual floor is what keeps the work happening through busy seasons.",
     "origin": "Jim Collins holds a floor of 1,000 creative hours a year.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -1786,7 +1786,7 @@ export const PROTOCOLS = [
     "benefit": "A focused start and more meaningful progress.",
     "subtitle": "Daily Planning",
     "rationale": "Choosing tomorrow's work while today's context is still loaded means the morning starts in execution rather than triage.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Prioritization",
       "Output",
@@ -1829,7 +1829,7 @@ export const PROTOCOLS = [
     "subtitle": "Day Structure",
     "rationale": "A small number of protected bouts, separated by light work, produces high lifetime output at a sustainable pace.",
     "origin": "Charles Darwin wrote nineteen books on three 90-minute bouts a day.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -1863,7 +1863,7 @@ export const PROTOCOLS = [
     "subtitle": "Early Schedule",
     "rationale": "Starting before dawn buys hours that nobody else can claim, provided bedtime moves earlier to match.",
     "origin": "Chung Ju-yung rose at three and walked to work while building Hyundai.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -1934,7 +1934,7 @@ export const PROTOCOLS = [
     "subtitle": "Decision Practice",
     "rationale": "Full sentences force complete thinking that bullet points allow you to skip, so the gaps show up before the meeting.",
     "origin": "Jeff Bezos replaced slides with six-page narrative memos at Amazon.",
-    "kind": "deep_work",
+    "kind": "decisions",
     "targets": [
       "Decision quality",
       "Clarity",
@@ -1968,7 +1968,7 @@ export const PROTOCOLS = [
     "subtitle": "Choice Reduction",
     "rationale": "Deleting trivial recurring choices preserves judgment for the decisions that actually carry consequences.",
     "origin": "Mark Zuckerberg wears the same outfit to remove the choice.",
-    "kind": "deep_work",
+    "kind": "decisions",
     "targets": [
       "Output",
       "Focus"
@@ -2062,7 +2062,7 @@ export const PROTOCOLS = [
     "subtitle": "Async Etiquette",
     "rationale": "Recipients read off-hours email as urgent, so scheduling delivery preserves your flexibility without transmitting pressure.",
     "origin": "Satya Nadella uses delay-send rather than changing when he works.",
-    "kind": "deep_work",
+    "kind": "social",
     "targets": [
       "Output",
       "Focus"
@@ -2133,7 +2133,7 @@ export const PROTOCOLS = [
     "subtitle": "Learning Block",
     "rationale": "Protected daily input compounds into a body of knowledge that later work draws on and competitors cannot copy quickly.",
     "origin": "David Senra reads a biography a week as game tape.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Learning",
       "Compounding",
@@ -2171,7 +2171,7 @@ export const PROTOCOLS = [
     "subtitle": "Attention Hygiene",
     "rationale": "The small gaps of the day are where undirected thinking happens, and a phone fills every one of them.",
     "origin": "Christopher Nolan carries no smartphone.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Output",
       "Focus"
@@ -2204,7 +2204,7 @@ export const PROTOCOLS = [
     "subtitle": "Decision Practice",
     "rationale": "Numbered ratings with written reasoning surface disagreement that a verbal round of nods conceals.",
     "origin": "Reed Hastings built the practice at Netflix after Qwikster.",
-    "kind": "deep_work",
+    "kind": "decisions",
     "targets": [
       "Output",
       "Focus"
@@ -2237,7 +2237,7 @@ export const PROTOCOLS = [
     "subtitle": "Mental Rehearsal",
     "rationale": "Rehearsing the likely failures as well as the ideal run means the real event triggers a prepared response instead of panic.",
     "origin": "Michael Phelps rehearsed a flooded-goggles race and then swam one for gold.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Output",
       "Focus"
@@ -2337,7 +2337,7 @@ export const PROTOCOLS = [
     "subtitle": "Effort Pacing",
     "rationale": "Reserving full intensity for genuinely rare moments is what allows daily work to continue for decades.",
     "origin": "Eliud Kipchoge separates training days from competition days.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -2366,7 +2366,7 @@ export const PROTOCOLS = [
     "benefit": "Protected focus and lower stress.",
     "subtitle": "Communication Boundary",
     "rationale": "Scheduled windows turn email from an ambient interrupt stream into a bounded task with a start and an end.",
-    "kind": "deep_work",
+    "kind": "focus",
     "targets": [
       "Focus",
       "Stress",
@@ -2566,7 +2566,7 @@ export const PROTOCOLS = [
     "benefit": "Sustained focus on work that needs real depth.",
     "subtitle": "Focus Boundary",
     "rationale": "A single long protected period produces work that several fragmented hours cannot, whenever in the day it falls.",
-    "kind": "deep_work",
+    "kind": "focus",
     "family": "attention_defense",
     "tier": "intermediate",
     "tierTarget": "One 3-hour low-distraction work period",
@@ -2640,7 +2640,7 @@ export const PROTOCOLS = [
     "subtitle": "Problem Registry",
     "rationale": "Holding a dozen open problems means every new technique gets tested against them the moment it arrives.",
     "origin": "Richard Feynman kept twelve favorite problems in mind.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Output",
       "Focus"
@@ -2707,7 +2707,7 @@ export const PROTOCOLS = [
     "subtitle": "Day Structure",
     "rationale": "The day's freshest attention goes to the hardest problem only if it is spent before the inbox sets the agenda.",
     "origin": "Jensen Huang finishes his top priority before reaching the office.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Deep work",
       "Output",
@@ -2783,7 +2783,7 @@ export const PROTOCOLS = [
     "subtitle": "Task Initiation",
     "rationale": "Starting is the real barrier, so an honest five-minute commitment with permission to stop usually produces a finished task.",
     "origin": "Kevin Systrom uses the five-minute deal on work he avoids.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Focus"
@@ -2813,7 +2813,7 @@ export const PROTOCOLS = [
     "subtitle": "Focus Training",
     "rationale": "Concentration is trainable the way endurance is, by extending duration gradually on top of an aerobic base.",
     "origin": "Haruki Murakami trains focus the way he trains for marathons.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -2883,7 +2883,7 @@ export const PROTOCOLS = [
     "subtitle": "Focus Rule",
     "rationale": "When the only permitted alternative is sitting still, boredom quickly makes the work the most interesting option available.",
     "origin": "Neil Gaiman allows himself to write or do nothing at all.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Focus"
@@ -2949,7 +2949,7 @@ export const PROTOCOLS = [
     "subtitle": "Strategic Block",
     "rationale": "Reserving a standing slot for the biggest questions is what separates people who do important work from equally capable people who do not.",
     "origin": "Richard Hamming held Great Thoughts Friday at Bell Labs.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Focus"
@@ -3023,7 +3023,7 @@ export const PROTOCOLS = [
     "subtitle": "Priority Check",
     "rationale": "Writing down whether you are working on an important problem exposes busywork that is real but small.",
     "origin": "Richard Hamming asked the question of colleagues at Bell Labs.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Focus"
@@ -3056,7 +3056,7 @@ export const PROTOCOLS = [
     "subtitle": "Founder Craft",
     "rationale": "Building in the real system keeps technical judgment accurate in a way status reports about it cannot.",
     "origin": "Sergey Brin still submits code at Google.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -3122,7 +3122,7 @@ export const PROTOCOLS = [
     "subtitle": "Effort Ceiling",
     "rationale": "Past a few hours of genuinely hard thinking, fatigue degrades judgment enough that extra hours produce work you will redo.",
     "origin": "Paul Graham caps hard work at four or five hours.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Work quality",
       "Sustainability",
@@ -3157,7 +3157,7 @@ export const PROTOCOLS = [
     "subtitle": "Product Testing",
     "rationale": "Using your own product harder than any customer surfaces defects and design truths before customers meet them.",
     "origin": "Yvon Chouinard field-tested Patagonia gear on his own expeditions.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -3187,7 +3187,7 @@ export const PROTOCOLS = [
     "subtitle": "Session Exit",
     "rationale": "Stopping while the next step is still obvious leaves a thread to pick up, so the next session starts warm.",
     "origin": "Ernest Hemingway stopped each day knowing what came next.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Focus"
@@ -3290,7 +3290,7 @@ export const PROTOCOLS = [
     "subtitle": "Attendance Rule",
     "rationale": "Judging the day by attendance rather than output removes the daily negotiation about whether to work.",
     "origin": "George Lucas sat at his desk eight hours a day despite hating writing.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -3323,7 +3323,7 @@ export const PROTOCOLS = [
     "subtitle": "Commitment Device",
     "rationale": "Making the exit expensive converts a slipping deadline into finished work more reliably than willpower does.",
     "origin": "Victor Hugo locked away his clothes to finish a book early.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Focus"
@@ -3396,7 +3396,7 @@ export const PROTOCOLS = [
     "subtitle": "Deep Session",
     "rationale": "Continuous days on one problem reach a depth that scheduled hours never touch, at a cost that makes it a rare tool.",
     "origin": "Edwin Land worked marathon sessions with meals brought to him.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -3433,7 +3433,7 @@ export const PROTOCOLS = [
     "subtitle": "Momentum Capture",
     "rationale": "Genuine interest is the highest-output state there is, and it decays long before a scheduled slot arrives.",
     "origin": "Naval Ravikant calls inspiration perishable.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Output",
       "Learning",
@@ -3532,7 +3532,7 @@ export const PROTOCOLS = [
     "subtitle": "Error Tracking",
     "rationale": "Logging every error with severity and owner turns individual mistakes into a queue that gets systematically fixed.",
     "origin": "Ray Dalio made unlogged errors the real offense at Bridgewater.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -3565,7 +3565,7 @@ export const PROTOCOLS = [
     "subtitle": "Task Initiation",
     "rationale": "Lowering the commitment to merely looking at the work bypasses the activation barrier, and found errors pull you in.",
     "origin": "Paul Graham uses the trick on work he cannot start.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Task initiation",
       "Procrastination"
@@ -3598,7 +3598,7 @@ export const PROTOCOLS = [
     "subtitle": "Exit Rule",
     "rationale": "A quit rule written in advance converts an emotional in-the-moment judgment into a precommitted trigger.",
     "origin": "Annie Duke recommends kill criteria as states and dates.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Focus"
@@ -3631,7 +3631,7 @@ export const PROTOCOLS = [
     "subtitle": "Output Floor",
     "rationale": "A fixed daily number makes output independent of mood, which is what produces book-scale volume.",
     "origin": "Stephen King writes 2,000 words a day including holidays.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -3664,7 +3664,7 @@ export const PROTOCOLS = [
     "subtitle": "Task Sizing",
     "rationale": "Radically small first targets dissolve the overwhelm that stops big projects from starting at all.",
     "origin": "Anne Lamott writes what fits in a one-inch picture frame.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Focus"
@@ -3696,7 +3696,7 @@ export const PROTOCOLS = [
     "benefit": "Faster learning of new material.",
     "subtitle": "Study Method",
     "rationale": "Brief eyes-open pauses let the brain replay just-practiced material, compressing extra repetitions into the session.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Learning speed",
       "Skill acquisition"
@@ -3808,7 +3808,7 @@ export const PROTOCOLS = [
     "subtitle": "Work Modes",
     "rationale": "Generating and judging in the same session kills raw ideas early, so the two modes need separate sittings.",
     "origin": "Jerry Seinfeld separates writing from editing entirely.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Output",
       "Focus"
@@ -3841,7 +3841,7 @@ export const PROTOCOLS = [
     "subtitle": "Motivation Device",
     "rationale": "A named rival converts a routine task into a contest, which reliably raises effort and persistence.",
     "origin": "Michael Jordan invented slights when real ones ran out.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Focus"
@@ -4125,7 +4125,7 @@ export const PROTOCOLS = [
     "subtitle": "Life Audit",
     "rationale": "A run of days where the honest answer is no is the clearest available signal that something needs to change.",
     "origin": "Steve Jobs asked the question in the mirror each morning.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Focus"
@@ -4158,7 +4158,7 @@ export const PROTOCOLS = [
     "subtitle": "Work Setup",
     "rationale": "Staging everything before starting removes the mid-task scavenging that fragments otherwise good work blocks.",
     "origin": "Professional kitchens run on the same discipline.",
-    "kind": "deep_work",
+    "kind": "focus",
     "targets": [
       "Output",
       "Focus"
@@ -4221,7 +4221,7 @@ export const PROTOCOLS = [
     "subtitle": "Risk Order",
     "rationale": "Attacking the hardest uncertainty first reaches the answer before serious time and money are committed.",
     "origin": "Astro Teller frames it as training the monkey, not building the pedestal.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Focus"
@@ -4326,7 +4326,7 @@ export const PROTOCOLS = [
     "subtitle": "Daily Structure",
     "rationale": "Unvarying repetition acts as its own trigger, dropping you into a working state without spending willpower on it.",
     "origin": "Haruki Murakami holds identical days for the length of a novel.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -4536,7 +4536,7 @@ export const PROTOCOLS = [
     "benefit": "Far fewer interruptions and better focus.",
     "subtitle": "Interruption Boundary",
     "rationale": "Scheduled delivery lets notifications arrive on your terms without going fully unreachable.",
-    "kind": "deep_work",
+    "kind": "focus",
     "targets": [
       "Focus",
       "Stress",
@@ -4606,7 +4606,7 @@ export const PROTOCOLS = [
     "subtitle": "Creative Unblock",
     "rationale": "A random lateral prompt breaks the tunnel vision that pressure creates and reopens abandoned approaches.",
     "origin": "Brian Eno created the Oblique Strategies deck for studio use.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Output",
       "Focus"
@@ -4639,7 +4639,7 @@ export const PROTOCOLS = [
     "subtitle": "Task Initiation",
     "rationale": "Starting on an adjacent smaller piece captures the interest of the big problem without its ignition cost.",
     "origin": "Paul Graham describes entering hard problems obliquely.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Focus"
@@ -4671,7 +4671,7 @@ export const PROTOCOLS = [
     "benefit": "Extra output without a recovery cost.",
     "subtitle": "Weekly Push",
     "rationale": "A bounded block on a normally open day can add output when the following days show no recovery cost.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Deep work",
       "Output",
@@ -4778,7 +4778,7 @@ export const PROTOCOLS = [
     "subtitle": "Craft Practice",
     "rationale": "Aiming improvement at one controllable detail at a time is what makes decades of repetition keep producing gains.",
     "origin": "Jiro Ono raised octopus massage from thirty minutes to forty-five.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Output",
       "Focus"
@@ -4811,7 +4811,7 @@ export const PROTOCOLS = [
     "subtitle": "Iteration Method",
     "rationale": "Changing one thing per iteration is the only way an iteration teaches you what actually caused the result.",
     "origin": "James Dyson built 5,127 prototypes one change at a time.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -4844,7 +4844,7 @@ export const PROTOCOLS = [
     "subtitle": "Incubation Loop",
     "rationale": "Posing the question at the end of the day recruits overnight incubation, and answering before any input keeps it clean.",
     "origin": "Josh Waitzkin ends the day with his most important question.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Output",
       "Focus"
@@ -4877,7 +4877,7 @@ export const PROTOCOLS = [
     "subtitle": "Reading Habit",
     "rationale": "Removing the obligation to finish any book keeps total reading volume high, because interest picks the next one.",
     "origin": "Marc Andreessen keeps many books in progress and abandons freely.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Output",
       "Focus"
@@ -4910,7 +4910,7 @@ export const PROTOCOLS = [
     "subtitle": "Design Method",
     "rationale": "Real parallel alternatives produce a better final design than iterating on the first idea ever does.",
     "origin": "Apple's design process ran ten versions down to three, then one.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Output",
       "Focus"
@@ -4980,7 +4980,7 @@ export const PROTOCOLS = [
     "subtitle": "Training Log",
     "rationale": "A daily record of conditions and results is the raw material that makes each training cycle better than the last.",
     "origin": "Eliud Kipchoge keeps a handwritten training log.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -5009,7 +5009,7 @@ export const PROTOCOLS = [
     "benefit": "Protected, deeper time on your hardest work.",
     "subtitle": "Focus Boundary",
     "rationale": "Removing the phone from reach raises the quality of one real work block more than adding hours does.",
-    "kind": "deep_work",
+    "kind": "focus",
     "family": "attention_defense",
     "tier": "beginner",
     "tierTarget": "One 90-minute distraction-free work block",
@@ -5209,7 +5209,7 @@ export const PROTOCOLS = [
     "subtitle": "Extra Session",
     "rationale": "An extra session before the day starts stacks on top of normal work, provided sleep is genuinely protected.",
     "origin": "Kobe Bryant trained at four in the morning.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -5277,7 +5277,7 @@ export const PROTOCOLS = [
     "subtitle": "Risk Check",
     "rationale": "Imagining the project has already failed surfaces risks and reservations that ordinary critique does not reach.",
     "origin": "Gary Klein developed the premortem from prospective-hindsight research.",
-    "kind": "deep_work",
+    "kind": "decisions",
     "targets": [
       "Output",
       "Focus"
@@ -5310,7 +5310,7 @@ export const PROTOCOLS = [
     "subtitle": "Session Boundary",
     "rationale": "Knowing exactly when the session ends is what allows full effort during it, because the demand is bounded.",
     "origin": "Jerry Seinfeld refuses open-ended work sessions.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -5343,7 +5343,7 @@ export const PROTOCOLS = [
     "subtitle": "Work Switching",
     "rationale": "Fatigue is often specific to one problem, so switching projects recovers productivity that forcing would waste.",
     "origin": "John Carmack rotates between live projects by mental state.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -5440,7 +5440,7 @@ export const PROTOCOLS = [
     "subtitle": "Effort Ceiling",
     "rationale": "Grading output as you go finds your true daily capacity, and hours past the fade produce work you will redo.",
     "origin": "Paul Graham stops on the quality fade rather than the clock.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -5505,7 +5505,7 @@ export const PROTOCOLS = [
     "benefit": "Better retention of what you learn.",
     "subtitle": "Study Method",
     "rationale": "Effortful recall, not re-reading, is what durably encodes material and reveals what you have not learned.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Retention",
       "Learning speed"
@@ -5542,7 +5542,7 @@ export const PROTOCOLS = [
     "subtitle": "Weekly Review",
     "rationale": "Reading the raw numbers before anyone interprets them means the week starts with a first-hand picture.",
     "origin": "Sam Walton read every weekly number before dawn on Saturdays.",
-    "kind": "deep_work",
+    "kind": "decisions",
     "targets": [
       "Output",
       "Focus"
@@ -5771,7 +5771,7 @@ export const PROTOCOLS = [
     "subtitle": "Morning Routine",
     "rationale": "A fixed, decision-free opening sequence means the day starts before motivation is consulted.",
     "origin": "Arnold Schwarzenegger executes the same automatic morning.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Focus"
@@ -5801,7 +5801,7 @@ export const PROTOCOLS = [
     "subtitle": "Execution Plan",
     "rationale": "Deciding the opening moves in calm conditions keeps early execution clinical and saves improvisation for real surprises.",
     "origin": "Bill Walsh scripted the 49ers' first twenty-five plays.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Output",
       "Focus"
@@ -5834,7 +5834,7 @@ export const PROTOCOLS = [
     "subtitle": "Night Schedule",
     "rationale": "A protected late shift provides quiet thinking hours the daytime calendar cannot, if chronotype and sleep genuinely allow it.",
     "origin": "Demis Hassabis has run a 10pm research shift for a decade.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -5869,7 +5869,7 @@ export const PROTOCOLS = [
     "subtitle": "Streak Tracking",
     "rationale": "A growing visible streak makes the daily rep something you refuse to lose rather than something you decide.",
     "origin": "Jerry Seinfeld marked a wall calendar for every day of writing.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -5936,7 +5936,7 @@ export const PROTOCOLS = [
     "subtitle": "Shipping Cadence",
     "rationale": "A dated public cadence converts open-ended work into finished reps, and volume is where quality comes from.",
     "origin": "Thomas Edison held himself to a minor invention every ten days.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Skill",
@@ -6010,7 +6010,7 @@ export const PROTOCOLS = [
     "subtitle": "User Research",
     "rationale": "Watching what a person actually does, rather than asking, is what reveals the adjustments worth making.",
     "origin": "Jiro Ono adjusts each piece to how the diner is eating.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -6039,7 +6039,7 @@ export const PROTOCOLS = [
     "benefit": "Faster work with fewer mistakes.",
     "subtitle": "Attention Discipline",
     "rationale": "Task switching costs measurable time and accuracy even when it feels efficient.",
-    "kind": "deep_work",
+    "kind": "focus",
     "targets": [
       "Focus",
       "Work quality",
@@ -6075,7 +6075,7 @@ export const PROTOCOLS = [
     "subtitle": "Timeline Check",
     "rationale": "Asking why a ten-year plan cannot happen in six months separates real constraints from assumed ones.",
     "origin": "Peter Thiel poses the question to founders.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Focus"
@@ -6105,7 +6105,7 @@ export const PROTOCOLS = [
     "subtitle": "Output Tracking",
     "rationale": "Plotting cumulative output makes a declining slope visible immediately rather than at the end of a bad month.",
     "origin": "B.F. Skinner ran his own working life as an experiment.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -6348,7 +6348,7 @@ export const PROTOCOLS = [
     "subtitle": "Material Testing",
     "rationale": "Testing rough material in dozens of low-stakes rooms means every element has already survived an audience.",
     "origin": "Chris Rock works out material in small clubs before big shows.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Output",
       "Focus"
@@ -6414,7 +6414,7 @@ export const PROTOCOLS = [
     "subtitle": "Note Practice",
     "rationale": "Spaced re-exposure keeps collected ideas active and available when decisions arrive.",
     "origin": "David Senra resurfaces book highlights daily.",
-    "kind": "deep_work",
+    "kind": "learning",
     "targets": [
       "Retention",
       "Judgment",
@@ -6449,7 +6449,7 @@ export const PROTOCOLS = [
     "subtitle": "Work Standards",
     "rationale": "Writing down what excellence looks like in each part of the work makes quality a controllable input rather than a hoped-for result.",
     "origin": "Bill Walsh took the 49ers from worst to champions with his Standard of Performance.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -6633,7 +6633,7 @@ export const PROTOCOLS = [
     "subtitle": "Avoidance Channel",
     "rationale": "Avoidance energy is inevitable, so directing it at worthwhile second-tier work produces output instead of feeds.",
     "origin": "Marc Andreessen keeps a Later list for exactly this.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Procrastination"
@@ -6696,7 +6696,7 @@ export const PROTOCOLS = [
     "subtitle": "Start Cue",
     "rationale": "One trivial automatic action that commits the session removes the daily decision to begin.",
     "origin": "Twyla Tharp's ritual was telling the cab driver the gym address.",
-    "kind": "deep_work",
+    "kind": "starting",
     "targets": [
       "Output",
       "Focus"
@@ -6844,7 +6844,7 @@ export const PROTOCOLS = [
     "subtitle": "Design Check",
     "rationale": "Pushing a design to its extreme case in your head finds contradictions before anything gets built.",
     "origin": "Albert Einstein rode alongside a light beam and found relativity.",
-    "kind": "deep_work",
+    "kind": "decisions",
     "targets": [
       "Output",
       "Focus"
@@ -6877,7 +6877,7 @@ export const PROTOCOLS = [
     "subtitle": "Decision Budget",
     "rationale": "Treating a few high-quality decisions as the whole job protects the slack that makes those decisions good.",
     "origin": "Jeff Bezos aims for three good decisions a day.",
-    "kind": "deep_work",
+    "kind": "decisions",
     "targets": [
       "Output",
       "Focus"
@@ -6937,7 +6937,7 @@ export const PROTOCOLS = [
     "subtitle": "Attention Check",
     "rationale": "Background thinking does the real work on hard problems, and you can only choose what occupies it indirectly.",
     "origin": "Paul Graham wrote about the top idea in your mind.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Prioritization",
       "Deep work",
@@ -7043,7 +7043,7 @@ export const PROTOCOLS = [
     "subtitle": "Output Pacing",
     "rationale": "Pacing output against a clock in small units turns production into a rhythm rather than a daily effort of will.",
     "origin": "Anthony Trollope wrote 250 words each quarter hour before work.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Output",
       "Focus"
@@ -7106,7 +7106,7 @@ export const PROTOCOLS = [
     "subtitle": "Decision Triage",
     "rationale": "Most decisions are reversible, and waiting for near-certainty on those costs more than the occasional walk-back.",
     "origin": "Jeff Bezos separates one-way from two-way doors.",
-    "kind": "deep_work",
+    "kind": "decisions",
     "targets": [
       "Output",
       "Focus"
@@ -7139,7 +7139,7 @@ export const PROTOCOLS = [
     "subtitle": "Idea Capture",
     "rationale": "Working memory drops ideas within minutes, so a capture tool always in reach preserves them and frees attention.",
     "origin": "Leonardo da Vinci hung a notebook from his belt.",
-    "kind": "deep_work",
+    "kind": "ideas",
     "targets": [
       "Ideas",
       "Clarity",
@@ -7169,7 +7169,7 @@ export const PROTOCOLS = [
     "benefit": "More high-quality work from fewer hours.",
     "subtitle": "Work Pacing",
     "rationale": "Matching hard pushes to roughly ninety-minute arcs with real breaks between produces more than grinding flat out.",
-    "kind": "deep_work",
+    "kind": "rhythm",
     "targets": [
       "Focus",
       "Output quality",
@@ -7204,7 +7204,7 @@ export const PROTOCOLS = [
     "subtitle": "First Principles",
     "rationale": "Re-measuring the fundamentals yourself is worth weeks when the reference numbers everyone trusts turn out to be wrong.",
     "origin": "The Wright brothers built a wind tunnel after Lilienthal's tables failed.",
-    "kind": "deep_work",
+    "kind": "decisions",
     "targets": [
       "Output",
       "Focus"
@@ -7237,7 +7237,7 @@ export const PROTOCOLS = [
     "subtitle": "Self Observation",
     "rationale": "Marking faults daily against written standards turns character-level goals into a visible trend line.",
     "origin": "Benjamin Franklin tracked thirteen virtues on a grid.",
-    "kind": "deep_work",
+    "kind": "review",
     "targets": [
       "Output",
       "Focus"
@@ -7533,7 +7533,7 @@ export const PROTOCOLS = [
     "subtitle": "Weekly Planning",
     "rationale": "Seeing the whole week at once places important work before the urgent fills it in.",
     "origin": "Cal Newport plans the week in advance every Monday.",
-    "kind": "deep_work",
+    "kind": "priorities",
     "targets": [
       "Output",
       "Calendar",
@@ -7709,7 +7709,8 @@ export const PROTOCOLS = [
     "benefit": "A full day of undistracted, high-quality work.",
     "subtitle": "Focus Boundary",
     "rationale": "A full day with feeds closed produces undiluted output that a partially protected day cannot.",
-    "kind": "deep_work",
+    "origin": "Donald Knuth has worked without email since 1990.",
+    "kind": "focus",
     "family": "attention_defense",
     "tier": "advanced",
     "tierTarget": "1 distraction-free workday per week",
@@ -7730,6 +7731,10 @@ export const PROTOCOLS = [
         {
           "label": "Interruption-reduction systematic review",
           "url": "https://pubmed.ncbi.nlm.nih.gov/34273814/"
+        },
+        {
+          "label": "Knuth on giving up email",
+          "url": "https://cs.stanford.edu/~knuth/email.html"
         }
       ]
     },

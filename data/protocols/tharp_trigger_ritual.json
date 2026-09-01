@@ -6,7 +6,7 @@
   "subtitle": "Start Cue",
   "rationale": "One trivial automatic action that commits the session removes the daily decision to begin.",
   "origin": "Twyla Tharp's ritual was telling the cab driver the gym address.",
-  "kind": "deep_work",
+  "kind": "starting",
   "targets": [
     "Output",
     "Focus"

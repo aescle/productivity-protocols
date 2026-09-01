@@ -6,7 +6,7 @@
   "subtitle": "Design Check",
   "rationale": "Pushing a design to its extreme case in your head finds contradictions before anything gets built.",
   "origin": "Albert Einstein rode alongside a light beam and found relativity.",
-  "kind": "deep_work",
+  "kind": "decisions",
   "targets": [
     "Output",
     "Focus"

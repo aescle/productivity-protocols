@@ -5,7 +5,7 @@
   "benefit": "A quicker start into focused work.",
   "subtitle": "Start Ritual",
   "rationale": "A consistent audio cue at the start of a block marks the transition and shortens the ramp into focus.",
-  "kind": "deep_work",
+  "kind": "focus",
   "targets": [
     "Focus",
     "Task initiation"

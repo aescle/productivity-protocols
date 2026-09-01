@@ -6,7 +6,7 @@
   "subtitle": "Weekly Review",
   "rationale": "Reading the raw numbers before anyone interprets them means the week starts with a first-hand picture.",
   "origin": "Sam Walton read every weekly number before dawn on Saturdays.",
-  "kind": "deep_work",
+  "kind": "decisions",
   "targets": [
     "Output",
     "Focus"

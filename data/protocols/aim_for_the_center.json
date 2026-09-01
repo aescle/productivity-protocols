@@ -6,7 +6,7 @@
   "subtitle": "Task Selection",
   "rationale": "Results are nonlinear near the hard core of a problem, so peripheral tasks feel productive while producing far less.",
   "origin": "Paul Graham describes it in How to Work Hard.",
-  "kind": "deep_work",
+  "kind": "priorities",
   "targets": [
     "Output",
     "Focus"

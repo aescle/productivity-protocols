@@ -6,7 +6,7 @@
   "subtitle": "First Principles",
   "rationale": "Re-measuring the fundamentals yourself is worth weeks when the reference numbers everyone trusts turn out to be wrong.",
   "origin": "The Wright brothers built a wind tunnel after Lilienthal's tables failed.",
-  "kind": "deep_work",
+  "kind": "decisions",
   "targets": [
     "Output",
     "Focus"

@@ -6,7 +6,7 @@
   "subtitle": "Choice Reduction",
   "rationale": "Deleting trivial recurring choices preserves judgment for the decisions that actually carry consequences.",
   "origin": "Mark Zuckerberg wears the same outfit to remove the choice.",
-  "kind": "deep_work",
+  "kind": "decisions",
   "targets": [
     "Output",
     "Focus"

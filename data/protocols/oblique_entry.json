@@ -6,7 +6,7 @@
   "subtitle": "Task Initiation",
   "rationale": "Starting on an adjacent smaller piece captures the interest of the big problem without its ignition cost.",
   "origin": "Paul Graham describes entering hard problems obliquely.",
-  "kind": "deep_work",
+  "kind": "starting",
   "targets": [
     "Output",
     "Focus"

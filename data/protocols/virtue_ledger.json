@@ -6,7 +6,7 @@
   "subtitle": "Self Observation",
   "rationale": "Marking faults daily against written standards turns character-level goals into a visible trend line.",
   "origin": "Benjamin Franklin tracked thirteen virtues on a grid.",
-  "kind": "deep_work",
+  "kind": "review",
   "targets": [
     "Output",
     "Focus"

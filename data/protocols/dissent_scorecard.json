@@ -6,7 +6,7 @@
   "subtitle": "Decision Practice",
   "rationale": "Numbered ratings with written reasoning surface disagreement that a verbal round of nods conceals.",
   "origin": "Reed Hastings built the practice at Netflix after Qwikster.",
-  "kind": "deep_work",
+  "kind": "decisions",
   "targets": [
     "Output",
     "Focus"

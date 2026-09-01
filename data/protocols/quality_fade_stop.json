@@ -6,7 +6,7 @@
   "subtitle": "Effort Ceiling",
   "rationale": "Grading output as you go finds your true daily capacity, and hours past the fade produce work you will redo.",
   "origin": "Paul Graham stops on the quality fade rather than the clock.",
-  "kind": "deep_work",
+  "kind": "rhythm",
   "targets": [
     "Output",
     "Focus"

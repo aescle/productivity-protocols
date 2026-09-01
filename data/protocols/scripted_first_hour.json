@@ -6,7 +6,7 @@
   "subtitle": "Morning Routine",
   "rationale": "A fixed, decision-free opening sequence means the day starts before motivation is consulted.",
   "origin": "Arnold Schwarzenegger executes the same automatic morning.",
-  "kind": "deep_work",
+  "kind": "starting",
   "targets": [
     "Output",
     "Focus"

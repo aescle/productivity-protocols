@@ -6,7 +6,7 @@
   "subtitle": "Night Schedule",
   "rationale": "A protected late shift provides quiet thinking hours the daytime calendar cannot, if chronotype and sleep genuinely allow it.",
   "origin": "Demis Hassabis has run a 10pm research shift for a decade.",
-  "kind": "deep_work",
+  "kind": "rhythm",
   "targets": [
     "Output",
     "Focus"

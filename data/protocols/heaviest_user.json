@@ -6,7 +6,7 @@
   "subtitle": "Product Testing",
   "rationale": "Using your own product harder than any customer surfaces defects and design truths before customers meet them.",
   "origin": "Yvon Chouinard field-tested Patagonia gear on his own expeditions.",
-  "kind": "deep_work",
+  "kind": "review",
   "targets": [
     "Output",
     "Focus"

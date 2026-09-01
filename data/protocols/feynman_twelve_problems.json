@@ -6,7 +6,7 @@
   "subtitle": "Problem Registry",
   "rationale": "Holding a dozen open problems means every new technique gets tested against them the moment it arrives.",
   "origin": "Richard Feynman kept twelve favorite problems in mind.",
-  "kind": "deep_work",
+  "kind": "ideas",
   "targets": [
     "Output",
     "Focus"

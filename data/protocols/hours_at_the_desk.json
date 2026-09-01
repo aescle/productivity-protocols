@@ -6,7 +6,7 @@
   "subtitle": "Attendance Rule",
   "rationale": "Judging the day by attendance rather than output removes the daily negotiation about whether to work.",
   "origin": "George Lucas sat at his desk eight hours a day despite hating writing.",
-  "kind": "deep_work",
+  "kind": "rhythm",
   "targets": [
     "Output",
     "Focus"

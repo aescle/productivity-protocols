@@ -6,7 +6,7 @@
   "subtitle": "Output Pacing",
   "rationale": "Pacing output against a clock in small units turns production into a rhythm rather than a daily effort of will.",
   "origin": "Anthony Trollope wrote 250 words each quarter hour before work.",
-  "kind": "deep_work",
+  "kind": "rhythm",
   "targets": [
     "Output",
     "Focus"

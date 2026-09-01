@@ -6,7 +6,7 @@
   "subtitle": "Commitment Device",
   "rationale": "Making the exit expensive converts a slipping deadline into finished work more reliably than willpower does.",
   "origin": "Victor Hugo locked away his clothes to finish a book early.",
-  "kind": "deep_work",
+  "kind": "starting",
   "targets": [
     "Output",
     "Focus"

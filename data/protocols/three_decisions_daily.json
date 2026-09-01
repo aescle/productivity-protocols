@@ -6,7 +6,7 @@
   "subtitle": "Decision Budget",
   "rationale": "Treating a few high-quality decisions as the whole job protects the slack that makes those decisions good.",
   "origin": "Jeff Bezos aims for three good decisions a day.",
-  "kind": "deep_work",
+  "kind": "decisions",
   "targets": [
     "Output",
     "Focus"

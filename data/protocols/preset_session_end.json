@@ -6,7 +6,7 @@
   "subtitle": "Session Boundary",
   "rationale": "Knowing exactly when the session ends is what allows full effort during it, because the demand is bounded.",
   "origin": "Jerry Seinfeld refuses open-ended work sessions.",
-  "kind": "deep_work",
+  "kind": "rhythm",
   "targets": [
     "Output",
     "Focus"

@@ -6,7 +6,7 @@
   "subtitle": "Error Tracking",
   "rationale": "Logging every error with severity and owner turns individual mistakes into a queue that gets systematically fixed.",
   "origin": "Ray Dalio made unlogged errors the real offense at Bridgewater.",
-  "kind": "deep_work",
+  "kind": "review",
   "targets": [
     "Output",
     "Focus"

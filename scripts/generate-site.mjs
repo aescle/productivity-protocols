@@ -13,8 +13,42 @@ import { fileURLToPath } from "node:url";
 
 const pkgRoot = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 
+// Two vocabularies. Short for the filter chips, where space is scarce and the
+// icon carries meaning. Longer for the list headings, where "Starting" and
+// "Rhythm" on their own do not say what they mean.
+const KIND_LONG = {
+  priorities: "Priorities",
+  decisions: "Decision making",
+  starting: "Getting started",
+  focus: "Protecting focus",
+  rhythm: "Work rhythm",
+  ideas: "Ideas and creativity",
+  learning: "Learning and craft",
+  review: "Review and feedback",
+  calendar_defense: "Calendar defense",
+  social: "People and feedback",
+  sleep: "Sleep",
+  training: "Exercise",
+  walk: "Daily movement",
+  recovery: "Recovery",
+  nutrition: "Nutrition",
+};
+// Two groups so fifteen chips read as two short lists instead of one long one.
+const KIND_GROUP = {
+  priorities: "work", decisions: "work", starting: "work", focus: "work",
+  rhythm: "work", ideas: "work", learning: "work", review: "work",
+  calendar_defense: "work", social: "work",
+  sleep: "body", training: "body", walk: "body", recovery: "body", nutrition: "body",
+};
 const KIND_LABEL = {
-  deep_work: "Focus",
+  focus: "Focus",
+  starting: "Starting",
+  rhythm: "Rhythm",
+  priorities: "Priorities",
+  decisions: "Decisions",
+  ideas: "Ideas",
+  learning: "Learning",
+  review: "Review",
   calendar_defense: "Calendar",
   sleep: "Sleep",
   training: "Exercise",
@@ -23,9 +57,17 @@ const KIND_LABEL = {
   walk: "Movement",
   social: "People",
 };
-// Order the areas by how much of the day they govern, not alphabetically.
+// How a workday actually runs: choose the work, start it, hold it, pace it,
+// then learn from it. Body and calendar underneath.
 const KIND_ORDER = [
-  "deep_work",
+  "priorities",
+  "decisions",
+  "starting",
+  "focus",
+  "rhythm",
+  "ideas",
+  "learning",
+  "review",
   "calendar_defense",
   "sleep",
   "training",
@@ -75,7 +117,22 @@ const esc = (s) =>
 const svg = (body) =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg>`;
 const ICONS = {
-  deep_work: svg('<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.2"/><path d="M12 1.6v2.6M12 19.8v2.6M22.4 12h-2.6M4.2 12H1.6"/>'),
+  // crosshair: holding one thing in view
+  focus: svg('<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.2"/><path d="M12 1.6v2.6M12 19.8v2.6M22.4 12h-2.6M4.2 12H1.6"/>'),
+  // play: the first move
+  starting: svg('<circle cx="12" cy="12" r="9"/><path d="M10 8.6l6 3.4-6 3.4Z"/>'),
+  // waveform: the beat of the day
+  rhythm: svg('<path d="M2.4 12h3l2.4-6.4 3.6 13L15 8.4l1.8 3.6h4.8"/>'),
+  // stacked bars, tallest first: what matters most
+  priorities: svg('<path d="M4 20V7.6M10 20v-9M16 20v-5.4M22 20H2"/>'),
+  // fork in the road
+  decisions: svg('<path d="M12 21.4V13m0 0L5.6 6.6M12 13l6.4-6.4"/><path d="M3 3.2h4v4M21 3.2h-4v4"/>'),
+  // lightbulb
+  ideas: svg('<path d="M9.4 18.4h5.2M10.2 21.4h3.6"/><path d="M12 2.6a6.4 6.4 0 0 0-3.8 11.5c.6.5 1 1.2 1 2h5.6c0-.8.4-1.5 1-2A6.4 6.4 0 0 0 12 2.6Z"/>'),
+  // open book
+  learning: svg('<path d="M12 6.4v14"/><path d="M12 6.4C10.4 4.9 8.2 4.2 5 4.2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1c3.2 0 5.4.7 7 2.2 1.6-1.5 3.8-2.2 7-2.2a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1c-3.2 0-5.4.7-7 2.2Z"/>'),
+  // loop back
+  review: svg('<path d="M3.2 12a8.8 8.8 0 1 1 2.9 6.5"/><path d="M2.6 19.6v-5h5"/>'),
   calendar_defense: svg('<rect x="3.2" y="5" width="17.6" height="16" rx="2.4"/><path d="M3.2 10h17.6M8 2.8v4.4M16 2.8v4.4"/>'),
   sleep: svg('<path d="M20.5 14.6A8.6 8.6 0 1 1 9.4 3.5a6.9 6.9 0 0 0 11.1 11.1Z"/>'),
   training: svg('<path d="M2.6 9.4v5.2M6 7v10M18 7v10M21.4 9.4v5.2M6 12h12"/>'),
@@ -202,7 +259,7 @@ export async function renderSite() {
       .map(
         (k) => `
       <section class="area" data-kind="${esc(k)}">
-        <h2 class="area-head">${esc(KIND_LABEL[k] ?? k)} <span>${byKind.get(k).length}</span></h2>
+        <h2 class="area-head">${ICONS[k] ?? ""}${esc(KIND_LONG[k] ?? KIND_LABEL[k] ?? k)} <span>${byKind.get(k).length}</span></h2>
         ${byKind.get(k).map(row).join("")}
       </section>`,
     )
@@ -343,14 +400,25 @@ export async function renderSite() {
   .grades button i { width: 7px; height: 7px; border-radius: 2px; flex: 0 0 auto; }
   .grades button:hover { color: var(--ink); }
   .grades button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
-  .areas { display: flex; flex-wrap: wrap; gap: 6px; }
+  .areas { display: flex; flex-direction: column; gap: 6px; width: 100%; }
+  .chip-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .grp {
+    flex: 0 0 34px;
+    font-family: var(--mono); font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.09em; color: var(--faint); white-space: nowrap;
+  }
   .areas button {
     display: inline-flex; align-items: center; gap: 6px;
-    font-size: 12.5px; padding: 5px 11px 5px 9px; border-radius: 999px;
+    font-size: 12.5px; padding: 5px 10px 5px 8px; border-radius: 999px;
     border: 1px solid var(--line); background: var(--card); color: var(--muted);
     transition: border-color .13s, color .13s, background .13s;
   }
-  .areas button svg { width: 14px; height: 14px; flex: 0 0 auto; opacity: .75; }
+  .areas button svg { width: 13px; height: 13px; flex: 0 0 auto; opacity: .75; }
+  .areas button b {
+    font-family: var(--mono); font-size: 10.5px; font-weight: 400; color: var(--faint);
+    font-variant-numeric: tabular-nums;
+  }
+  .areas button[aria-pressed="true"] b { color: var(--accent); }
   .areas button:hover { color: var(--ink); }
   .areas button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
   .areas button[aria-pressed="true"] svg { opacity: 1; }
@@ -375,8 +443,9 @@ export async function renderSite() {
   .area-head {
     font-family: var(--mono); font-size: 11px; font-weight: 500; text-transform: uppercase;
     letter-spacing: 0.1em; color: var(--faint); margin: 0 0 8px; padding: 0 4px;
-    display: flex; align-items: baseline; gap: 7px;
+    display: flex; align-items: center; gap: 7px;
   }
+  .area-head svg { width: 14px; height: 14px; flex: 0 0 auto; }
   .area-head span { color: var(--line); }
   :root[data-theme="dark"] .area-head span { color: var(--muted); }
 
@@ -398,11 +467,6 @@ export async function renderSite() {
 
   /* Essentials sits in the same row as the areas and looks the same. It only
      gets a hairline separator, because it filters on a different axis. */
-  .areas .is-essential { margin-right: 5px; position: relative; }
-  .areas .is-essential::after {
-    content: ""; position: absolute; right: -6px; top: 20%; height: 60%;
-    border-right: 1px solid var(--line);
-  }
   .areas .is-essential svg { opacity: .9; }
 
   .empty { padding: 40px 4px; color: var(--muted); font-size: 15px; }
@@ -525,13 +589,30 @@ export async function renderSite() {
       ).join("")}
     </div>
     <div class="areas" id="areas" role="group" aria-label="Filters">
-      <button id="essential" class="is-essential" aria-pressed="false">${STAR_ICON}<span>Essentials</span></button>
-      ${kinds
-        .map(
-          (k) =>
-            `<button data-kind="${esc(k)}" aria-pressed="false">${ICONS[k] ?? ""}<span>${esc(KIND_LABEL[k] ?? k)}</span></button>`,
-        )
-        .join("")}
+      <div class="chip-row">
+        <span class="grp"></span>
+        <button id="essential" class="is-essential" aria-pressed="false">${STAR_ICON}<span>Essentials</span></button>
+      </div>
+      <div class="chip-row">
+        <span class="grp">Work</span>
+        ${kinds
+          .filter((k) => KIND_GROUP[k] === "work")
+          .map(
+            (k) =>
+              `<button data-kind="${esc(k)}" aria-pressed="false">${ICONS[k] ?? ""}<span>${esc(KIND_LABEL[k] ?? k)}</span><b>${byKind.get(k).length}</b></button>`,
+          )
+          .join("")}
+      </div>
+      <div class="chip-row">
+        <span class="grp">Body</span>
+        ${kinds
+          .filter((k) => KIND_GROUP[k] !== "work")
+          .map(
+            (k) =>
+              `<button data-kind="${esc(k)}" aria-pressed="false">${ICONS[k] ?? ""}<span>${esc(KIND_LABEL[k] ?? k)}</span><b>${byKind.get(k).length}</b></button>`,
+          )
+          .join("")}
+      </div>
     </div>
     <span class="tally" id="tally">${protocols.length} shown</span>
   </div>

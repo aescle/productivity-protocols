@@ -14,11 +14,18 @@ const dataDir = path.join(pkgRoot, "data", "protocols");
 
 const KINDS = new Set([
   "calendar_defense",
-  "deep_work",
+  "decisions",
+  "focus",
+  "ideas",
+  "learning",
   "nutrition",
+  "priorities",
   "recovery",
+  "review",
+  "rhythm",
   "sleep",
   "social",
+  "starting",
   "training",
   "walk",
 ]);

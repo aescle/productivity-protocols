@@ -6,7 +6,7 @@
   "subtitle": "Risk Check",
   "rationale": "Imagining the project has already failed surfaces risks and reservations that ordinary critique does not reach.",
   "origin": "Gary Klein developed the premortem from prospective-hindsight research.",
-  "kind": "deep_work",
+  "kind": "decisions",
   "targets": [
     "Output",
     "Focus"
