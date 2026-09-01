@@ -24,7 +24,7 @@
     ]
   },
   "indications": [
-    "Most calendar slots are 30 or 60 minutes by default.",
+    "Meetings reach their real end early, then fill the rest of the slot.",
     "Meetings routinely end with padding small talk."
   ],
   "guide": {

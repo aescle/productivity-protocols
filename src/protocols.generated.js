@@ -131,7 +131,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "A 30-minute weekly aerobic floor is established.",
       "Energy fades before the workday does.",
       "Stressful stretches take longer to shake off."
     ],
@@ -172,7 +171,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "150 weekly aerobic minutes are already routine.",
       "Runs and rides double as your best thinking time.",
       "Recovery absorbs more volume without denting output."
     ],
@@ -311,7 +309,6 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Most weeknights include at least one drink.",
-      "The three-hour cutoff is already consistent.",
       "Morning readiness dips after drinking evenings."
     ],
     "guide": {
@@ -344,7 +341,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Drinks regularly land within two hours of bedtime.",
+      "Alcohol is the default wind-down after hard days.",
       "Sleep tracking shows depressed HRV or fragmented sleep after drinking evenings.",
       "Night waking clusters after social dinners."
     ],
@@ -412,7 +409,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Skill growth outside the job stalled years ago.",
-      "Public accountability reliably works on you."
+      "Publicly announced goals get finished when private ones do not."
     ],
     "guide": null
   },
@@ -705,7 +702,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Berry and polyphenol intake is low.",
-      "Cognitive longevity matters and cheap levers are welcome."
+      "Fruit intake is limited to juice, or absent altogether."
     ],
     "guide": {
       "url": "https://www.foundmyfitness.com/topics/polyphenols-brain-aging",
@@ -739,7 +736,7 @@ export const PROTOCOLS = [
     "indications": [
       "A specific task has been rescheduled three or more times.",
       "Focus is fine in meetings but collapses when working alone.",
-      "Accountability reliably outperforms willpower."
+      "Work done alongside someone finishes when solo work stalls."
     ],
     "guide": {
       "url": "https://add.org/the-body-double/",
@@ -772,7 +769,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Days start reactive and end unexamined.",
-      "A two-question habit is sustainable where journaling was not."
+      "Longer journaling practices have been started and dropped."
     ],
     "guide": {
       "url": "https://www.mayooshin.com/benjamin-franklins-daily-schedule",
@@ -867,7 +864,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Cruciferous vegetable intake is low.",
-      "A food-first lever is preferred over another capsule."
+      "The supplement stack is already long."
     ],
     "avoidWhen": [
       "Immunocompromised: raw sprouts carry foodborne-illness risk."
@@ -1263,8 +1260,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Two to three weekly immersions are already comfortable.",
-      "A structured weekly cap would keep the habit bounded."
+      "Cold exposure varies week to week with no consistent weekly total."
     ],
     "avoidWhen": [
       "Cardiovascular disease or arrhythmia unless cleared by a physician.",
@@ -1307,8 +1303,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Cold shower finishes are already routine and easy.",
-      "A plunge, cold tub, or open water is practically available."
+      "The alertness bump from a cold finish has faded."
     ],
     "avoidWhen": [
       "Cardiovascular disease or arrhythmia unless cleared by a physician.",
@@ -1597,7 +1592,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Strength training is consistent but unsupplemented.",
-      "Muscle or strength progression is an explicit goal."
+      "Strength numbers have been flat for two months or more."
     ],
     "avoidWhen": [
       "Kidney disease or impaired renal function unless cleared by a physician."
@@ -1706,7 +1701,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "45 minutes of daily movement is already consistent.",
       "Long sedentary stretches remain despite a movement habit.",
       "An active day needs to become the default, not the exception."
     ],
@@ -1745,7 +1739,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Solo training keeps dying of boredom.",
-      "Competition reliably gets you out the door."
+      "Solo workouts get skipped when a scheduled game would not be."
     ],
     "guide": {
       "url": "https://www.insidetennis.com/2014/03/the-larry-ellison-interview-inside-tennis-talks-with-the-wizard-of-wow/",
@@ -1925,7 +1919,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "The same mental loops replay through routine tasks.",
-      "Meditation as-such never stuck, but debugging might."
+      "Seated meditation has been tried and abandoned more than once."
     ],
     "guide": {
       "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/",
@@ -1992,7 +1986,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Mornings burn energy on choices with no payoff.",
-      "Trivial decisions get revisited daily."
+      "Decision quality is visibly worse in the evening than the morning."
     ],
     "guide": null
   },
@@ -2331,8 +2325,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "A 10-hour window is already consistent.",
-      "A defined metabolic or recovery goal justifies a tighter experiment."
+      "Body composition or morning glucose has stalled on the 10-hour window."
     ],
     "guide": null
   },
@@ -2598,7 +2591,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "One 90-minute protected block is already consistent.",
       "Feeds and news creep into work gaps.",
       "Deep work needs longer uninterrupted arcs."
     ],
@@ -2809,7 +2801,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "One specific task has survived a week of todo lists.",
-      "Once started, you rarely stop at five minutes."
+      "Short sessions reliably run long once begun."
     ],
     "guide": null
   },
@@ -2876,7 +2868,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Workouts happen but the head stays at work throughout.",
-      "Only absorbing activities actually switch the loop off."
+      "Easy workouts leave the work loop running, but hard ones do not."
     ],
     "guide": {
       "url": "https://www.forbes.com/sites/kerryadolan/2023/09/28/eight-hours-of-sleep-and-no-back-to-back-meetings-how-mark-zuckerberg-organizes-his-days/",
@@ -3316,7 +3308,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "The dreaded project moves only under deadline panic.",
-      "Output-judged days end in avoidance; attendance is controllable."
+      "Days judged by output end in avoidance, but days judged by hours do not."
     ],
     "guide": {
       "url": "https://calnewport.com/the-forgotten-tale-of-george-lucass-writing-tower/",
@@ -3590,7 +3582,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Starting is the hard part; momentum holds once begun.",
+      "Work resumes easily once the first ten minutes are past.",
       "A project has stalled between sessions."
     ],
     "guide": {
@@ -3764,7 +3756,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "One daily post-meal walk is already routine.",
       "Late meals still run close to bedtime.",
       "Post-lunch and post-dinner slumps persist."
     ],
@@ -3799,7 +3790,7 @@ export const PROTOCOLS = [
     "indications": [
       "Sleep quality lags despite solid behavior-level hygiene.",
       "Dietary magnesium intake is likely low.",
-      "A cheap, low-risk experiment is preferred before bigger changes."
+      "No sleep supplement has been trialled one at a time."
     ],
     "avoidWhen": [
       "Kidney disease or impaired renal function unless cleared by a physician."
@@ -3868,7 +3859,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Flat stakes produce flat effort.",
-      "Competition reliably switches you on."
+      "Effort rises sharply when someone else is measured against you."
     ],
     "guide": null
   },
@@ -3900,7 +3891,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Eating continues within two hours of bedtime.",
+      "Dinner lands late because the workday runs long.",
       "Night waking or reflux follows late meals.",
       "Morning glucose or sleep quality lags after late dinners."
     ],
@@ -3941,7 +3932,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Meetings are already clustered but still touch every day.",
       "Deep work needs full days, not fragments.",
       "Calendar control is sufficient to protect whole days."
     ],
@@ -4085,7 +4075,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "A 10-minute daily practice is consistent and easy.",
       "Benefits are noticeable but plateau at the shorter dose."
     ],
     "guide": {
@@ -4121,8 +4110,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "20 daily minutes are established and no longer difficult.",
-      "The practice is valuable enough to justify a bigger slot."
+      "Sessions end just as attention finally settles."
     ],
     "guide": {
       "url": "https://www.apa.org/topics/mindfulness/meditation",
@@ -4357,7 +4345,7 @@ export const PROTOCOLS = [
     "indications": [
       "A months-long project needs sustained daily output.",
       "Every day currently starts with negotiating the schedule from scratch.",
-      "Willpower is doing work that routine should."
+      "Output drops on any day that breaks the pattern."
     ],
     "guide": {
       "url": "https://www.openculture.com/2021/07/haruki-murakamis-daily-routine-up-at-400-a-m-5-6-hours-of-writing-then-a-10k-run.html",
@@ -4500,8 +4488,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Meetings scatter across mornings and afternoons alike.",
-      "Morning hours are reliably the sharpest and least protected.",
-      "Meeting clustering is established but not yet anchored to a daypart."
+      "Morning hours are reliably the sharpest and least protected."
     ],
     "guide": {
       "url": "https://pmarchive.com/guide_to_personal_productivity.html",
@@ -4534,7 +4521,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Most calendar slots are 30 or 60 minutes by default.",
+      "Meetings reach their real end early, then fill the rest of the slot.",
       "Meetings routinely end with padding small talk."
     ],
     "guide": {
@@ -4573,7 +4560,7 @@ export const PROTOCOLS = [
     "indications": [
       "The phone interrupts more than a few times per hour.",
       "Notification settings have never been deliberately configured.",
-      "Full do-not-disturb feels too unreachable to sustain."
+      "Do-not-disturb gets switched back off within a day of turning it on."
     ],
     "guide": null
   },
@@ -5609,8 +5596,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Two to three weekly sessions are already routine.",
-      "Daily sauna access makes higher frequency practical."
+      "Recovery and heat tolerance have flattened at three sessions per week."
     ],
     "avoidWhen": [
       "Pregnancy, cardiovascular instability, recent alcohol, or heat intolerance."
@@ -5696,8 +5682,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "One weekly sauna session is already routine.",
-      "Sessions are easy and no longer feel like a stressor."
+      "Evening tension and post-training soreness persist through the week."
     ],
     "avoidWhen": [
       "Pregnancy, cardiovascular instability, recent alcohol, or heat intolerance."
@@ -5771,7 +5756,7 @@ export const PROTOCOLS = [
     "indications": [
       "Screens are in hand at lights-out on most nights.",
       "Sleep onset takes more than 20 minutes.",
-      "No shutdown boundary currently exists."
+      "Bedtime drifts later on any evening with no fixed end."
     ],
     "guide": {
       "source": "Sleep Foundation",
@@ -5804,7 +5789,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Mornings open with negotiation about what to do first.",
-      "Routines survive only as long as motivation does."
+      "Morning routines hold for two weeks and then collapse."
     ],
     "guide": null
   },
@@ -5866,7 +5851,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "You are genuinely, verifiably a night person.",
+      "Late-evening work holds quality that late-afternoon work does not.",
       "Daytime is unavoidably consumed by meetings."
     ],
     "avoidWhen": [
@@ -6206,7 +6191,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "A 60-minute screen shutdown is already consistent.",
       "Sleep quality still lags despite a solid shutdown.",
       "Evenings allow a longer, protected wind-down."
     ],
@@ -6243,8 +6227,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "The 45-minute wake window is already mastered.",
-      "Marginal circadian gains still matter for performance."
+      "Training, travel, or competition happens at a fixed early hour."
     ],
     "guide": {
       "source": "Sleep Foundation",
@@ -6317,7 +6300,6 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Wake time varies 45 to 90 minutes across the week.",
-      "The 90-minute window is already mastered.",
       "Mornings feel inconsistent despite adequate sleep duration."
     ],
     "guide": {
@@ -6557,7 +6539,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "One weekly strength session is established.",
       "Strength gains have stalled at single-session frequency."
     ],
     "guide": {
@@ -6597,8 +6578,7 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Two weekly sessions are established and recovery is solid.",
-      "Progression, not maintenance, is the goal."
+      "Lifts have stopped progressing at two sessions per week."
     ],
     "guide": {
       "source": "The Fitness Wiki",
@@ -6734,7 +6714,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "The gap between intending and starting eats 20 minutes.",
-      "Sessions begun always finish; sessions unbegun multiply."
+      "Started sessions almost always run to completion."
     ],
     "guide": {
       "url": "https://jamesclear.com/twyla-tharp",
@@ -6945,7 +6925,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Grazing smears energy and appetite across the day.",
-      "Food decisions recur hourly instead of thrice daily."
+      "Appetite and energy never settle into a daily rhythm."
     ],
     "guide": null
   },
@@ -7114,7 +7094,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Coffee outnumbers water until mid-afternoon.",
-      "Tracking rules fail but simple pairing rules stick."
+      "Hydration tracking has been tried and abandoned."
     ],
     "guide": null
   },
@@ -7355,7 +7335,6 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "A 30-minute daily movement floor is already consistent.",
       "Meetings cluster with usable gaps between them.",
       "Afternoon energy fades on meeting-heavy days."
     ],
@@ -7650,8 +7629,7 @@ export const PROTOCOLS = [
     },
     "indications": [
       "Screen use continues into the final hour before sleep on most nights.",
-      "Sleep onset is slow after evening screen sessions.",
-      "A 30-minute shutdown is already consistent and no longer difficult."
+      "Sleep onset is slow after evening screen sessions."
     ],
     "guide": {
       "source": "Sleep Foundation",
@@ -7756,9 +7734,8 @@ export const PROTOCOLS = [
       ]
     },
     "indications": [
-      "Three-hour protected periods are already routine.",
       "Feed checking still bookends every work session.",
-      "One day of full output matters more than availability."
+      "One project needs a whole uninterrupted day to move."
     ],
     "guide": {
       "source": "Tech Shabbat",

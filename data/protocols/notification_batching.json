@@ -29,7 +29,7 @@
   "indications": [
     "The phone interrupts more than a few times per hour.",
     "Notification settings have never been deliberately configured.",
-    "Full do-not-disturb feels too unreachable to sustain."
+    "Do-not-disturb gets switched back off within a day of turning it on."
   ],
   "guide": null
 }

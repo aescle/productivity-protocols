@@ -3,6 +3,10 @@
 // drift-checked by validate.mjs:
 //
 //   node packages/protocol-bank/scripts/generate-index.mjs
+//
+// Layout is master-detail: the left column scans, the right column holds one
+// full protocol. The list opens with an opinionated Start here set, because
+// 227 rows is not a browsable thing on its own.
 import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -10,272 +14,672 @@ import { fileURLToPath } from "node:url";
 const pkgRoot = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const KIND_LABEL = {
-  calendar_defense: "Calendar", deep_work: "Focus", nutrition: "Nutrition", recovery: "Recovery",
-  sleep: "Sleep", social: "Social", training: "Training", walk: "Movement",
+  deep_work: "Focus",
+  calendar_defense: "Calendar",
+  sleep: "Sleep",
+  training: "Exercise",
+  recovery: "Recovery",
+  nutrition: "Nutrition",
+  walk: "Movement",
+  social: "People",
 };
+// Order the areas by how much of the day they govern, not alphabetically.
+const KIND_ORDER = [
+  "deep_work",
+  "calendar_defense",
+  "sleep",
+  "training",
+  "recovery",
+  "nutrition",
+  "walk",
+  "social",
+];
 const FAMILY_LABEL = {
-  attention_defense: "Focus defense", daily_activity: "Daily activity", aerobic_volume: "Aerobic volume",
-  strength_capacity: "Strength", sleep_regularity: "Sleep rhythm", sleep_shutdown: "Screen shutdown",
-  calendar_defense: "Calendar defense", meal_timing: "Meal timing", eating_window: "Eating window",
-  heat_exposure: "Heat exposure", cold_exposure: "Cold exposure", mindfulness: "Mindfulness",
+  attention_defense: "Focus defense",
+  daily_activity: "Daily activity",
+  aerobic_volume: "Aerobic volume",
+  strength_capacity: "Strength",
+  sleep_regularity: "Sleep rhythm",
+  sleep_shutdown: "Screen shutdown",
+  calendar_defense: "Calendar defense",
+  meal_timing: "Meal timing",
+  eating_window: "Eating window",
+  heat_exposure: "Heat exposure",
+  cold_exposure: "Cold exposure",
+  mindfulness: "Mindfulness",
 };
 const TIER_ORDER = { beginner: 0, intermediate: 1, advanced: 2 };
+const GRADE_STEPS = { strong: 4, moderate: 3, emerging: 2, anecdotal: 1 };
+const GRADES = ["strong", "moderate", "emerging", "anecdotal"];
+// An opinionated starting set. 227 is too many to walk cold, so the list opens
+// with the handful worth running first. Edit this line to change the opinion.
+const ESSENTIALS = [
+  "morning_light",
+  "caffeine_cutoff",
+  "screen_shutdown",
+  "wind_down",
+  "walk_reset",
+  "zone2_aerobic",
+  "strength_training",
+];
 
 const esc = (s) =>
-  String(s).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+  String(s)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+
+// Inline stroke icons, one per area. Drawn at 24 and scaled down, so the
+// filter row reads as a set of objects rather than a row of word-pills.
+const svg = (body) =>
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg>`;
+const ICONS = {
+  deep_work: svg('<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.2"/><path d="M12 1.6v2.6M12 19.8v2.6M22.4 12h-2.6M4.2 12H1.6"/>'),
+  calendar_defense: svg('<rect x="3.2" y="5" width="17.6" height="16" rx="2.4"/><path d="M3.2 10h17.6M8 2.8v4.4M16 2.8v4.4"/>'),
+  sleep: svg('<path d="M20.5 14.6A8.6 8.6 0 1 1 9.4 3.5a6.9 6.9 0 0 0 11.1 11.1Z"/>'),
+  training: svg('<path d="M2.6 9.4v5.2M6 7v10M18 7v10M21.4 9.4v5.2M6 12h12"/>'),
+  recovery: svg('<path d="M20.3 5.6a5 5 0 0 0-7.1 0L12 6.8l-1.2-1.2a5 5 0 1 0-7.1 7.1L12 21l8.3-8.3a5 5 0 0 0 0-7.1Z"/>'),
+  nutrition: svg('<path d="M12 7.6c-1.8-3-6-3-7.6 0-1.6 3 .6 9.4 3.6 12.2 1.2 1.1 2.8.4 4-.4 1.2.8 2.8 1.5 4 .4 3-2.8 5.2-9.2 3.6-12.2-1.6-3-5.8-3-7.6 0Z"/><path d="M12 7.6V4.4a2.8 2.8 0 0 1 2.8-2.8"/>'),
+  walk: svg('<circle cx="13.4" cy="3.9" r="2"/><path d="M11 21.6l1.8-6-3-2.6.9-5 3.4 2.2 3 1.4M9.4 21.6l1.6-4.4M17.6 21.6l-2-5.4"/>'),
+  social: svg('<circle cx="9" cy="8.4" r="3.4"/><path d="M2.8 20.4a6.2 6.2 0 0 1 12.4 0"/><path d="M16.4 5.4a3.4 3.4 0 0 1 0 6M17.8 14.8a6.2 6.2 0 0 1 3.4 5.6"/>'),
+};
+const STAR_ICON = svg('<path d="M12 3.2l2.6 5.6 6 .8-4.4 4.2 1.1 6.1-5.3-2.9-5.3 2.9 1.1-6.1L3.4 9.6l6-.8Z"/>');
+const GH_ICON =
+  '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>';
+
+// Say the grade in words. A bar chart of four segments looked like a signal
+// meter and did not tell anyone what it measured.
+const gradeTag = (grade) =>
+  `<span class="tag" data-grade="${grade}"><i></i>${grade}</span>`;
 
 export async function renderSite() {
   const dataDir = path.join(pkgRoot, "data", "protocols");
   const files = (await readdir(dataDir)).filter((f) => f.endsWith(".json")).sort();
   const protocols = [];
-  for (const f of files) protocols.push(JSON.parse(await readFile(path.join(dataDir, f), "utf8")));
-
-  const families = new Map();
-  const standalone = [];
-  for (const p of protocols) {
-    if (p.family) {
-      if (!families.has(p.family)) families.set(p.family, []);
-      families.get(p.family).push(p);
-    } else standalone.push(p);
+  for (const file of files) {
+    protocols.push(JSON.parse(await readFile(path.join(dataDir, file), "utf8")));
   }
-  for (const list of families.values()) list.sort((a, b) => TIER_ORDER[a.tier] - TIER_ORDER[b.tier]);
-  const familyOrder = [...families.keys()].sort((a, b) =>
-    (FAMILY_LABEL[a] ?? a).localeCompare(FAMILY_LABEL[b] ?? b));
-  const kinds = [...new Set(standalone.map((p) => p.kind))].sort((a, b) =>
-    (KIND_LABEL[a] ?? a).localeCompare(KIND_LABEL[b] ?? b));
 
-  const gradeCount = { strong: 0, moderate: 0, emerging: 0, anecdotal: 0 };
-  for (const p of protocols) gradeCount[p.evidence.grade] += 1;
+  const counts = { strong: 0, moderate: 0, emerging: 0, anecdotal: 0 };
+  for (const p of protocols) counts[p.evidence.grade]++;
 
-  const card = (p) => {
-    const g = p.evidence.grade;
-    const hay = esc(
-      [p.id, p.name, p.title, p.benefit, p.rationale, ...(p.targets ?? []), ...(p.indications ?? [])]
+  // Ladder rungs, so a detail pane can show where a protocol sits.
+  const ladders = new Map();
+  for (const p of protocols) {
+    if (!p.family) continue;
+    if (!ladders.has(p.family)) ladders.set(p.family, []);
+    ladders.get(p.family).push(p);
+  }
+  for (const rungs of ladders.values()) rungs.sort((a, b) => TIER_ORDER[a.tier] - TIER_ORDER[b.tier]);
+
+  const byKind = new Map();
+  for (const p of protocols) {
+    if (!byKind.has(p.kind)) byKind.set(p.kind, []);
+    byKind.get(p.kind).push(p);
+  }
+  const kinds = KIND_ORDER.filter((k) => byKind.has(k));
+  for (const k of byKind.keys()) if (!kinds.includes(k)) kinds.push(k);
+  for (const list of byKind.values()) {
+    list.sort(
+      (a, b) =>
+        GRADE_STEPS[b.evidence.grade] - GRADE_STEPS[a.evidence.grade] ||
+        a.name.localeCompare(b.name),
+    );
+  }
+
+  const hay = (p) =>
+    esc(
+      [p.id, p.name, p.title, p.benefit, p.rationale, p.origin ?? "", ...p.targets, ...p.indications]
         .join(" ")
         .toLowerCase(),
     );
+
+  // One line per protocol: what it is called, and how well supported it is.
+  // Everything else lives in the panel, so 227 stays scannable.
+  const row = (p) => `
+      <button class="row" role="option" id="r-${esc(p.id)}" data-id="${esc(p.id)}" data-grade="${p.evidence.grade}" data-kind="${esc(p.kind)}"${ESSENTIALS.includes(p.id) ? ' data-essential="1"' : ""} data-hay="${hay(p)}">
+        <span class="row-name">${esc(p.name)}</span>
+        ${gradeTag(p.evidence.grade)}
+      </button>`;
+
+  const ladderStrip = (p) => {
+    if (!p.family) return "";
+    const rungs = ladders.get(p.family) ?? [];
     return `
-  <details class="card" data-grade="${g}" data-hay="${hay}">
-    <summary>
-      <div class="card-top">
-        <h3>${esc(p.name)}</h3>
-        <span class="chip grade grade-${g}">${g}</span>
-        ${p.tier ? `<span class="tiertxt">${esc(p.tier)}</span>` : ""}
-      </div>
-      <p class="benefit">${esc(p.benefit)}</p>
-      <p class="how">${esc(p.title)}</p>
-    </summary>
-    <div class="detail">
-      <p class="rationale">${esc(p.rationale)}</p>
-      ${p.origin ? `<p class="origin">${esc(p.origin)}</p>` : ""}
-      <div class="block">
-        <span class="blabel">When to use</span>
-        <ul>${(p.indications ?? []).map((i) => `<li>${esc(i)}</li>`).join("")}</ul>
-      </div>
-      ${p.tierTarget ? `<p class="tier-target">Target: ${esc(p.tierTarget)}</p>` : ""}
-      ${p.avoidWhen ? `<p class="avoid">Avoid: ${p.avoidWhen.map(esc).join(" ")}</p>` : ""}
-      <p class="evidence">${esc(p.evidence.summary)}</p>
-      <p class="links">
-        ${p.evidence.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(" · ")}
-        ${p.guide ? ` · <a class="guide" href="${esc(p.guide.url)}" target="_blank" rel="noopener">Guide: ${esc(p.guide.source)}</a>` : ""}
-        <span class="pid">${esc(p.id)}</span>
-      </p>
-    </div>
-  </details>`;
+        <div class="ladder">
+          <span class="lab">${esc(FAMILY_LABEL[p.family] ?? p.family)} ladder</span>
+          <div class="rungs">
+            ${rungs
+              .map(
+                (r) =>
+                  `<button class="rung ${r.id === p.id ? "here" : ""}" data-goto="${esc(r.id)}">
+                     <span class="rung-tier">${esc(r.tier)}</span>
+                     <span class="rung-bar">${esc(r.tierTarget)}</span>
+                   </button>`,
+              )
+              .join("")}
+          </div>
+        </div>`;
   };
 
-  const section = (id, label, sub, list) => `
-  <section class="family" id="${esc(id)}">
-    <header class="fam-head">
-      <h2>${esc(label)}</h2>
-      <span class="fam-sub">${esc(sub)}</span>
-    </header>
-    <div class="cards">${list.map(card).join("")}</div>
-  </section>`;
+  // One pattern all the way down: a short hero, then labelled blocks. Nothing
+  // free-floating below the hero, so the panel reads as one system.
+  const block = (label, body) => `<section class="d-block"><h3>${label}</h3>${body}</section>`;
+  const bullets = (items) => `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
 
-  const familySections = familyOrder
-    .map((f) => section(f, FAMILY_LABEL[f] ?? f, "ladder · beginner → advanced", families.get(f)))
+  const detail = (p) => `
+      <article class="detail" id="d-${esc(p.id)}" hidden>
+        <header class="d-head">
+          ${gradeTag(p.evidence.grade)}
+          <span class="d-kind">${ICONS[p.kind] ?? ""}${esc(KIND_LABEL[p.kind] ?? p.kind)}</span>
+          <button class="d-close" data-close aria-label="Back to the list">Back</button>
+        </header>
+        <h2>${esc(p.name)}</h2>
+        <p class="d-do">${esc(p.title)}</p>
+        <p class="d-benefit">${esc(p.benefit)}</p>
+        ${p.origin ? `<p class="d-origin">${esc(p.origin)}</p>` : ""}
+        ${block("Try it when", bullets(p.indications))}
+        ${block("Why it works", `<p>${esc(p.rationale)}</p>`)}
+        ${p.avoidWhen ? `<section class="d-block avoid"><h3>Skip it when</h3>${bullets(p.avoidWhen)}</section>` : ""}
+        ${ladderStrip(p)}
+        ${block(
+          "Proof",
+          `<p class="d-links">${p.evidence.sources
+            .map(
+              (s) =>
+                `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`,
+            )
+            .join("")}${
+            p.guide
+              ? `<a href="${esc(p.guide.url)}" target="_blank" rel="noopener">How to start, via ${esc(p.guide.source)}</a>`
+              : ""
+          }</p>`,
+        )}
+      </article>`;
+
+  const list = kinds
+      .map(
+        (k) => `
+      <section class="area" data-kind="${esc(k)}">
+        <h2 class="area-head">${esc(KIND_LABEL[k] ?? k)} <span>${byKind.get(k).length}</span></h2>
+        ${byKind.get(k).map(row).join("")}
+      </section>`,
+    )
     .join("");
-  const standaloneSections = kinds
-    .map((k) =>
-      section(`kind-${k}`, KIND_LABEL[k] ?? k, "standalone",
-        standalone.filter((p) => p.kind === k).sort((a, b) => a.id.localeCompare(b.id))))
-    .join("");
+
+  const total = protocols.length;
+  const dist = GRADES.map(
+    (g) =>
+      `<i class="seg-${g}" style="flex:${counts[g]}" title="${counts[g]} ${g}"></i>`,
+  ).join("");
+  const distKey = GRADES.map(
+    (g) => `<span class="k"><i class="seg-${g}"></i><b>${counts[g]}</b>${g}</span>`,
+  ).join("");
 
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Protocol Bank</title>
-<meta name="description" content="An open, evidence-graded bank of health and performance protocols: behaviors, triggers, progressions, and citations.">
+<title>Productivity Protocols</title>
+<meta name="description" content="${protocols.length} behaviors founders and researchers actually use, each with an honest evidence grade, the signals that say try it, and citations.">
+<meta property="og:title" content="Productivity Protocols">
+<meta property="og:description" content="${protocols.length} behaviors founders and researchers actually use, graded honestly.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://protocols.aescle.com">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
   :root {
-    --ground: #f6f7f5; --surface: #ffffff; --ink: #182019; --muted: #5c665e;
-    --line: #e3e7e2; --accent: #0e7c66; --accent-soft: #e2f0ec;
-    --strong: #0e7c66; --strong-bg: #e2f0ec;
-    --moderate: #3b6fa0; --moderate-bg: #e7eef5;
-    --emerging: #a1580a; --emerging-bg: #f7ecdd;
-    --anecdotal: #616a75; --anecdotal-bg: #eceef1;
-    --avoid: #a03b3b;
+    --paper: #faf9f5; --card: #ffffff; --ink: #17181a; --muted: #6b6f6c;
+    --faint: #9aa09b; --line: #e6e4dd; --line-soft: #efede7;
+    --accent: #16584a; --accent-soft: #e4efea;
+    --warn: #8a4b2a;
+    --shadow: 0 1px 2px rgba(23,24,26,.04), 0 8px 24px rgba(23,24,26,.05);
+    --g-strong: #17795f; --g-moderate: #3d72a4; --g-emerging: #b07219; --g-anecdotal: #9a9a94;
+    --display: "Fraunces", Georgia, "Times New Roman", serif;
+    --body: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --ground: #151815; --surface: #1d211d; --ink: #e8ece8; --muted: #9aa59c;
-      --line: #2c322c; --accent: #4dbfa4; --accent-soft: #1d3a32;
-      --strong: #4dbfa4; --strong-bg: #1d3a32;
-      --moderate: #7fa8d0; --moderate-bg: #22303f;
-      --emerging: #d99a4e; --emerging-bg: #3a2c1a;
-      --anecdotal: #98a1ac; --anecdotal-bg: #272c33;
-      --avoid: #d08080;
+      --paper: #14161a; --card: #1b1e23; --ink: #eceae4; --muted: #9aa09c;
+      --faint: #6d746f; --line: #2a2e34; --line-soft: #23272c;
+      --accent: #6fc4ab; --accent-soft: #1c332e;
+      --warn: #d59a72;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+      --g-strong: #5cc0a2; --g-moderate: #79a9d8; --g-emerging: #d9a25c; --g-anecdotal: #7d827d;
     }
   }
   :root[data-theme="dark"] {
-    --ground: #151815; --surface: #1d211d; --ink: #e8ece8; --muted: #9aa59c;
-    --line: #2c322c; --accent: #4dbfa4; --accent-soft: #1d3a32;
-    --strong: #4dbfa4; --strong-bg: #1d3a32;
-    --moderate: #7fa8d0; --moderate-bg: #22303f;
-    --emerging: #d99a4e; --emerging-bg: #3a2c1a;
-    --anecdotal: #98a1ac; --anecdotal-bg: #272c33;
-    --avoid: #d08080;
+    --paper: #14161a; --card: #1b1e23; --ink: #eceae4; --muted: #9aa09c;
+    --faint: #6d746f; --line: #2a2e34; --line-soft: #23272c;
+    --accent: #6fc4ab; --accent-soft: #1c332e;
+    --warn: #d59a72;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+    --g-strong: #5cc0a2; --g-moderate: #79a9d8; --g-emerging: #d9a25c; --g-anecdotal: #7d827d;
   }
+
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
-    margin: 0; background: var(--ground); color: var(--ink);
-    font-family: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 15px; line-height: 1.5;
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--body); font-size: 15px; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px 40px; }
-  .masthead { padding: 44px 0 20px; }
-  .masthead h1 { margin: 0 0 6px; font-size: 30px; font-weight: 650; letter-spacing: -0.02em; text-wrap: balance; }
-  .masthead p { margin: 0; color: var(--muted); max-width: 62ch; }
-  .stats { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 18px; }
-  .stat { display: flex; flex-direction: column; }
-  .stat b { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 21px; font-weight: 500; font-variant-numeric: tabular-nums; }
-  .stat span { font-size: 12px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
-  .bar {
-    position: sticky; top: 0; z-index: 5; background: var(--ground);
-    border-bottom: 1px solid var(--line); padding: 12px 0; margin-bottom: 28px;
-    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  a { color: inherit; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+  /* Set from the toolbar's real height on load and resize; the toolbar wraps
+     to two rows at narrow widths, so a hardcoded offset clips the panel. */
+  :root { --stick: 132px; }
+
+  /* ── masthead ─────────────────────────────────────────────── */
+  .mast { padding: 68px 0 34px; max-width: 700px; }
+  .mast h1 {
+    font-family: var(--display); font-optical-sizing: auto;
+    font-size: clamp(38px, 6vw, 60px); font-weight: 600; line-height: 1.02;
+    letter-spacing: -0.025em; margin: 0 0 20px; text-wrap: balance;
   }
-  .bar input[type="search"] {
-    flex: 1 1 220px; min-width: 180px; padding: 8px 12px; border: 1px solid var(--line);
-    border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit;
+  .mast .lede { font-size: 18px; line-height: 1.5; color: var(--muted); margin: 0 0 30px; max-width: 60ch; text-wrap: pretty; }
+
+  /* Show the mix, do not list four numbers and hope. */
+  .evidence-mix { max-width: 460px; }
+  .mix-top { font-size: 13.5px; color: var(--muted); margin-bottom: 10px; }
+  .mix-top b { font-family: var(--display); font-size: 22px; font-weight: 600; color: var(--ink); letter-spacing: -0.02em; }
+  .dist { display: flex; gap: 3px; height: 12px; }
+  .dist i { display: block; border-radius: 3px; min-width: 6px; }
+  .dist-key { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 10px; }
+  .dist-key .k {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted);
   }
-  .bar input[type="search"]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-  .fbtn {
-    border: 1px solid var(--line); background: var(--surface); color: var(--muted);
-    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px;
-    padding: 6px 11px; border-radius: 999px; cursor: pointer;
+  .dist-key .k i { width: 8px; height: 8px; border-radius: 2px; flex: 0 0 auto; }
+  .dist-key .k b { color: var(--ink); font-weight: 500; }
+  .seg-strong { background: var(--g-strong); }
+  .seg-moderate { background: var(--g-moderate); }
+  .seg-emerging { background: var(--g-emerging); }
+  .seg-anecdotal { background: var(--g-anecdotal); }
+
+  .mast .use { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 28px 0 0; }
+  .mast .use code {
+    font-family: var(--mono); font-size: 12.5px; background: var(--card);
+    border: 1px solid var(--line); border-radius: 7px; padding: 6px 10px; white-space: nowrap;
   }
-  .fbtn[aria-pressed="true"] { color: var(--ink); border-color: var(--accent); background: var(--accent-soft); }
-  .fbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-  .count-note { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; color: var(--muted); margin-left: auto; }
-  .family { margin-bottom: 34px; }
-  .fam-head { display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 14px; }
-  .fam-head h2 { margin: 0; font-size: 17px; font-weight: 650; letter-spacing: -0.01em; }
-  .fam-sub { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; color: var(--muted); }
-  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 14px; }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 0; }
-  .card.hide { display: none; }
-  .card > summary { list-style: none; cursor: pointer; padding: 13px 16px; display: flex; flex-direction: column; gap: 4px; position: relative; }
-  .card > summary::-webkit-details-marker { display: none; }
-  .card > summary::after { content: "+"; position: absolute; top: 10px; right: 14px; color: var(--muted); font-family: "IBM Plex Mono", ui-monospace, monospace; }
-  .card[open] > summary::after { content: "2"; }
-  .card > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 10px; }
-  .card-top { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; padding-right: 18px; }
-  .card h3 { margin: 0; font-size: 15.5px; font-weight: 650; letter-spacing: -0.01em; }
-  .chip { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; letter-spacing: 0.04em; padding: 1px 7px; border-radius: 999px; }
-  .grade-strong { color: var(--strong); background: var(--strong-bg); }
-  .grade-moderate { color: var(--moderate); background: var(--moderate-bg); }
-  .grade-emerging { color: var(--emerging); background: var(--emerging-bg); }
-  .grade-anecdotal { color: var(--anecdotal); background: var(--anecdotal-bg); }
-  .tiertxt { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; color: var(--muted); }
-  .benefit { margin: 0; color: var(--accent); font-weight: 550; }
-  .how { margin: 0; color: var(--muted); font-size: 13.5px; }
-  .detail { padding: 0 16px 14px; display: flex; flex-direction: column; gap: 8px; border-top: 1px dashed var(--line); }
-  .detail > :first-child { margin-top: 10px; }
-  .rationale { margin: 0; color: var(--muted); font-size: 13px; }
-  .origin { margin: 0; color: var(--muted); font-size: 12.5px; font-style: italic; }
-  .block .blabel { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 3px; }
-  .block ul { margin: 0; padding-left: 18px; }
-  .block li { margin: 2px 0; }
-  .tier-target { margin: 0; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; color: var(--accent); }
-  .avoid { margin: 0; font-size: 13px; color: var(--avoid); }
-  .evidence { margin: 0; font-size: 13px; color: var(--muted); }
-  .links { margin: 0; font-size: 12.5px; }
-  .links a { color: var(--moderate); text-decoration: none; }
-  .links a.guide { color: var(--accent); }
-  .links a:hover, .links a:focus-visible { text-decoration: underline; }
-  .pid { float: right; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; color: var(--muted); }
-  footer { border-top: 1px solid var(--line); margin-top: 20px; padding: 18px 0 30px; color: var(--muted); font-size: 13px; }
-  footer a { color: var(--accent); text-decoration: none; }
-  footer a:hover, footer a:focus-visible { text-decoration: underline; }
+  .mast .use a {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px;
+    color: var(--muted); text-decoration: none;
+  }
+  .mast .use a:hover { color: var(--ink); }
+  .mast .use a svg { width: 15px; height: 15px; flex: 0 0 auto; }
+  .mast .use a span { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line); }
+
+  /* ── toolbar ──────────────────────────────────────────────── */
+  .tools {
+    position: sticky; top: 0; z-index: 20; background: var(--paper);
+    border-bottom: 1px solid var(--line); padding: 14px 0;
+  }
+  .tools-in { display: flex; flex-wrap: wrap; gap: 14px 18px; align-items: center; }
+  .search {
+    flex: 1 1 240px; min-width: 190px; padding: 9px 14px; border-radius: 9px;
+    border: 1px solid var(--line); background: var(--card); color: var(--ink);
+    font: inherit; font-size: 14px;
+  }
+  .search::placeholder { color: var(--faint); }
+  /* Same four words, same four colours, as the meter and the rows. */
+  .grades { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .glabel { font-size: 12.5px; color: var(--muted); margin-right: 2px; white-space: nowrap; }
+  .grades button {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12.5px; padding: 5px 11px 5px 9px; border-radius: 999px; white-space: nowrap;
+    border: 1px solid var(--line); background: var(--card); color: var(--muted);
+    transition: border-color .13s, color .13s;
+  }
+  .grades button i { width: 7px; height: 7px; border-radius: 2px; flex: 0 0 auto; }
+  .grades button:hover { color: var(--ink); }
+  .grades button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
+  .areas { display: flex; flex-wrap: wrap; gap: 6px; }
+  .areas button {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12.5px; padding: 5px 11px 5px 9px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--card); color: var(--muted);
+    transition: border-color .13s, color .13s, background .13s;
+  }
+  .areas button svg { width: 14px; height: 14px; flex: 0 0 auto; opacity: .75; }
+  .areas button:hover { color: var(--ink); }
+  .areas button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+  .areas button[aria-pressed="true"] svg { opacity: 1; }
+  .tally { font-family: var(--mono); font-size: 12px; color: var(--faint); margin-left: auto; white-space: nowrap; }
+
+  /* ── grade tag ────────────────────────────────────────────── */
+  .tag {
+    display: inline-flex; align-items: center; gap: 6px; flex: 0 0 auto;
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    text-transform: lowercase; letter-spacing: 0.02em;
+  }
+  .tag i { width: 7px; height: 7px; border-radius: 2px; flex: 0 0 auto; }
+  .tag[data-grade="strong"] i { background: var(--g-strong); }
+  .tag[data-grade="moderate"] i { background: var(--g-moderate); }
+  .tag[data-grade="emerging"] i { background: var(--g-emerging); }
+  .tag[data-grade="anecdotal"] i { background: var(--g-anecdotal); }
+
+  /* ── two-pane ─────────────────────────────────────────────── */
+  .panes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 40px; align-items: start; padding: 26px 0 80px; }
+  .list { min-width: 0; }
+  .area { margin: 0 0 30px; scroll-margin-top: calc(var(--stick) + 8px); }
+  .area-head {
+    font-family: var(--mono); font-size: 11px; font-weight: 500; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--faint); margin: 0 0 8px; padding: 0 4px;
+    display: flex; align-items: baseline; gap: 7px;
+  }
+  .area-head span { color: var(--line); }
+  :root[data-theme="dark"] .area-head span { color: var(--muted); }
+
+  .row {
+    scroll-margin-top: calc(var(--stick) + 8px);
+    display: flex; gap: 14px; width: 100%; text-align: left; align-items: center;
+    padding: 9px 13px; border-radius: 9px; border: 1px solid transparent;
+    transition: background .12s, border-color .12s;
+  }
+  .row:hover { background: var(--card); border-color: var(--line-soft); }
+  .row[aria-selected="true"] { background: var(--card); border-color: var(--line); box-shadow: var(--shadow); }
+  .row-name {
+    font-weight: 500; font-size: 14.5px; letter-spacing: -0.005em; flex: 1 1 auto;
+    min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .row .tag { opacity: .8; }
+  .row:hover .tag, .row[aria-selected="true"] .tag { opacity: 1; }
+  .row.hide, .area.hide { display: none; }
+
+  /* Essentials sits in the same row as the areas and looks the same. It only
+     gets a hairline separator, because it filters on a different axis. */
+  .areas .is-essential { margin-right: 5px; position: relative; }
+  .areas .is-essential::after {
+    content: ""; position: absolute; right: -6px; top: 20%; height: 60%;
+    border-right: 1px solid var(--line);
+  }
+  .areas .is-essential svg { opacity: .9; }
+
+  .empty { padding: 40px 4px; color: var(--muted); font-size: 15px; }
+  .empty b { color: var(--ink); font-weight: 600; }
+
+  /* ── detail ───────────────────────────────────────────────── */
+  .pane {
+    position: sticky; top: var(--stick); background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 30px 32px; box-shadow: var(--shadow);
+    max-height: calc(100vh - var(--stick) - 24px); overflow-y: auto; overscroll-behavior: contain;
+  }
+  .d-head { display: flex; align-items: center; gap: 9px; margin-bottom: 18px; }
+  .d-grade, .d-kind {
+    font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em;
+    color: var(--faint);
+  }
+  .d-kind { margin-left: auto; display: inline-flex; align-items: center; gap: 5px; }
+  .d-kind svg { width: 13px; height: 13px; }
+  .d-close { display: none; }
+  .detail h2 {
+    font-family: var(--display); font-size: 30px; font-weight: 600; line-height: 1.1;
+    letter-spacing: -0.02em; margin: 0 0 10px; text-wrap: balance;
+  }
+  .d-do { font-size: 17px; font-weight: 500; margin: 0 0 4px; line-height: 1.4; }
+  .d-benefit { color: var(--accent); font-size: 15.5px; margin: 0 0 18px; }
+  .d-origin {
+    font-family: var(--mono); font-size: 12.5px; line-height: 1.6; color: var(--muted);
+    border-left: 2px solid var(--line); padding: 2px 0 2px 13px; margin: 0 0 18px;
+  }
+  .d-block { border-top: 1px solid var(--line-soft); padding-top: 15px; margin-bottom: 15px; }
+  .d-block h3 {
+    font-family: var(--mono); font-size: 11px; font-weight: 500; text-transform: uppercase;
+    letter-spacing: 0.09em; color: var(--faint); margin: 0 0 9px;
+  }
+  .d-block p { margin: 0; line-height: 1.55; color: var(--muted); }
+  .d-block ul { margin: 0; padding-left: 17px; }
+  .d-block li { margin-bottom: 5px; line-height: 1.5; }
+  .d-block.avoid li { color: var(--warn); }
+  /* Links, not pills. Pills mean "you can press this" everywhere else. */
+  .d-links { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+  .d-links a {
+    font-size: 13.5px; color: var(--accent); text-decoration: underline;
+    text-underline-offset: 3px; text-decoration-color: var(--line);
+    transition: text-decoration-color .13s;
+  }
+  .d-links a:hover { text-decoration-color: var(--accent); }
+
+  .ladder { border-top: 1px solid var(--line-soft); padding-top: 16px; margin-bottom: 16px; }
+  .ladder .lab {
+    font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.09em;
+    color: var(--faint); display: block; margin-bottom: 9px;
+  }
+  .rungs { display: flex; flex-direction: column; gap: 5px; }
+  .rung {
+    display: flex; gap: 11px; align-items: baseline; text-align: left; width: 100%;
+    padding: 7px 11px; border-radius: 8px; border: 1px solid var(--line-soft);
+    transition: border-color .13s, background .13s;
+  }
+  .rung:hover { border-color: var(--line); background: var(--paper); }
+  .rung.here { border-color: var(--accent); background: var(--accent-soft); }
+  .rung-tier {
+    font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.07em;
+    color: var(--faint); flex: 0 0 74px;
+  }
+  .rung.here .rung-tier { color: var(--accent); }
+  .rung-bar { font-size: 13px; line-height: 1.4; }
+
+  footer { border-top: 1px solid var(--line); padding: 30px 0 60px; color: var(--muted); font-size: 13.5px; }
+  footer a { color: var(--accent); }
+  footer p { margin: 0 0 7px; max-width: 68ch; }
+
+  /* ── responsive ───────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .wrap { padding: 0 20px; }
+    .mast { padding: 46px 0 26px; }
+    .panes { grid-template-columns: 1fr; gap: 0; padding-bottom: 40px; }
+    .tally { margin-left: 0; }
+    .pane {
+      position: fixed; inset: 0; z-index: 60; border-radius: 0; border: 0;
+      max-height: none; height: 100dvh; padding: 20px 20px 60px; display: none;
+    }
+    body.open .pane { display: block; }
+    body.open { overflow: hidden; }
+    .d-close {
+      display: inline-block; margin-left: auto; font-family: var(--mono); font-size: 12px;
+      color: var(--accent); padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px;
+    }
+    .d-kind { margin-left: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="masthead">
-    <h1>Protocol Bank</h1>
-    <p>An open, evidence-graded bank of health and performance protocols for people who optimize
-    their focus, energy, and long arc like they optimize systems. Each protocol is a concrete
-    behavior with the signals that indicate trying it, an honest evidence grade, citations, and
-    contraindications — structured data your agent can act on.</p>
-    <div class="stats">
-      <div class="stat"><b>${protocols.length}</b><span>protocols</span></div>
-      <div class="stat"><b>${families.size}</b><span>ladders</span></div>
-      <div class="stat"><b>${gradeCount.strong}·${gradeCount.moderate}·${gradeCount.emerging}·${gradeCount.anecdotal}</b><span>strong · mod · emer · anec</span></div>
+  <header class="mast">
+    <h1>Productivity Protocols</h1>
+    <p class="lede">Behaviors you can implement to do better work, across focus, sleep, exercise, nutrition, and calendar.</p>
+    <div class="evidence-mix">
+      <div class="mix-top"><b>${total}</b> protocols, by how much proof is behind them</div>
+      <div class="dist" role="img" aria-label="${GRADES.map((g) => `${counts[g]} ${g}`).join(", ")}">${dist}</div>
+      <div class="dist-key">${distKey}</div>
     </div>
+    <p class="use">
+      <code>npx -y productivity-protocols</code>
+      <a href="https://github.com/aescle/productivity-protocols">${GH_ICON}<span>Source and data</span></a>
+    </p>
   </header>
+</div>
 
-  <div class="bar">
-    <input id="q" type="search" placeholder="Search titles, triggers, targets…" aria-label="Search protocols">
-    <button class="fbtn" data-grade="strong" aria-pressed="false">strong ${gradeCount.strong}</button>
-    <button class="fbtn" data-grade="moderate" aria-pressed="false">moderate ${gradeCount.moderate}</button>
-    <button class="fbtn" data-grade="emerging" aria-pressed="false">emerging ${gradeCount.emerging}</button>
-    <button class="fbtn" data-grade="anecdotal" aria-pressed="false">anecdotal ${gradeCount.anecdotal}</button>
-    <span class="count-note" id="count"></span>
+<div class="tools">
+  <div class="wrap tools-in">
+    <input class="search" id="q" type="search" placeholder="Search behaviors, triggers, people..." aria-label="Search protocols">
+    <div class="grades" id="grades" role="group" aria-label="Evidence">
+      <span class="glabel">Proof</span>
+      ${GRADES.map(
+        (g) =>
+          `<button data-grade="${g}" aria-pressed="false"><i class="seg-${g}"></i>${g}</button>`,
+      ).join("")}
+    </div>
+    <div class="areas" id="areas" role="group" aria-label="Filters">
+      <button id="essential" class="is-essential" aria-pressed="false">${STAR_ICON}<span>Essentials</span></button>
+      ${kinds
+        .map(
+          (k) =>
+            `<button data-kind="${esc(k)}" aria-pressed="false">${ICONS[k] ?? ""}<span>${esc(KIND_LABEL[k] ?? k)}</span></button>`,
+        )
+        .join("")}
+    </div>
+    <span class="tally" id="tally">${protocols.length} shown</span>
   </div>
+</div>
 
-  ${familySections}
-  ${standaloneSections}
+<div class="wrap">
+  <div class="panes">
+    <div class="list" id="list" role="listbox" aria-label="Protocols" tabindex="0">
+      ${list}
+      <p class="empty" id="empty" hidden>Nothing matches that. <b>Clear a filter</b> or change the search.</p>
+    </div>
+    <div class="pane" id="pane">
+      ${protocols.map(detail).join("")}
+    </div>
+  </div>
+</div>
 
+<div class="wrap">
   <footer>
-    Maintained by <a href="https://aescle.com" rel="noopener">Aescle</a> · Data CC BY 4.0 · Code MIT ·
-    Not medical advice: protocols describe general practices and their evidence, not recommendations
-    for any individual.
+    <p>Not medical advice. These describe general practices and the evidence behind them, not recommendations for you specifically. Read the "skip it when" notes and talk to a doctor before changing anything that touches a medical condition or medication.</p>
+    <p>Data is CC BY 4.0, code is MIT. Built by <a href="https://aescle.com">Aescle</a>. <a href="https://github.com/aescle/productivity-protocols">Contribute a protocol</a>.</p>
   </footer>
 </div>
+
 <script>
-  const cards = [...document.querySelectorAll(".card")];
-  const q = document.getElementById("q");
-  const count = document.getElementById("count");
-  const gradeBtns = [...document.querySelectorAll("button[data-grade]")];
-  const active = { grades: new Set(), q: "" };
-  function apply() {
-    let shown = 0;
-    for (const c of cards) {
-      const okGrade = active.grades.size === 0 || active.grades.has(c.dataset.grade);
-      const okQ = !active.q || c.dataset.hay.includes(active.q);
-      const ok = okGrade && okQ;
-      c.classList.toggle("hide", !ok);
-      if (ok) shown++;
+(function () {
+  var rows = [].slice.call(document.querySelectorAll(".row"));
+  var areas = [].slice.call(document.querySelectorAll(".area"));
+  var q = document.getElementById("q");
+  var tally = document.getElementById("tally");
+  var empty = document.getElementById("empty");
+  var pane = document.getElementById("pane");
+  var state = { q: "", grades: {}, kinds: {}, essential: false };
+  var current = null;
+
+  function visible() { return rows.filter(function (r) { return !r.classList.contains("hide"); }); }
+
+  function select(id, scroll) {
+    var row = document.getElementById("r-" + id);
+    var det = document.getElementById("d-" + id);
+    if (!row || !det) return;
+    if (current) {
+      var prev = document.getElementById("r-" + current);
+      var prevD = document.getElementById("d-" + current);
+      if (prev) prev.setAttribute("aria-selected", "false");
+      if (prevD) prevD.hidden = true;
     }
-    for (const s of document.querySelectorAll(".family")) {
-      s.style.display = s.querySelector(".card:not(.hide)") ? "" : "none";
-    }
-    count.textContent = shown + " / " + cards.length;
+    current = id;
+    row.setAttribute("aria-selected", "true");
+    det.hidden = false;
+    pane.scrollTop = 0;
+    document.body.classList.add("open");
+    if (scroll) row.scrollIntoView({ block: "nearest" });
+    if (history.replaceState) history.replaceState(null, "", "#" + id);
   }
-  q.addEventListener("input", () => { active.q = q.value.trim().toLowerCase(); apply(); });
-  for (const b of gradeBtns) b.addEventListener("click", () => {
-    const g = b.dataset.grade;
-    if (active.grades.has(g)) active.grades.delete(g); else active.grades.add(g);
-    b.setAttribute("aria-pressed", String(active.grades.has(g)));
+
+  function close() {
+    document.body.classList.remove("open");
+  }
+
+  function apply() {
+    var grades = Object.keys(state.grades).filter(function (g) { return state.grades[g]; });
+    var picked = Object.keys(state.kinds).filter(function (k) { return state.kinds[k]; });
+    var shown = 0;
+    rows.forEach(function (r) {
+      var ok = (grades.length === 0 || grades.indexOf(r.dataset.grade) !== -1)
+        && (!state.essential || r.dataset.essential === "1")
+        && (picked.length === 0 || picked.indexOf(r.dataset.kind) !== -1)
+        && (!state.q || r.dataset.hay.indexOf(state.q) !== -1);
+      r.classList.toggle("hide", !ok);
+      if (ok) shown++;
+    });
+    areas.forEach(function (a) {
+      a.classList.toggle("hide", !a.querySelector(".row:not(.hide)"));
+    });
+    tally.textContent = shown === rows.length ? shown + " shown" : shown + " of " + rows.length;
+    empty.hidden = shown !== 0;
+    // Keep the open protocol honest: if it filtered out, move to the first match.
+    if (shown && current) {
+      var cur = document.getElementById("r-" + current);
+      if (cur && cur.classList.contains("hide")) select(visible()[0].dataset.id, false);
+    }
+  }
+
+  q.addEventListener("input", function () { state.q = q.value.trim().toLowerCase(); apply(); });
+
+  document.getElementById("grades").addEventListener("click", function (e) {
+    var b = e.target.closest("button[data-grade]");
+    if (!b) return;
+    var g = b.dataset.grade;
+    state.grades[g] = !state.grades[g];
+    b.setAttribute("aria-pressed", String(!!state.grades[g]));
     apply();
   });
+
+  document.getElementById("essential").addEventListener("click", function () {
+    state.essential = !state.essential;
+    this.setAttribute("aria-pressed", String(state.essential));
+    apply();
+  });
+
+  document.getElementById("areas").addEventListener("click", function (e) {
+    var b = e.target.closest("button[data-kind]");
+    if (!b) return;
+    var k = b.dataset.kind;
+    state.kinds[k] = !state.kinds[k];
+    b.setAttribute("aria-pressed", String(!!state.kinds[k]));
+    apply();
+  });
+
+  document.getElementById("list").addEventListener("click", function (e) {
+    var r = e.target.closest(".row");
+    if (r) select(r.dataset.id, false);
+  });
+
+  pane.addEventListener("click", function (e) {
+    if (e.target.closest("[data-close]")) return close();
+    var g = e.target.closest("[data-goto]");
+    if (g) select(g.dataset.goto, true);
+  });
+
+  // Arrow keys walk the visible list, so 227 can be reviewed without the mouse.
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") return close();
+    if (e.target === q || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key !== "ArrowDown" && e.key !== "ArrowUp" && e.key !== "j" && e.key !== "k") return;
+    var vis = visible();
+    if (!vis.length) return;
+    e.preventDefault();
+    var down = e.key === "ArrowDown" || e.key === "j";
+    var at = current ? vis.map(function (r) { return r.dataset.id; }).indexOf(current) : -1;
+    var next = at === -1 ? 0 : Math.min(vis.length - 1, Math.max(0, at + (down ? 1 : -1)));
+    select(vis[next].dataset.id, true);
+  });
+
+  var tools = document.querySelector(".tools");
+  function stick() {
+    document.documentElement.style.setProperty("--stick", (tools.offsetHeight + 16) + "px");
+  }
+  stick();
+  window.addEventListener("resize", stick);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(stick);
+
   apply();
+  var deep = location.hash.slice(1);
+  if (deep && document.getElementById("d-" + deep)) select(deep, true);
+  else { select(rows[0].dataset.id, false); close(); }
+})();
 </script>
 </body>
 </html>
