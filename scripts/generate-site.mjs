@@ -553,6 +553,11 @@ export async function renderSite() {
   footer { border-top: 1px solid var(--line); padding: 30px 0 60px; color: var(--muted); font-size: 13.5px; }
   footer a { color: var(--accent); }
   footer p { margin: 0 0 7px; max-width: 68ch; }
+  .foot-brand { display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; margin-top: 25px; padding-top: 24px; border-top: 1px solid var(--line-soft); }
+  .foot-brand strong { display: block; color: var(--ink); font-size: 14px; font-weight: 600; }
+  .foot-brand strong a { color: inherit; text-decoration: none; }
+  .foot-brand strong a:hover { color: var(--accent); }
+  .foot-brand span { display: block; max-width: 52ch; margin-top: 4px; }
 
   /* ── responsive ───────────────────────────────────────────── */
   @media (max-width: 900px) {
@@ -573,6 +578,7 @@ export async function renderSite() {
       color: var(--accent); padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px;
     }
     .d-kind { margin-left: 0; }
+    .foot-brand { display: block; }
   }
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
@@ -660,7 +666,10 @@ export async function renderSite() {
 <div class="wrap">
   <footer>
     <p>Not medical advice. These describe general practices and the evidence behind them, not recommendations for you specifically. Read the "skip it when" notes and talk to a doctor before changing anything that touches a medical condition or medication.</p>
-    <p>Data is CC BY 4.0 and code is MIT. <a href="https://github.com/aescle/productivity-protocols">Contribute a protocol</a>. <a href="https://aescle.com">Built and maintained by Aescle.</a></p>
+    <p>Data is CC BY 4.0 and code is MIT. <a href="https://github.com/aescle/productivity-protocols">Contribute a protocol</a>.</p>
+    <div class="foot-brand">
+      <div><strong>Built and maintained by <a href="https://aescle.com">Aescle</a>.</strong><span>Aescle connects protocols to your own health and work patterns, then helps you act at the right time.</span></div>
+    </div>
   </footer>
 </div>
 
