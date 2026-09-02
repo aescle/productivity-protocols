@@ -555,8 +555,8 @@ export async function renderSite() {
   footer p { margin: 0 0 7px; max-width: 68ch; }
   .foot-brand { display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; margin-top: 25px; padding-top: 24px; border-top: 1px solid var(--line-soft); }
   .foot-brand strong { display: block; color: var(--ink); font-size: 14px; font-weight: 600; }
-  .foot-brand strong a { color: inherit; text-decoration: none; }
-  .foot-brand strong a:hover { color: var(--accent); }
+  .foot-brand strong a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .foot-brand strong a:hover { color: var(--ink); }
   .foot-brand span { display: block; max-width: 52ch; margin-top: 4px; }
 
   /* ── responsive ───────────────────────────────────────────── */
