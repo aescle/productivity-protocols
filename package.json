@@ -39,7 +39,9 @@
     "data",
     "schema",
     "mcp",
-    "scripts",
+    "scripts/validate.mjs",
+    "scripts/generate-index.mjs",
+    "scripts/generate-site.mjs",
     "LICENSE",
     "LICENSE-DATA.md",
     "README.md"
