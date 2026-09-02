@@ -32,7 +32,7 @@
     "./data/*": "./data/*"
   },
   "bin": {
-    "productivity-protocols": "./mcp/server.mjs"
+    "productivity-protocols": "mcp/server.mjs"
   },
   "files": [
     "src",
