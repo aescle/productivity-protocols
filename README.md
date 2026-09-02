@@ -1,57 +1,66 @@
 # productivity-protocols
 
-227 things people actually do to work better, each graded by how much proof is behind it.
+[![validate](https://github.com/aescle/productivity-protocols/actions/workflows/validate.yml/badge.svg)](https://github.com/aescle/productivity-protocols/actions/workflows/validate.yml)
 
-Built by [Aescle](https://aescle.com), a health and performance coach for founders.
+Personal productivity protocols, or behaviors you control to get more done. Runs the whole
+gamut, from peer-reviewed to anecdotal, physical and mental.
+
+> You’ll have to experiment to find out what works best for your body. It’s definitely worth
+> doing—it helps in all aspects of life, and you’ll feel a lot better and happier overall.
+>
+> — [Sam Altman](https://blog.samaltman.com/productivity)
+
+Built by the team behind [Aescle](https://aescle.com).
 
 ## Install
 
+**Claude Code**
 ```bash
 claude mcp add productivity-protocols -- npx -y productivity-protocols
 ```
 
-ChatGPT takes a URL instead, under Settings -> Connectors -> Add custom connector:
-`https://protocols.aescle.com/mcp`
+**ChatGPT**
+```
+Settings -> Connectors -> Add custom connector -> https://protocols.aescle.com/mcp
+```
 
 ## Example
 
-> **Fundraising, hiring, and code all day. I haven't shipped in three weeks.**
-
 ```
-Your problem is fragmentation, not hours. Four protocols fit.
+> my sleep is all over the place on weekends and i feel like shit by monday
 
-  Meeting Clustering                                          emerging
-  Cluster meetings into two daily windows.
-  https://pubmed.ncbi.nlm.nih.gov/37023294/
+⏺ apple-health - health_query (MCP)
+  ⎿  14 nights, wake time 06:28 to 07:44
 
-  Themed Days                                                anecdotal
-  Give each weekday one theme and route work into its day.
-  Jack Dorsey ran two companies on themed weekdays.
+⏺ productivity-protocols - list_protocols (MCP)
+  ⎿  227 protocols
 
-  90-Minute First-Block Creation                             anecdotal
-  Give the first 90 work minutes to creation, not communication.
-  Jensen Huang finishes his top priority before reaching the office.
+⏺ productivity-protocols - get_protocol (MCP)
+  ⎿  sleep_regular_wake_time, sleep_precision
 
-  Three Decisions a Day                                      anecdotal
-  Cap yourself at about three good decisions per day.
-  Jeff Bezos aims for three good decisions a day.
+⏺ Your wake time is swinging about 75 minutes across the week, which is enough
+  to explain the Monday fog on its own. There's a protocol for exactly that.
 
-Only the first has real evidence behind it. Start there. The other three
-are what specific people do, which is worth something, but not the same
-thing.
+  45-Minute Wake Window: keep wake time within a 45-minute window.
+
+  Graded moderate. Consistent sleep and wake timing is associated with better
+  health, safety, and performance.
+  https://pubmed.ncbi.nlm.nih.gov/33054339/
+
+  There's a stricter 20-minute version on the same ladder, but it's only
+  graded emerging, so start with the 45.
 ```
 
-## Browse it first
+## Browse
 
-All 227, searchable and filterable, at **https://protocols.aescle.com**.
+**https://protocols.aescle.com**
 
 ---
 
-## What is in it
+## What's in it
 
-| | |
-| --- | --- |
 | Protocols | 227 |
+| --- | --- |
 | Evidence grades | 17 strong, 52 moderate, 80 emerging, 78 anecdotal |
 | Progression ladders | 12 families, 36 laddered protocols |
 | Standalone protocols | 191 |
@@ -65,11 +74,26 @@ Evidence grades are honest. Science-backed staples and popular-but-thin founder 
 one bank without pretending to be the same thing. 78 entries are labeled `anecdotal` because that
 is what they are.
 
-## How the agent uses it
+The center of gravity is work performance. Longevity levers earn their place by protecting the
+ability to keep performing, and their benefits are framed that way.
 
-The bank ships a zero-dependency MCP server. Local clients run it over stdio via `npx`; ChatGPT and
-other cloud clients use the hosted endpoint at `https://protocols.aescle.com/mcp`. Same two tools
-either way.
+Work kinds: `priorities`, `decisions`, `starting`, `focus`, `rhythm`, `ideas`, `learning`,
+`review`, `calendar_defense`, `social`. Body kinds: `sleep`, `training`, `recovery`, `nutrition`,
+`walk`.
+
+Sources span the performance canon: founder essays, the Huberman and Attia literature, the
+Founders-podcast roster, athletes, and the deep-work research. Every URL is verified live and
+every PMID is checked against NCBI.
+
+## Tools
+
+| Tool | Returns |
+| --- | --- |
+| `list_protocols` | The catalog. All 227 by default, about 20k tokens. Optional `kind`, `family`, `grade` filters. |
+| `get_protocol` | Full records for the ids you chose: rationale, contraindications, evidence, citations. |
+
+The catalog is also an MCP resource at `protocols://catalog`, for clients that would rather not
+spend a tool call on it.
 
 <details>
 <summary>Local client config, if you did not use the one-liner above</summary>
@@ -86,35 +110,6 @@ either way.
 ```
 
 </details>
-
-Two tools:
-
-| Tool | Returns |
-| --- | --- |
-| `list_protocols` | The catalog. All 227 by default, about 18k tokens. Optional `kind`, `family`, `grade` filters. |
-| `get_protocol` | Full records for the ids you chose: rationale, contraindications, evidence, citations. |
-
-Plus the same catalog as an MCP resource at `protocols://catalog`, for clients that prefer to load
-it without spending a tool call.
-
-**The server does no ranking and no matching, on purpose.** Every protocol carries `indications`,
-which are observable triggers written to be compared against a real person's state. A model reads
-those and reasons about them better than any keyword score can, so the server hands over the
-catalog and gets out of the way.
-
-The flow is two calls. The agent reads the catalog, picks the handful whose indications actually
-fit the person in front of it, then pulls those full records to check `avoidWhen` and cite the
-evidence:
-
-```
-list_protocols()  ->  227 protocols, each with its triggers and evidence grade
-                      ...the model chooses...
-get_protocol(["sleep_extension_experiment", "caffeine_cutoff", "post_meal_walk"])
-                  ->  full records with rationale, contraindications, and sources
-```
-
-An earlier version ranked server-side. It was worse than the model at the one job that mattered,
-so it was removed.
 
 ## Use it as data
 
@@ -145,21 +140,6 @@ Or read the JSON directly. `data/protocols/<id>.json` is the source of truth and
   "indications": ["Focus reliably dips in the hour after lunch."]
 }
 ```
-
-Browse all 227 at **https://protocols.aescle.com**.
-
-## What is in the bank
-
-The center of gravity is work performance. Longevity levers earn their place by protecting the
-ability to keep performing, and their benefits are framed that way.
-
-Work kinds: `priorities`, `decisions`, `starting`, `focus`, `rhythm`, `ideas`, `learning`,
-`review`, `calendar_defense`, `social`. Body kinds: `sleep`, `training`, `recovery`, `nutrition`,
-`walk`.
-
-Sources span the performance canon: founder essays, the Huberman and Attia literature, the
-Founders-podcast roster, athletes, and the deep-work research. Every URL is verified live and
-every PMID is checked against NCBI.
 
 ## Evidence grades
 
@@ -230,9 +210,8 @@ colon to splice two clauses together.
 
 ## Who maintains this
 
-Built and maintained by [Aescle](https://aescle.com), an iOS health and performance coach. The
-Aescle app curates a subset of this bank and layers its own scheduling and personalization on top.
-The bank itself is complete and standalone. Nothing app-specific belongs in it.
+Built and maintained by the team behind [Aescle](https://aescle.com), health and productivity for top performers.
+Aescle combines these protocols with your live behavior to help you do your best work every day. 
 
 ## License
 
@@ -240,5 +219,5 @@ Code is MIT ([LICENSE](LICENSE)). The protocol dataset is CC BY 4.0
 ([LICENSE-DATA.md](LICENSE-DATA.md)).
 
 Not medical advice. Protocols describe general practices and their evidence, not recommendations
-for any individual. Check `avoidWhen` and talk to a doctor before changing anything that interacts
-with a medical condition or medication.
+for any individual. Check `avoidWhen` where present and talk to a doctor before changing anything
+that interacts with a medical condition or medication.
