@@ -12,7 +12,7 @@ import { fileURLToPath } from "node:url";
 const pkgRoot = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 export async function renderGeneratedModule() {
-  const dataDir = path.join(pkgRoot, "data", "protocols");
+  const dataDir = process.env.PROTOCOL_DATA_DIR ?? path.join(pkgRoot, "data", "protocols");
   const files = (await readdir(dataDir)).filter((f) => f.endsWith(".json")).sort();
   const protocols = [];
   for (const file of files) {

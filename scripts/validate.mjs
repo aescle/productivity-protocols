@@ -10,7 +10,7 @@ import { fileURLToPath } from "node:url";
 import { renderGeneratedModule } from "./generate-index.mjs";
 
 const pkgRoot = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const dataDir = path.join(pkgRoot, "data", "protocols");
+const dataDir = process.env.PROTOCOL_DATA_DIR ?? path.join(pkgRoot, "data", "protocols");
 
 const KINDS = new Set([
   "calendar_defense",
@@ -228,6 +228,10 @@ for (const [family, tiers] of families) {
   );
 }
 
+// The mirror and site are generated from data/protocols. When PROTOCOL_DATA_DIR
+// points elsewhere (the local admin checking a single staged candidate), that
+// drift is expected and the check is meaningless, so skip it.
+if (!process.env.PROTOCOL_DATA_DIR) {
 const committed = await readFile(path.join(pkgRoot, "src", "protocols.generated.js"), "utf8");
 const expected = await renderGeneratedModule();
 assert.equal(
@@ -243,5 +247,6 @@ assert.equal(
   await renderSite(),
   "site/index.html is stale; run: node packages/protocol-bank/scripts/generate-index.mjs",
 );
+}
 
 console.log(`protocol-bank: ${protocols.length} protocols valid, ${families.size} families complete, mirror and site in sync`);

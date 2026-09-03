@@ -10,6 +10,8 @@ gamut, from peer-reviewed to anecdotal, physical and mental.
 >
 > — [Sam Altman](https://blog.samaltman.com/productivity)
 
+Browse at **[protocols.aescle.com](https://protocols.aescle.com)**.
+
 Built by the team behind [Aescle](https://aescle.com).
 
 ## Install
@@ -50,12 +52,6 @@ Settings -> Connectors -> Add custom connector -> https://protocols.aescle.com/m
   There's a stricter 20-minute version on the same ladder, but it's only
   graded emerging, so start with the 45.
 ```
-
-## Browse
-
-**https://protocols.aescle.com**
-
----
 
 ## What's in it
 

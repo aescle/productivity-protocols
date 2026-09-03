@@ -151,7 +151,9 @@ const gradeTag = (grade) =>
   `<span class="tag" data-grade="${grade}"><i></i>${grade}</span>`;
 
 export async function renderSite() {
-  const dataDir = path.join(pkgRoot, "data", "protocols");
+  // PROTOCOL_DATA_DIR lets the local admin render a preview that includes
+  // staged, not-yet-published protocols. Unset in normal operation.
+  const dataDir = process.env.PROTOCOL_DATA_DIR ?? path.join(pkgRoot, "data", "protocols");
   const files = (await readdir(dataDir)).filter((f) => f.endsWith(".json")).sort();
   const protocols = [];
   for (const file of files) {
