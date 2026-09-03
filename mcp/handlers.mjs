@@ -11,7 +11,7 @@
 // keyword score can.
 import { PROTOCOLS } from "../src/protocols.generated.js";
 
-export const SERVER_INFO = { name: "productivity-protocols", version: "0.1.0" };
+export const SERVER_INFO = { name: "productivity-protocols", version: "0.1.1" };
 
 // Catalog shape: everything needed to decide, nothing needed only to cite.
 // ~18k tokens for all 227, which is cheap enough to hand over whole.

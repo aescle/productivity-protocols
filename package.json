@@ -1,6 +1,6 @@
 {
   "name": "productivity-protocols",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "An open, evidence-graded bank of health and performance protocols: behaviors, triggers, progression ladders, and citations. Queryable by agents over MCP.",
   "license": "MIT",
@@ -39,6 +39,7 @@
     "data",
     "schema",
     "mcp",
+    "site",
     "scripts/validate.mjs",
     "scripts/generate-index.mjs",
     "scripts/generate-site.mjs",
